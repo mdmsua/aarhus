@@ -1,0 +1,53 @@
+extends layout
+block container
+    article.col-lg-6
+        header.page-header Job category config
+        form.form-horizontal(role="form")
+            div.form-group
+                label.control-label.col-lg-2 Name
+                div.col-lg-10
+                    input.form-control(type="text", ng-required="true", ng-model="jc.name")
+            div.form-group
+                label.control-label.col-lg-2 Category
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a category", ng-model="jc.category", ng-options="c as c for c in categories")
+            div.form-group
+                label.control-label.col-lg-2 LKO
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a LKO", ng-model="jc.lko", ng-options="l.kode as l.navn for l in lkos")
+            div.form-group
+                label.control-label.col-lg-2 PKAT
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.nummer as p.navn for p in pkats")
+            div.form-group
+                label.control-label.col-lg-2 STIKO
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.nummer as s.stilling for s in stikos")
+            div.form-group
+                label.control-label.col-lg-2 Salary class
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a salary class", ng-model="jc.sc", ng-options="sc as sc for sc in salaryClasses")
+            div.form-group
+                label.control-label.col-lg-2 Salary form
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a salary from", ng-model="jc.sf", ng-options="sf as sf for sf in salaryForms")
+            div.form-group
+                label.control-label.col-lg-2 Salary level
+                div.col-lg-10
+                    select.form-control(chosen, data-placeholder="Choose a salary level", ng-model="jc.sl", ng-options="sl as sl for sl in salaryLevels")
+            hr
+            footer.btn-group.btn-group-justified
+                section.btn-group
+                    button.btn.btn-success(type="submit") Save
+                section.btn-group
+                    button.btn.btn-warning(type="reset") Cancel
+                section.btn-group
+                    button.btn.btn-default(type="button", ng-click="getHistory()") History
+    article.col-lg-6(ng-show="history")
+        header.page-header History
+        section(ng-repeat="h in history")
+            header.page-header {{h.period}}
+            ul.list-unstyled
+                li(ng-repeat="v in h.values") {{v.key}}: {{v.value}}
+block scripts
+    script(src='app/jobcategory.js')

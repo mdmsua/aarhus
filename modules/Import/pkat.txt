@@ -1,0 +1,258 @@
+21	 Kiropraktorer	Overenskomstansatte	AC OK	Dansk Kiropraktorforening
+22	 Civiløkonomer	Overenskomstansatte	AC OK	Danmarks Jurist- og Økonomforb
+23	 Hjælpepræster	Overenskomstansatte	AC OK	Den Danske Præsteforening
+25	 Fængselslæger	Overenskomstansatte	AC OK	Praktiserende lægers organis.
+26	 Efterløn funk. ok-ansatte	Regulativlønnede	Andet
+27	 Efterindtægt	Tjenestemænd	Andet
+28	 Mejeriingeniører	Overenskomstansatte	AC OK	Dansk Mejeriingeniørforening
+29	 Undervisn.assistent	Overenskomstansatte	LC - OK	Centralorganisation II
+33	 Undervisningskonsulent	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+36	 Bygningskonstruktør	Overenskomstansatte	CO10 - OK	Konstruktørforeningen
+38	 Bibliotekarer	Overenskomstansatte	AC OK	Bibliotekarforbundet
+39	 Erhvervss.kandidater	Overenskomstansatte	AC OK	Forbundet Kommunikation/ Sprog
+40	 Ingeniørassistenter	Overenskomstansatte	OAO OK	Dansk Metalarbejderforbund
+42	 Forsk.tekn./Ing.ass.	Overenskomstansatte	OAO OK	Teknisk Landsforbund
+43	 Arkitekter	Overenskomstansatte	AC OK	Arkitektforbundet
+44	 Ingeniører	Overenskomstansatte	AC OK	Ingeniørforbundet I Danmark
+46	 Jurister/økonomer	Overenskomstansatte	AC OK	Danmarks Jurist- og Økonomforb
+47	 Bachelorer	Overenskomstansatte	CO10 - OK	Centralorganisation II
+49	 Magistre	Overenskomstansatte	AC OK	Dansk Magisterfor./Psykologf.
+50	 Teknikere m.fl.	Overenskomstansatte	OAO OK	Teknisk Landsforbund
+51	 Helseass. og laboratoriemestre	Overenskomstansatte	OAO OK	Serviceforbundet
+54	 Maskinmestre	Overenskomstansatte	OAO OK	Maskinmestrenes Forening
+58	 Værkstedsledere	Overenskomstansatte	OAO OK	Lederne
+60	 Journalister	Overenskomstansatte	AC OK	Dansk Journalistforbund
+62	 Lærere AMU m.v.	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+63	 Arbejdsmarkedskonsulenter	Overenskomstansatte	OAO OK	Landsklubben HK/APL
+64	 Dyrlæger	Overenskomstansatte	AC OK	Den Danske Dyrlægeforening
+65	 Læreruddannede	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+66	 Lærere Maritime uddannelser	Overenskomstansatte	LC - OK	Uddannelsesforbundet
+67	 Læger i Staten	Overenskomstansatte	AC OK	Foreningen af yngre læger
+68	 Tandlægekons.krim.f.	Overenskomstansatte	Andre overenskomster	Dansk Tandlægeforening
+69	 Tandlæger	Overenskomstansatte	AC OK	Dansk Tandlægeforening
+74	 Inspektører og afdelingsledere	Overenskomstansatte	OAO OK	Serviceforbundet
+78	 Særligt aflønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+80	 Vederlagslønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+81	 Særskilt vederlæggelse	Regulativlønnede	Regulativtlønnede
+82	 Timelønnede	Regulativlønnede	Regulativtlønnede
+83	 Vederlagslønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+84	 Farmaceuter	Overenskomstansatte	AC OK	Dansk Farmaceutforening
+85	 Landinspektører	Overenskomstansatte	AC OK	Den Danske Landinspektørforen.
+86	 Agronomer	Overenskomstansatte	AC OK	Jordbrugsakedemikernes Forbund
+88	 Lærere ved Gymnasieskoler	Overenskomstansatte	AC OK	Gymnasieskolernes lærerfore.
+89	 Magistre Erhvervssk.	Overenskomstansatte	AC OK	Gymnasieskolernes lærerfore.
+91	 Fremm.tjenesteydelser	Andre ansættelsesforhold	Udenfor FD-regi
+93	 Særligt aflønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+94	 Lærere, St. Scenekunstskole	Regulativlønnede	Regulativtlønnede
+95	 Observatorer	Regulativlønnede	Regulativtlønnede
+98	 Særlig aflønnet SKTR	Indviduelle ansættelsesforhold	Individuelt ansatte
+99	 Lærere v/Filmskole (F&TV)	Overenskomstansatte	CO10 - OK	Film- og TV-arbejderforeningen
+101	 Civiløkonomer, Rigsrevisionen	Andre ansættelsesforhold	Udenfor FD-regi
+102	 Handicapledsagere i staten mv.	Regulativlønnede	Regulativtlønnede
+103	 Særligt aflønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+104	 Erhvervsvejledere	Regulativlønnede	Regulativtlønnede
+105	 Klinisk Lekt/lærere	Overenskomstansatte	AC OK	Foreningen af yngre læger
+106	 Eksterne Lektorer	Overenskomstansatte	AC OK	Akademikernes Centralorganisa.
+107	 Studenterundervisere	Overenskomstansatte	AC OK	Foreningen af danske lægestud.
+108	 Læger v/højere læreans.	Overenskomstansatte	AC OK	Den Alm. Danske Lægeforening
+109	 Særligt Aflønnede	Andre ansættelsesforhold	Udenfor FD-regi
+110	 Folketingets medlemmer mf.	Andre ansættelsesforhold	Andet
+111	 Ministre	Andre ansættelsesforhold	Udenfor FD-regi
+112	 Uddannelseskonsulent	Overenskomstansatte	OAO OK	Serviceforbundet
+115	 Jordbrugsteknikere	Overenskomstansatte	CO10 - OK	Jordbrugsteknikere I Danmark
+117	 Konsulenter	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+118	 Konsulenter	Overenskomstansatte	LC - OK	Flere organisationer
+121	 Speciallæger	Overenskomstansatte	AC OK	Foreningen af speciallæger
+122	 Eksperter	Regulativlønnede	Regulativtlønnede
+124	 Biologass/o.ass.	Overenskomstansatte	OAO OK	Teknisk Landsforbund
+125	 Individuelle kontrakter	Indviduelle ansættelsesforhold	Individuelt ansatte
+127	 Tjenestemænd	Tjenestemænd	Stillingsbestemt
+130	 Plantekontrollører	Overenskomstansatte	OAO OK	Serviceforbundet
+131	 Fængselslærere - tjenestemænd	Tjenestemænd	Stillingsbestemt
+133	 Faglærer Klinikass.	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+134	 Erhvervsvejledere	Overenskomstansatte	LC - OK	Landsfors. af voksen og ungdom
+136	 Lager- og Handelsarbejdere	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+137	 Pædagogiske assistenter	Overenskomstansatte	CO10 - OK	Lærernes Centralorganisation
+139	 Gartnere og gartneriarbejdere	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+144	 Slagteriarbejdere	Overenskomstansatte	OAO OK	Nærings- og nydelsesmiddelarb.
+145	 Landmålingsteknikere	Overenskomstansatte	CO10 - OK	Kort- og Landmålingsteknikerne
+149	 Kandidater i sygepleje	Overenskomstansatte	CO10 - OK	Centralorganisation II
+150	 Ernærings- /Husholdn.økonomer	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+151	 Fængselslærere m.fl.	Overenskomstansatte	CO10 - OK	Centralorganisation II
+152	 Lederstillinger	Overenskomstansatte	CO10 - OK	Centralorganisation II
+153	 Lærere, tjmd.	Tjenestemandslignende	Stillingsbestemt
+154	 Lærere, Selvejeinst.	Regulativlønnede	Regulativtlønnede
+155	 Sceneteknikere	Overenskomstansatte	OAO OK	Lager- og handelsarbejderne
+156	 Teaterteknikere	Overenskomstansatte	OAO OK	Teaterteknikerforbundet
+157	 Lærere ved Designskoler	Overenskomstansatte	LC - OK	Statstjenestemændenes Centralo
+158	 Tekn.personale DKT	Overenskomstansatte	OAO OK	Flere organisationer
+160	 Værnepl.personel	Regulativlønnede	Regulativtlønnede
+163	 Omsorgsmedarbejdere	Overenskomstansatte	OAO OK	Socialpædagogernes Landsforbun
+172	 Lærlinge og elever	Overenskomstansatte	OAO OK	Flere organisationer
+173	 Lærere, overensk.	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+174	 Skov - og Landskabsingeniører	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+175	 Daktyloskopitekniker	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+176	 Skov- og naturteknikere	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+177	 Ansat (amts)kommunal	Andre ansættelsesforhold	Ej valid
+178	 Værkstedsass./ledere	Overenskomstansatte	OAO OK	Flere organisationer
+179	 Håndværkere	Overenskomstansatte	OAO OK	Flere organisationer
+180	 Tilsynsfunktionærer	Overenskomstansatte	OAO OK	Serviceforbundet
+185	 Grafiske Arbejdere	Overenskomstansatte	OAO OK	HK Stat
+188	 Officerer	Tjenestemænd	Stillingsbestemt
+193	 Socialrådgivere	Overenskomstansatte	CO10 - OK	Dansk Socialrådgiverforening
+196	 Tolke	Overenskomstansatte	OAO OK	HK Stat
+201	 Tjenestemænd	Tjenestemænd	Stillingsbestemt
+202	 Tjenestemænd - PP	Tjenestemænd	Stillingsbestemt
+206	 Tjenestemandslign.	Tjenestemandslignende	Stillingsbestemt
+207	 Tjenestemænd (åremål)	Tjenestemænd	Stillingsbestemt
+211	 Tjenestemandslign.	Tjenestemandslignende	Stillingsbestemt
+212	 Tjm.lign Kgl. Teater	Regulativlønnede	Regulativtlønnede
+221	 Køkkenmedhjælpere	Overenskomstansatte	OAO OK	Forbundet af off. ansatte
+223	 Lærere m.fl. grundskoler	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+224	 Servicemedarbejdere	Overenskomstansatte	OAO OK	Flere organisationer
+225	 Tjenestemænd	Tjenestemænd	Ej valid
+226	 Fagfotografer	Overenskomstansatte	OAO OK	Serviceforbundet
+227	 Repetitør Kgl.teater	Overenskomstansatte	CO10 - OK	Centralorganisation II
+231	 Bioanalytikere	Overenskomstansatte	CO10 - OK	Danske Bioanalytikere
+236	 Laboratoriefunktionærer	Overenskomstansatte	OAO OK	Dansk Laborantforening
+237	 Lærere m.fl. grundskoler	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+238	 IT-medarbejdere	Overenskomstansatte	OAO OK	Samdata
+239	 IT-medarbejdere	Overenskomstansatte	CO10 - OK	Prosa / Offentlig
+240	 Kontorfunktionærer	Overenskomstansatte	OAO OK	HK Stat
+242	 Farmakonom/defektric	Overenskomstansatte	CO10 - OK	Farmakonomforeningen
+243	 Tjenestemænd i SKAT	Tjenestemænd	Stillingsbestemt
+246	 Tekniske Ledere	Overenskomstansatte	OAO OK	Lederne
+247	 Rengøringsassistenter	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+248	 Specialarbejdere m.fl.	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+251	 Sygeplejersker	Overenskomstansatte	CO10 - OK	Dansk Sygeplejeråd
+252	 Vagtfunktionærer	Overenskomstansatte	OAO OK	Serviceforbundet
+254	 Præster	Tjenestemænd	Stillingsbestemt
+255	 Teknisk Servicemeda.	Andre ansættelsesforhold	Udenfor FD-regi
+257	 Fuldmægtige m.fl. i SKAT	Overenskomstansatte	CO10 - OK	Dansk Told og Skatteforbund
+258	 Kokke/kogersker	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+259	 Flyveledere m.fl.	Overenskomstansatte	CO10 - OK
+260	 Tjenestemandslign.	Tjenestemandslignende	Stillingsbestemt
+261	 Soc- og Sundh.ass.mf.	Overenskomstansatte	OAO OK	Forbundet af off. ansatte
+265	 Kantineledere	Overenskomstansatte	OAO OK	Serviceforbundet
+266	 Køkkenpersonale	Overenskomstansatte	CO10 - OK	Kost og Ernæringsforbundet
+270	 Værnepl.personel	Regulativlønnede	Regulativtlønnede
+280	 Skibsass. i Esbjerg	Overenskomstansatte	OAO OK	Sømændenes Forbund
+284	 Ergo-/fysioterapeuter	Overenskomstansatte	CO10 - OK	Danske Fysioterapeuter
+285	 Piccolo/piccoline	Regulativlønnede	Regulativtlønnede
+286	 Ledere og Lærere	Overenskomstansatte	AC OK	Dansk Magisterforening
+287	 Ledere og Lærere	Overenskomstansatte	AC OK	Dansk Magisterforening
+288	 Ungkok/stewardesse	Overenskomstansatte	Andre overenskomster	Dansk Sø-Restaurations Forenin
+289	 Kantineledere	Overenskomstansatte	OAO OK	Lederne
+291	 Sanitører	Overenskomstansatte	OAO OK	Serviceforbundet
+292	 Parkeringskontrollør	Overenskomstansatte	OAO OK	Vagt- og sikkerhedsfunktionær
+293	 Særligt aflønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+294	 Særligt aflønnede	Regulativlønnede	Regulativtlønnede
+296	 Sanitører	Overenskomstansatte	OAO OK	Serviceforbundet
+297	 Uv.ass.fodterapeutsk	Overenskomstansatte	OAO OK	Forbundet af off. ansatte
+303	 Polititjenestemænd	Tjenestemænd	Stillingsbestemt
+326	 Ventepenge	Tjenestemænd	Stillingsbestemt
+327	 Rådighedsløn	Tjenestemænd	Stillingsbestemt
+401	 Tjenestemænd	Tjenestemænd	Stillingsbestemt
+402	 Tjenestemænd PP	Tjenestemænd	Stillingsbestemt
+403	 Polititjenestemænd	Tjenestemænd	Stillingsbestemt
+407	 Tjenstemænd på åremål	Tjenestemænd	Stillingsbestemt
+411	 Tjenestemandslign.	Tjenestemandslignende	Stillingsbestemt
+412	 Arbejdsledere	Overenskomstansatte	Grønland OK	Arbejdslederforeningens SSK
+414	 Køkkenass./-Ledere	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+415	 Kontorpersonale	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+416	 STI-Elever	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+417	 Reservepolitibetjent	Indviduelle ansættelsesforhold	Individuelt ansatte
+418	 Skibsfører/styrmænd	Overenskomstansatte	Grønland OK	GRL skibsfør.-/styrmandssamm.
+427	 Efterindtægt	Tjenestemænd	Andet
+440	 Tilkaldte kontorfunktionærer	Overenskomstansatte	Grønland OK	HK Stat
+445	 Ingeniører	Overenskomstansatte	Grønland OK	Ingeniørforbundet I Danmark
+446	 Jurister	Overenskomstansatte	Grønland OK	Danmarks Jurist- og Økonomforb
+449	 Magistre	Overenskomstansatte	Grønland OK	Dansk Magisterforening
+456	 Plejemødre,økonomaer	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+462	 Faglærte Arbejdere	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+463	 Faglærte og Ikke Fag, TIMELØN	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+464	 Vejrobservatører	Regulativlønnede	Regulativtlønnede
+467	 Tolke	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+471	 Kommunikationsmedarb	Overenskomstansatte	Grønland OK	Radiotelegrafistforeningen
+472	 Varmemestre,pedeller(SIK)	Overenskomstansatte	Grønland OK	Sulinermik Inuut. Kattuffiat
+480	 Honorarlønnede	Indviduelle ansættelsesforhold	Individuelt ansatte
+484	 Honorarløn, Grønland	Regulativlønnede	Regulativtlønnede
+485	 Kredsdommerkandidater	Overenskomstansatte	CO10 TJM	Centralorganisation II
+492	 Indiv.aflønnede Grl.	Indviduelle ansættelsesforhold	Individuelt ansatte
+493	 Særl. Aflønnede Grl.	Indviduelle ansættelsesforhold	Individuelt ansatte
+503	 Personale ved D.K.T.	Overenskomstansatte	CO10 - OK	Teaterfunktionærforeningen
+505	 Musikassistenter (COII)	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+507	 Korassistenter (KOR)	Overenskomstansatte	CO10 - OK	Ass. ved Det Kgl. Operakor
+509	 Eksterne Lektorer	Overenskomstansatte	AC OK	Akademikernes Centralorganisa.
+512	 Skuespill./operasang	Overenskomstansatte	CO10 - OK	Dansk Skuespillerforbund
+513	 Musikere Kgl. Kapel	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+514	 Musikere Kgl. Kapel	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+516	 Operasangere	Overenskomstansatte	CO10 - OK	Foreningen det Kgl. Operakor
+517	 Operasangere	Overenskomstansatte	CO10 - OK	Foreningen det Kgl. Operakor
+518	 Balletdansere	Overenskomstansatte	Andre overenskomster	Foreningen Den Kgl. Ballet
+519	 Balletdansere	Overenskomstansatte	Andre overenskomster	Foreningen Den Kgl. Ballet
+521	 Skibassistenter, m.fl.	Overenskomstansatte	OAO OK	Sømændenes Forbund
+531	 Interviewere	Regulativlønnede	Regulativtlønnede
+537	 Lærer/leder Prod.sk.	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+540	 Korrespondenter	Overenskomstansatte	AC OK	Forbundet Kommunikation/ Sprog
+547	 Sagkyndig Konsulent	Regulativlønnede	Regulativtlønnede
+548	 Egu-Elever	Overenskomstansatte	Andre overenskomster	Centralorg. Fællesudvalg
+549	 Stipendiater	Andre ansættelsesforhold	Udenfor FD-regi
+553	 Ph.d. Stipendiater	Overenskomstansatte	AC OK	Akademikernes Centralorganisa.
+554	 Ph.d. Studerende	Andre ansættelsesforhold	Udenfor FD-regi
+555	 Skolepraktikelever	Andre ansættelsesforhold	Udenfor FD-regi
+560	 Eksportstipendiater	Andre ansættelsesforhold	Udenfor FD-regi
+564	 Veterinærstuderende	Regulativlønnede	AC OK	Den Danske Dyrlægeforening
+580	 Klinisk Professorer	Overenskomstansatte	AC OK	Akademikernes Centralorganisa.
+583	 Pædagogisk Personale	Andre ansættelsesforhold	Udenfor FD-regi
+586	 Medarbejder Frie Grundskoler	Andre ansættelsesforhold	Udenfor FD-regi
+590	 Hovmestre og kokke	Overenskomstansatte	Andre overenskomster	Dansk Sø-Restaurations Forenin
+592	 Overstyrmænd M.fl.	Overenskomstansatte	Regulativtlønnede	Dansk Navigatørforening
+594	 Skibsassistenter	Overenskomstansatte	OAO OK	Sømændenes Forbund
+601	 Invd.ansatte. Drka	Indviduelle ansættelsesforhold	Individuelt ansatte
+602	 HK-/SL-medarbejdere	Overenskomstansatte	OAO OK	Flere organisationer
+605	 Lærere	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+606	 Køkkenmedarbejdere	Overenskomstansatte	OAO OK	Forbundet af off. ansatte
+607	 Ledere og Lærere SOSU (LC)	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+608	 Rektorer ved professionshøjsk.	Overenskomstansatte	LC - OK	Lærernes Centralorganisation
+609	 Ledere og Lærere SOSU (CO10)	Overenskomstansatte	CO10 - OK	Centralorganisation II
+610	 Folketingets ansatte	Overenskomstansatte	OAO OK	Flere organisationer
+611	 Folketingets AC-ansatte	Overenskomstansatte	AC OK
+620	 Lærere ved AVU , FVU mm	Overenskomstansatte	LC - OK	Statstjenestemændenes Centralo
+621	 Ledere ved VUC	Overenskomstansatte	AC OK	Danmarks Jurist- og Økonomforb
+622	 Vederlagsl. Pension.	Regulativlønnede	Regulativtlønnede
+623	 Pædagogiske ledere	Overenskomstansatte	AC OK	Gymnasieskolernes lærerfore.
+630	 Håndværkere, murere	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+632	 Administrative medarbejdere	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+633	 Operative medarb. og ledere	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+634	 Tekniske medarbejdere, Naviair	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+635	 Specialister og ledere	Overenskomstansatte	CO10 - OK	Statstjenestemændenes Centralo
+640	 Ledere ved en række udd.inst.	Overenskomstansatte	CO10 - OK	Centralorganisation II
+641	 Rektorer ved Erhvervsakademier	Overenskomstansatte	CO10 - OK	Centralorganisation II
+654	 Særpræster	Tjenestemænd	Stillingsbestemt
+660	 Værnepl.personel	Regulativlønnede	Regulativtlønnede
+681	 Befalingsm.bk.stamp.	Overenskomstansatte	CO10 - OK	Organisationen af Stampersonel
+682	 Off. Tjm.lign. (Cf)	Overenskomstansatte	AC OK	Org. af akademisk civilfors.
+683	 Stampersonale M/rådh	Overenskomstansatte	CO10 - OK	Organisationen af Stampersonel
+684	 Off. Råd.tjm. (Cf)	Overenskomstansatte	AC OK	Hovedorg. beredskabsoff. i Dk
+687	 Kontraktansatte	Regulativlønnede	Regulativtlønnede
+688	 Rådgivere - Danida	Regulativlønnede	Regulativtlønnede
+692	 Forstandere Amu Cent	Overenskomstansatte	OAO OK	Lederne
+693	 Særl.afløn.timeløn	Indviduelle ansættelsesforhold	Individuelt ansatte
+694	 Særl.afløn.timeløn	Indviduelle ansættelsesforhold	Individuelt ansatte
+695	 Timelærere Handelssk	Tjenestemandslignende	Stillingsbestemt
+696	 Timelærere Teknisksk	Tjenestemandslignende	Stillingsbestemt
+697	 Timelærere Maskinm.s	Tjenestemandslignende	Stillingsbestemt
+747	 Rengøringsassistenter	Overenskomstansatte	OAO OK	Fagligt Fælles Forbund
+750	 Psyk.kons.timeløn (DP)	Overenskomstansatte	AC OK	Dansk Psykologforening
+754	 Bi.inspek./tilsynsm.	Regulativlønnede	Regulativtlønnede
+780	 Vederlagsløn Eeng.	Indviduelle ansættelsesforhold	Individuelt ansatte
+782	 Timelønnede	Regulativlønnede	Regulativtlønnede
+791	 Fremm.tjenesteydelser	Andre ansættelsesforhold	Udenfor FD-regi
+793	 Særl.afløn.timeløn	Indviduelle ansættelsesforhold	Individuelt ansatte
+799	 Praktiklærerløn	Indviduelle ansættelsesforhold	Individuelt ansatte
+933	 Håndværkere	Overenskomstansatte	OAO OK	Fællesorganisationen DSB
+937	 Bane- og Elektropersonel	Overenskomstansatte	OAO OK	Dansk Jernbaneforbund
+960	 Trafikdisponenter	Overenskomstansatte	OAO OK	HK Trafik & Jernbane
+961	 Kontorpersonale Banedanmark	Overenskomstansatte	OAO OK	Flere organisationer
+963	 Kontorpersonale	Overenskomstansatte	OAO OK	HK Trafik & Jernbane

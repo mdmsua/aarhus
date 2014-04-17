@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        title
+        link(href='bootstrap.min.css', rel='stylesheet')
+        link(href='chosen/chosen.min.css', rel='stylesheet')
+        link(href='angular-chosen-localytics/chosen-spinner.css', rel='stylesheet')
+    body.ng-cloak(ng-app="app")
+        header
+            nav.navbar.navbar-inverse
+                header.navbar-header
+                    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-inverse-collapse")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                a.navbar-brand(href="/") Aarhus
+                nav.navbar-collapse.collapse.navbar-inverse-collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href="/job-category-config") Job category config
+        section.container(ng-controller="ctrl")
+            block container
+        script(src='jquery/dist/jquery.min.js')
+        script(src='angular/angular.min.js')
+        script(src='angular-resource/angular-resource.min.js')
+        script(src='chosen/chosen.jquery.min.js')
+        script(src='angular-chosen-localytics/chosen.js')
+        block scripts

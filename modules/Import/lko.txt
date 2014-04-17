@@ -1,0 +1,2076 @@
+28	 Teknisk beregnet fiktiv refusion	 18.87	Ingen løndelstype	Ingen løntype	Nej
+29	 Refusion fra TB/CF	 18.87	Ingen løndelstype	Ingen løntype	Nej
+57	 Varig stillingsmæssig omklassificering, teknisk løndel	 00.00	Løbende løndele	Ingen løntype	Nej
+201	 Feriegrundlag indeværende år	 00.00	Løbende løndele	Ingen løntype	Nej
+204	 Feriegrundlag sidste år	 00.00	Løbende løndele	Ingen løntype	Nej
+207	 Feriegrundlag forrige år	 00.00	Løbende løndele	Ingen løntype	Nej
+211	 Feriedage sidste år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+213	 Timeløn til vikarer	 00.00	Løbende løndele	Ingen løntype	Nej
+215	 Udmelding af løn/ tillæg	 99.99	Løbende løndele	Ingen løntype	Nej
+217	 Rettelse af feriedage indeværende år (løndel 5050)	 00.00	Engangsløndele	Ferie	Nej
+218	 Samtidighedsferie	 00.00	Løbende løndele	Ingen løntype	Nej
+219	 Ekstra pensionstimer	 00.00	Løbende løndele	Ingen løntype	Nej
+220	 Indplacering - teknisk løndel	 00.00	Løbende løndele	Ingen løntype	Nej
+221	 Dellønsbrøk	 00.00	Løbende løndele	Ingen løntype	Nej
+222	 Bilag M, registreringer	 00.00	Løbende løndele	Ingen løntype	Nej
+223	 Regulering af refusionstimer	 00.00	Løbende løndele	Ingen løntype	Nej
+225	 Timer ved orlov midt i en måned	 99.99	Løbende løndele	Ingen løntype	Nej
+230	 Markering af frikort offentlig befordring	 00.00	Løbende løndele	Ingen løntype	Nej
+240	 Pensionsgivende løn	 99.99	Ingen løndelstype	Ingen løntype	Nej
+241	 Pensionsoplysninger	 99.99	Løbende løndele	Ingen løntype	Nej
+242	 Refusionsgrundlag	 00.00	Løbende løndele	Ingen løntype	Nej
+244	 Max. standset anvisning	 00.00	Løbende løndele	Ingen løntype	Nej
+246	 Markering af felt 11 - befordringsfradrag kan ikke beregnes	 00.00	Løbende løndele	Ingen løntype	Nej
+247	 Færøske feriepenge	 99.99	Ingen løndelstype	Ingen løntype	Nej
+248	 Grundlag for færøskat	 99.99	Ingen løndelstype	Ingen løntype	Nej
+250	 Forhøjet trækprocent	 00.00	Løbende løndele	Ingen løntype	Nej
+251	 Bestilling af eSkattekort	 00.00	Løbende løndele	Ingen løntype	Nej
+266	 Jubilæumsanc-dage	 00.00	Engangsløndele	Ingen løntype	Nej
+270	 Lønanc. u/ferie	 00.00	Engangsløndele	Ingen løntype	Nej
+271	 Lønanc. u/sygdom	 00.00	Engangsløndele	Ingen løntype	Nej
+272	 Lønanc. suppl. timer	 00.00	Engangsløndele	Ingen løntype	Nej
+301	 9,4% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+303	 13,8/14,1 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+305	 16,6% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+307	 Pensionsbidrag seniorordning	 99.99	Ingen løndelstype	Ingen løntype	Nej
+308	 15,79% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+310	 5,0% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+311	 13,28% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+312	 9,5% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+313	 17,05% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+314	 10,6% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+316	 12,5% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+318	 5,8% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+319	 4,8% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+320	 15,3% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+322	 5,81% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+323	 13,75% Pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+324	 7,8% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+326	 12% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+328	 10,2% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+329	 35,49% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+330	 15% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+332	 9% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+333	 10,65% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+334	 15,70% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+336	 8,66% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+339	 7,5 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+340	 3,9% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+342	 18 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+344	 16,8 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+346	 15,75% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+348	 Pensionsbidrag seniorordning	 99.99	Ingen løndelstype	Ingen løntype	Nej
+350	 13 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+352	 14 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+354	 16,12 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+356	 9,28 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+358	 13,5 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+361	 17 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+363	 12,6 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+365	 16,5 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+367	 16,4 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+369	 16,3 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+371	 13,7 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+373	 14,3 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+375	 14,1 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+377	 12,8 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+381	 13,15 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+383	 Tillæg til UTS.Modsv. LKO 3816	 00.00	Løbende løndele	Ingen løntype	Nej
+384	 Tillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+385	 Hjemmetillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+386	 Rådighedstillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+387	 Stillingsklassificeret tillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+388	 Topchefstillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+389	 Omklassificeringstillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+390	 7,69% pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+392	 17,10% pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+394	 Tillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+395	 Cheftillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+396	 Tillæg, teknisk løndel til UTS	 00.00	Ingen løndelstype	Ingen løntype	Nej
+397	 Heraf 1/3 eget bidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+398	 Skattekompensation (udetillæg)	 22.36	Løbende løndele	Ingen løntype	Nej
+399	 Ude- og hjemmeløn (udetillæg)	 00.00	Løbende løndele	Ingen løntype	Nej
+400	 25% af skalatrinsløn - POL	 00.00	Løbende løndele	Ingen løntype	Nej
+405	 Sendt til pensionskasse	 99.99	Ingen løndelstype	Ingen løntype	Nej
+411	 Sendt til pensk. f/sygepl. & hospitalsl.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+412	 Sendt til PFA a/s	 99.99	Ingen løndelstype	Ingen løntype	Nej
+413	 Sendt til PKA	 99.99	Ingen løndelstype	Ingen løntype	Nej
+414	 Sendt til Pensks. Teknikum/Diplomingen.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+415	 Sendt til kommunernes pensionsfors. a/s	 99.99	Ingen løndelstype	Ingen løntype	Nej
+416	 Sendt til arkitekternes pensionskasse	 99.99	Ingen løndelstype	Ingen løntype	Nej
+417	 Sendt til dansk ingeniørforen. pensk.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+418	 Sendt til juristerne og økonomernes pens	 99.99	Ingen løndelstype	Ingen løntype	Nej
+419	 Sendt til tekniske landsforening pensk.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+420	 Sendt til Magistrenes Pensionskasse	 99.99	Ingen løndelstype	Ingen løntype	Nej
+421	 Sendt til lægernes pensionkasse	 99.99	Ingen løndelstype	Ingen løntype	Nej
+422	 Sendt til tryg-baltica forsikring	 99.99	Ingen løndelstype	Ingen løntype	Nej
+423	 Sendt til dansk agronomforening	 99.99	Ingen løndelstype	Ingen løntype	Nej
+425	 Sendt til dansk farmaceutforening (pfa)	 99.99	Ingen løndelstype	Ingen løntype	Nej
+426	 Sendt til forsikringssel. codan liv a/s	 99.99	Ingen løndelstype	Ingen løntype	Nej
+427	 Sendt til lærernes pensionskasse (pfa)	 99.99	Ingen løndelstype	Ingen løntype	Nej
+428	 Sendt til ap-pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+429	 Sendt til pensk. f/børne- og ungdomspæd.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+430	 Sendt til progressiv livsforsikring	 99.99	Ingen løndelstype	Ingen løntype	Nej
+431	 Sendt til pensk. f/sygehj. & beskæftvej.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+432	 Sendt til apotekassisternes pensk.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+433	 Sendt til alm.brand af 1792	 99.99	Ingen løndelstype	Ingen løntype	Nej
+434	 Sendt til topdanmark	 99.99	Ingen løndelstype	Ingen løntype	Nej
+435	 Sendt til enhjørningen liv og pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+436	 Sendt til handels-,transsp. og serviceb.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+437	 Sendt til funktionærpension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+438	 Sendt til grafisk pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+439	 Sendt til bg bank	 99.99	Ingen løndelstype	Ingen løntype	Nej
+440	 Sendt til pensionskassen for højskolerne	 99.99	Ingen løndelstype	Ingen løntype	Nej
+441	 Sendt til skolepension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+442	 Sendt til Sampension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+443	 Sendt til kgl. brand	 99.99	Ingen løndelstype	Ingen løntype	Nej
+444	 Sendt til pen-sam	 99.99	Ingen løndelstype	Ingen løntype	Nej
+446	 Sendt til pmf pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+447	 Sendt til pensionskassen for økonomaer	 99.99	Ingen løndelstype	Ingen løntype	Nej
+448	 Sendt til tok-pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+449	 Sendt til pensk. for forsøgsteknikere	 99.99	Ingen løndelstype	Ingen løntype	Nej
+450	 Sendt til PKA Plus	 99.99	Ingen løndelstype	Ingen løntype	Nej
+451	 Sendt til pks (kvindelige- og spec.arb)	 99.99	Ingen løndelstype	Ingen løntype	Nej
+452	 Sendt til dansk arbg.forenings pensk.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+453	 Sendt til penskassen for dyrlæger	 99.99	Ingen løndelstype	Ingen løntype	Nej
+454	 Sendt til Nordea Pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+455	 Sendt til dansk psykologforening	 99.99	Ingen løndelstype	Ingen løntype	Nej
+457	 Sendt til KP A/S Kontorpersonale	 99.99	Ingen løndelstype	Ingen løntype	Nej
+458	 PFA Kommunalforeningen KPS	 99.99	Ingen løndelstype	Ingen løntype	Nej
+459	 PKA Kontorfunktionærer	 99.99	Ingen løndelstype	Ingen løntype	Nej
+460	 Magistrenes Pensionskasse	 99.99	Ingen løndelstype	Ingen løntype	Nej
+463	 JØP	 99.99	Ingen løndelstype	Ingen løntype	Nej
+464	 Pen-Sam Liv lønarbejdere	 99.99	Ingen løndelstype	Ingen løntype	Nej
+466	 PensionDanmark	 99.99	Ingen løndelstype	Ingen løntype	Nej
+467	 KP A/S	 99.99	Ingen løndelstype	Ingen løntype	Nej
+469	 PFA suppl. pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+472	 Danica Revisor KBH	 99.99	Ingen løndelstype	Ingen løntype	Nej
+473	 PEN-SAM Liv, Amtsvejmænd m.fl.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+474	 PFA Farmceutfor. Pensionsordn.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+475	 Danske Civ-og Akad.ing. pens.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+477	 PFA Tekn. Landsforb. pens.ks.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+481	 PensionDanmark, Fagl. gartnere	 99.99	Ingen løndelstype	Ingen løntype	Nej
+483	 PFA Lærernes Pens.ks.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+484	 Danica Pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+485	 KP Grafisk Pension	 99.99	Ingen løndelstype	Ingen løntype	Nej
+486	 PFA Lærerenes Pens. plus pens.	 99.99	Ingen løndelstype	Ingen løntype	Nej
+488	 Sendt til TAKS	 99.99	Ingen løndelstype	Ingen løntype	Nej
+500	 3,95 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+501	 11,5 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+502	 11,10 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+503	 16,00 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+504	 16,80 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+505	 Pensionsbidrag af løndel 3900-3939 samt 3970-3989	 99.99	Ingen løndelstype	Ingen løntype	Nej
+506	 15,40 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+507	 2,82 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+508	 4,51 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+509	 17,50 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+510	 16,75 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+511	 14,70 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+512	 15,32 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+513	 16,44 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+514	 14,47 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+515	 6 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+516	 13,14 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+517	 17,63 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+518	 22,16 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+519	 16,53 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+520	 12,83 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+521	 13,48 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+522	 14,03 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+523	 16,20% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+524	 21% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+525	 16,09% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+526	 15,50% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+527	 11,00% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+528	 8,20% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+529	 6,91% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+530	 17,3% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+531	 17,73% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+532	 14,75% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+533	 16,9% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+534	 15,1% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+535	 12,9% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+536	 14,9% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+537	 11,16% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+538	 4,5% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+539	 10,28% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+540	 14,50% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+541	 17,75% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+542	 14,55% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+543	 16,10% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+544	 15,20% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+545	 14,20% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+546	 19,80% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+547	 13,60% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+548	 17,66% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+549	 15,60% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+550	 20,00% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+551	 10,5 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+552	 7,73 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+555	 1/3 Pensionsbidrag af løndel 3900-3939 samt 3970-3989	 99.99	Ingen løndelstype	Ingen løntype	Nej
+557	 eget bidrag 1/3 af 2,82 %	 99.99	Ingen løndelstype	Ingen løntype	Nej
+558	 eget bidrag 1/3 af 4,51 %	 99.99	Ingen løndelstype	Ingen løntype	Nej
+559	 eget bidrag 1/3 af 17,50 %	 99.99	Ingen løndelstype	Ingen løntype	Nej
+560	 10 % pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+576	 18,2% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+579	 15,35% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+591	 17,12% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+592	 12,30% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+593	 23,00% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+594	 13,20% pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+595	 13,95% Pensionsbidrag	 99.99	Ingen løndelstype	Ingen løntype	Nej
+599	 Heraf 1/3 eget bidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+601	 Statens pensionstilskud	 18.81	Løbende løndele	Ingen løntype	Nej
+602	 Pensionsbidrag	 97.50	Ingen løndelstype	Ingen løntype	Nej
+603	 Statens pensionstilskud	 18.81	Ingen løndelstype	Ingen løntype	Nej
+604	 Statens ATP-bidrag, sats B - lav ATP	 18.81	Ingen løndelstype	Ingen løntype	Nej
+605	 Arbejdsgivers bidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+606	 Pensionsbidrag, Bilag M	 18.81	Ingen løndelstype	Ingen løntype	Nej
+607	 Statens ATP-bidrag, sats A - høj ATP	 18.81	Ingen løndelstype	Ingen løntype	Nej
+608	 Statens pensionstilskud (seniorordning)	 18.71	Ingen løndelstype	Ingen løntype	Nej
+609	 Feriefond grønland	 18.11	Ingen løndelstype	Ingen løntype	Nej
+611	 Teknisk ferieløndel, SSI	 18.11	Løbende løndele	Ferie	Nej
+612	 Statens pensionstilskud	 18.81	Engangsløndele	Ingen løntype	Nej
+613	 Teknisk ferieløndel SSI	 18.11	Engangsløndele	Ferie	Nej
+615	 Statens pensionstilskud af topcheftillæg	 18.81	Ingen løndelstype	Ingen løntype	Nej
+616	 Statens pensionstilskud	 18.71	Ingen løndelstype	Ingen løntype	Nej
+617	 Refusion, udlånt personale	 61.33	Løbende løndele	Ingen løntype	Nej
+618	 Refusion i.f.m. Barsel/VEU-fond/fleksordning/seniorbonus	 61.70	Engangsløndele	Ingen løntype	Nej
+620	 Pensionsbidrag ved tjenestefrihed u. løn	 18.81	Løbende løndele	Pensionsbidrag	Nej
+621	 Refusion	 61.70	Engangsløndele	Ingen løntype	Nej
+630	 AUB-bidrag	 22.32	Engangsløndele	Ingen løntype	Nej
+631	 Negativer	 61.50	Ingen løndelstype	Ingen løntype	Nej
+632	 Omkontering	 00.00	Ingen løndelstype	Ingen løntype	Nej
+633	 Statens pensionstilskud af tillæg	 18.81	Ingen løndelstype	Ingen løntype	Nej
+634	 Betaling for pensionsforhøjelse(styr.)	 18.71	Ingen løndelstype	Ingen løntype	Nej
+639	 Bidrag til tjenestemandspens.	 18.81	Ingen løndelstype	Ingen løntype	Nej
+641	 Socialfondsbidrag, SIK	 18.11	Løbende løndele	Ingen løntype	Nej
+642	 Oplysnings- og uddannelsesfond, SIK	 18.11	Løbende løndele	Ingen løntype	Nej
+643	 Hjemmestyrets tilskud vedr. løndel 7439	 18.81	Ingen løndelstype	Ingen løntype	Nej
+644	 Betaling for pensionsforhøjelse(int.)	 43.10	Ingen løndelstype	Ingen løntype	Nej
+645	 Statens ATP-bidrag, sats C	 18.81	Ingen løndelstype	Ingen løntype	Nej
+646	 Arbejdsløshedsforsikring m.v.	 18.81	Løbende løndele	Ingen løntype	Nej
+647	 Arbejdsløshedsforsikring m.v., Færøerne	 18.81	Engangsløndele	Ingen løntype	Nej
+652	 Efter- og videreuddannelsespulje	 22.70	Løbende løndele	Ingen løntype	Nej
+653	 Pressens uddannelsesfond	 18.11	Løbende løndele	Ingen løntype	Nej
+655	 Udlånt personale, lønudgift	 61.33	Engangsløndele	Ingen løntype	Nej
+656	 indlånt personale, lønudgift	 18.21	Engangsløndele	Ingen løntype	Nej
+661	 Anvisning	 00.00	Ingen løndelstype	Ingen løntype	Nej
+664	 Anvisning til Færøerne	 00.00	Ingen løndelstype	Ingen løntype	Nej
+665	 Standset anvisning - Færøerne	 00.00	Ingen løndelstype	Ingen løntype	Nej
+666	 Pulje	 00.00	Ingen løndelstype	Ingen løntype	Nej
+668	 Statens pensionsbidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+669	 Pensionsbidrag, Efterlønskassen	 18.81	Løbende løndele	Ingen løntype	Nej
+670	 Bidrag til tjenestemandspension	 18.81	Løbende løndele	Ingen løntype	Nej
+671	 Bidrag til pension, DKT	 18.81	Løbende løndele	Ingen løntype	Nej
+673	 Bidrag til tjenestemandspension, UVM	 18.81	Løbende løndele	Ingen løntype	Nej
+674	 Bidrag til tjenestemandspension, speciel	 18.81	Løbende løndele	Ingen løntype	Nej
+675	 Bidrag til tjenestemandspension, senior-/fleksjob	 18.71	Løbende løndele	Pensionsbidrag	Nej
+676	 Pensionsbidrag ved tjenestefrihed uden løn	 18.81	Løbende løndele	Pensionsbidrag	Nej
+677	 Bidrag til Pensionskassen af 1925	 18.81	Løbende løndele	Ingen løntype	Nej
+678	 Bidrag til Pensionskassen for Erhvervsskolerne	 18.81	Løbende løndele	Ingen løntype	Nej
+679	 Pension, senior, barsel mm	 00.00	Løbende løndele	Pensionsbidrag	Nej
+691	 Præmiering, elevplads	 61.70	Engangsløndele	Ingen løntype	Nej
+692	 Statens ATP-bidrag, sygedagpenge	 18.81	Engangsløndele	Ingen løntype	Nej
+693	 Bidrag til tjenestemandslignende pension	 18.81	Løbende løndele	Ingen løntype	Nej
+695	 Statens ATP-bidrag, sats F	 18.81	Ingen løndelstype	Ingen løntype	Nej
+696	 Pensionsbidrag seniorordning, AC	 18.71	Løbende løndele	Pensionsbidrag	Nej
+697	 Statens ATP-bidrag, sats E	 18.81	Ingen løndelstype	Ingen løntype	Nej
+698	 Statens ATP-bidrag D	 18.81	Engangsløndele	Ingen løntype	Nej
+699	 Bidrag til fleksjobordning	 18.05	Løbende løndele	Ingen løntype	Nej
+701	 Statens pensionstilskud	 00.00	Ingen løndelstype	Ingen løntype	Nej
+705	 Statens ATP-bidrag	 97.29	Ingen løndelstype	Ingen løntype	Nej
+706	 Statens tilskud, løndel 7060	 00.00	Ingen løndelstype	Ingen løntype	Nej
+708	 Feriefond grønland	 00.00	Ingen løndelstype	Ingen løntype	Nej
+711	 Teknisk ferieløndel	 95.11	Ingen løndelstype	Ingen løntype	Nej
+712	 Statens pensionstilskud	 00.00	Ingen løndelstype	Ingen løntype	Nej
+713	 Statens ATP-bidrag, regulering	 98.71	Ingen løndelstype	Ingen løntype	Nej
+714	 Statens pensionstilskud 6%	 00.00	Ingen løndelstype	Ingen løntype	Nej
+715	 Returnerede anvisninger	 98.71	Ingen løndelstype	Ingen løntype	Nej
+716	 Statens pensionstilskud	 97.50	Ingen løndelstype	Ingen løntype	Nej
+717	 Refusion - udlånt personale	 18.88	Ingen løndelstype	Ingen løntype	Nej
+718	 Refusion - fra barsels-/veu-fonden	 18.89	Ingen løndelstype	Ingen løntype	Nej
+719	 Betaling for pensionsforhøjelse	 00.00	Ingen løndelstype	Ingen løntype	Nej
+720	 Refusion, sygedage/barsel	 61.33	Ingen løndelstype	Ingen løntype	Nej
+721	 Refusion	 18.91	Ingen løndelstype	Ingen løntype	Nej
+722	 AUB-refusion af befordringsudgifter	 22.38	Ingen løndelstype	Ingen løntype	Nej
+723	 Aer-refusion af lønudgift	 18.91	Ingen løndelstype	Ingen løntype	Nej
+724	 Refusion - tilskud til voksenelever	 18.92	Ingen løndelstype	Ingen løntype	Nej
+725	 Refusion - barsel og sygdom (v/barsel)	 18.91	Ingen løndelstype	Ingen løntype	Nej
+726	 Refusion - amu	 18.91	Ingen løndelstype	Ingen løntype	Nej
+727	 Refusion - kursusdeltagelse andet	 18.91	Ingen løndelstype	Ingen løntype	Nej
+728	 Refusion - handicapordninger	 18.92	Ingen løndelstype	Ingen løntype	Nej
+729	 Refusion - bistandsloven	 18.92	Ingen løndelstype	Ingen løntype	Nej
+731	 AUB-bidrag, afregningslønkode	 97.30	Ingen løndelstype	Ingen løntype	Nej
+733	 IAP-beløb, 1. lønkørsel	 00.00	Ingen løndelstype	Ingen løntype	Nej
+734	 Betaling for pensionsalderforhøjelse	 18.72	Ingen løndelstype	Ingen løntype	Nej
+735	 Refusion - anden godkendt	 18.91	Ingen løndelstype	Ingen løntype	Nej
+736	 Refusion - langtidsledige kommunal ref	 18.91	Ingen løndelstype	Ingen løntype	Nej
+737	 Refusion - langtidsledige anden refusion	 18.91	Ingen løndelstype	Ingen løntype	Nej
+740	 Statens socialfondsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+741	 Socialfondsbidrag, SIK	 00.00	Ingen løndelstype	Ingen løntype	Nej
+742	 Oplysnings- og uddannelsesfond (sik)	 00.00	Ingen løndelstype	Ingen løntype	Nej
+743	 Hjemmestyrets tilskud vedr. løndel 7439	 00.00	Ingen løndelstype	Ingen løntype	Nej
+744	 Betaling for pensionsalderforhøjelse	 00.00	Ingen løndelstype	Ingen løntype	Nej
+746	 Arbejdsløshedsforsikring - Færøerne	 00.00	Ingen løndelstype	Ingen løntype	Nej
+748	 Pensionsbidrag til TAKS - statens bidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+749	 Overarbejde KTO 3-1	 00.00	Ingen løndelstype	Ingen løntype	Nej
+750	 Overarbejde KTO 3-1	 00.00	Ingen løndelstype	Ingen løntype	Nej
+752	 Efter- og videreuddannelsespulje	 97.50	Ingen løndelstype	Ingen løntype	Nej
+753	 Pressens uddannelsesfond	 00.00	Ingen løndelstype	Ingen løntype	Nej
+754	 Refusion - barsel efter 1/1-96	 18.91	Ingen løndelstype	Ingen løntype	Nej
+755	 Refusion - udlånte tjenestemænd	 18.88	Ingen løndelstype	Ingen løntype	Nej
+756	 Lønudgift - indlånte tjenestemænd	 95.11	Ingen løndelstype	Ingen løntype	Nej
+758	 Statens ATP-bidrag, sats A - høj ATP
+759	 Refusion	 21.10	Ingen løndelstype	Ingen løntype	Nej
+760	 Statens tilskud, løndel 7069	 00.00	Løbende løndele	Ingen løntype	Nej
+763	 Refusion - sygdom	 18.91	Ingen løndelstype	Ingen løntype	Nej
+767	 Refusion - veu-fonden efter 1/1-96	 18.91	Ingen løndelstype	Ingen løntype	Nej
+768	 Statens pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+769	 Pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+770	 Statens tilskud - løndel 670	 00.00	Ingen løndelstype	Ingen løntype	Nej
+771	 Statens tilskud - løndel 671	 00.00	Ingen løndelstype	Ingen løntype	Nej
+772	 Statens tilskud - løndel 672	 97.50	Ingen løndelstype	Ingen løntype	Nej
+773	 Statens tilskud - løndel 673 (speciel)	 00.00	Ingen løndelstype	Ingen løntype	Nej
+774	 Statens tilskud - løndel 674 (speciel)	 34.10	Ingen løndelstype	Ingen løntype	Nej
+775	 Bidrag til seniorordning	 00.00	Ingen løndelstype	Ingen løntype	Nej
+776	 Statens tilskud, §36	 00.00	Ingen løndelstype	Ingen løntype	Nej
+777	 Statens pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+778	 Statens pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+779	 Statens tilskud, løndel 674	 61.50	Ingen løndelstype	Ingen løntype	Nej
+784	 Statens tilskud	 00.00	Løbende løndele	Ingen løntype	Nej
+785	 Nettoferie løb. 1. lønkørsel	 00.00	Ingen løndelstype	Ingen løntype	Nej
+786	 Nettoferie fratr. 1. lønkørsel	 00.00	Ingen løndelstype	Ingen løntype	Nej
+791	 Præmiering	 18.92	Ingen løndelstype	Ingen løntype	Nej
+793	 Statens pensionstilskud	 00.00	Ingen løndelstype	Ingen løntype	Nej
+798	 Statens ATP-bidrag, sats D	 00.00	Ingen løndelstype	Ingen løntype	Nej
+799	 Bidrag til fleksjobordning	 61.50	Ingen løndelstype	Ingen løntype	Nej
+802	 Feriepenge Overført, afgivende institution	 18.11	Engangsløndele	Ferie	Nej
+803	 Feriepenge Overført	 61.50	Engangsløndele	Ingen løntype	Nej
+805	 Barselsfonden	 18.89	Ingen løndelstype	Ingen løntype	Nej
+833	 IAP-beløb, 1. lønkørsel	 61.50	Ingen løndelstype	Ingen løntype	Nej
+858	 Pens.bidr. v deltid med fuld indbetaling	 18.81	Løbende løndele	Pensionsbidrag	Nej
+859	 Pens.bidr. v deltid med fuld indbetaling	 18.81	Løbende løndele	Pensionsbidrag	Nej
+860	 Pens.bidrag v. tjenestefrihed u. løn	 18.81	Løbende løndele	Pensionsbidrag	Nej
+861	 Pens.bidrag v. tjenestefrihed u. løn	 18.81	Løbende løndele	Pensionsbidrag	Nej
+862	 Pens.bidr. tj.frihed (pasning af syge)	 18.81	Løbende løndele	Pensionsbidrag	Nej
+864	 Pens.bidr. tj.frihed (evt. under pasning af syge)	 18.81	Løbende løndele	Pensionsbidrag	Nej
+868	 Pens.bidr. v deltid med fuld indbetaling	 18.81	Løbende løndele	Pensionsbidrag	Nej
+870	 Pg Tjm.Løn	 22.40	Løbende løndele	Ingen løntype	Nej
+876	 Bidrag til § 36 ved orlov fra anden stilling	 18.81	Løbende løndele	Ingen løntype	Nej
+877	 Bidrag til tjenestem. pension, Rigspolitiet	 18.81	Løbende løndele	Ingen løntype	Nej
+885	 Feriepenge, 1. lønkørsel	 61.50	Ingen løndelstype	Ingen løntype	Nej
+902	 Feriepenge Overført	 61.50	Engangsløndele	Ingen løntype	Nej
+903	 Feriepenge Overført, modtagende institution	 18.11	Engangsløndele	Ferie	Nej
+905	 Barselsfonden	 61.70	Løbende løndele	Ingen løntype	Nej
+910	 Feriekonto indeværende år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+911	 Feriekonto sidste år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+912	 Feriekonto forrige år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+950	 Feriekonto indeværende år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+951	 Feriekonto sidste år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+952	 Feriekonto forrige år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+970	 Pg Tjm.Løn, Modpost	 21.10	Løbende løndele	Ingen løntype	Nej
+971	 Refusion af udbetalt pension til §36	 00.00	Ingen løndelstype	Ingen løntype	Nej
+974	 Refusion af udbetalt pension til §36	 34.10	Ingen løndelstype	Ingen løntype	Nej
+977	 Refusion af udbetalt pension til §36	 00.00	Ingen løndelstype	Ingen løntype	Nej
+978	 Refusion af udbetalt pension til §36	 00.00	Ingen løndelstype	Ingen løntype	Nej
+979	 Refusion af udbetalt pension til §36	 61.50	Ingen løndelstype	Ingen løntype	Nej
+984	 Refusion af udbetalt pension til § 36	 00.00	Løbende løndele	Ingen løntype	Nej
+1101	 Puljejob	 18.90	Ingen løndelstype	Ingen løntype	Nej
+1150	 Udlånte tjenestemænd	 18.88	Ingen løndelstype	Ingen løntype	Nej
+1160	 Udlånte tjenestemænd	 61.33	Ingen løndelstype	Ingen løntype	Nej
+1200	 Modpost vedr. betaling	 98.81	Ingen løndelstype	Ingen løntype	Nej
+1210	 Modpost vedr. betaling	 98.81	Ingen løndelstype	Ingen løntype	Nej
+1410	 Tjm Lrm til Pensionsberegning	 61.50	Løbende løndele	Ingen løntype	Nej
+1600	 Samlet pensionsbidrag	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1700	 Sendt til pensionskassen	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1701	 Sendt til pensk. f/sygepl. & hospitalsl.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1702	 Sendt til pfa a/s	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1703	 Sendt til pka	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1704	 Sendt til ingeniør-sammenslutn. pensk.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1705	 Sendt til kommunernes pensionsfors. a/s	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1706	 Sendt til arkitekternes pensionskasse	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1707	 Sendt til dansk ingeniørsforen. pensk.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1708	 Sendt til juristernes & økonomernes pens	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1709	 Sendt til tekniske landsforening pensk.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1710	 Sendt til magistrenes pensionskasse	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1711	 Sendt til lægernes pensionskasse´	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1712	 Sendt til tryg-baltica forsikring	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1713	 Sendt til dansk agronomforening	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1714	 Sendt til danica	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1715	 Sendt til dansk farmaceutforening (pfa)	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1716	 Sendt til forsikringssels. codan liv a/s	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1717	 Sendt til lærernes pensionskasse (pfa)	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1718	 Sendt til ap-pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1719	 Sendt til pensk. f/børne- og ungdomspæd.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1720	 Sendt til progressiv livsforsikring	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1721	 Sendt til pensk. f/sygehj. & beskæftvej.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1722	 Sendt til apoteksassistenternes pensk.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1723	 Sendt til alm. brand af 1792	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1724	 Sendt til topdanmark	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1725	 Sendt til enhjørningen liv og pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1726	 Sendt til handels-,trandsp. og serviceb.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1727	 Sendt til funktionærpension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1728	 Sendt til grafisk pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1729	 Sendt til bg bank	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1730	 Sendt til pensionskassen for højskolerne	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1731	 Sendt til skolepension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1732	 Sendt til Sampension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1733	 Sendt til kgl. brand	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1734	 Sendt til pen-sam	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1735	 Sendt til arbejdsgiverbevægelsens pensk.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1736	 Sendt til pmf pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1737	 Sendt til pensionskassen for økonomaer	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1738	 Til tok-pension/pfa	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1739	 Sendt til pensk. for forsøgsteknikere	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1740	 Sendt til PKA Plus	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1741	 Sendt til pks (kvindelige- og spec.arb.)	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1742	 PenSam Liv	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1743	 Sendt til pensionskassen for dyrlæger	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1744	 Til fødevaredirektoratet	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1745	 Sendt til dansk psykologforening	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1748	 Sendt til TAKS	 18.11	Ingen løndelstype	Ingen løntype	Nej
+1902	 Bidrag til tjenestemandspension	 18.81	Engangsløndele	Ingen løntype	Nej
+1903	 Rettelse af pensionsalderforhøjelse	 00.00	Engangsløndele	Pensionsbidrag	Nej
+1909	 Rettelse af pensionsalderforhøjelse, Rigsrevisionen	 00.00	Engangsløndele	Ingen løntype	Nej
+1925	 Pensionsalderforhøjelse efter 1. april 2011	 99.99	Engangsløndele	Pensionsbidrag	Nej
+1950	 Feriegivende løn (ifm. løndel 5050)	 99.99	Engangsløndele	Ingen løntype	Nej
+2000	 Lønning	 18.11	Løbende løndele	Grundløn	Ja
+2010	 Forhøjelse af løn til SKTR 51-55	 18.11	Løbende løndele	Grundløn	Nej
+2015	 Tillæg vedr. pension	 18.11	Løbende løndele	Tillæg	Nej
+2016	 Tillæg vedr. pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2017	 Tillæg vedr. pension - pensg.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2018	 Tillæg vedr. pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2019	 Tillæg vedr. pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2020	 Tillæg vedr. pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2021	 Tillæg vedr. pension	 18.71	Ingen løndelstype	Ingen løntype	Nej
+2035	 Hovedstadstillæg	 18.11	Løbende løndele	Grundløn	Ja
+2048	 Tillæg vedr. pensionsbidrag	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2051	 Ikke-pensionsgivende tillæg	 18.11	Løbende løndele	Ingen løntype	Nej
+2055	 Tillæg vedr. pension	 18.11	Løbende løndele	Tillæg	Nej
+2067	 Tillæg vedr. pension	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2075	 Pensionsgivende skalalønstillæg	 18.11	Løbende løndele	Ingen løntype	Nej
+2079	 Udligningstillæg - ikke pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+2080	 Lønudligningstillæg (ikke-pensionsgiv.)	 18.11	Løbende løndele	Tillæg	Nej
+2084	 Udligningstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2085	 Udligningstillæg - ikke pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+2086	 Udligningstillæg - pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2087	 Lønudligningstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2090	 Rbr-tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2091	 Udlandstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2092	 Pensionsgivende tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2093	 OK2008 tillæg, ikke-pens.giv.	 18.11	Løbende løndele	Tillæg	Nej
+2094	 OK2008 tillæg, pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+2095	 Ureguleret tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2096	 Trin 4 - tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2098	 Udetillægslignende tillæg	 22.36	Løbende løndele	Tillæg	Nej
+2100	 Udligningstillæg §55 (pensionsgivende)	 18.11	Løbende løndele	Tillæg	Ja
+2101	 Udligningstillæg (ikke-pensionsgivende)	 18.11	Løbende løndele	Tillæg	Nej
+2102	 Udligningstillæg §55 (pensionsgivende)	 18.11	Løbende løndele	Tillæg	Ja
+2105	 Statspension	 44.21	Løbende løndele	Grundløn	Nej
+2107	 Udligningstillæg (pensionsgivende)	 18.11	Løbende løndele	Tillæg	Ja
+2110	 Rådighedstillæg, pensionsg.	 18.11	Løbende løndele	Tillæg	Ja
+2112	 Forkontortillæg	 18.11	Løbende løndele	Tillæg	Nej
+2117	 Madlavertillæg	 18.11	Løbende løndele	Tillæg	Ja
+2120	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2121	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2122	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2123	 Rådighedsvederlag (grp 008)	 18.11	Løbende løndele	Tillæg	Nej
+2126	 Snerydningstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2127	 Snerydningstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2131	 Ulempetillæg	 18.11	Løbende løndele	Tillæg	Nej
+2133	 Ubekvem tjeneste, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2135	 Ubekvem tjeneste	 18.11	Løbende løndele	Tillæg	Nej
+2136	 Ubekvem tjeneste pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2140	 Rektor/prorektortillæg (lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+2150	 Mentortillæg	 18.11	Løbende løndele	Tillæg	Ja
+2151	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2161	 Særligt tillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2165	 Plustid	 18.11	Løbende løndele	Grundløn	Ja
+2170	 Rådighedstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+2175	 Rådighedstillæg pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2176	 Vagttillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2180	 Særskilt vederlag	 18.11	Løbende løndele	Tillæg	Nej
+2181	 Honorar, kliniske professorer	 18.11	Løbende løndele	Tillæg	Ja
+2182	 Bestyrelseshonorar	 18.61	Løbende løndele	Tillæg	Nej
+2183	 Bestyrelseshonorar	 18.61	Løbende løndele	Grundløn	Nej
+2190	 Vejrtjenestehonorar - pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2191	 Referenttillæg	 18.11	Løbende løndele	Tillæg	Ja
+2196	 Åremålstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2201	 Folketingstillæg	 18.11	Løbende løndele	Tillæg	Ja
+2207	 Procenttillæg	 18.11	Løbende løndele	Tillæg	Ja
+2208	 Fleksibilitetstillæg - pens.	 18.11	Løbende løndele	Tillæg	Ja
+2209	 Bestillingstillæg - pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+2210	 Kvalifikationstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2211	 Kvalifikationstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2212	 Kvalifikationstillæg, ikke-pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+2214	 Krigszonetillæg	 18.11	Løbende løndele	Tillæg	Nej
+2215	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2218	 Forskud på udetillæg	 22.36	Løbende løndele	Tillæg	Nej
+2219	 Forskud på udetillæg	 22.36	Engangsløndele	Tillæg	Nej
+2220	 Udetillæg	 22.36	Løbende løndele	Tillæg	Nej
+2222	 Lønforskud - Danida	 61.50	Løbende løndele	Tillæg	Nej
+2224	 Timeløn korttidsrådgivere	 18.11	Engangsløndele	Tillæg	Nej
+2225	 Fratrædelsesgodtgørelse, rådgivere	 18.11	Engangsløndele	Tillæg	Nej
+2226	 Turnustillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2227	 Ulempetillæg	 18.11	Løbende løndele	Tillæg	Nej
+2228	 Rådgivertillæg pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2229	 Rådgivertillæg, ikke-pensg.	 18.11	Løbende løndele	Tillæg	Nej
+2230	 Udetillæg, manuelle reguleringer	 22.36	Engangsløndele	Tillæg	Nej
+2231	 Landetillæg	 22.36	Løbende løndele	Tillæg	Nej
+2232	 Ægtefælletillæg	 22.36	Løbende løndele	Tillæg	Nej
+2233	 Hardshiptillæg	 22.36	Løbende løndele	Tillæg	Nej
+2235	 Besøgstillæg	 22.36	Løbende løndele	Tillæg	Nej
+2236	 Rejselegater	 22.10	Engangsløndele	Tillæg	Nej
+2237	 Børnetillæg	 22.36	Løbende løndele	Tillæg	Nej
+2238	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2239	 Fratrædelsesgodtgørelse, rådgivere	 18.11	Engangsløndele	Tillæg	Nej
+2240	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2241	 Bestillingstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2245	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Ja
+2246	 Turnustillæg	 18.11	Løbende løndele	Tillæg	Nej
+2248	 Tillæg til forstfuldmægtige pens.givende	 18.11	Løbende løndele	Tillæg	Ja
+2249	 Rådighedstillæg til soc. kapitel m.m.	 18.11	Løbende løndele	Tillæg	Ja
+2251	 Medhjælpertillæg (AC-overenskomst)	 18.11	Løbende løndele	Tillæg	Ja
+2252	 Stillingstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2253	 Stillingstillæg - pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+2254	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2256	 Amanuensistillæg, penionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2257	 Rokeringstillæg	 18.11	Løbende løndele	Tillæg	Ja
+2260	 Ægtefælletillæg	 22.36	Løbende løndele	Tillæg	Nej
+2261	 Reguleret tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2265	 Undervisningstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+2271	 Under turnus tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2274	 Særligt slagteritillæg	 18.11	Løbende løndele	Tillæg	Ja
+2275	 Slagteritillæg	 18.11	Løbende løndele	Tillæg	Ja
+2278	 Mobilitetstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2285	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Ja
+2287	 Mobilitetstillæg I - pensg.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2288	 Mobilitetstillæg II - pensg.	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2289	 Mobilitetstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2291	 Kvalifikationstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2292	 Kvalifikationstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2293	 Kvalifikationstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2294	 Kvalifikationstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2295	 Kvalifikationstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2296	 Funktionstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2298	 Kvalifikationstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2299	 Kvalifikationstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2300	 Kvalifikationstillæg, ikke pensionsgiv.	 18.11	Løbende løndele	Tillæg	Nej
+2301	 Kvalifikationstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2302	 Kvalifikationstillæg, ikke-pensg. uregul	 18.11	Løbende løndele	Tillæg	Nej
+2303	 Kvalifikationstillæg,pensionsgiv. ureg.	 18.11	Løbende løndele	Tillæg	Ja
+2304	 Funktionstillæg, ikke pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+2305	 Funktionstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2306	 Funktionstillæg, ikke pensgivende - ureguleret	 18.11	Løbende løndele	Tillæg	Nej
+2307	 Individuelt tillæg, ikke pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+2308	 Individuelt tillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2309	 Individuelt tillæg, ikke pensgivende - ureguleret	 18.11	Løbende løndele	Tillæg	Nej
+2310	 Gruppeledertillæg	 18.11	Løbende løndele	Tillæg	Nej
+2311	 Kvalifikationstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2312	 Funktionstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2315	 Funktionstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2316	 Funktionstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2317	 Funktionstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2318	 Funktionstillæg, ikke-pensg.	 18.11	Løbende løndele	Tillæg	Nej
+2320	 Særligt tillæg, pens.givende	 18.11	Løbende løndele	Tillæg	Ja
+2321	 Særligt tillæg, pens.givende	 18.11	Løbende løndele	Tillæg	Ja
+2322	 Funktionsbestemt tillæg, PG	 18.11	Løbende løndele	Tillæg	Ja
+2323	 Stedfortrædertillæg, PG	 18.11	Løbende løndele	Tillæg	Ja
+2326	 Særligt tillæg, Grønland	 18.11	Løbende løndele	Tillæg	Nej
+2335	 Personligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2336	 Polititillæg (rådighedstillæg)	 18.11	Løbende løndele	Tillæg	Ja
+2337	 Polititillæg (rådighedstillæg)	 18.11	Løbende løndele	Tillæg	Ja
+2338	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2340	 Personligt tillæg, Udenrigsministeriet	 18.11	Løbende løndele	Tillæg	Nej
+2346	 Udligningstillæg	 18.11	Løbende løndele	Tillæg	Ja
+2347	 Udligningstillæg	 18.11	Løbende løndele	Tillæg	Ja
+2351	 Løntillæg, 1/3-ordning	 18.11	Løbende løndele	Tillæg	Nej
+2370	 Stedtillæg	 18.11	Løbende løndele	Tillæg	Nej
+2377	 Madpakketillæg	 18.51	Engangsløndele	Tillæg	Nej
+2378	 Kosttilskud	 18.51	Engangsløndele	Tillæg	Nej
+2380	 Værdi af frirejser, Grønland	 18.51	Engangsløndele	Tillæg	Nej
+2383	 Værdi af frit logi, Grønland	 18.51	Løbende løndele	Tillæg	Nej
+2388	 Feriekostpenge	 18.51	Løbende løndele	Ferie	Nej
+2390	 Værdi af fri kost og logi	 18.51	Løbende løndele	Tillæg	Nej
+2391	 Provianttillæg	 18.51	Løbende løndele	Tillæg	Nej
+2392	 Kosttilskud	 18.51	Engangsløndele	Tillæg	Nej
+2394	 Kostpenge i land	 18.51	Engangsløndele	Tillæg	Nej
+2395	 Værdi af fri kost og logi	 18.51	Engangsløndele	Tillæg	Nej
+2399	 Personligt kosttillæg	 18.51	Løbende løndele	Tillæg	Nej
+2411	 Personligt tillæg (ureguleret)	 18.11	Løbende løndele	Tillæg	Nej
+2412	 Personligt tillæg, ureguleret	 18.11	Løbende løndele	Tillæg	Nej
+2413	 Personligt tillæg pensionsg.	 18.11	Løbende løndele	Tillæg	Ja
+2414	 Personligt tillæg, reguleret/ikke-pensgivende	 18.11	Løbende løndele	Tillæg	Nej
+2415	 Særligt tillæg, retrætestillinger	 18.11	Løbende løndele	Tillæg	Nej
+2416	 Lønudligningstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+2420	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2430	 Kvalifikationstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2431	 Kvalifikationstillæg	 18.11	Engangsløndele	Tillæg	Nej
+2432	 Videreuddannelsestillæg	 18.11	Løbende løndele	Tillæg	Nej
+2440	 Parkeringskontrollørtillæg	 18.11	Løbende løndele	Tillæg	Nej
+2455	 Åremålstillæg, pensionsg.	 18.11	Løbende løndele	Tillæg	Ja
+2456	 Åremålstillæg - ikke-pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+2465	 Beredskabstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2485	 Overgangstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+2488	 Overgangstillæg pensionsg.	 18.11	Løbende løndele	Tillæg	Ja
+2495	 Fratrædelsesbeløb - fortsat ansat	 18.11	Engangsløndele	Tillæg	Nej
+2505	 Transmissionshonorar	 18.11	Engangsløndele	Tillæg	Nej
+2510	 Særligt vederlag	 18.11	Engangsløndele	Tillæg	Nej
+2511	 Værgevederlag	 44.24	Engangsløndele	Tillæg	Nej
+2515	 Anciennitetstillæg (10-års)	 18.11	Engangsløndele	Tillæg	Nej
+2519	 Vederlag - eksamenskommissioner	 18.61	Engangsløndele	Tillæg	Nej
+2520	 Særskilt vederlag	 18.11	Engangsløndele	Tillæg	Nej
+2530	 Fremmødehonorar	 18.51	Engangsløndele	Tillæg	Nej
+2536	 Timeløn (sagkyndige konsulenter)	 18.11	Løbende løndele	Tillæg	Nej
+2550	 Honorar	 18.11	Engangsløndele	Tillæg	Nej
+2560	 Fremmødehonorar	 18.11	Engangsløndele	Tillæg	Nej
+2561	 Fremmødehonorar	 18.11	Engangsløndele	Tillæg	Nej
+2570	 Daglig husholdning	 22.36	Løbende løndele	Tillæg	Nej
+2571	 Udligning af negativ husholdning	 22.36	Løbende løndele	Tillæg	Nej
+2572	 Medhjælp	 22.36	Løbende løndele	Tillæg	Nej
+2573	 Transport	 22.36	Løbende løndele	Tillæg	Nej
+2574	 Hjemrejser tur/retur	 22.36	Løbende løndele	Tillæg	Nej
+2575	 Dobbelt husførelse for adskillelse	 22.36	Løbende løndele	Tillæg	Nej
+2576	 Familie- og partnertillæg	 22.36	Løbende løndele	Tillæg	Nej
+2577	 Flerbørnsfødsler (tvillinger 0-6 år)	 22.36	Løbende løndele	Tillæg	Nej
+2578	 Enlig forsørgerydelse ordinært	 22.36	Løbende løndele	Tillæg	Nej
+2579	 Enlig forsørgerydelse, ekstra	 22.36	Løbende løndele	Tillæg	Nej
+2580	 Hardship og livskvalitet	 22.36	Løbende løndele	Tillæg	Nej
+2614	 Vederlag for koloni- og weekendophold	 18.51	Engangsløndele	Tillæg	Nej
+2640	 ATP-regulering	 98.71	Engangsløndele	Tillæg	Nej
+2641	 Midlertidigt tillæg ureg.	 18.11	Løbende løndele	Tillæg	Nej
+2642	 Stillingsmæssigt midl. tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2646	 Personligt, varigt tillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2648	 Personligt, varigt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+2650	 Merarbejdsvederlag	 18.41	Engangsløndele	Tillæg	Nej
+2651	 Personligt varigt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+2652	 Personligt varigt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+2653	 Personligt varigt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+2654	 Stillingsmæssigt, varigt tillæg, lokalløn	 18.11	Løbende løndele	Tillæg	Nej
+2656	 Personligt, midlertidigt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2657	 Personligt, varigt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2658	 Personligt, midlertidigt tillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2659	 Personligt, varigt tillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2660	 Diverse ydelser	 22.36	Engangsløndele	Tillæg	Nej
+2661	 Stillingsmæssigt, varigt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+2662	 Stillingsmæssigt, varigt tillæg, pensg., lokalløn	 18.11	Løbende løndele	Tillæg	Ja
+2663	 Personligt, midlertidigt tillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2664	 Personligt, varigt tillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2665	 Ulempegodtgørelse	 18.11	Løbende løndele	Tillæg	Nej
+2669	 Ulempegodtgørelse	 18.51	Engangsløndele	Tillæg	Nej
+2670	 Lønregulering	 18.11	Engangsløndele	Tillæg	Nej
+2682	 Sygedagpenge, timer	 18.11	Engangsløndele	Tillæg	Nej
+2689	 Sygedagpenge, feriegivende, Beløb	 18.11	Engangsløndele	Tillæg	Nej
+2690	 Sygedagpenge, ikke-feriegivende, Beløb	 18.11	Engangsløndele	Tillæg	Nej
+2701	 Jubilæumsgratiale	 18.51	Ingen løndelstype	Tillæg	Nej
+2721	 1. - 3. ledighedsdag	 18.11	Engangsløndele	Tillæg	Nej
+2722	 1. - 3. ledighedsdag	 18.11	Engangsløndele	Tillæg	Nej
+2734	 Fremmødegodtgørelse	 22.36	Engangsløndele	Tillæg	Nej
+2737	 Refusion af læge- og tandlæge udgifter	 22.36	Engangsløndele	Tillæg	Nej
+2770	 Pensionsgivende lønregulering	 18.11	Engangsløndele	Tillæg	Ja
+2779	 Særligt grønlandstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2780	 Følgesvendstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2781	 Produktionstillæg	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2782	 Fleksibilitetstillæg	 18.11	Ingen løndelstype	Ingen løntype	Nej
+2800	 Diverse tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+2801	 Særlig ydelse	 22.40	Løbende løndele	Grundløn	Nej
+2805	 Løntillæg	 18.11	Løbende løndele	Tillæg	Nej
+2806	 Vederlag m.v.	 18.11	Engangsløndele	Tillæg	Nej
+2813	 Grundvederlag	 44.24	Engangsløndele	Grundløn	Nej
+2814	 Vederlag - skalatrin 51	 44.24	Ingen løndelstype	Ingen løntype	Nej
+2815	 Certifikattillæg/Sprøjtetillæg	 18.11	Løbende løndele	Tillæg	Ja
+2816	 Refusion af boligudgifter	 22.36	Løbende løndele	Tillæg	Nej
+2817	 Refusion af boligudgifter	 22.36	Engangsløndele	Tillæg	Nej
+2818	 Grundvederlag	 44.24	Løbende løndele	Grundløn	Nej
+2819	 Eftervederlag	 44.24	Løbende løndele	Grundløn	Nej
+2820	 Omkostningstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2821	 Omkostningstillæg	 44.24	Løbende løndele	Tillæg	Nej
+2822	 Omkostningstillæg	 44.24	Engangsløndele	Tillæg	Nej
+2825	 Effektiviseringsoverskud	 18.11	Engangsløndele	Tillæg	Nej
+2827	 Resultatlønstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2828	 Resultatlønstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2830	 Diverse tillæg	 18.11	Engangsløndele	Tillæg	Nej
+2831	 Diverse timeløn	 18.11	Engangsløndele	Tillæg	Nej
+2838	 Reguleringstillæg	 44.24	Løbende løndele	Grundløn	Nej
+2849	 Fastholdelsestillæg	 18.11	Løbende løndele	Tillæg	Nej
+2852	 Fastholdelsesbonus	 18.11	Engangsløndele	Tillæg	Nej
+2861	 Særligt tillæg (topchef) pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2863	 Yderligere særligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2864	 Særligt folketingstillæg (topchef)	 18.11	Løbende løndele	Tillæg	Nej
+2866	 Varigt personligt tillæg, topchef pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+2869	 Særligt tillæg, topchef - pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2870	 Solotillæg	 18.11	Løbende løndele	Tillæg	Ja
+2871	 1., 2. og 3. solotillæg	 18.11	Løbende løndele	Tillæg	Ja
+2872	 Skræddertillæg	 18.11	Løbende løndele	Tillæg	Nej
+2874	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2875	 Regnskabsførertillæg	 18.11	Løbende løndele	Tillæg	Ja
+2876	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+2878	 Særligt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+2879	 Tutti-tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2880	 Særligt tillæg, stillingsklassificerede	 18.11	Løbende løndele	Tillæg	Ja
+2881	 Særligt tillæg (topchef)	 18.11	Løbende løndele	Tillæg	Nej
+2882	 1. solotillæg	 18.11	Løbende løndele	Ingen løntype	Ja
+2883	 2. solotillæg	 18.11	Løbende løndele	Ingen løntype	Nej
+2885	 Særligt tillæg, musikere	 18.11	Løbende løndele	Tillæg	Ja
+2886	 Solotillæg	 18.11	Løbende løndele	Tillæg	Nej
+2888	 Rollehonorar	 18.11	Engangsløndele	Tillæg	Nej
+2889	 Turnetillæg/gæstespil	 18.11	Engangsløndele	Tillæg	Nej
+2890	 Generelt tillæg pensg.	 18.11	Løbende løndele	Tillæg	Ja
+2893	 Særligt tillæg til BVLR 35 og derover	 18.11	Løbende løndele	Tillæg	Nej
+2894	 Fast procenttillæg	 18.11	Løbende løndele	Tillæg	Nej
+2898	 Merarbejdskompensation	 18.11	Løbende løndele	Tillæg	Nej
+2899	 Fast tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2902	 Særligt tillæg til adjunkter/lektorer	 18.11	Løbende løndele	Tillæg	Ja
+2903	 Særligt tillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2904	 Særligt tillæg til adjunkter/lektorer i LR 34	 18.11	Løbende løndele	Tillæg	Ja
+2905	 Særligt tillæg til adjunkter/lektorer i LR 16/31	 18.11	Løbende løndele	Tillæg	Ja
+2906	 Tillæg til lektorer ved gymnasieskoler mv.	 18.11	Løbende løndele	Tillæg	Ja
+2908	 Merarbejdskompensation, pens.giv.	 18.11	Løbende løndele	Ingen løntype	Nej
+2909	 Fast tillæg	 18.11	Løbende løndele	Tillæg	Nej
+2913	 Indbetalt beløb	 98.71	Engangsløndele	Tillæg	Nej
+2914	 Afskrivning af gæld	 22.40	Engangsløndele	Ingen løntype	Nej
+2940	 Pensionsgivende tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2945	 Arbejdsmarkedsbidrag	 00.00	Engangsløndele	Ingen løntype	Nej
+2949	 Tilbagebetaling af grønlandskat	 00.00	Engangsløndele	Ingen løntype	Nej
+2950	 Tilbagebetaling af kildeskat	 00.00	Engangsløndele	Ingen løntype	Nej
+2964	 Særligt Tillæg JBA	 18.11	Løbende løndele	Tillæg	Ja
+2966	 Banelære	 18.11	Løbende løndele	Tillæg	Ja
+2967	 Lyslederkabelsplids	 18.11	Løbende løndele	Tillæg	Ja
+2975	 Holdledertillæg JBA	 18.11	Løbende løndele	Tillæg	Ja
+2978	 SR Kursus	 18.11	Løbende løndele	Tillæg	Ja
+2980	 Særligt tillæg, Grønland	 18.11	Løbende løndele	Tillæg	Nej
+2981	 Certificeringstillæg, Grønland	 18.11	Løbende løndele	Tillæg	Ja
+2990	 Lønreduktion	 18.11	Løbende løndele	Fradrag	Ja
+2992	 Lønreduktion, socialt kapitel	 18.11	Løbende løndele	Fradrag	Nej
+2997	 Fast tillæg - pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+2998	 PG Tillæg	 18.11	Løbende løndele	Tillæg	Ja
+2999	 Fast tillæg	 18.11	Løbende løndele	Tillæg	Nej
+3000	 Funktionstillæg, Rigspolitiet	 18.11	Løbende løndele	Tillæg	Nej
+3031	 Fuld pensionsindbetaling	 18.11	Engangsløndele	Tillæg	Nej
+3035	 Bonus (hjemsendelse)	 18.11	Engangsløndele	Tillæg	Nej
+3044	 Observatorvederlag, KL-OBS	 18.11	Løbende løndele	Tillæg	Nej
+3045	 Observatorvederlag, NA-OBS	 18.11	Løbende løndele	Tillæg	Nej
+3056	 Boligtilskud - Danida	 22.36	Engangsløndele	Tillæg	Nej
+3057	 Huslejetilskud	 22.36	Løbende løndele	Tillæg	Nej
+3058	 Skolepenge	 22.36	Løbende løndele	Tillæg	Nej
+3070	 Kontorholdsgodtgørelse	 22.36	Løbende løndele	Tillæg	Nej
+3071	 Kontorholdsudgifter	 22.36	Engangsløndele	Tillæg	Nej
+3072	 Kontorholdsudgifter	 22.36	Løbende løndele	Tillæg	Nej
+3073	 Køb af tjenesteydelser	 22.70	Engangsløndele	Tillæg	Nej
+3074	 Køb af IT- tjenesteydelser	 22.65	Engangsløndele	Tillæg	Nej
+3075	 Refusion ifølge bilag	 22.80	Engangsløndele	Tillæg	Nej
+3076	 Moms	 61.21	Engangsløndele	Ingen løntype	Nej
+3100	 Hundeførertillæg	 18.51	Løbende løndele	Tillæg	Nej
+3101	 Hundeførertillæg POL og KRIM	 18.11	Løbende løndele	Tillæg	Nej
+3102	 Hundeførertillæg - SKAT og KRIM	 18.51	Løbende løndele	Tillæg	Nej
+3120	 Vederlag til jurister for delt tjeneste	 18.11	Løbende løndele	Tillæg	Ja
+3125	 FN - tillæg	 18.11	Løbende løndele	Tillæg	Nej
+3131	 Honorar til ansatte i Kriminalforsorgen	 18.51	Engangsløndele	Tillæg	Nej
+3133	 Præstationsydelse - godtgørelse	 18.31	Engangsløndele	Tillæg	Nej
+3135	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+3140	 Vederlag, tjenestelig ydelse	 18.11	Engangsløndele	Tillæg	Nej
+3141	 Tilsynsvederlag	 18.11	Engangsløndele	Tillæg	Nej
+3150	 Rådighedstillæg SKAT	 18.11	Løbende løndele	Tillæg	Ja
+3157	 Rådighedstillæg, snerydning	 18.11	Engangsløndele	Tillæg	Nej
+3158	 Hvervstillæg	 18.11	Engangsløndele	Tillæg	Nej
+3159	 Hvervstillæg	 18.11	Løbende løndele	Tillæg	Nej
+3161	 Aftentillæg efter kl. 18.30	 18.51	Løbende løndele	Tillæg	Nej
+3162	 Aftentillæg efter kl. 18.30	 18.51	Engangsløndele	Tillæg	Nej
+3165	 Flyveledertillæg	 18.11	Løbende løndele	Tillæg	Ja
+3167	 Bonusordning	 18.11	Løbende løndele	Tillæg	Nej
+3168	 Kosttilskud	 18.11	Løbende løndele	Ingen løntype	Nej
+3169	 Særlig funktion - pensg.	 18.11	Løbende løndele	Tillæg	Ja
+3170	 Særligt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+3171	 Særligt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+3172	 Tillæg for varetagelse af særlig funktion, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3174	 Særligt færø-tillæg	 18.11	Løbende løndele	Tillæg	Nej
+3177	 Særligt tillæg, Dansk Dekommissionering	 18.51	Løbende løndele	Tillæg	Nej
+3178	 Tillæg for varetagelse af særlig funktion	 18.11	Løbende løndele	Tillæg	Nej
+3179	 Tillæg for varetagelse af særlig funktion	 18.11	Løbende løndele	Tillæg	Nej
+3180	 Lkl pgf 31 stk. 2 - tillæg (rådighed)	 18.11	Løbende løndele	Tillæg	Nej
+3181	 Tillæg, ansvarshavende	 18.11	Engangsløndele	Tillæg	Nej
+3182	 Tillæg, ansvarshavende	 18.11	Engangsløndele	Tillæg	Ja
+3183	 Tillæg, ansvarshavende	 18.11	Engangsløndele	Tillæg	Ja
+3184	 §31 stk. 2 tillæg, rådighed	 18.11	Løbende løndele	Tillæg	Nej
+3185	 Fast tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+3186	 Særskilt vederlag	 18.61	Løbende løndele	Tillæg	Nej
+3188	 Tillæg for varetagelse af særlig funktion	 18.11	Løbende løndele	Tillæg	Nej
+3189	 Tillæg, særlig funktion - pens	 18.11	Løbende løndele	Tillæg	Ja
+3191	 §31 stk. 8 tillæg, LKL (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+3210	 Særligt tillæg til revisorer - Rigsrevisionen	 18.11	Løbende løndele	Tillæg	Ja
+3211	 Generelt tillæg - Rigsrevisionen	 18.11	Løbende løndele	Tillæg	Nej
+3212	 Generelt tillæg nyt lønsystem - Rigsrevisionen	 18.11	Løbende løndele	Tillæg	Ja
+3217	 Meteorologisk/-e vagttjeneste, pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+3235	 Kasseinspektørtillæg	 18.11	Løbende løndele	Tillæg	Nej
+3245	 Hundetillæg	 18.11	Løbende løndele	Tillæg	Nej
+3246	 Hundetillæg	 18.11	Løbende løndele	Tillæg	Nej
+3254	 Rådighedstillæg, pens.g.	 18.11	Løbende løndele	Tillæg	Ja
+3255	 Undervisning, Naturerhvevstyrelsen	 18.11	Engangsløndele	Tillæg	Nej
+3269	 Kosttillæg, Skibsfører/styrmænd	 18.51	Engangsløndele	Tillæg	Nej
+3280	 Kvalifikationstillæg	 18.11	Løbende løndele	Tillæg	Nej
+3281	 Rådighedstillæg	 18.11	Løbende løndele	Tillæg	Nej
+3282	 Tolketillæg	 18.11	Løbende løndele	Tillæg	Nej
+3291	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Nej
+3293	 Tilsynsvederlag (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+3294	 EVU-tillæg	 18.11	Løbende løndele	Tillæg	Nej
+3297	 Tilsynsvederlag	 18.11	Løbende løndele	Tillæg	Nej
+3299	 Inspektionstillæg	 18.11	Løbende løndele	Tillæg	Nej
+3305	 Inspektionstillæg pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+3321	 Mødediæter	 18.61	Engangsløndele	Tillæg	Nej
+3341	 Honorar for tilsyn, fysik/kemi	 18.11	Løbende løndele	Tillæg	Nej
+3342	 Honorar for tilsyn, biologi/geografi	 18.11	Løbende løndele	Tillæg	Nej
+3350	 Opdagertillæg	 18.11	Løbende løndele	Tillæg	Nej
+3352	 Flextillæg	 18.11	Ingen løndelstype	Ingen løntype	Nej
+3360	 Funktionsvederlag	 18.11	Engangsløndele	Tillæg	Nej
+3361	 Arbejde på steder, hvor der er registreret asbest	 18.11	Engangsløndele	Tillæg	Nej
+3362	 Sidemandsoplæring	 18.11	Engangsløndele	Tillæg	Nej
+3363	 Funktionstillæg	 18.11	Engangsløndele	Tillæg	Nej
+3364	 Funktionstillæg	 18.11	Engangsløndele	Tillæg	Nej
+3365	 Ulempetillæg	 18.51	Engangsløndele	Tillæg	Nej
+3366	 Spiseret	 18.51	Engangsløndele	Tillæg	Nej
+3367	 Overnatning	 18.51	Engangsløndele	Tillæg	Nej
+3368	 Undervisning	 18.11	Engangsløndele	Tillæg	Nej
+3369	 Undervisning	 18.11	Løbende løndele	Tillæg	Nej
+3375	 Sejlads	 18.51	Engangsløndele	Tillæg	Nej
+3376	 Ulempetillæg	 18.51	Engangsløndele	Tillæg	Nej
+3410	 Par. 4-tillæg (præster) pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3415	 Særligt tidsbegrænset tillæg	 18.11	Løbende løndele	Tillæg	Nej
+3440	 Resultatløn, pensionsgivende	 18.11	Engangsløndele	Tillæg	Ja
+3441	 Resultatløn, ikke pensionsgivende	 18.11	Engangsløndele	Tillæg	Nej
+3442	 Engangsvederlag, pensionsgivende	 18.11	Engangsløndele	Tillæg	Ja
+3443	 Engangsvederlag, ikke pensionsgivende	 18.11	Engangsløndele	Tillæg	Nej
+3490	 Godtgørelse, rengøring	 18.11	Løbende løndele	Tillæg	Nej
+3492	 Godtgørelse, elforbrug	 18.11	Løbende løndele	Tillæg	Nej
+3494	 Godtgørelse, varme	 18.11	Løbende løndele	Tillæg	Nej
+3496	 Godtgørelse, inventar	 18.11	Løbende løndele	Tillæg	Nej
+3498	 Godtgørelse, vedligeh.	 18.11	Løbende løndele	Tillæg	Nej
+3500	 Godtgørelse, boligdel	 18.11	Løbende løndele	Tillæg	Nej
+3525	 Vederlag til kommunefogeder	 18.11	Løbende løndele	Tillæg	Nej
+3551	 Formandstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+3555	 Ledertillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+3564	 Godtgørelse Organisation	 61.50	Ingen løndelstype	Ingen løntype	Nej
+3600	 Overarbejdsbetaling - manuel	 18.31	Engangsløndele	Tillæg	Nej
+3607	 Fri telefon	 18.11	Løbende løndele	Tillæg	Nej
+3617	 Sundhedsforsikring	 18.11	Løbende løndele	Tillæg	Nej
+3619	 Sundhedsforsikring	 18.11	Engangsløndele	Tillæg	Nej
+3640	 Praktikvederlag	 18.11	Engangsløndele	Tillæg	Nej
+3641	 Praktikvederlag	 18.51	Engangsløndele	Tillæg	Nej
+3660	 Søprogrammeringstillæg	 18.51	Engangsløndele	Tillæg	Nej
+3690	 Telefongodtgørelse (Lukket for indrapp.)	 22.36	Løbende løndele	Ingen løntype	Nej
+3699	 Samtaletilskud	 22.36	Løbende løndele	Ingen løntype	Nej
+3700	 Telefongodtgørelse	 22.36	Løbende løndele	Tillæg	Nej
+3701	 Telefongodtgørelse	 22.36	Engangsløndele	Tillæg	Nej
+3702	 Telefongodtgørelse, Grønland	 22.36	Løbende løndele	Tillæg	Nej
+3704	 Telefongodtgørelse, Grønland - skattefri	 18.11	Løbende løndele	Tillæg	Nej
+3705	 Fri telefon, rettelse	 22.36	Engangsløndele	Tillæg	Nej
+3707	 Telefongodtgørelse	 22.36	Løbende løndele	Tillæg	Nej
+3709	 ISDN-forbindelse	 22.36	Løbende løndele	Tillæg	Nej
+3710	 Diverse kontorhold udlæg	 22.70	Engangsløndele	Tillæg	Nej
+3712	 Assistance ved kødkontrol	 18.11	Engangsløndele	Tillæg	Nej
+3716	 Overgangstillæg, pensionsgivende - centralt	 18.11	Løbende løndele	Tillæg	Ja
+3717	 Reservelægetillæg, pensionsgivende - centralt	 18.11	Løbende løndele	Tillæg	Ja
+3718	 Kvalifikat.tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+3719	 Funktionstillæg, pensionsgivende - centralt	 18.11	Løbende løndele	Tillæg	Ja
+3721	 Reservelægetillæg -pens.giv/centralt	 18.11	Løbende løndele	Tillæg	Ja
+3800	 Værdi af fri bil	 22.10	Løbende løndele	Tillæg	Nej
+3805	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3806	 Værdi af fri bil - rettelse	 22.10	Engangsløndele	Tillæg	Nej
+3807	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3808	 Funktionstillæg, ikke pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Nej
+3809	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3810	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3811	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3812	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3813	 Funk.tillæg, ikke-pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3814	 Funktionstillæg, ikke-pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3815	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3816	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3817	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3818	 Funktionstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3819	 Funktionstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3820	 Funktionstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3821	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3822	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3823	 Kvalifikationstillæg, ikke-pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3824	 Kvalifikationstillæg, ikke-pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3825	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3826	 Kvalifikationstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3827	 Kvalifkationstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3828	 Kvalifikationstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3829	 Kvalifikationstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3830	 Kvalifikationstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3831	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3832	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3833	 Kvalifikationstillæg, ikke pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3834	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3835	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3836	 Kval.tillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3837	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3838	 Kvalifikationstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3839	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3840	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3841	 Funktionstillæg, pensionsgivende - varig	 18.11	Løbende løndele	Tillæg	Ja
+3842	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3843	 Funktionstillæg, ikke-pensg.	 18.11	Løbende løndele	Tillæg	Nej
+3844	 Funktionstillæg, ikke-pensionsgivende varigt	 18.11	Løbende løndele	Tillæg	Nej
+3845	 Funktionstillæg, ikke-pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+3846	 Funktionstillæg, pensionsgivende - varig	 18.11	Løbende løndele	Tillæg	Ja
+3847	 Resultatlønstillæg, reguleret - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3848	 Funktionstillæg til timelønnede	 18.11	Løbende løndele	Tillæg	Nej
+3849	 Resultatlønstillæg, ikke-reguleret - varigt	 18.11	Løbende løndele	Tillæg	Nej
+3850	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3851	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3852	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3853	 Kvalifikationstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3854	 Funktionstillæg, ikke-pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Nej
+3855	 Kvalifikationstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3856	 Kvalifkationstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3857	 Funktionstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3858	 Kvalifikationstillæg, pensg.	 18.11	Løbende løndele	Tillæg	Ja
+3859	 Vagt i TWR København	 18.11	Løbende løndele	Tillæg	Ja
+3860	 Individuelt tillæg - pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3861	 Individuelt tillæg - ikke-pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+3862	 Individuelt tillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3863	 Individuelt tillæg, ikke-pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+3864	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3865	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3866	 Funktionstillæg, pensionsgivende - midlertidig	 18.11	Løbende løndele	Tillæg	Ja
+3867	 Kvalifikationstillæg til timelønnede	 18.11	Løbende løndele	Tillæg	Ja
+3868	 Kvalifikationstillæg, Naviair	 18.11	Løbende løndele	Tillæg	Nej
+3869	 Kvalifikationstillæg, pensg., Naviair	 18.11	Løbende løndele	Tillæg	Ja
+3874	 Aktieafsavnstillæg	 18.11	Løbende løndele	Tillæg	Ja
+3878	 Engangsvederlag	 18.11	Engangsløndele	Tillæg	Ja
+3881	 Personligt tillæg - pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3882	 Personligt tillæg, ikke-pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+3883	 Personligt tillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+3891	 Udligningstillæg - pensg.	 18.11	Ingen løndelstype	Ingen løntype	Ja
+3892	 Udligningstillæg	 18.11	Ingen løndelstype	Ingen løntype	Nej
+3893	 Udligningstillæg - pensg.	 18.11	Ingen løndelstype	Ingen løntype	Ja
+3900	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3901	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3902	 Funktionstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3903	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3904	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3905	 Kvalifikationstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3908	 Individuelt tillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3909	 Individuelt tillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3910	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3911	 Funktionstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3912	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3913	 Kvalifikationstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3916	 Individuelt tillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3918	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3919	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3920	 Funktionstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3921	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3922	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3923	 Kvalifikationstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3926	 Individuelt tillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3929	 Funktionstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3930	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3931	 Kvalifikationstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3950	 Tillæg til gruppeliv	 18.11	Løbende løndele	Tillæg	Nej
+3952	 Regulering af gruppeliv	 18.11	Engangsløndele	Tillæg	Nej
+3959	 Forsikringsbidragstillæg	 18.11	Løbende løndele	Tillæg	Nej
+3960	 Tillæg til gruppeliv	 18.11	Løbende løndele	Tillæg	Nej
+3970	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3971	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3972	 Funktionstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3973	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3974	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3975	 Kvalifikationstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3978	 Individuelt tillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3980	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3981	 Funktionstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3982	 Funktionstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3983	 Kvalifikationstillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3985	 Kvalifikationstillæg, pensionsgivende - midlertidigt	 18.11	Løbende løndele	Tillæg	Ja
+3988	 Individuelt tillæg, pensionsgivende - varigt	 18.11	Løbende løndele	Tillæg	Ja
+3990	 Uniformsgodtgørelse	 22.36	Løbende løndele	Tillæg	Nej
+3992	 Uniformsgodtgørelse	 22.36	Engangsløndele	Tillæg	Nej
+3993	 Uniformsgodtgørelse	 22.36	Løbende løndele	Tillæg	Nej
+3996	 Vederlag for andet arbejde	 18.61	Løbende løndele	Tillæg	Nej
+4040	 Grunduddannelsestillæg	 18.11	Løbende løndele	Tillæg	Ja
+4041	 Tillæg under turnus	 18.11	Løbende løndele	Tillæg	Ja
+4043	 Tillæg efter turnus (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4045	 4. tjst.tillæg	 18.11	Løbende løndele	Tillæg	Ja
+4046	 Delt tjeneste	 18.11	Løbende løndele	Tillæg	Ja
+4049	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Ja
+4050	 Tjeneste i anden retskreds	 18.11	Løbende løndele	Tillæg	Ja
+4071	 Undervisningstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4080	 Undervisning i Billedkunst	 18.11	Løbende løndele	Tillæg	Ja
+4081	 Undervisning i Mediefag	 18.11	Løbende løndele	Tillæg	Ja
+4082	 Undervisning i Drama	 18.11	Løbende løndele	Tillæg	Ja
+4083	 Undervisning i Musik	 18.11	Løbende løndele	Tillæg	Ja
+4084	 Undervisning i Biologi	 18.11	Løbende løndele	Tillæg	Ja
+4085	 Undervisning i Fysik	 18.11	Løbende løndele	Tillæg	Ja
+4086	 Undervisning i Kemi	 18.11	Løbende løndele	Tillæg	Ja
+4100	 Vederlag, ureguleret	 18.11	Løbende løndele	Tillæg	Nej
+4114	 PG Ekstra Lønrammer	 18.11	Ingen løndelstype	Ingen løntype	Nej
+4130	 Personlig ordning, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4131	 Personlig ordning, ikke pensionsgivende	 18.11	Løbende løndele	Tillæg	Nej
+4151	 Adjunkt/Lektor tillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4152	 Markedsøkonomtillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4153	 Erhvervsakademitillæg pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4154	 Særligt tillæg ved Erhvervsakademier, pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+4155	 Markedsøkonomtillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4156	 Særligt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4158	 Centralt aftalt undervisningstillæg	 18.11	Løbende løndele	Tillæg	Ja
+4161	 Tilsagnstillæg	 18.11	Løbende løndele	Tillæg	Nej
+4162	 Undervisningstillæg	 18.11	Løbende løndele	Tillæg	Nej
+4168	 Kostskoletillæg	 18.11	Løbende løndele	Tillæg	Nej
+4170	 Seminarietillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+4171	 Undervisningstillæg	 18.11	Løbende løndele	Tillæg	Ja
+4173	 Undervisningstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+4174	 Undervisningstillæg, pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+4175	 Ledende lærertillæg(Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+4177	 Datatillæg (Lukket for nyansatte).	 18.11	Løbende løndele	Tillæg	Ja
+4179	 Undervisning ved eksamensskoleafdelinger	 18.11	Løbende løndele	Tillæg	Ja
+4180	 17 års anciennitetstillæg - pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4183	 Undervisningstillæg - pensiongivende	 18.11	Løbende løndele	Tillæg	Ja
+4184	 Datatillæg, pensionsgivende (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4185	 Datatillæg, pensionsgivende (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4186	 Særligt anciennitetstillæg pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+4187	 Efteruddannelsestillæg	 18.11	Løbende løndele	Tillæg	Ja
+4188	 Undervisningstillæg - pensiongivende	 18.11	Løbende løndele	Tillæg	Ja
+4192	 Undervisningstillæg	 18.11	Ingen løndelstype	Ingen løntype	Nej
+4195	 Ledende lærertillæg tekniske skoler	 18.11	Løbende løndele	Tillæg	Ja
+4196	 Undervisningstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4198	 Landbrugsskoletillæg	 18.11	Løbende løndele	Tillæg	Ja
+4199	 Undervisningstillæg v/landbrugsskoler	 18.11	Løbende løndele	Tillæg	Ja
+4200	 Boliglejeudligning	 18.11	Løbende løndele	Tillæg	Nej
+4210	 Ødetillæg (Lukket for indrapp.)	 18.51	Løbende løndele	Ingen løntype	Nej
+4230	 Lærertillæg (journalister)	 18.11	Løbende løndele	Tillæg	Ja
+4231	 Lærertillæg, pensionsgivende	 18.11	Ingen løndelstype	Ingen løntype	Nej
+4232	 Adjunkttillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4235	 Tillæg	 18.11	Løbende løndele	Tillæg	Ja
+4236	 Særlige opgaver pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+4237	 Tillæg, ny stillingsstruktur	 18.11	Løbende løndele	Tillæg	Ja
+4240	 Læreanstalttillæg, kvalifikationstillæg	 18.11	Løbende løndele	Tillæg	Ja
+4246	 Kvalifikationstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4250	 Hjemmetillæg	 18.11	Løbende løndele	Tillæg	Nej
+4251	 Hjemflytningstillæg	 22.36	Løbende løndele	Tillæg	Nej
+4252	 Hjemflytningstillæg, manuelle reguleringer	 22.36	Engangsløndele	Tillæg	Nej
+4253	 Lindholmtillæg	 18.51	Løbende løndele	Tillæg	Ja
+4254	 Hjemmetillæg	 18.11	Løbende løndele	Tillæg	Ja
+4257	 Kvalifikationstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4260	 Ansvarstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4261	 Adjunkt-/lektortillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4262	 Adjunkt-/lektortillæg (teknika), pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4263	 Sektorforskningstillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4264	 Adjunkt-/lektor-/lærertillæg, pensionsgivende	 18.11	Løbende løndele	Tillæg	Ja
+4265	 Stipendiater/kandidater/forskning	 18.11	Løbende løndele	Tillæg	Ja
+4267	 Lektor-/seniorforskertillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4269	 Rådighedstj. (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4270	 Tillæg for rådighedstj. og tilsynsarb	 18.11	Løbende løndele	Tillæg	Ja
+4290	 Kvalifikationstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4292	 Tilsynstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4295	 Kvalifikationstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4296	 Autorisationstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4297	 Eksamenstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4302	 Merudgift, udland, modregning	 22.10	Engangsløndele	Tillæg	Nej
+4315	 Ulempetillæg	 22.36	Løbende løndele	Tillæg	Nej
+4316	 Merudgift, udland	 22.10	Løbende løndele	Tillæg	Nej
+4319	 Dagpenge, udstationering	 22.10	Løbende løndele	Tillæg	Nej
+4320	 Pensionsgivende tillæg	 18.11	Løbende løndele	Tillæg	Ja
+4330	 Kvalifikationstillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4351	 Hjemflytningstillæg	 22.36	Engangsløndele	Tillæg	Nej
+4370	 Skoleskibstillæg	 18.11	Løbende løndele	Tillæg	Nej
+4420	 Arbejdsbestemt tillæg, pens.g.	 18.11	Løbende løndele	Tillæg	Ja
+4430	 Pensionsgivende tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4431	 Tillæg vedr. pensionsbidrag	 18.11	Løbende løndele	Tillæg	Nej
+4450	 Tilsyn ved pædagogikum	 18.11	Engangsløndele	Tillæg	Nej
+4459	 Vejledning af pædagogikumkandidater	 18.11	Engangsløndele	Tillæg	Nej
+4464	 Pædagogikumvejledning	 18.11	Engangsløndele	Tillæg	Ja
+4467	 Pædagogikumvejledning	 18.11	Løbende løndele	Tillæg	Ja
+4470	 Vejledning af lærerkandidater	 18.11	Engangsløndele	Tillæg	Nej
+4471	 Særligt tillæg	 18.11	Løbende løndele	Tillæg	Ja
+4472	 Særligt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4475	 Skolehjemstillæg	 18.11	Engangsløndele	Tillæg	Nej
+4476	 Skolehjemstillæg	 18.11	Løbende løndele	Tillæg	Nej
+4482	 Skolehjemstillæg	 18.11	Løbende løndele	Tillæg	Nej
+4484	 Pæd.-adm. funktion,(Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Ja
+4485	 Særligt tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Ingen løntype	Nej
+4487	 Tunneltillæg, pens.giv.	 18.11	Løbende løndele	Tillæg	Ja
+4490	 EDB-tillæg (Lukket for indrapp.)	 18.11	Løbende løndele	Tillæg	Nej
+4491	 Funktionsvederlag	 18.11	Løbende løndele	Tillæg	Nej
+4493	 Diff. overarbejde u/funktion	 18.31	Ingen løndelstype	Ingen løntype	Nej
+4511	 Reservelægetillæg	 18.11	Løbende løndele	Tillæg	Nej
+4512	 Protokollat-tillæg (paraply-tillæg)	 18.11	Løbende løndele	Tillæg	Ja
+4530	 Garageleje	 22.36	Løbende løndele	Tillæg	Nej
+4550	 Befordringsgodtgørelse	 22.10	Løbende løndele	Tillæg	Nej
+4551	 Befordringsgodtgørelse	 22.10	Engangsløndele	Tillæg	Nej
+4555	 Befordringsgodtgørelse, elever/lærlinge/kursister	 22.10	Engangsløndele	Tillæg	Nej
+4570	 Befordringsgodtgørelse	 22.10	Engangsløndele	Tillæg	Nej
+4571	 Rejsegodtgørelse	 22.10	Engangsløndele	Tillæg	Nej
+4595	 Kost/logi/transport - iaeste-elever	 18.11	Løbende løndele	Tillæg	Nej
+4613	 Pension tryg-forsikring	 61.50	Løbende løndele	Tillæg	Nej
+4614	 Special- /støtteundervisning	 18.11	Engangsløndele	Tillæg	Nej
+4615	 Undervisningshonorar	 18.11	Engangsløndele	Tillæg	Nej
+4616	 Undervisningsgodtgørelse	 18.11	Engangsløndele	Tillæg	Nej
+4617	 Undervisning	 18.11	Engangsløndele	Tillæg	Ja
+4618	 Undervisning - erhvervsskolerne	 18.31	Engangsløndele	Tillæg	Nej
+4619	 Undervisning	 18.11	Engangsløndele	Tillæg	Nej
+4620	 Undervisning	 18.11	Engangsløndele	Tillæg	Nej
+4621	 Instruktorhonorar	 18.11	Engangsløndele	Tillæg	Ja
+4624	 Demonstratorer	 18.11	Engangsløndele	Tillæg	Ja
+4626	 Honorar, kliniske lektorer	 18.11	Løbende løndele	Tillæg	Nej
+4627	 Præparatfremstillere	 18.11	Engangsløndele	Tillæg	Ja
+4629	 Studentermedhjælp	 18.11	Engangsløndele	Tillæg	Ja
+4630	 Undervisning	 18.11	Løbende løndele	Tillæg	Nej
+4631	 Studentermedhjælp	 18.11	Engangsløndele	Tillæg	Ja
+4632	 Undervisning (hjælpelærere)	 18.11	Engangsløndele	Tillæg	Ja
+4633	 Undervisning (eksterne lektorer)	 18.11	Engangsløndele	Tillæg	Nej
+4635	 Studenterstudievejledning	 18.11	Engangsløndele	Tillæg	Ja
+4636	 Undervisning	 18.11	Engangsløndele	Tillæg	Nej
+4638	 Undervisning (eksterne lektorer)	 18.11	Engangsløndele	Tillæg	Nej
+4639	 Undervisningsmedvirken	 18.11	Løbende løndele	Tillæg	Ja
+4640	 Undervisning, SKAT	 18.11	Engangsløndele	Tillæg	Nej
+4641	 Censorvederlag, SKAT	 18.11	Engangsløndele	Tillæg	Nej
+4642	 Undervisningsassistance	 18.11	Engangsløndele	Tillæg	Nej
+4643	 Undervisning (eksterne lektorer)	 18.11	Løbende løndele	Tillæg	Nej
+4644	 Hjælpelærere	 18.11	Engangsløndele	Tillæg	Ja
+4645	 Censorvederlag, sats A	 18.11	Engangsløndele	Tillæg	Nej
+4646	 Censorvederlag, sats B	 18.11	Engangsløndele	Tillæg	Nej
+4647	 Censorvederlag, sats C	 18.11	Engangsløndele	Tillæg	Nej
+4652	 Undervisning (hjælpelærere)	 18.11	Engangsløndele	Tillæg	Ja
+4654	 Undervisningsassistance	 18.11	Engangsløndele	Tillæg	Ja
+4655	 Faglig vejledning	 18.11	Engangsløndele	Tillæg	Ja
+4656	 Honorar, klinisk lektor	 18.11	Løbende løndele	Tillæg	Ja
+4659	 Arrestrenholdelse/forkyndelser	 18.11	Engangsløndele	Tillæg	Nej
+4660	 Assistancegodtgørelse	 18.11	Engangsløndele	Tillæg	Nej
+4661	 Arrestantgodtgørelse mv.	 22.40	Engangsløndele	Tillæg	Nej
+4662	 Censurering	 18.11	Engangsløndele	Tillæg	Nej
+4664	 Censurering	 18.11	Engangsløndele	Tillæg	Nej
+4671	 Timelønnet undervisning, tidsbegrænset	 18.11	Engangsløndele	Tillæg	Nej
+4674	 Timelønnet undervisning	 18.11	Engangsløndele	Tillæg	Nej
+4685	 Funktionstillæg, eksterne lektorer	 18.11	Løbende løndele	Tillæg	Nej
+4686	 Kvalifikationstillæg, eksterne lektorer	 18.11	Løbende løndele	Tillæg	Nej
+4690	 Timeløn, fast løbende timer	 18.11	Løbende løndele	Tillæg	Ja
+4700	 Undervisningstimer, sats 1-3	 18.11	Løbende løndele	Tillæg	Nej
+4702	 Undervisningstimer, sats 1-3	 18.11	Løbende løndele	Tillæg	Nej
+4710	 Udkørselstillæg	 18.51	Engangsløndele	Tillæg	Nej
+4711	 Test		 	Tillæg	Nej
+4712	 TEST AF PKATTEST		 	Tillæg	Nej
+4713	 Test	 18.11	 	Tillæg	Nej
+4715	 Studenterstudievejledning	 18.11	Løbende løndele	Tillæg	Ja
+4716	 Studenterstudievejledning	 18.11	Løbende løndele	Tillæg	Ja
+4719	 Timeløn, eksterne lektorer	 18.11	Løbende løndele	Tillæg	Nej
+4720	 Timeløn, eksterne lektorer	 18.11	Løbende løndele	Tillæg	Nej
+4722	 Timeløn, eksterne lektorer v/teknika	 18.11	Løbende løndele	Tillæg	Nej
+4723	 Timeløn, eksterne lektorer	 18.11	Løbende løndele	Tillæg	Nej
+4731	 Karrieretillæg - EU-kontrakter	 18.11	Engangsløndele	Tillæg	Nej
+4732	 Rejsetillæg - EU-kontrakter	 18.11	Engangsløndele	Tillæg	Nej
+4735	 Legater	 44.24	Løbende løndele	Tillæg	Nej
+4739	 Stipendie	 18.11	Løbende løndele	Tillæg	Nej
+4740	 Instruktorhonorar	 18.11	Løbende løndele	Tillæg	Ja
+4743	 Vederlag	 18.11	Engangsløndele	Tillæg	Nej
+4746	 Vederlag for bedømmelser	 18.11	Engangsløndele	Tillæg	Nej
+4747	 Vederlag for formandskab, censorkorps	 18.11	Engangsløndele	Tillæg	Nej
+4753	 Undervisning, hjælpelærere	 18.11	Løbende løndele	Tillæg	Ja
+4760	 Undervisningstimer, sats 7	 18.11	Engangsløndele	Tillæg	Nej
+4770	 Undervisningstimer, sats 1-3	 18.11	Engangsløndele	Tillæg	Nej
+4771	 Undervisningstimer	 18.11	Løbende løndele	Tillæg	Nej
+4773	 Undervisningstimer	 18.11	Løbende løndele	Tillæg	Ja
+4780	 Undervisningstimer, sats 4	 18.11	Engangsløndele	Tillæg	Nej
+4790	 Undervisningstimer, sats 5	 18.11	Engangsløndele	Tillæg	Nej
+4800	 Undervisningstimer, sats 1	 18.11	Engangsløndele	Tillæg	Nej
+4810	 Undervisningstimer, sats 1-2 (-15%)	 18.11	Engangsløndele	Tillæg	Nej
+4820	 Undervisningstimer, sats 2	 18.11	Engangsløndele	Tillæg	Nej
+4840	 Undervisningstimer, sats 3	 18.11	Engangsløndele	Tillæg	Nej
+4860	 Undervisningstimer, sats 4	 18.11	Engangsløndele	Tillæg	Nej
+4880	 Undervisning m.v.	 18.11	Engangsløndele	Tillæg	Nej
+4890	 Undervisning m.v.	 18.11	Engangsløndele	Tillæg	Nej
+4900	 Undervisningstimer, sats 5	 18.11	Engangsløndele	Tillæg	Nej
+4921	 Undervisningstimer, sats 6 (inkl. 15. min forberedelse)	 18.11	Engangsløndele	Tillæg	Nej
+4952	 Kvotatimeløn gl.løn 85%, ny løn100%	 18.11	Engangsløndele	Tillæg	Ja
+4953	 Kvotatimeløn	 18.11	Engangsløndele	Tillæg	Ja
+4955	 Kvotatimeløn 100%	 18.11	Løbende løndele	Tillæg	Ja
+4957	 Kvotatimeløn gl.løn 85%, ny løn100%	 18.11	Løbende løndele	Tillæg	Ja
+4960	 Undervisningstimer, sats 6	 18.11	Engangsløndele	Tillæg	Nej
+4961	 Timeløn	 18.11	Engangsløndele	Tillæg	Nej
+4963	 Timeløn - fængselslæger	 18.11	Løbende løndele	Tillæg	Nej
+4966	 Timeløn	 18.11	Engangsløndele	Tillæg	Nej
+4967	 Timeløn	 18.11	Engangsløndele	Tillæg	Nej
+4971	 Timeløn, psykologiske konsulenter og familierådgivning	 18.11	Engangsløndele	Tillæg	Ja
+4972	 Honorar for interview	 18.11	Engangsløndele	Tillæg	Ja
+4977	 Vikartimer (tilfældige) pens.giv.	 18.11	Engangsløndele	Tillæg	Ja
+4978	 Medvirker i forestillingen	 18.11	Engangsløndele	Tillæg	Ja
+4980	 Undervisning på sygeplejeskoler	 18.11	Engangsløndele	Tillæg	Nej
+4981	 Angivet i program	 18.11	Engangsløndele	Tillæg	Ja
+4983	 Videnskabelig medhjælp	 18.11	Engangsløndele	Tillæg	Nej
+4986	 Timeløn (timer med 2. decimaler)	 18.11	Engangsløndele	Tillæg	Ja
+4987	 Båndtimer	 18.11	Engangsløndele	Tillæg	Nej
+4989	 Videnskabelig medhjælp (midlertidig)	 18.11	Løbende løndele	Tillæg	Nej
+4992	 Indkommandering	 18.11	Engangsløndele	Tillæg	Nej
+4994	 Vikartimeløn (gymnasieskoler)	 18.11	Engangsløndele	Tillæg	Nej
+4995	 Tilsynshonorar m.v. (kriminalforsorgen)	 18.11	Engangsløndele	Tillæg	Nej
+4996	 Personundersøgelser	 18.11	Engangsløndele	Tillæg	Nej
+4997	 Timeløn	 18.11	Engangsløndele	Tillæg	Nej
+5000	 Feriegodtgørelse - indeværende år	 18.11	Løbende løndele	Ferie	Nej
+5005	 Overførte feriedage - fortsat ansat	 18.11	Engangsløndele	Ferie	Ja
+5007	 Særlige feriedage, ikke afholdte dage	 18.11	Engangsløndele	Ferie	Nej
+5009	 Ikke afholdte særlige feriedage, SÅ	 18.11	Ingen løndelstype	Ingen løntype	Nej
+5010	 Feriegodtgørelse - sidste år	 18.11	Løbende løndele	Ferie	Nej
+5013	 Ikke afholdte særlige feriedage, FÅ	 18.11	Ingen løndelstype	Ingen løntype	Nej
+5015	 Ej afholdt særlig feriedag - Grønland	 18.11	Engangsløndele	Ferie	Nej
+5017	 Ej afholdt særl. feriedg. DÅ	 18.11	Løbende løndele	Ferie	Nej
+5020	 Feriegodtgørelse, forrige år	 18.11	Løbende løndele	Ferie	Nej
+5027	 Ej afholdt særl feriedg. SÅ	 18.11	Løbende løndele	Ferie	Nej
+5030	 Særlig feriegodtgørelse	 18.11	Løbende løndele	Ferie	Nej
+5031	 Feriegodtgørelse af merarbejde	 18.11	Ingen løndelstype	Ingen løntype	Nej
+5032	 Særlig feriegodtg.af løndel 2519 sats 1	 18.61	Ingen løndelstype	Ingen løntype	Nej
+5035	 Særlig feriegodtgørelse til tillidsmænd	 61.50	Ingen løndelstype	Ingen løntype	Nej
+5036	 Feriegodtgørelse af mertjeneste og undervisning	 18.11	Ingen løndelstype	Ingen løntype	Nej
+5037	 Ej afholdt særlige feriedg. FÅ	 18.11	Løbende løndele	Ferie	Nej
+5040	 Udbetaling af overført ferie ved fratræden	 18.11	Løbende løndele	Ferie	Nej
+5050	 Feriegodtgørelse	 18.11	Løbende løndele	Ferie	Nej
+5052	 Opsat S-/H-betaling	 18.11	Løbende løndele	Ingen løntype	Nej
+5053	 Optj. S-/H-betaling DÅ	 18.11	Ingen løndelstype	Ingen løntype	Nej
+5055	 Feriegodtg. af undervisning	 18.11	Løbende løndele	Ferie	Nej
+5056	 Feriegodtg. af særlig uv.	 18.11	Løbende løndele	Ferie	Nej
+5062	 Ferielønregulering	 18.11	Engangsløndele	Ferie	Ja
+5063	 Ferielønregulering af særlige feriedage	 18.11	Ingen løndelstype	Ingen løntype	Nej
+5067	 Ferielønregulering, Rigspolitiet	 18.11	Engangsløndele	Ferie	Ja
+5070	 Ferielønstillæg	 18.11	Engangsløndele	Ferie	Nej
+5071	 Ej afholdte feriedage, Danida	 18.11	Engangsløndele	Ferie	Nej
+5085	 Afregning til feriefond i Grønland	 18.11	Løbende løndele	Ferie	Nej
+5101	 Værktøjstillæg	 18.51	Løbende løndele	Tillæg	Nej
+5103	 Weekendtjeneste, Folketinget	 18.11	Engangsløndele	Tillæg	Nej
+5104	 Omvisning, Folketinget	 18.11	Engangsløndele	Tillæg	Nej
+5105	 Mødepasning, Folketinget	 18.11	Engangsløndele	Tillæg	Nej
+5110	 Forskudt arbejdstid	 18.51	Engangsløndele	Tillæg	Nej
+5111	 Undervisningstimer, balletdansere	 18.11	Engangsløndele	Tillæg	Nej
+5116	 Varskotillæg	 18.51	Engangsløndele	Tillæg	Nej
+5123	 Tillæg for ekstra timer	 18.51	Engangsløndele	Tillæg	Nej
+5124	 Omlagte timer	 18.51	Engangsløndele	Tillæg	Nej
+5125	 Holddrift	 18.51	Engangsløndele	Tillæg	Nej
+5128	 Tillæg, kontrollører	 18.11	Engangsløndele	Tillæg	Nej
+5129	 Ekstra timetillæg	 18.51	Engangsløndele	Tillæg	Nej
+5130	 Vagt med billetsalg	 18.51	Engangsløndele	Tillæg	Nej
+5131	 Natpenge under ferie	 18.51	Engangsløndele	Tillæg	Nej
+5132	 Helligdagsbet. under ferie	 18.51	Engangsløndele	Tillæg	Nej
+5133	 Natpenge under ferie	 18.51	Engangsløndele	Tillæg	Nej
+5134	 Helligdagsbet. under ferie	 18.51	Engangsløndele	Tillæg	Nej
+5145	 Svejsetillæg (Lukket for indrapp.)	 18.51	Løbende løndele	Tillæg	Nej
+5146	 Svejsetillæg	 18.11	Løbende løndele	Tillæg	Nej
+5150	 Forskudt arbejdstid	 18.51	Engangsløndele	Tillæg	Nej
+5151	 Godtgørelse, lør-, søn-, helligdage, Grønland	 18.51	Særlige engangsløndele	Tillæg	Nej
+5152	 Godtgørelse, lør-, søn-, helligdage, Grønland	 18.51	Engangsløndele	Tillæg	Nej
+5154	 Natpenge, tjenestemænd i Grønland	 18.51	Særlige engangsløndele	Tillæg	Nej
+5155	 Natpenge, tjenestemænd i Grønland	 18.51	Engangsløndele	Tillæg	Nej
+5160	 Godtgørelse, lør- og mandage	 18.51	Engangsløndele	Tillæg	Nej
+5170	 Weekend- og helligdagsbetaling	 18.51	Engangsløndele	Tillæg	Nej
+5174	 Tabt arbejdsfortjeneste	 18.51	Engangsløndele	Tillæg	Nej
+5176	 Afsavnstillæg	 18.51	Engangsløndele	Tillæg	Nej
+5177	 Godtgørelse for sovevagter	 18.51	Engangsløndele	Tillæg	Nej
+5180	 Godtgørelse, søndage	 18.51	Engangsløndele	Tillæg	Nej
+5181	 Lør-/søn- og helligdage	 18.51	Ingen løndelstype	Tillæg	Nej
+5190	 Togtledertillæg	 18.51	Engangsløndele	Tillæg	Nej
+5193	 Feltledertillæg	 18.51	Engangsløndele	Tillæg	Nej
+5194	 Dicardstillæg	 18.51	Engangsløndele	Tillæg	Nej
+5200	 Nattillæg kl. 17-06, Kriminalforsorgen	 18.51	Engangsløndele	Tillæg	Nej
+5201	 Nattillæg kl. 17-06, Kriminalforsorgen	 18.51	Engangsløndele	Tillæg	Nej
+5202	 Vagttillæg, Folketinget	 18.11	Engangsløndele	Tillæg	Nej
+5224	 Modregning erhvervs knallert/cykelgodt.	 97.50	Ingen løndelstype	Ingen løntype	Nej
+5225	 Modregning erhvervs knallert/cykelgodt.	 22.10	Ingen løndelstype	Ingen løntype	Nej
+5226	 Fradragsberett. moms - bropenge	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5227	 Erhvervs cykel/knallertgodtg., skattefri	 22.10	Engangsløndele	Tillæg	Nej
+5228	 Fradragsberettiget moms - rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5229	 Trailertillæg	 22.10	Engangsløndele	Tillæg	Nej
+5233	 Time-/dagpenge, beløb	 97.50	Engangsløndele	Tillæg	Nej
+5234	 Bropenge ifm. tjenesterejser	 22.10	Engangsløndele	Tillæg	Nej
+5235	 Cykel-/knallert kørselsgodtg., skattepligtig	 22.10	Engangsløndele	Tillæg	Nej
+5236	 Fradragsberettiget moms - rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5237	 Fradragsberettiget moms - rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5238	 Fradragsberettiget moms - rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5239	 Fradragsberettiget moms - rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5241	 Dagpenge og rejsegodtgørelse (Grønland)	 22.10	Engangsløndele	Tillæg	Nej
+5242	 Dagpenge og rejsegodtgørelse (Grønland)	 22.10	Engangsløndele	Tillæg	Nej
+5243	 Dagpenge og rejsegodtgørelse, Grønland	 22.10	Engangsløndele	Tillæg	Nej
+5248	 Hoteludgifter ifm. tjenesterejser	 22.10	Engangsløndele	Tillæg	Nej
+5249	 Flyttegodtgørelse - Grønland	 22.36	Engangsløndele	Tillæg	Nej
+5250	 Standardgodtgørelse ved flytning af bohave	 22.36	Engangsløndele	Tillæg	Nej
+5251	 Fradragsberett. moms - diverse rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5252	 Supplerende godtgørelse ved flytning	 22.36	Engangsløndele	Tillæg	Nej
+5253	 Fradragsberettiget moms - hoteludgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5254	 Godtgørelse ved dobbelt husførelse	 22.36	Engangsløndele	Tillæg	Nej
+5255	 Flyttegodtgørelse efter regning	 22.36	Engangsløndele	Tillæg	Nej
+5256	 Transportgodtgørelse	 22.36	Engangsløndele	Tillæg	Nej
+5258	 Anden flyttegodtgørelse	 22.36	Engangsløndele	Tillæg	Nej
+5260	 Diverse	 61.50	Engangsløndele	Tillæg	Nej
+5262	 Diverse udlæg	 22.10	Engangsløndele	Tillæg	Nej
+5263	 Fradragsberettiget moms af rejseudgifter	 22.10	Engangsløndele	Tillæg	Nej
+5264	 Udokumenteret nattillæg	 22.10	Engangsløndele	Tillæg	Nej
+5265	 Godtgørelse for transporttid	 18.11	Engangsløndele	Tillæg	Nej
+5267	 Ferierejsetillæg, Grønland	 18.51	Engangsløndele	Tillæg	Nej
+5268	 Udokumenteret nattillæg, skattefri	 22.10	Engangsløndele	Tillæg	Nej
+5269	 Udokumenteret nattillæg	 97.50	Engangsløndele	Tillæg	Nej
+5270	 Befordringsgodtgørelse, skattefri	 22.10	Løbende løndele	Tillæg	Nej
+5271	 Oplysningspligtig rejsegodtgørelse	 61.55	Engangsløndele	Tillæg	Nej
+5272	 Udlæg varekøb	 22.10	Engangsløndele	Tillæg	Nej
+5273	 Udbetalt rejsegodtgørelse	 61.55	Ingen løndelstype	Ingen løntype	Nej
+5274	 Rejseforskud, skattefrit	 61.55	Engangsløndele	Tillæg	Nej
+5275	 Rejse-/Befordringsgodtgørelse	 22.10	Engangsløndele	Tillæg	Nej
+5277	 Fuldt nattillæg, dokumenteret hoteludgifter	 22.10	Engangsløndele	Tillæg	Nej
+5279	 Taxi-kørsel	 22.10	Engangsløndele	Tillæg	Nej
+5280	 Kompens. f. mødested	 18.11	Engangsløndele	Tillæg	Nej
+5281	 Anden godtgørelse i.f.m. rejser	 22.10	Engangsløndele	Tillæg	Nej
+5283	 Timepenge	 22.10	Engangsløndele	Tillæg	Nej
+5284	 Dagpenge	 22.10	Engangsløndele	Tillæg	Nej
+5285	 Time- og dagpenge, skattepligtige	 22.10	Engangsløndele	Tillæg	Nej
+5287	 Time- og dagpenge/nattillæg, udland	 22.10	Engangsløndele	Tillæg	Nej
+5290	 Time- og dagpenge, skattefri	 22.10	Engangsløndele	Tillæg	Nej
+5292	 Fortæring/repræsentation	 22.20	Engangsløndele	Tillæg	Nej
+5293	 Fradragsberett. moms - repræsentation	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5294	 Fradragsberettiget moms - rejseudgifter	 61.21	Ingen løndelstype	Ingen løntype	Nej
+5295	 Skattefri time- og dagpenge	 22.10	Engangsløndele	Tillæg	Nej
+5297	 Udokumenteret nattillæg, skattepligtig	 22.10	Engangsløndele	Tillæg	Nej
+5300	 Vederlag vedr. den særlige klageret	 18.61	Engangsløndele	Tillæg	Nej
+5303	 Udlæg efter regning i forbindelse med rejser	 22.10	Engangsløndele	Tillæg	Nej
+5305	 Skattefri km-godtgørelse	 22.10	Engangsløndele	Tillæg	Nej
+5306	 Udlæg efter regning i forbindelse med rejser	 22.10	Engangsløndele	Tillæg	Nej
+5308	 Skattefri km-godtgørelse, beløb	 22.10	Engangsløndele	Tillæg	Nej
+5310	 Kørselsgodtgørelse i egen bil	 22.10	Engangsløndele	Tillæg	Nej
+5311	 Skattepligtig km-godtgørelse	 22.10	Engangsløndele	Tillæg	Nej
+5313	 Befordringsgodtgørelse	 22.10	Ingen løndelstype	Ingen løntype	Nej
+5320	 Skattefri Time- og dagpenge	 22.10	Løbende løndele	Tillæg	Nej
+5325	 Forskudt frokost	 18.51	Ingen løndelstype	Tillæg	Nej
+5330	 Par. 55 tillæg i sømandsloven	 18.51	Ingen løndelstype	Tillæg	Nej
+5335	 Cykel-/knallert kørselsgodtgørelse, Retterne	 22.70	Engangsløndele	Tillæg	Nej
+5341	 Produktionsmandstillæg	 18.11	Løbende løndele	Tillæg	Nej
+5342	 Produktionsmandstillæg	 18.11	Engangsløndele	Tillæg	Nej
+5344	 Arbejdstimetillæg	 18.11	Løbende løndele	Tillæg	Ja
+5346	 Afmålt fleksibilitetstillæg	 18.11	Løbende løndele	Tillæg	Nej
+5349	 Særlige tillæg	 18.51	Engangsløndele	Tillæg	Nej
+5350	 Formandstillæg	 18.11	Engangsløndele	Tillæg	Nej
+5351	 Formandstillæg	 18.11	Løbende løndele	Tillæg	Nej
+5353	 Fleksibilitetstillæg	 18.11	Løbende løndele	Tillæg	Nej
+5354	 Teatertillæg	 18.11	Løbende løndele	Tillæg	Nej
+5356	 Koordinerende formandstillæg	 18.11	Løbende løndele	Tillæg	Nej
+5359	 Smudstillæg	 18.51	Løbende løndele	Tillæg	Nej
+5360	 Smudstillæg	 18.51	Løbende løndele	Tillæg	Nej
+5363	 Pensionsgivende smudstillæg	 18.51	Løbende løndele	Tillæg	Ja
+5368	 Vederlag møder, kendelser mv.	 18.61	Engangsløndele	Tillæg	Nej
+5370	 Godtgørelse for søn- og helligdage	 18.51	Engangsløndele	Tillæg	Nej
+5371	 Godtgørelse for søn- og helligdage (løbende)	 18.51	Løbende løndele	Tillæg	Nej
+5372	 Søn- og helligdage før kl. 12, Kriminalforsorgen	 18.51	Engangsløndele	Tillæg	Nej
+5373	 Søn- og helligdage før kl. 12, Kriminalforsorgen	 18.51	Engangsløndele	Tillæg	Nej
+5376	 Særskilt vederlæggelse	 18.61	Engangsløndele	Tillæg	Nej
+5377	 Vederlæggelse, formænd	 61.50	Engangsløndele	Tillæg	Nej
+5379	 Vederlag for møder, kendelser m.v.	 18.11	Engangsløndele	Tillæg	Nej
+5394	 Transporttid	 18.11	Engangsløndele	Tillæg	Ja
+5400	 Omlagte timer	 18.51	Engangsløndele	Tillæg	Nej
+5414	 Tillæg under tjenesterejser i grønland	 18.41	Engangsløndele	Tillæg	Nej
+5420	 Funktionsvederlag	 18.11	Løbende løndele	Tillæg	Nej
+5421	 Pensionsgivende funktionsvederlag	 18.11	Løbende løndele	Tillæg	Ja
+5430	 Tillæg (§ 4)	 18.51	Engangsløndele	Tillæg	Nej
+5510	 Godtgørelse, 3-delt tjeneste	 18.51	Engangsløndele	Tillæg	Nej
+5521	 Overarbejdsbetaling (frie grundskoler)	 18.31	Særlige engangsløndele	Tillæg	Nej
+5530	 Grundovertimesats uden tilsagn	 18.31	Løbende løndele	Tillæg	Nej
+5532	 Overtimer 0-2,5 med tilsagn	 18.31	Løbende løndele	Tillæg	Nej
+5540	 Godtgørelse for delt tjeneste	 18.51	Engangsløndele	Tillæg	Nej
+5545	 Godtgørelse for delt tjeneste	 18.51	Løbende løndele	Tillæg	Nej
+5579	 Mistet fridag	 18.51	Engangsløndele	Tillæg	Nej
+5586	 Overtimer gymnasieskoler (enkelte)	 18.31	Engangsløndele	Tillæg	Nej
+5591	 Overtimer	 18.31	Engangsløndele	Tillæg	Ja
+5593	 Overtimer	 18.31	Engangsløndele	Tillæg	Nej
+5595	 Overtimer 100 %	 18.31	Løbende løndele	Tillæg	Nej
+5603	 Overarbejdsbetaling	 18.31	Særlige engangsløndele	Tillæg	Nej
+5607	 Overarbejdsbetaling	 18.31	Engangsløndele	Tillæg	Nej
+5608	 Korassistance (timeløn)	 18.11	Engangsløndele	Tillæg	Nej
+5610	 Musikassistance	 18.11	Engangsløndele	Tillæg	Nej
+5612	 Aftenprøver	 18.11	Engangsløndele	Tillæg	Nej
+5613	 Danseskoleundervisning	 18.11	Engangsløndele	Tillæg	Nej
+5615	 Opera-akademitakster	 18.11	Engangsløndele	Tillæg	Nej
+5617	 Tilkaldetillæg	 18.51	Engangsløndele	Tillæg	Nej
+5618	 Rådighedsvagt hverdage	 18.51	Engangsløndele	Tillæg	Nej
+5619	 Rådighedsvagt lør-, søn- og helligdage	 18.51	Engangsløndele	Tillæg	Nej
+5620	 Smudstillæg	 18.51	Engangsløndele	Tillæg	Nej
+5623	 Smudstillæg, 5%	 18.51	Engangsløndele	Tillæg	Nej
+5624	 Dykkertillæg	 18.51	Engangsløndele	Tillæg	Nej
+5627	 Overtimer til overenskomstans. v.teknika	 18.31	Løbende løndele	Tillæg	Nej
+5629	 Tillæg, rådighedsvagt	 18.51	Engangsløndele	Tillæg	Nej
+5630	 Timeløn for simultantolkning	 18.51	Engangsløndele	Tillæg	Nej
+5632	 Dommerhonorar	 18.11	Engangsløndele	Tillæg	Nej
+5641	 Ligsyn/obduktion	 18.11	Engangsløndele	Tillæg	Nej
+5646	 Overtimer	 18.31	Løbende løndele	Tillæg	Nej
+5649	 Erstatning for mistet SH-dag	 18.11	Engangsløndele	Tillæg	Nej
+5659	 Særlige aften- og nattetimer	 18.51	Engangsløndele	Tillæg	Nej
+5660	 Fast løntillæg	 18.11	Løbende løndele	Tillæg	Nej
+5732	 I tiden indtil kl 23	 18.51	Engangsløndele	Tillæg	Nej
+5733	 I tiden kl 23.00-06.00	 18.51	Engangsløndele	Tillæg	Nej
+5734	 Lørdag 06.00 - Søndag 24.00	 18.51	Engangsløndele	Tillæg	Nej
+5735	 Godtgørelse for lørdage	 18.51	Ingen løndelstype	Ingen løntype	Nej
+5745	 Lør-, søn- og helligdage (DTU)	 18.51	Engangsløndele	Tillæg	Ja
+5750	 Natpenge, kl. 17-06 (BRST)	 18.51	Engangsløndele	Tillæg	Nej
+5756	 Natpenge, kl. 17-06, CO-II	 18.51	Engangsløndele	Tillæg	Nej
+5760	 Natpenge, kl. 17-06, Rigspolitiet	 18.51	Engangsløndele	Tillæg	Nej
+5761	 Natpenge, kl. 17-06 (Lukket for indrapp.)	 18.51	Løbende løndele	Tillæg	Nej
+5762	 Natpenge, kl. 17-06, løbende	 18.51	Løbende løndele	Tillæg	Nej
+5763	 Natpenge, kl. 17-06, CO-II	 18.51	Løbende løndele	Tillæg	Nej
+5780	 Særlige ydelser under ferie (DTU)	 18.51	Engangsløndele	Tillæg	Nej
+5781	 Særlig ydelser under sygdom (DTU)	 18.51	Engangsløndele	Tillæg	Nej
+5790	 Stipendie	 44.24	Løbende løndele	Tillæg	Nej
+5791	 Kompensation til tillidsrepr.	 18.11	Løbende løndele	Tillæg	Ja
+5794	 Udvekslingsstipendie	 44.24	Løbende løndele	Tillæg	Nej
+5795	 Udvekslingsstipendie	 44.24	Engangsløndele	Tillæg	Nej
+5801	 Godtgørelse, Skolepraktikelever	 61.50	Engangsløndele	Tillæg	Nej
+5804	 Godtgørelse, Skolepraktikelever	 61.50	Engangsløndele	Tillæg	Nej
+5809	 Befordringsgodtgørelse, skolepraktikelever	 61.50	Engangsløndele	Tillæg	Nej
+5813	 Skoleydelse (Lukket for indrapp.)	 61.50	Løbende løndele	Grundløn	Nej
+5814	 Skolepraktikydelse	 61.50	Løbende løndele	Grundløn	Nej
+5815	 Skoleydelse	 61.50	Løbende løndele	Grundløn	Nej
+5824	 Skolepraktikydelse	 61.50	Løbende løndele	Grundløn	Nej
+5825	 Skoleydelse	 61.50	Løbende løndele	Grundløn	Nej
+5900	 Censurering, sats A	 18.11	Engangsløndele	Tillæg	Nej
+5935	 Supplerende ydelse, Rigspolitiet	 44.24	Engangsløndele	Tillæg	Nej
+5940	 Censurering, sats B	 18.11	Engangsløndele	Tillæg	Nej
+5942	 Censurering, sats B	 18.11	Engangsløndele	Tillæg	Nej
+5950	 Censurering, sats C	 18.11	Engangsløndele	Tillæg	Nej
+5952	 Censurering, sats C	 18.11	Engangsløndele	Tillæg	Nej
+5960	 Censurering, sats D	 18.11	Engangsløndele	Tillæg	Nej
+5970	 Censurering, sats E	 18.11	Engangsløndele	Tillæg	Nej
+5980	 Censurering, sats F	 18.11	Engangsløndele	Tillæg	Nej
+5982	 Godtgørelse for merarbejde, speciel	 18.11	Løbende løndele	Tillæg	Nej
+5983	 Godtgørelse for særlig sejlads (DTU)	 18.51	Engangsløndele	Tillæg	Nej
+5988	 Rådgivningsordning (BRST)	 18.41	Engangsløndele	Tillæg	Ja
+5989	 Rådgivningsordning (BRST)	 18.41	Engangsløndele	Tillæg	Nej
+5994	 Konsulentbistand/vagttjeneste	 18.11	Engangsløndele	Tillæg	Nej
+6000	 Løbende merarbejde, deltidsansættelse	 18.11	Løbende løndele	Tillæg	Ja
+6003	 Statens supplerende pension	 18.81	Løbende løndele	Tillæg	Nej
+6005	 Statens bidrag	 18.81	IA Pension	Ingen løntype	Nej
+6007	 Pensionsbidrag til beskatning	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6009	 Ekstra pensionsbidrag	 18.71	Ingen løndelstype	Ingen løntype	Nej
+6030	 Pensionsbidrag	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6035	 Skurpenge	 18.51	Engangsløndele	Tillæg	Nej
+6039	 Statens (kapital)pensionsbidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6040	 Fritvalgsordning - speciel	 18.11	Løbende løndele	Tillæg	Nej
+6041	 Udbetaling, Fritvalgsordning (speciel)	 18.11	Engangsløndele	Tillæg	Nej
+6049	 Udbetaling af opsat feriegodtgørelse, Grønland	 97.50	Engangsløndele	Ferie	Nej
+6070	 Statens bidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6080	 Statens (kapital)pensionsbidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6081	 Statens ratepensionsbidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6082	 Statens kapital-/ratepensionsbidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6084	 Statens bidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6085	 Statens kapitalpensionsbidrag	 18.71	Ingen løndelstype	Ingen løntype	Nej
+6086	 Statens bidrag	 18.81	Løbende løndele	Ingen løntype	Nej
+6091	 Statens pensionsbidrag	 18.81	Ingen løndelstype	Ingen løntype	Nej
+6101	 Natpenge kl. 17-06	 18.51	Engangsløndele	Tillæg	Nej
+6102	 Ulempetillæg - 25 % af timelønnen	 18.51	Engangsløndele	Tillæg	Nej
+6104	 Weekendgodtgørelse - 50 %	 18.51	Engangsløndele	Tillæg	Nej
+6105	 Weekendgodtgørelse - 100 %	 18.31	Engangsløndele	Tillæg	Nej
+6106	 Udbet. af overskydende timer	 18.11	Engangsløndele	Tillæg	Nej
+6110	 Undervisning m.m., Rigspolitiet	 18.11	Engangsløndele	Tillæg	Nej
+6112	 Ulempetillæg - 25 % af timelønnen	 18.51	Løbende løndele	Tillæg	Nej
+6114	 Weekendgodtgørelse	 18.31	Ingen løndelstype	Ingen løntype	Nej
+6120	 Undervisning m.m., Rigspolitiet	 18.11	Engangsløndele	Tillæg	Nej
+6203	 Weekend / helligdage	 18.51	Engangsløndele	Tillæg	Nej
+6206	 Helligdagsbetaling, Banedanmark	 18.51	Engangsløndele	Tillæg	Nej
+6211	 Rangertjeneste Alm.	 18.51	Engangsløndele	Tillæg	Nej
+6220	 Overarbejde	 18.31	Særlige engangsløndele	Tillæg	Nej
+6221	 Fratrædelsesgodtgørelse, Grønland	 18.11	Løbende løndele	Tillæg	Nej
+6223	 Fratrædelsesgodtgørelse, Grønland	 18.11	Løbende løndele	Ingen løntype	Nej
+6224	 Mistet fridag	 18.31	Særlige engangsløndele	Tillæg	Nej
+6225	 Pensionsbidrag, tj.frihed	 18.81	IA Pension	Ingen løntype	Nej
+6226	 Mistede fridage, Rigspolitiet	 18.31	Særlige engangsløndele	Tillæg	Nej
+6230	 Overarbejdsbetaling, 100%	 18.31	Særlige engangsløndele	Tillæg	Nej
+6239	 Overarbejde (100%), Banedanmark	 18.31	Engangsløndele	Tillæg	Nej
+6240	 Overarbejde (100%), Banedanmark	 18.31	Særlige engangsløndele	Tillæg	Nej
+6251	 Statens kapitalpensionsbidrag	 18.81	Løbende løndele	Ingen løntype	Nej
+6254	 Løbende godtgørelse ved dobbelt husførelse	 22.36	Løbende løndele	Tillæg	Nej
+6256	 Statens tillægspension	 18.11	Løbende løndele	Ingen løntype	Nej
+6257	 Statens tillægspension	 18.81	Løbende løndele	Ingen løntype	Nej
+6260	 Overarbejde, Banedanmark	 18.31	Engangsløndele	Tillæg	Nej
+6261	 UA-Betaling Nyt År, Banedanmark	 18.51	Engangsløndele	Tillæg	Nej
+6262	 UA-Betaling Gammelt År, Banedanmark	 18.51	Engangsløndele	Tillæg	Nej
+6269	 UA-Betaling Nyt År, Banedanmark	 18.51	Særlige engangsløndele	Tillæg	Nej
+6270	 UA-Betaling Gammelt År, Banedanmark	 18.51	Særlige engangsløndele	Tillæg	Nej
+6300	 Gasrensningsvederlag	 18.11	Engangsløndele	Tillæg	Nej
+6305	 Skattefri km-godtgørelse	 22.70	Engangsløndele	Tillæg	Nej
+6306	 Køretøjs-Tillæg	 18.51	Engangsløndele	Tillæg	Nej
+6309	 Atomberedskabstillæg	 18.11	Engangsløndele	Tillæg	Ja
+6310	 Atomberedskabstillæg	 18.11	Engangsløndele	Tillæg	Nej
+6317	 Funktionstillæg, undervisning	 18.11	Engangsløndele	Tillæg	Nej
+6320	 Vagt-/øvelsestillæg	 18.11	Engangsløndele	Tillæg	Nej
+6321	 2/7 dag	 18.11	Engangsløndele	Tillæg	Nej
+6334	 Tunnelarbejde	 18.51	Engangsløndele	Tillæg	Nej
+6337	 Tunnelarbejde, Storebælt	 18.51	Engangsløndele	Tillæg	Nej
+6350	 Ledelsesansvar	 18.11	Engangsløndele	Tillæg	Nej
+6402	 Undervisning, sats B, Grønland	 18.11	Engangsløndele	Tillæg	Nej
+6403	 Undervisning, sats C, Grønland	 18.11	Engangsløndele	Tillæg	Nej
+6404	 Undervisning, sats D, Grønland	 18.11	Engangsløndele	Tillæg	Nej
+6435	 Overarbejdsbetaling, Folketinget	 18.31	Engangsløndele	Tillæg	Nej
+6442	 Køreplansskift tillæg	 18.51	Engangsløndele	Tillæg	Nej
+6447	 Funktionstillæg, Banedanmark	 18.11	Engangsløndele	Tillæg	Nej
+6449	 Aftalt Planarbejde	 18.51	Engangsløndele	Tillæg	Nej
+6453	 Trafikal vagthavende	 18.51	Engangsløndele	Tillæg	Nej
+6455	 Arbejdsleder Tillæg 03-12	 18.51	Engangsløndele	Tillæg	Nej
+6456	 Arbejdsleder Tillæg 13-20	 18.51	Engangsløndele	Tillæg	Nej
+6457	 Arbejdsleder Tillæg 21	 18.51	Engangsløndele	Tillæg	Nej
+6490	 Overarbejdsbetaling	 18.31	Engangsløndele	Tillæg	Nej
+6491	 Rejsetid	 18.31	Engangsløndele	Tillæg	Nej
+6492	 Overarbejdsbetaling m.v.	 18.31	Engangsløndele	Tillæg	Nej
+6495	 Overtidstillæg v/afspadsering	 18.31	Engangsløndele	Tillæg	Nej
+6499	 Overarbejdsbetaling, Grønland	 18.31	Særlige engangsløndele	Tillæg	Nej
+6500	 Overarbejdsbetaling	 18.31	Engangsløndele	Tillæg	Nej
+6530	 Vederlag til domsmænd og lægdommere	 22.70	Engangsløndele	Tillæg	Nej
+6531	 Vederlag til stævningsmænd	 18.51	Engangsløndele	Tillæg	Nej
+6532	 Vidnegodtgørelse	 22.70	Engangsløndele	Tillæg	Nej
+6533	 Tolkning, høj takst	 22.70	Engangsløndele	Tillæg	Nej
+6534	 Tolkning, lav takst	 22.70	Engangsløndele	Tillæg	Nej
+6535	 Tolkning, øvrig	 22.70	Engangsløndele	Tillæg	Nej
+6536	 Døvetolkning	 22.70	Engangsløndele	Tillæg	Nej
+6537	 Fri proces	 46.54	Engangsløndele	Tillæg	Nej
+6538	 Transporttid	 22.70	Engangsløndele	Tillæg	Nej
+6539	 Km-godtgørelse - B-indkomst	 22.70	Engangsløndele	Tillæg	Nej
+6546	 Overtimer, erhvervsskoler	 18.31	Engangsløndele	Tillæg	Nej
+6595	 Overtidstillæg v/afspadsering	 18.31	Engangsløndele	Tillæg	Nej
+6600	 Forestilling	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6601	 Prøve	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6602	 Overtid før kl. 24	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6603	 Overtid efter kl. 24	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6604	 Båndindspilning	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6605	 Båndafspilning	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6606	 Prøve søn- og helligdage	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6607	 Prøve + kostume	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6608	 1.2.3. solo + særl. instrument	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6609	 Aida/kongetrompet	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6610	 Overspil	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6611	 Båndafspilning + tillæg	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6630	 Forelæsning	 18.11	Engangsløndele	Tillæg	Nej
+6658	 Seniorbonus	 18.11	Engangsløndele	Tillæg	Nej
+6659	 Seniorbonus	 18.11	Engangsløndele	Tillæg	Nej
+6691	 Timepenge	 22.10	Engangsløndele	Tillæg	Nej
+6692	 Dagpenge Tjenesterejse	 22.10	Engangsløndele	Tillæg	Nej
+6699	 Procentgodtgørelse, Døgn	 22.10	Engangsløndele	Tillæg	Nej
+6700	 Rådighedsvagt	 18.51	Engangsløndele	Tillæg	Nej
+6701	 Bagvagt (SSI)	 18.51	Løbende løndele	Tillæg	Nej
+6702	 Pressevagt	 18.51	Engangsløndele	Tillæg	Nej
+6703	 Rådighedsvagt (Modst)	 18.51	Engangsløndele	Tillæg	Nej
+6705	 Biologisk beredskabsvagt	 18.51	Løbende løndele	Tillæg	Nej
+6706	 Vagttillæg/tilkald	 18.51	Engangsløndele	Tillæg	Nej
+6707	 Rådighedsvagt, teleteknisk tjeneste	 18.51	Engangsløndele	Tillæg	Nej
+6708	 Rådighedsvagt, Statens brandinspektion og CF	 18.51	Engangsløndele	Tillæg	Nej
+6710	 Rådighedsvagt, hverdage	 18.51	Engangsløndele	Tillæg	Nej
+6711	 Rådighedsvagt, søn- og helligdage	 18.51	Engangsløndele	Tillæg	Nej
+6713	 Rådighedsvagt (stormflodsberedskabet)	 18.11	Løbende løndele	Tillæg	Ja
+6714	 Kompensationstillæg	 18.51	Løbende løndele	Tillæg	Nej
+6715	 Helsefysisk rådighedstjeneste	 18.51	Engangsløndele	Tillæg	Nej
+6716	 Rådighedstjeneste i hjemmet	 18.51	Engangsløndele	Tillæg	Nej
+6717	 Udkaldstimer	 18.51	Engangsløndele	Tillæg	Nej
+6718	 Rådighedstjeneste i hjemmet	 18.11	Engangsløndele	Tillæg	Nej
+6719	 Rådighedsvagt (SSI og DMI)	 18.51	Engangsløndele	Tillæg	Nej
+6722	 Hverdagsvagter, læger	 18.51	Engangsløndele	Tillæg	Nej
+6723	 Lørdagsvagter, læger	 18.51	Engangsløndele	Tillæg	Nej
+6724	 Søn- og helligdagsvagter, læger	 18.51	Engangsløndele	Tillæg	Nej
+6727	 Rådighedsvagt	 18.51	Engangsløndele	Tillæg	Nej
+6732	 Tilkald under vagttjeneste, læger	 18.51	Engangsløndele	Tillæg	Nej
+6734	 Rådighedstjeneste i hjemmet	 18.11	Engangsløndele	Tillæg	Nej
+6735	 Vederlag for tilkald (Naviair)	 18.51	Engangsløndele	Tillæg	Nej
+6736	 Vagttillæg/tilkald	 18.51	Engangsløndele	Tillæg	Nej
+6737	 Vagttillæg/tilkald	 18.11	Ingen løndelstype	Ingen løntype	Nej
+6738	 Vagttillæg/tilkald	 18.51	Engangsløndele	Tillæg	Nej
+6740	 Scanningsvagt	 18.51	Engangsløndele	Tillæg	Nej
+6744	 Kompensationstillæg (DD)	 18.51	Løbende løndele	Tillæg	Nej
+6745	 Kompensationstillæg (DD)	 18.51	Løbende løndele	Tillæg	Nej
+6748	 Sygdomsdækning / Casimo	 18.51	Engangsløndele	Tillæg	Nej
+6749	 Merudbud	 18.51	Ingen løndelstype	Ingen løntype	Nej
+6750	 Morgen-/aftengodtgørelse	 18.51	Engangsløndele	Tillæg	Nej
+6755	 Tillæg mindst 4 års lønanciennitet	 18.11	Løbende løndele	Tillæg	Ja
+6756	 Tillæg, dommer- og politifuldmægtige	 18.11	Løbende løndele	Tillæg	Ja
+6757	 Indstationeringstillæg	 18.11	Løbende løndele	Tillæg	Ja
+6758	 Tillæg eft. endt udd - dommerfuldmægtige	 18.11	Løbende løndele	Tillæg	Ja
+6759	 Vagttillæg politi- og dommerfuldmægtige	 18.51	Løbende løndele	Tillæg	Nej
+6760	 Vagtvederlag/bagvagt	 18.51	Engangsløndele	Tillæg	Nej
+6761	 SR-Førere af arbejdskøretøjer	 18.51	Engangsløndele	Tillæg	Nej
+6765	 Vagtordning	 18.11	Engangsløndele	Tillæg	Ja
+6766	 Vagtordning, Koncern IT	 18.51	Engangsløndele	Tillæg	Ja
+6767	 Vagtordning, it-og videncenter	 18.51	Engangsløndele	Tillæg	Ja
+6769	 Sommertilkald	 18.51	Ingen løndelstype	Ingen løntype	Nej
+6770	 Observatorvederlag	 18.11	Engangsløndele	Tillæg	Nej
+6795	 Rådighedsvagt SRV	 18.51	Engangsløndele	Tillæg	Nej
+6800	 Rådighedsvagt, pensionsgivende	 18.51	Engangsløndele	Tillæg	Ja
+6808	 Rådighedsvagt, Statens brandinspektion og CF	 18.51	Engangsløndele	Tillæg	Ja
+6813	 Bestyrelseshonorar	 18.61	Engangsløndele	Tillæg	Nej
+6831	 Bonus	 18.11	Engangsløndele	Tillæg	Nej
+6843	 Censorvederlag, ordinæreksamen	 18.11	Engangsløndele	Tillæg	Nej
+6881	 Eksamenstilsyn / studievejledning	 18.11	Engangsløndele	Tillæg	Nej
+6884	 Eksamenstilsyn / studievejledning	 18.11	Engangsløndele	Tillæg	Nej
+6888	 Undervisningstimer, kliniske lærere	 18.11	Engangsløndele	Tillæg	Nej
+6894	 Erstatning - skattepligtig	 22.40	Engangsløndele	Tillæg	Nej
+6900	 Andre personalegoder	 18.11	Engangsløndele	Tillæg	Nej
+6901	 Andre personalegoder modpost	 18.11	Ingen løndelstype	Tillæg	Nej
+6909	 Gave/præmie skattepl.	 22.20	Engangsløndele	Tillæg	Nej
+6911	 Modtaget Gave/præmie	 22.36	Ingen løndelstype	Ingen løntype	Nej
+6913	 Efterindtægt bo	 44.24	Engangsløndele	Tillæg	Nej
+6914	 Omvisning, Det Kongelige Bibliotek	 18.11	Engangsløndele	Tillæg	Nej
+6915	 Omvisning	 18.11	Engangsløndele	Tillæg	Nej
+6921	 Lægeregning Udlæg	 22.70	Engangsløndele	Tillæg	Nej
+6922	 Helbredsudgifter udlæg	 22.70	Engangsløndele	Tillæg	Nej
+6923	 Skattefri godtgørelse	 18.71	Engangsløndele	Tillæg	Nej
+6924	 Erstatning, skattefri	 22.36	Engangsløndele	Tillæg	Nej
+6925	 Svie og smerte	 22.36	Engangsløndele	Tillæg	Nej
+6926	 Dusør, særlig indkomst	 18.61	Engangsløndele	Tillæg	Nej
+6929	 Rejse-/befordringsgodtgørelse m/arbejdsmarkeds bidrag	 22.10	Engangsløndele	Tillæg	Nej
+6930	 B-indkomst - med arbejsmarkedsbidragspligt	 18.11	Engangsløndele	Tillæg	Nej
+6931	 Værgevederlag	 44.24	Engangsløndele	Tillæg	Nej
+6932	 B-indkomst - uden arbejdsmarkedsbidragspligt	 18.11	Engangsløndele	Tillæg	Nej
+6933	 B-indkomst - stipendier m/arbejdsmarkedsbidragspligt	 61.33	Engangsløndele	Tillæg	Nej
+6934	 Oplysningspligtigt rejselegat/stipendium	 22.10	Engangsløndele	Tillæg	Nej
+6935	 B-indkomst - med arbejdsmarkedsbidragspligt	 18.11	Løbende løndele	Tillæg	Nej
+6936	 Patentvederlag, B-indkomst - uden AM-bidrag	 18.11	Engangsløndele	Tillæg	Nej
+6937	 B-indkomst - uden arbejdsmarkedsbidragspligt	 18.11	Løbende løndele	Tillæg	Nej
+6938	 Legat uddelt fra fond	 18.11	Engangsløndele	Tillæg	Nej
+6939	 Morarenter (renteudgifter)	 61.70	Engangsløndele	Tillæg	Nej
+6941	 Hædersgave	 44.24	Engangsløndele	Tillæg	Nej
+6942	 Tinggave/naturalie	 18.11	Engangsløndele	Tillæg	Nej
+6943	 Gaver	 22.20	Engangsløndele	Tillæg	Nej
+6944	 Gratiale, Grønland og Færøerne	 18.11	Engangsløndele	Tillæg	Nej
+6946	 Skattefri fratrædelsesgodtgørelse/jubilæumsgodtgørelse	 18.11	Engangsløndele	Tillæg	Nej
+6947	 Skattepligtig fratrædelsesg./jubilæumsg.	 18.11	Engangsløndele	Tillæg	Nej
+6956	 Skattefrit fratrædelsesbeløb	 18.71	Ingen løndelstype	Ingen løntype	Nej
+6957	 Skattepligtig del af jubilæumsgratiale	 18.51	Ingen løndelstype	Ingen løntype	Nej
+6958	 Skattepligitg del af fratrædelsesbeløb	 18.71	Ingen løndelstype	Ingen løntype	Nej
+6960	 Tolkehonorar	 18.51	Engangsløndele	Tillæg	Nej
+6963	 Kostpenge til værnepligtige	 22.36	Engangsløndele	Tillæg	Nej
+6964	 Kostpenge til værnepligtige	 22.36	Løbende løndele	Tillæg	Nej
+6970	 Hædersgave som naturalieydelse	 98.71	Engangsløndele	Tillæg	Nej
+6971	 Modregning til hædersgave	 98.71	Ingen løndelstype	Ingen løntype	Nej
+6975	 Dusør	 18.51	Engangsløndele	Tillæg	Nej
+6980	 Særlig feriegodtgørelse (manuel)	 18.11	Engangsløndele	Ferie	Nej
+6990	 Merarbejdstimer ved deltidsansættelse	 18.11	Engangsløndele	Tillæg	Ja
+6991	 Merarbejdstimer ved deltidsansættelse	 18.11	Engangsløndele	Tillæg	Nej
+6992	 Merarbejdstimer inkl. 50%	 18.41	Engangsløndele	Tillæg	Nej
+6993	 Løbende merarbejdstimer	 18.41	Løbende løndele	Tillæg	Nej
+6995	 Merarbejdstimer ved deltidsansættelse	 18.11	Særlige engangsløndele	Tillæg	Ja
+6996	 Merarbejdstimer ved deltidsansættelse	 18.11	Særlige engangsløndele	Tillæg	Nej
+7004	 Arbejdsnedlæggelse under 1 dag	 18.11	Engangsløndele	Fradrag	Ja
+7005	 Arbejdsnedlæggelse 1 dag og derover	 18.11	Engangsløndele	Fradrag	Ja
+7006	 Bod ved arbejdsnedlæggelse	 61.70	Engangsløndele	Fradrag	Nej
+7007	 Pensionsbidrag efter skat	 18.81	Ingen løndelstype	Ingen løntype	Nej
+7009	 Ekstra pensionsbidrag	 00.00	Engangsløndele	Pensionsbidrag	Nej
+7010	 Pensionsbidrag for overenskomstlønnede	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7016	 Pensionsbidrag af tillæg	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7017	 Arbejdsgivers bidrag af tillæg	 18.81	Løbende løndele	Pensionsbidrag	Nej
+7018	 Pensionsbidrag, øvrige OK	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7019	 Pensionsbidrag, akademikere	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7020	 Pensionsbidrag af tillæg	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7023	 Pensionsbidrag af tillæg	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7024	 Pensionsbidrag, herunder COII	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7026	 Frivilligt pensionsbidrag, SAMPENSION	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7027	 Eget forhøjet bidrag af løndel 3900->3939	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7030	 Afregnet pensionsbidrag	 18.11	Ingen løndelstype	Ingen løntype	Nej
+7031	 LKO 7031 Arbejdsmarkedspension (BRST)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7032	 Pensionsbidrag (BRST)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7033	 Arbejdsmarkedspension,(BRST)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7034	 Særlig pensionspulje HOD	 00.00	Løbende løndele	Ingen løntype	Nej
+7035	 Pensionsbidrag (BRST)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7036	 Pension af RBR-tillæg	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7039	 Pensionsbidrag, § 48 E	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7040	 ATP-bidrag (eget og statens bidrag)	 97.29	Løbende løndele	Pensionsbidrag	Nej
+7041	 Atp-regulering, eget og statens bidrag	 00.00	Engangsløndele	Pensionsbidrag	Nej
+7043	 ATP Pension, sats D	 97.29	Ingen løndelstype	Ingen løntype	Nej
+7044	 ATP Pension, sats C	 97.29	Ingen løndelstype	Ingen løntype	Nej
+7045	 ATP-bidrag, lønmodtagers bidrag	 97.29	Ingen løndelstype	Ingen løntype	Nej
+7047	 ATP Pension, sats E	 97.29	Ingen løndelstype	Ingen løntype	Nej
+7048	 ATP-bidrag, lønmodtagers bidrag	 97.29	Ingen løndelstype	Ingen løntype	Nej
+7050	 Statens pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7052	 Pensionsbidrag af tillæg, AC-tjenestemænd	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7053	 Pensionsbidrag af løndel 4196	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7055	 Statens pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7061	 Pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7064	 Pensionsbidrag, individuelt	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7065	 Pensionsbidrag (Lukket for indrapportering)	 00.00	Løbende løndele	Ingen løntype	Nej
+7067	 Pensionsbidrag	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7068	 Forsikring, tab af arbejdsevne, erhvervsskoler	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7069	 Pensionsbidrag	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7070	 Pensionsbidrag af tillæg (16,6%/16,8%/17,1%/18%)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7072	 Pensionsbidrag af tillæg (COII/OAO)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7073	 Pensionsbidrag af tillæg til tjenestem.	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7074	 Pens.bidrag af tillæg til tjm (5%/10%)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7075	 Pensionsbidrag af tillæg (COII. Grønland)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7081	 Stk-pension	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7083	 Pensionsbidrag (lav sats)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7085	 Pensionsbidrag (STK-ordning) høj sats	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7086	 Pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7088	 Pensionsbidrag (DKT)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7090	 Pensionsbidrag for overenskomstansatte	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7093	 Tillægspension, sygeplejersker, sygehjælpere mfl.	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7094	 Pens.bidrag af tillæg til tjm (Lukket for indrapp.)	 00.00	Løbende løndele	Ingen løntype	Nej
+7095	 Pensionsbidrag i %, Det Kongelige Teater	 00.00	IA Pension	IAPension	Nej
+7096	 Pensionsbidrag, PKAT 118	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7097	 Eget forhøjet pensionsbidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7098	 Tillægspension (BRST)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7099	 Pensionsbidrag (SIK)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7100	 Pensionsbidrag, individuelt	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7105	 Pensionsudligningstillæg (tidl. (kommunal)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7106	 Pensionsbidrag (DKT)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7107	 Pensionsbidrag, individuelt	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7108	 Pensionsbidrag (seniorordning)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7109	 Pensionsbidrag (seniorordning)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7111	 Rettelse af pensionsbidrag	 00.00	Engangsløndele	Pensionsbidrag	Nej
+7112	 Rettelse af Supplerende pension, Bilag M	 00.00	IA Pension	Pensionsbidrag	Nej
+7115	 Pensionsbidrag af tillæg, Retterne	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7116	 Pensionsbidrag af tillæg	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7148	 Pensionsbidrag til TAKS - eget bidrag	 00.00	Ingen løndelstype	Ingen løntype	Nej
+7149	 Pensionsbidrag til TAKS - 1%	 00.00	Løbende løndele	Ingen løntype	Nej
+7150	 Pensionsbidrag ved fratrædelsesgodtg	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7204	 Supplerende pension, ikke fyldt 60 år	 00.00	IA Pension	Pensionsbidrag	Nej
+7205	 Supplerende pension, fyldt 60 år	 00.00	IA Pension	IAPension	Nej
+7208	 Ratepension/-forsikring, livrente ved fratrædelsesgodt.	 00.00	IA Pension	IAPension	Nej
+7209	 Pensionsbidrag (seniorordning)	 00.00	IA Pension	IAPension	Nej
+7210	 Ratepension/-forsikring mv, beløb	 00.00	IA Pension	IAPension	Nej
+7211	 Ratepension/-forsikring mv, beløb	 00.00	IA Pension	IAPension	Nej
+7212	 Ratepension/-forsikring mv, beløb	 00.00	IA Pension	IAPension	Nej
+7214	 Pensionsbidrag, individuelt	 00.00	IA Pension	Pensionsbidrag	Nej
+7218	 Pensionsbidrag (Lukket for indrapp.)	 00.00	IA Pension	Pensionsbidrag	Nej
+7219	 Pensionsbidrag, akademikere	 00.00	IA Pension	Pensionsbidrag	Nej
+7220	 Pension/-forsikring, ikke fradragsberettiget	 00.00	IA Pension	IAPension	Nej
+7222	 Fratrædelsesgodtgørelse, nettobeløb	 00.00	IA Pension	IAPension	Nej
+7223	 Fratrædelsesgodtg. - Grønland	 00.00	IA Pension	IAPension	Nej
+7224	 individuel ratepension/livrente	 00.00	IA Pension	IAPension	Nej
+7225	 Pensionsbidrag ved tjenestefrihed uden løn	 00.00	IA Pension	Pensionsbidrag	Nej
+7227	 Supplerende pension, Bilag M	 00.00	IA Pension	IAPension	Nej
+7228	 Supplerende pension, Bilag M	 00.00	IA Pension	IAPension	Nej
+7229	 Supplerende pension, Bilag M	 00.00	IA Pension	IAPension	Nej
+7235	 Pensionsbidrag	 00.00	IA Pension	Pensionsbidrag	Nej
+7236	 Pensionsbidrag	 00.00	IA Pension	Pensionsbidrag	Nej
+7248	 Ratepension, procent	 00.00	IA Pension	IAPension	Nej
+7249	 Ratepension, kr./øre	 00.00	IA Pension	IAPension	Nej
+7250	 Ratepension, beløb	 00.00	IA Pension	IAPension	Nej
+7257	 Tilbagebetaling, IAP	 98.71	Engangsløndele	Pensionsbidrag	Nej
+7258	 Tilbagebetaling af pension af fratrædelsesgodtgørelse	 98.71	Engangsløndele	Pensionsbidrag	Nej
+7268	 Ratepension, procent	 00.00	IA Pension	IAPension	Nej
+7270	 Kapitalpension i % (Lukket for indrapp.)	 00.00	IA Pension	IAPension	Nej
+7271	 Livrente eller ratepension, engangsbeløb	 00.00	IA Pension	IAPension	Nej
+7272	 Livrente, beløb	 00.00	IA Pension	IAPension	Nej
+7279	 Pensionsbidrag af tillæg	 00.00	IA Pension	Pensionsbidrag	Nej
+7300	 Rateforsikring, beløb	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7439	 Pensionsbidrag (hjemmestyrets)	 00.00	Løbende løndele	Pensionsbidrag	Nej
+7440	 Aldersopsparing	 00.00	IA Pension	IAPension	Nej
+7441	 Aldersforsikring	 00.00	IA Pension	IAPension	Nej
+7442	 Kombineret aldersordning	 00.00	IA Pension	Pensionsbidrag	Nej
+7443	 Ren aldersordning	 00.00	IA Pension	Pensionsbidrag	Nej
+7445	 Pensionsbidrag §53a	 00.00	IA Pension	Pensionsbidrag	Nej
+7530	 Forsikringspræmie, TRYG	 00.00	Løbende løndele	Fradrag	Nej
+7675	 Borgerligt ombud og lignende	 18.11	Engangsløndele	Fradrag	Nej
+7800	 Skolehjemsophold	 98.71	Engangsløndele	Fradrag	Nej
+7801	 Fravær, Skolepraktikelever	 61.50	Engangsløndele	Fradrag	Nej
+7819	 Fradrag i eftervederlag	 44.24	Løbende løndele	Fradrag	Nej
+7900	 pension, der skal modregnes i rådighedsløn	 18.11	Løbende løndele	Fradrag	Nej
+7961	 Fradrag for arbejdsindtægt, rådighedsløn	 44.23	Løbende løndele	Fradrag	Nej
+7980	 Lønregulering	 18.11	Løbende løndele	Fradrag	Nej
+7985	 Fradrag for stipendie	 18.11	Løbende løndele	Fradrag	Nej
+7990	 Fradrag for løn, udmeldes under løndel 2000	 18.11	Løbende løndele	Fradrag	Nej
+7995	 Plejevederlag	 18.11	Løbende løndele	Fradrag	Nej
+8000	 Fravær enkelte dage - ATP reduc. ikke - rådigh./pens. reduc.	 18.11	Engangsløndele	Fradrag	Ja
+8005	 Fravær enkelte timer - ATP/rådighed reduc ikke - pens. reduc	 18.11	Engangsløndele	Fradrag	Ja
+8011	 Lønfradrag, tjenestefrihed - ATP/rådighed reduceres	 18.11	Engangsløndele	Fradrag	Nej
+8020	 Fravær mod betaling, beløb	 18.11	Engangsløndele	Fradrag	Nej
+8035	 Fravær, pasning af syge m.m.	 18.11	Engangsløndele	Fradrag	Nej
+8036	 Fritimer mod betaling - ATP nedskrives	 18.11	Engangsløndele	Fradrag	Nej
+8037	 Fravær mod betaling, speciel	 18.11	Engangsløndele	Fradrag	Nej
+8042	 Sygefradrag	 18.11	Engangsløndele	Fradrag	Nej
+8060	 Fravær enkelte dage - ATP/pension/rådighed reduceres	 18.11	Engangsløndele	Fradrag	Ja
+8061	 Fravær - ATP/pension/rådighed reduceres	 18.11	Løbende løndele	Fradrag	Ja
+8070	 Fravær enkelte timer - - ATP/pens. reduc - rådighed reduc.ik	 18.11	Engangsløndele	Fradrag	Ja
+8075	 Statens pensionsbidrag	 97.50	Løbende løndele	 	Nej
+8112	 Boligbetaling, Grønland (INI A/S)	 00.00	Løbende løndele	Fradrag	Nej
+8113	 Boligbetaling, Grønland (Hjemmestyret/kommunen)	 97.50	Løbende løndele	Fradrag	Nej
+8114	 Møbelafgift, Grønland	 11.80	Løbende løndele	Fradrag	Nej
+8115	 Regulering af bolig-/varmebetaling (INI A/S)	 00.00	Engangsløndele	Fradrag	Nej
+8150	 Tjenstlige bøder	 30.92	Engangsløndele	Fradrag	Nej
+8210	 Boligbørnetilskud (Grønland)	 11.50	Løbende løndele	Tillæg	Nej
+8211	 Boligbørnetilskud (Grønland)	 97.50	Løbende løndele	Tillæg	Nej
+8212	 Boligbørnetilskud (Grønland)	 00.00	Løbende løndele	Tillæg	Nej
+8230	 Lejeboligbidrag, Grønland	 11.50	Løbende løndele	Fradrag	Nej
+8231	 Tjenesteboligbidrag, Grønland	 11.50	Løbende løndele	Fradrag	Nej
+8270	 Tjenestlig gæld	 61.50	Løbende løndele	Fradrag	Nej
+8274	 Afregning af rejseforskud	 61.55	Engangsløndele	Fradrag	Nej
+8287	 Modregning af time-/dagpenge/nattillæg	 97.50	Ingen løndelstype	Ingen løntype	Nej
+8292	 Måltidsfradrag, morgenmad	 22.10	Engangsløndele	Fradrag	Nej
+8293	 Måltidsfradrag, frokost/middag	 22.10	Engangsløndele	Fradrag	Nej
+8294	 Modregning af måltidsfradrag	 97.50	Ingen løndelstype	Ingen løntype	Nej
+8295	 Modregning af time-/dagpenge	 97.50	Engangsløndele	Fradrag	Nej
+8296	 Måltidsfradrag, morgenmad	 22.10	Ingen løndelstype	Ingen løntype	Nej
+8297	 Måltidsfradrag, frokost/middag	 22.10	Ingen løndelstype	Ingen løntype	Nej
+8300	 Måltidsfradrag, fuld kost	 22.10	Engangsløndele	Fradrag	Nej
+8301	 Modregning af fuld kost	 97.50	Ingen løndelstype	Ingen løntype	Nej
+8305	 Modregning	 97.50	Engangsløndele	Fradrag	Nej
+8312	 A-conto varme, Grønland	 00.00	Løbende løndele	Fradrag	Nej
+8331	 Morarenter (renteindtægt)	 61.70	Engangsløndele	Fradrag	Nej
+8390	 Varmebidrag	 11.50	Løbende løndele	Fradrag	Nej
+8410	 Tjenestebolig	 11.50	Løbende løndele	Fradrag	Nej
+8411	 Tjenestebolig, regulering	 11.50	Engangsløndele	Fradrag	Nej
+8412	 Husleje	 11.50	Løbende løndele	Fradrag	Nej
+8413	 Renovationsafgift	 11.50	Løbende løndele	Fradrag	Nej
+8418	 Modværdi af vand, varme og el	 11.50	Ingen løndelstype	Ingen løntype	Nej
+8420	 Tjenesteboligbidrag, vurderingsleje	 11.50	Løbende løndele	Fradrag	Nej
+8421	 Betalt frihed, ferie o.l.	 18.11	Løbende løndele	Fradrag	Nej
+8423	 Værdi af Medielicens	 22.36	Engangsløndele	Fradrag	Nej
+8425	 Lejeboligbidrag, vurderingsleje	 11.50	Løbende løndele	Fradrag	Nej
+8426	 Skattepligtig værdi af fri bolig	 11.50	Engangsløndele	Fradrag	Nej
+8427	 Skattepligtig værdi af fri bolig	 11.50	Løbende løndele	Fradrag	Nej
+8430	 Forskud ved indkaldelse	 97.50	Løbende løndele	Fradrag	Nej
+8440	 Hjemsendelsesfradrag	 97.50	Løbende løndele	Fradrag	Nej
+8455	 Boligopvarmning m.m.	 11.50	Løbende løndele	Fradrag	Nej
+8470	 Boligtjenestetelefon	 11.80	Løbende løndele	Fradrag	Nej
+8481	 Modværdi af fri bolig	 11.50	Ingen løndelstype	Ingen løntype	Nej
+8483	 Modværdi tv-licens	 11.50	Ingen løndelstype	Ingen løntype	Nej
+8490	 Lejeboligbidrag	 11.50	Løbende løndele	Fradrag	Nej
+8491	 Kvarterbidrag	 11.50	Løbende løndele	Fradrag	Nej
+8550	 Anvises manuelt	 95.11	Ingen løndelstype	Fradrag	Nej
+8561	 Skyldigt beløb	 61.50	Engangsløndele	Fradrag	Nej
+8564	 Tjenestefrihed Org. (Tim)	 18.11	Engangsløndele	Fradrag	Ja
+8600	 Værdi af fri bil	 22.10	Ingen løndelstype	Ingen løntype	Nej
+8607	 Fri telefon	 18.11	Løbende løndele	Ingen løntype	Nej
+8610	 Betaling for telefon	 22.36	Ingen løndelstype	Ingen løntype	Nej
+8611	 A-conto telefongodtgørelse	 22.36	Ingen løndelstype	Ingen løntype	Nej
+8617	 Sundhedsforsikring	 18.11	Løbende løndele	Ingen løntype	Nej
+8619	 Sundhedsforsikring	 18.11	Løbende løndele	Ingen løntype	Nej
+8640	 Fradrag for el/gas	 11.80	Løbende løndele	Fradrag	Nej
+8643	 Modregning af dagpenge, Grønland	 97.50	Engangsløndele	Fradrag	Nej
+8645	 Jordlodsfradrag	 11.60	Løbende løndele	Fradrag	Nej
+8650	 Fradrag for kost	 11.80	Løbende løndele	Fradrag	Nej
+8660	 Fradrag for kost	 11.80	Engangsløndele	Fradrag	Nej
+8665	 Fradrag for kost (BRST)	 22.36	Engangsløndele	Fradrag	Nej
+8670	 Fradrag for fri kost og logi	 11.80	Ingen løndelstype	Ingen løntype	Nej
+8680	 Diverse fradrag	 97.50	Løbende løndele	Fradrag	Nej
+8689	 Forbrug i kantinen	 97.50	Engangsløndele	Fradrag	Nej
+8690	 Diverse fradrag	 97.50	Engangsløndele	Fradrag	Nej
+8691	 Morgenmad	 22.10	Engangsløndele	Fradrag	Nej
+8693	 Middag	 22.10	Engangsløndele	Fradrag	Nej
+8694	 Fuld Kost	 22.10	Engangsløndele	Fradrag	Nej
+8695	 Køb af produkter	 61.50	Engangsløndele	Fradrag	Nej
+8740	 Lønforskud/a-contobeløb/tjenstlig gæld	 61.50	Løbende løndele	Fradrag	Nej
+8801	 Overført beløb	 97.50	Ingen løndelstype	Ingen løntype	Nej
+8810	 Rettelse af beregnet feriegodtgørelse	 18.11	Engangsløndele	Ferie	Nej
+8820	 Kontingent, Sprogforbundet	 00.00	Løbende løndele	Kontingent	Nej
+8821	 Forsikring, Politiforbundet	 00.00	Løbende løndele	Fradrag	Nej
+8822	 Gruppeulykkesforsikring, Rigspolitiet	 00.00	Løbende løndele	Fradrag	Nej
+8823	 Behandlingsforsikring, Rigspolitiet	 00.00	Løbende løndele	Fradrag	Nej
+8830	 Parkeringsafgift	 11.80	Løbende løndele	Fradrag	Nej
+8831	 Parkeringsafgift	 11.80	Engangsløndele	Fradrag	Nej
+8840	 Kontingent	 00.00	Løbende løndele	Kontingent	Nej
+8841	 Politidirektørforeningen	 00.00	Løbende løndele	Kontingent	Nej
+8842	 Politiforbundet	 00.00	Løbende løndele	Kontingent	Nej
+8843	 Fagforeningskontingent, Rigspolitiet	 00.00	Løbende løndele	Kontingent	Nej
+8844	 FOAN	 00.00	Løbende løndele	Kontingent	Nej
+8845	 Kontingent	 00.00	Løbende løndele	Kontingent	Nej
+8846	 DJ Konfliktfond	 00.00	Ingen løndelstype	Ingen løntype	Nej
+8847	 Fagforeningskontingent, Rigspolitiet	 00.00	Løbende løndele	Kontingent	Nej
+8848	 Fagforeningskontingent, Rigspolitiet	 00.00	Løbende løndele	Kontingent	Nej
+8850	 Kontingent	 00.00	Løbende løndele	Kontingent	Nej
+8859	 Kontingent gruppeliv	 00.00	Ingen løndelstype	Ingen løntype	Nej
+8860	 Bidrag til arbejdsløshedskasser	 00.00	Løbende løndele	Kontingent	Nej
+8869	 Varekøb	 61.50	Engangsløndele	Fradrag	Nej
+8870	 Kontingent, Banedanmark	 00.00	Løbende løndele	Kontingent	Nej
+8881	 Modregning af frit logi (grønland)	 18.51	Ingen løndelstype	Ingen løntype	Nej
+8890	 Købt Mobil m.v.	 11.80	Engangsløndele	Fradrag	Nej
+8895	 Arbejdsgivers tab af DP-refusion	 18.91	Engangsløndele	Fradrag	Nej
+8901	 Rettelse af beløb vedr. LKO 5050	 97.50	Engangsløndele	Ferie	Nej
+8903	 Rettelse af beløb vedr. LKO 5000, 5010 og 5020	 97.50	Engangsløndele	Ferie	Nej
+8915	 Underskud på kasse, kurs- og momsdifferencer	 22.91	Engangsløndele	Fradrag	Nej
+8916	 Overskud på kasse, kurs- og momsdifferencer	 22.91	Engangsløndele	Fradrag	Nej
+8932	 Gruppelivspræmie - Politiforbundet	 61.50	Løbende løndele	Fradrag	Nej
+8940	 Kontingent til gruppeliv	 00.00	Ingen løndelstype	Ingen løntype	Nej
+8948	 Aconto dansk skat, opsamling	 97.27	Løbende løndele	Ingen løntype	Nej
+8949	 Aconto dansk skat	 97.27	Løbende løndele	Ingen løntype	Nej
+8953	 Kontingent til gruppeliv	 00.00	Ingen løndelstype	Ingen løntype	Nej
+8958	 Kontingent til gruppeliv	 00.00	Ingen løndelstype	Ingen løntype	Nej
+8959	 Kontingent til gruppeliv	 00.00	Ingen løndelstype	Ingen løntype	Nej
+8970	 Forsikringspræmie, TRYG	 00.00	Engangsløndele	Fradrag	Nej
+9000	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9001	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9002	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9003	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9004	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9005	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9006	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9007	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9008	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9010	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9020	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9021	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9022	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9023	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9024	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9025	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9026	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9027	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9028	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9029	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9030	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9040	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9044	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9046	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9050	 Kontingent	 97.50	Løbende løndele	Kontingent	Nej
+9051	 Kontingent	 97.50	Engangsløndele	Kontingent	Nej
+9052	 Kontingent	 97.50	Engangsløndele	Kontingent	Nej
+9251	 Forsikringspræmie (BRST)	 00.00	Løbende løndele	Fradrag	Nej
+9252	 Forsikringspræmie	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9401	 Udetillæg	 22.36	Løbende løndele	Tillæg	Nej
+9402	 Udetillæg, forskud	 22.36	Løbende løndele	Tillæg	Nej
+9403	 Udetillæg (udenfor Udenrigsministeriet)	 22.36	Løbende løndele	Tillæg	Nej
+9460	 Modregning af forskud	 22.36	Løbende løndele	Ingen løntype	Nej
+9501	 Afregning til feriekonto indeværende år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9502	 Afregning til feriefond indeværende år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9511	 Afregning til feriekonto sidste år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9512	 Afregning til feriefond sidste år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9521	 Afregning til feriekonto forrige år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9522	 Afregning til feriefond forrige år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9540	 Opsat feriegodtgørelse - indeværende år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9541	 Opsat feriegodtgørelse - sidste år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9542	 Opsat feriegodtgørelse - indeværende år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9543	 Opsat feriegodtgørelse - sidste år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9544	 Opsat feriegodtgørelse - forrige år	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9545	 Afregning til færøsk feriekonto	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9546	 Afregning til færøsk feriekonto	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9547	 Afregning til færøsk feriekonto	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9548	 Afregning til færøsk feriekonto	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9551	 Afregning til feriekonto fra løndel 5050	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9561	 Til Feriekonto sidste år	 00.00	Ingen løndelstype	Ingen løntype	Nej
+9562	 Afregning til feriefond fra løndel 5050	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9572	 Afregning til feriefond fra løndel 5050	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9580	 Feriegodtgørelse - færø	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9582	 Afregning til feriefond FÅ	 97.50	Ingen løndelstype	Ingen løntype	Nej
+9600	 Tjenestemændenes låneforening	 00.00	Løbende løndele	Fradrag	Nej
+9635	 Kontingent/Lån 1883	 00.00	Løbende løndele	Fradrag	Nej
+9660	 Forskud eller lignende	 97.50	Engangsløndele	Fradrag	Nej
+9661	 Månedligt forskud - Udenrigsministeriet	 97.50	Løbende løndele	Fradrag	Nej
+9663	 Afdrag på lønforskud	 61.50	Ingen løndelstype	Fradrag	Nej
+9665	 Forskud eller lignende	 61.50	Engangsløndele	Fradrag	Nej
+9680	 Låneforening af embeds- og bestillingsmænd	 00.00	Løbende løndele	Fradrag	Nej
+9700	 Danmarks lærerforening, låneafdeling	 00.00	Løbende løndele	Fradrag	Nej
+9760	 Lønindeholdelse, Grønland	 00.00	Indeholdelser	Fradrag	Nej
+9770	 Lønindeholdelse, Grønland	 00.00	Løbende løndele	Fradrag	Nej
+9780	 Lønindeholdelse, Grønland	 00.00	Indeholdelser	Fradrag	Nej
+9838	 25 % eller 26% bruttoskat	 00.00	Løbende løndele	Ingen løntype	Nej
+9840	 Reduceret AM-bidrag	 00.00	Løbende løndele	Ingen løntype	Nej
+9841	 Grønlandsskat/dagsfradrag	 00.00	Engangsløndele	Ingen løntype	Nej
+9842	 Grønlandsk skat af feriegodtgørelse	 00.00	Løbende løndele	Ingen løntype	Nej
+9845	 Arbejdsmarkedsbidrag	 00.00	Løbende løndele	Ingen løntype	Nej
+9846	 Arbejdsmarkedsbidrag af feriegodtgørelse	 00.00	Løbende løndele	Ingen løntype	Nej
+9847	 Arbejdsmarkedsbidrag	 00.00	Løbende løndele	Ingen løntype	Nej
+9848	 Færøsk samtidighedsskat	 00.00	Skatteløndel	Ingen løntype	Nej
+9849	 Grønlandsk skat	 00.00	Skatteløndel	Ingen løntype	Nej
+9850	 Kildeskat	 00.00	Skatteløndel	Ingen løntype	Nej
+9851	 A-skat/dagsfradrag	 00.00	Engangsløndele	Ingen løntype	Nej
+9852	 Skat af feriegodtgørelse	 00.00	Løbende løndele	Ingen løntype	Nej
+9853	 Skat af søgnehelligdagsbetaling	 00.00	Løbende løndele	Ingen løntype	Nej
+9875	 Særlig pensionsopsparing	 00.00	Løbende løndele	Ingen løntype	Nej
+9876	 Særlig pensionsopsparing	 00.00	Løbende løndele	Ingen løntype	Nej
+9877	 Særlig pensionsopsparing	 00.00	Løbende løndele	Ingen løntype	Nej
+9878	 Midlertidig pensionsopsparing (§ 48 e)	 00.00	Løbende løndele
+10013	 AM-indkomst Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10014	 AM-fri A-indkomst Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10015	 A-skat Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10016	 AM-bidrag Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10017	 SP-bidrag Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10019	 Fri bil Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10021	 Fri kost og logi Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10036	 B-indk.m. AM-bidr.Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10038	 B-indk.u. AM-bidr.Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10039	 Hædersgaver Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10046	 ATP-bidrag Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10048	 Rejsegg./udd.yd. Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10050	 Fri helårsbolig Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10051	 Fri sommerbolig Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10053	 Fri TV-licens Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10054	 Fri telefon, Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10069	 Fratr.gg./jub.grat.Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10070	 Pens.bidr.frat.gg.Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10071	 Tinggaver Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10097	 ATP sats D Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10098	 ATP sats B Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10099	 ATP sats C Nyt år	 97.50	Engangsløndele	Ingen løntype	Nej
+10113	 AM-indkomst Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10114	 AMfri-A-indkomst Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10115	 A-skat Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10116	 AM-bidrag Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10117	 SP-bidrag Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10119	 Fri bil Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10121	 Fri kost og logi Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10136	 B-indk.m. AM-bidr.Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10138	 B-indk.u. AM-bidr.Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10139	 Hædersgaver Gl. år	 97.50	Engangsløndele	Ingen løntype	Nej
+10146	 ATP sats A Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10148	 Dannes automatisk som modpost til løndel 10013.	 97.50	Engangsløndele	Ingen løntype	Nej
+10150	 Fri helårsbolig Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10151	 Fri sommerbolig Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10153	 Fri TV-licens Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10154	 Fri telefon, Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10169	 Fratr.gg./jub.grat.Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10170	 Pens.bidr. fratgg.Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10171	 Tinggaver Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10197	 ATP sats D Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10198	 ATP sats B Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10199	 ATP sats C Gl.år	 97.50	Engangsløndele	Ingen løntype	Nej
+10631	 Tilgodehavende udlån	 61.33	Ingen løndelstype	Ingen løntype	Nej
+10657	 Udl. pers. m/årsv. dubl. ldl	 61.33	Ingen løndelstype	Ingen løntype	Nej
+10658	 Udl. pers. u/årsv. dubl. ldl	 61.33	Ingen løndelstype	Ingen løntype	Nej
+10681	 Udl. tjm løn m/årsv. dubl. ldl	 18.11	Ingen løndelstype	Ingen løntype	Nej
+10683	 Udl. tjm overarb. dubl. ldl	 18.31	Ingen løndelstype	Ingen løntype	Nej
+10684	 Udl. tjm merarb. dubl. ldl	 18.41	Ingen løndelstype	Ingen løntype	Nej
+10685	 Udl. tjm løn u/årsv. dubl. ldl	 18.51	Ingen løndelstype	Ingen løntype	Nej
+10687	 Udl. tjm fratræden dubl. ldl	 18.71	Ingen løndelstype	Ingen løntype	Nej
+10688	 Udl. tjm pens.bidrag dubl. ldl	 18.81	Ingen løndelstype	Ingen løntype	Nej
+10689	 Udl. tjm div. ej løn dubl. ldl	 22.32	Ingen løndelstype	Ingen løntype	Nej
+10694	 Aut. modværdi løndel 10794	 18.88	Ingen løndelstype	Ingen løntype	Nej
+10731	 Udlånte, Lønsum	 18.88	Ingen løndelstype	Ingen løntype	Nej
+10732	 Udlånte, ej Lønsum	 18.88	Ingen løndelstype	Ingen løntype	Nej
+10757	 Aut. modværdi løndel 10657	 18.91	Ingen løndelstype	Ingen løntype	Nej
+10758	 Aut. modværdi løndel 10658	 18.91	Ingen løndelstype	Ingen løntype	Nej
+10790	 Aut. modværdi løndel 10681-87	 18.88	Ingen løndelstype	Ingen løntype	Nej
+10791	 Aut. modværdi løndel 10688	 18.88	Ingen løndelstype	Ingen løntype	Nej
+10792	 Aut. modværdi løndel 10689	 22.38	Ingen løndelstype	Ingen løntype	Nej
+10793	 Aut. modværdi løndel 10689	 22.38	Ingen løndelstype	Ingen løntype	Nej
+10794	 Aut. modværdi refus. dub. ldl	 18.88	Ingen løndelstype	Ingen løntype	Nej
+11200	 Teknisk ved eSkattekort	 00.00	Løbende løndele	Ingen løntype	Nej
+11201	 Teknisk ved eSkattekort	 00.00	Løbende løndele	Ingen løntype	Nej
+70000	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70001	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70002	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70010	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70011	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70012	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70020	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70021	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+70022	 Centralt tillæg til pensionsberegning ift. Bilag M	 00.00	Løbende løndele	Pensionsbidrag	Ja
+88000	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88010	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88020	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88030	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88035	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88036	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88037	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88040	 Afgangsoplysninger ændret	 00.00	Engangsløndele	Ingen løntype	Nej
+88050	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+88060	 Teknisk løndel dannet til PENSAB	 00.00	Engangsløndele	Ingen løntype	Nej
+99227	 Njs A-Sektion	 97.50	Løbende løndele	Kontingent	Nej
+99228	 Njs B-Sektion	 97.50	Løbende løndele	Kontingent	Nej
+99230	 Njs D-Sektion	 97.50	Løbende løndele	Kontingent	Nej
+99231	 Njs E-Sektion	 97.50	Løbende løndele	Kontingent	Nej
+99233	 Jernbanefritid	 97.50	Løbende løndele	Kontingent	Nej
+99234	 Jernbanefritid	 97.50	Løbende løndele	Kontingent	Nej
+99235	 Kontingent HI	 97.50	Løbende løndele	Kontingent	Nej
+99236	 Kontingent HI	 97.50	Løbende løndele	Kontingent	Nej
+99237	 Kontingent HI	 97.50	Løbende løndele	Kontingent	Nej
+99238	 Kontingent HI	 97.50	Løbende løndele	Kontingent	Nej
+99239	 Jif Århus	 97.50	Løbende løndele	Kontingent	Nej
+99242	 Kontingent El-Forbund	 97.50	Løbende løndele	Kontingent	Nej
+99246	 Brændstofdysen	 97.50	Løbende løndele	Kontingent	Nej
+99247	 Jif København	 97.50	Løbende løndele	Kontingent	Nej
+99248	 Jif København	 97.50	Løbende løndele	Kontingent	Nej
+99250	 DSB If Randers	 97.50	Løbende løndele	Kontingent	Nej
+99254	 Motionscenter København	 97.50	Løbende løndele	Kontingent	Nej
+99264	 Bold & Idræt Kbhvn	 97.50	Løbende løndele	Kontingent	Nej
+99266	 Bold & Idræt Kbhvn	 97.50	Løbende løndele	Kontingent	Nej
+99267	 Bold & Idræt Kbhvn	 97.50	Løbende løndele	Kontingent	Nej
+99268	 DPA	 97.50	Løbende løndele	Kontingent	Nej
+99274	 Motionscenter Århus	 97.50	Løbende løndele	Kontingent	Nej
+99318	 DSB Kunstforening	 97.50	Løbende løndele	Fradrag	Nej
+99319	 Museets Venner	 97.50	Løbende løndele	Fradrag	Nej
