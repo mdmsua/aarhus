@@ -1,0 +1,2440 @@
+101	Adjunkt	 
+102	Adjunktvikar	 
+103	Adjunkt	 
+104	Adjunkt	 
+105	Adm. medarbejder	 
+106	Adm.direktør	 
+107	Administrationschef	 
+108	Administrator	 
+109	Administrationsleder	 
+110	Advokat	 
+111	AC Praktikant	 
+112	Adjunkt.p.p. U/pæd.	 
+113	Adm. Akad. personale	 
+115	Administrativ Leder	 
+116	Adjunkt, Cand.merc.	 
+117	Adjunkt, Arkitekt	 
+118	Administrations-og HR direktør	 
+119	Adjunkt, Cand.interp	 
+120	Advokaturchef	 
+121	AC-Tap	 
+122	Adjunkt, Akademiing.	 
+123	Adjunkt, Cand. Mag.	 
+124	Adjunkt, Cand.scient	 
+125	Tidsbegrænsede adjunkter	 
+126	Adjunkt,civilingeniø	 
+127	Adjunkt, Ingeniør	 
+128	Adjunkt midlertidig	 
+129	Afdelingsdyrlæge	 
+130	Afdelingsarkitekt	 
+131	Afdelingsassistent	 
+134	Afdelingschef	 
+135	Afdelingsfarmaceut	 
+136	Afdelingsdirektør	 
+137	Afdelingsforstander	 
+138	Afd.bioanalytiker	 
+139	Afdelingsbibliotekar	 
+142	Afdelingsingeniør	 
+143	Afdelingsinspektør	 
+144	Afdelingsekretær	 
+149	Afdelingskoordinator	 
+150	Afdelingskonsulent	 
+151	Afdelingslaborant	 
+152	Afdelingsleder	 
+153	Afdelingslæge	 
+154	Adjunkt,cand.pæd.	 
+155	Adjunkt,maritime Udd	 
+156	Afdelingsmeteorolog	 
+158	Adjunkt, F.u.	 
+159	Afdelingssygepl.	 
+160	Afdelingstandlæge	 
+161	Adm.kontorleder	 
+162	AF-Konsulent	 
+164	Afd.tandlæge.pkt.1-4	 
+165	Afspændingspædagog	 
+166	Afsnitsleder	 
+168	Afsnitslaborant	 
+169	Afdelingsleder-1	 
+170	Agronom	 
+171	Adjunkt, Civiløkonom	 
+172	Afd.leder Cand.phil	 
+173	Adjungeret Seniorforsker	 
+175	Adjunkt/lektor	 
+176	AC-specialist	 
+177	Akademiingeniør	 
+178	Akademisk Medarb.	 
+181	Akademiingeniør	 
+182	AC-medarbejder	 
+183	Akademisk Sekretær	 
+184	AF-chef	 
+185	Altmuligmand	 
+186	Administrativ koordinator	 
+187	Aktivitetsmedarb.	 
+189	Adm. veterinærsygeplejerske	 
+190	Amanuensis	 
+191	Akademisk IT-medarbejder	 
+192	Afmærkningstekniker	 
+193	Afdelingssouschef	 
+194	AC-fuldmægtig	 
+195	Ambassaderåd	 
+196	Ambassadesekretær	 
+197	Ambassadesekretær-1	 
+198	Ambassadør	 
+199	Afdelingschefsekretær	 
+201	Amtsbetjent	 
+205	Amtsfuldmægtig	 
+206	Akademisk medarbejder FU	 
+207	Akustisk specialist	 
+208	Adjunkt, PH.d.	 
+225	Analysekonsulent	 
+226	Analyseassistent	 
+228	Analysekemiker	 
+229	Analytiker	 
+230	Ankechef	 
+231	Anlægschef	 
+232	Anlægs- og driftdirektør	 
+235	Anklager Grønland	 
+236	Ankenævnsmedlem	 
+237	Anlægsdirektør	 
+238	Anklager	 
+239	Anklagerfuldmægtig	 
+240	Adjung.seniorrådgiver	 
+242	Anklagerfuldmægtig Grønland	 
+243	Anlægssouschef	 
+247	Analysechef	 
+250	Apoteker	 
+251	Apoteksassistent	 
+253	Apron Tower - Flyveleder	 
+256	Applikationstekniker	 
+257	Arbejdsmiljøkons.	 
+258	Anlægskoordinator	 
+259	Arbejdsmiljøleder	 
+260	Arbejdsmiljøkoordinator	 
+264	Arbejdshygiejniker	 
+265	Arbejdsformidlingsch	 
+267	Arbejdsfysiolog	 
+268	Arbejdsleder	 
+269	Arbejdslæge	 
+270	Arbejdsmand	 
+275	Arbejdsmarkedschef	 
+276	Arkitekt	 
+277	Arkivar	 
+278	Arkitekturlærer	 
+281	Arkivchef	 
+285	Arkæolog	 
+287	Arkivmedhjælper	 
+288	Arkivmedarbejder	 
+289	Arkivkoordintor	 
+290	Arkivleder	 
+291	Arkivarvikar	 
+292	Arrangementschef	 
+293	Arkitekt M.a.a.	 
+294	Arresthuslæge	 
+295	Arrestforvarer	 
+296	Arrestinspektør	 
+298	Arrangementsass.	 
+299	Arrangementsinspekt.	 
+300	Aspirant	 
+301	Arrangementsekretær	 
+302	Arrangementskoordinator	 
+303	Assisterende ministersekretær	 
+304	Ass.læge	 
+305	Ass.belysningsmester	 
+308	Ass.afdelingsleder	 
+310	Ass.system Manager	 
+313	Ass.scenemester	 
+315	Assistent	 
+320	Assistentmedhjælper	 
+322	Assistent-Pædagog	 
+326	Ass.leder I Malersal	 
+328	Asylchef	 
+330	Attache	 
+331	Associate Examiner	 
+332	Arbejdsmarkedskonsulent	 
+343	Auditoriebetjent	 
+351	Aut.laborant	 
+352	Aut.hospitalslab.	 
+356	Automatikmekaniker	 
+360	Automekaniker	 
+362	Automatikmek.elev	 
+363	Autovedligeholder	 
+370	Administrationsmedarbejder	 
+387	AV-Tekniker	 
+388	AV-medarbejder	 
+390	Bachelor	 
+391	Bachelor B.a.	 
+392	Bach. Scient	 
+400	Badeassistent	 
+405	Bager	 
+408	Bakteriolog	 
+410	Balletdanser	 
+412	Balletmester	 
+414	Balletsekretær	 
+415	Balletskoleleder	 
+477	Bedømmer	 
+480	Bedstemand	 
+481	Beregningschef	 
+487	Belysningsassistent	 
+488	Beredskabsassistent	 
+489	Beredskabschef	 
+490	Beredskabskoordinator	 
+492	Beredskabsmester	 
+493	Beskyttet arbejde	 
+495	Beskæftigelsesmedarbejder	 
+496	Beskæftigelsesleder	 
+498	Bestyrer	 
+499	Betjent FU	 
+500	Betjent	 
+501	Bevaringschef	 
+503	Betjentformand	 
+504	Bevaringskonsulent	 
+505	Betjentvikar	 
+507	Betjentmedhjælper	 
+508	Bestyrelsesmedlem	 
+509	Bestyrelsesformand	 
+510	Bibliotekar	 
+515	Bibliotekarassist-1	 
+516	Biblioteksassistent	 
+517	Biblioteksleder	 
+518	Bibliotekarvikar	 
+519	Bibliotekschef	 
+530	Biblioteksbetjent	 
+533	Biblioteksdirektør	 
+549	Biblioteksmedarbejder	 
+550	Biblioteksmedhj.	 
+551	Bibliotekskonsulent	 
+552	Bibliotekssekretær	 
+555	Bilassistent	 
+557	Bilinspektør (C.ing)	 
+559	Bilinspektør (Tnkum)	 
+560	Bilsagkyndig	 
+567	Billedkunstner	 
+568	Billedkunststu.	 
+580	Bioanalytiker	 
+581	Bioanalytikerunderv.	 
+582	Biologisk konsulent	 
+585	Biologassistent	 
+586	Biolog	 
+587	Biologoverassistent	 
+591	Bisidder	 
+592	Bistandsadministrat.	 
+593	Bistandsattache	 
+595	Bistandskonsulent	 
+596	Bistandsråd	 
+600	Blikkenslager	 
+609	Bogbinderiassistent	 
+611	Bogbinder	 
+614	Bogholder	 
+615	Bogholder/kontorfuldmægtig	 
+620	Bogholderiassistent	 
+639	Boligkoordinator	 
+652	Briefingmedarbejder	 
+654	Bromatolog	 
+655	Brofoged	 
+656	Brovagt	 
+657	Broformand	 
+666	Budgetchef	 
+667	Budgetfuldmægtig	 
+670	Budgetleder	 
+674	Business Relationship Manager	 
+675	Business Development Manager	 
+676	Business Development Supporter	 
+677	Byggetekniker	 
+678	Byggekoordinator	 
+679	Bygningsbetjent	 
+680	Bygningsforvalter	 
+681	Bygningsinspektør	 
+684	Bygningskonstruktør	 
+686	Byggeleder	 
+687	Bygningssnedker	 
+689	Bygningschef	 
+691	Bygningskonsulent	 
+694	Bygningsingeniør	 
+695	Byretsdommer	 
+700	Budgetmedarbejder	 
+702	Butikschef	 
+703	Budgetkonsulent	 
+704	Budget/øko.ansvarlig	 
+706	Børnehaveklasseleder	 
+710	Børnehaveleder	 
+730	Bøssemager	 
+750	Bådfører	 
+751	Bådsmand	 
+760	Båkepasser	 
+768	Butiksassistent	 
+784	Campuschef	 
+785	Cand.negot	 
+786	Cand.scient.san.publ.	 
+787	Caterelev	 
+788	Catere	 
+789	Cand.it	 
+790	Cand.pæd.	 
+791	Cand.med.vet	 
+792	Cand.scient.oecon	 
+793	Cand Oecon Agro	 
+794	Cand.Tech.al	 
+795	Cand.silv.	 
+796	Cand.scient.ant	 
+797	Cand.scient.soc	 
+798	Cand.scient.cons	 
+800	Cand.scient. Adm.	 
+801	Cand.IT	 
+803	Cafeteriaassistent	 
+804	Cand.scient.bibl.	 
+805	Cand.psych.	 
+807	Cand.hort.	 
+808	Cand.brom.	 
+809	Cand.soc	 
+810	Cand.agro.	 
+811	Cand.jur.	 
+812	Cand.mag.	 
+813	Cand.med.	 
+814	Cand.merc.	 
+815	Cand.oecon.	 
+816	Cand.pharm.	 
+817	Cand.ling.merc.	 
+818	Cand.scient.pol.	 
+819	Cand.polyt.	 
+820	Cand.phil.	 
+821	Cand.polit.	 
+822	Cand.psych.	 
+823	Cand.scient.	 
+824	Cand.stat.	 
+825	Cand.pæd.pæd.psych	 
+826	Cand.theol.	 
+827	Cand.merc.jur	 
+828	Cand.techn.soc	 
+829	Cand.rer.soc.	 
+830	Censor	 
+831	Cand. Comm.	 
+832	Cand.interpret.	 
+833	Centerleder	 
+834	Centermedarbejder	 
+835	Centerchef	 
+836	Centersygeplejerske	 
+837	Centerkoordinator	 
+840	Chauffør	 
+842	Central Studievejl.	 
+844	Centerdirektør	 
+847	Centerleder - ny løn	 
+848	Centersekretær	 
+849	Chefcontroller	 
+851	Chefdisponent	 
+855	Chefkonservator	 
+856	Centerdirektionssekretær	 
+858	Centersekretær	 
+859	Chefembedsdyrlæge	 
+860	Chefkonsulent	 
+861	Chefkontorleder	 
+862	Centerdirektionskonsulent	 
+863	Chefjurist	 
+864	Cand.Tech.Soc	 
+866	Centeradministrator	 
+870	Chefoperatør	 
+871	Chefprojektleder	 
+872	Chefpsykolog	 
+874	Chefrådgiver	 
+875	Chefredaktør	 
+876	Chefsekretær	 
+877	Chefudreder	 
+878	Cheftekniker	 
+879	CVU Rektor	 
+887	CM Børn/ungemedarb.	 
+888	CM Voksenpæd.medarb.	 
+889	CM Netværksmedarb.	 
+890	CM Nattevagt	 
+891	Civilingeniør	 
+892	Civilingeniør	 
+894	Civiløkonom	 
+896	Controller	 
+897	Civil værnepligtig	 
+899	CM Støttemedarb.	 
+901	Datamekanikerelev	 
+902	Datamekaniker	 
+903	Databaseadm.	 
+906	Datafagteknikelev	 
+907	Datachef	 
+908	Datamatiker	 
+909	Datalog	 
+910	Datakonsulent	 
+912	Datatekniker	 
+913	Data- og analysespecialist	 
+914	Daktyloskopitekniker	 
+917	Dekoratør	 
+918	Demonstrator	 
+920	Datafagtekniker	 
+922	Daglig leder	 
+923	Delprojektleder	 
+924	Datamedarbejder	 
+926	Departementsråd	 
+928	Dekan	 
+929	Datakoordinator	 
+930	Datateknikerelev	 
+933	Datanom	 
+935	Datamanager	 
+936	Depotmedhjælper	 
+937	Depotmester	 
+939	Designer	 
+940	Databaseudvikler	 
+941	Digital formidlingskoordinator	 
+942	Div.medhj. Auc	 
+944	Direktionsfuldmægtig	 
+945	Divisionschef	 
+948	Direktionskonsulent	 
+949	Direktionssekretær	 
+950	Diplomingeniør	 
+951	Direktør	 
+956	Distriktassistent	 
+958	Distriktschef	 
+963	Distriktsleder	 
+966	Dokumentalist	 
+970	Distriktskonsulent	 
+972	Driftsdirektør	 
+973	Driftansvarlig	 
+974	Driftslederassistent	 
+975	Docent	 
+976	Dokumentationschef	 
+977	Domsmand	 
+978	Dommer	 
+979	Dommerfuldmægtig	 
+980	Domprovst	 
+981	Dramaturg	 
+983	Dr.med.	 
+984	Dr.	 
+986	Dr.phil.	 
+987	Driftsassistent	 
+989	Driftschef	 
+990	Driftsingeniør	 
+991	Driftsinspektør	 
+992	Driftsleder	 
+996	Driftsmester	 
+997	Driftsplanlægger	 
+998	Driftskonsulent	 
+1000	Driftsmedarbejder	 
+1001	Driftstekniker	 
+1002	Driftsøkonomichef	 
+1005	Driftskoordinator	 
+1006	Driftsøkonom	 
+1008	Drifts- & adm.chef	 
+1009	Dokumentationskons.	 
+1014	DTP-medarbejder	 
+1016	Dyrebruger	 
+1018	Dyreassistent	 
+1019	Dyreassistentelev	 
+1020	Dyrepasser	 
+1021	Dyrlæge	 
+1022	Dyrepasserelev	 
+1030	Dyretekniker	 
+1043	Eksekutivdirektør	 
+1051	Edb-Operatør	 
+1055	EDB-Systemkonsulent	 
+1057	EDB-Koordinator	 
+1064	EDB-Supportør	 
+1090	EDB-Driftsassistent	 
+1094	EDB-Fuldmægtig	 
+1095	EDB-Driftschef	 
+1096	EDB-Driftsleder	 
+1098	EDB-assistent	 
+1099	EDB-medarbejder	 
+1100	EDB-underviser	 
+1101	EDB-Chef	 
+1102	EDB-Konsulent	 
+1103	EDB-leder/specialist	 
+1105	Ejendomsadministrator	 
+1106	Ejendomskonsulent	 
+1107	EFG-elev	 
+1108	Ejendomstekniker	 
+1109	Ejendomsfunktionær	 
+1110	Ejendomsinspektør	 
+1111	Ejendomschef	 
+1112	Ejendomsserv.as.elev	 
+1114	Ekspeditionssekretær	 
+1116	Ekspeditionssekretær	 
+1118	Ejendomsserviceassistent	 
+1119	Ekstern Lektor	 
+1120	Ejendomsservicemedarbejder	 
+1121	Ejendomsservicefuldmægtig	 
+1122	Ejendomsservicetekniker	 
+1125	Efterkontrollør	 
+1126	Ejendomsserviceteknikerelev	 
+1127	Ejendomsansvarlig	 
+1128	Eksamenskoordinator	 
+1129	Eksamensmedarb.	 
+1130	Eksamensleder	 
+1131	Eksamensvagt	 
+1132	Eksamenstilsyn	 
+1133	Eksportchef	 
+1135	Eksportassistent	 
+1136	Eksportkoordinator	 
+1137	Eksportstipendiat	 
+1138	Eksportingeniør	 
+1139	Eksportrådgiver	 
+1142	Elektriker	 
+1144	EL-installatør	 
+1145	Eletronikfagteknikerlærling	 
+1146	Elektroingeniør	 
+1147	Elektroinstallatør	 
+1149	Elektromekaniker	 
+1150	Elektromek.elev	 
+1151	Elektronikmekaniker	 
+1152	Elektrotekniker	 
+1153	Elektroniktekniker	 
+1154	Elektronik- og it-tekniker	 
+1156	Elektronikfagtekniker	 
+1157	Efter-og videreuddannelseschef	 
+1158	Efterlønsmodtager	 
+1159	Elektronikfagteknikerlærling	 
+1160	Elev	 
+1164	Elevmedhjælpere	 
+1166	Embedslæge	 
+1167	Embedslægeassistent	 
+1170	Entreprisechef	 
+1171	Enkepensionist	 
+1172	Enhedsleder	 
+1174	Entreprisekoordinator	 
+1175	Entreprisestyrer	 
+1176	Epidemiolog	 
+1177	EU-projektsekretær	 
+1178	Europæisk Specialist	 
+1180	Ergoterapeut	 
+1181	Ergoterapeutlærer	 
+1182	Erhvervsvejleder	 
+1183	Ernæringsfaglig medarbejder	 
+1184	EU-programsekr/sagsbehandl.	 
+1185	ESDH-fuldmægtig	 
+1186	Ernæringsassistentelev	 
+1187	Ernær.-Hush.økonom	 
+1188	Ernæringsassistent	 
+1189	EU-stipendiat	 
+1192	Esdh-Konsulent	 
+1193	Eud-Skovbrugerelev	 
+1195	ESDH-koordinator.	 
+1197	EU-Informationsmedarbejder	 
+1199	Examiner	 
+1200	Fabrikschef	 
+1201	FCM-chef	 
+1202	ESDH-assistent	 
+1204	Faglig leder af programled.	 
+1205	Fagbetjent	 
+1206	Fagkyndig Bedømmer	 
+1207	Faglærer	 
+1209	Fagfotografelev	 
+1210	Fagkoordinator	 
+1211	Fagkonsulent	 
+1212	Fagleder	 
+1213	Faglig Vejleder	 
+1214	Faglig Assistent	 
+1215	Faglærer	 
+1216	Faglig Sekretær	 
+1217	Faglig Medarbejder	 
+1218	Fagarbejdsleder	 
+1219	Faglært Arbejder	 
+1220	Faguddannet Betjent	 
+1221	Faglært Betjent	 
+1223	Faglært Slagter	 
+1224	Faglig Koordinator	 
+1225	Faglært Landbrugsarb	 
+1226	Fagchef	 
+1227	Faggruppesekretær	 
+1228	Fakultetsdirektør	 
+1229	Farmaceut	 
+1230	Farmakonom	 
+1232	Universitetsbibliotekar	 
+1234	Fagentrepriseleder	 
+1235	Fagprojektleder	 
+1237	Feltassistent	 
+1238	Faglært skibsassistent	 
+1245	Fhv.minister	 
+1248	Fhv. medlem af Folketinget	 
+1249	Filmarbejder	 
+1251	Filmcensor	 
+1252	Filmfotograf	 
+1253	Filminstruktør	 
+1254	Filmklipper	 
+1257	Filmtekniker	 
+1260	Finansattache	 
+1262	Finansinspektør	 
+1264	Finmekanikerelev	 
+1265	Finmekaniker	 
+1266	Finmekanikerlærling	 
+1274	Fiskemester	 
+1275	Fiskeriassistent	 
+1276	Fiskeritekniker	 
+1298	Flyfotolaboratorieleder	 
+1301	Flyveleder	 
+1310	Flymekaniker M.UDD	 
+1312	Flyvelederass.asp	 
+1313	Flyvelederaspirant	 
+1314	Flyvelederass.	 
+1320	Fodermester	 
+1321	Fodterapeut	 
+1323	Foredragsholder	 
+1325	Folketingsbetjent	 
+1326	Folketingsmedlem	 
+1328	Forfatter	 
+1329	Forlagsleder	 
+1330	Forlagssekretær	 
+1333	Formand	 
+1336	Formidlingskoordinator	 
+1337	Formidlingschef	 
+1338	Forretningskonsulent	 
+1341	Forretningsudvikler	 
+1342	Forskningsfuldmægtig	 
+1344	Forestillingsleder	 
+1346	Forsikringstekn.insp	 
+1348	Formidlingsmedarb.	 
+1351	Forretningsfører	 
+1352	Forskningslektor	 
+1353	Forskningsadjunkt	 
+1356	Forsker	 
+1357	Forskerstipendiat	 
+1358	Forskningsassistent	 
+1359	Forskningsbibl.vikar	 
+1360	Forskningsbibliotek.	 
+1361	Forskningskonsulent	 
+1362	Forskningsleder	 
+1363	Forskningsstipendiat	 
+1364	Forskningschef	 
+1365	Forskningstekniker	 
+1366	Forskningsmedarb.	 
+1367	Forskningsprofessor	 
+1368	Forsknings-Udviklingskonsulent	 
+1369	Forskningsdirektør	 
+1370	Forsorgsassistent	 
+1371	Forskningsspecialist	 
+1372	Fors.mat.konsulent	 
+1373	Forsorgsfuldmægtig	 
+1374	Forskn.rådsprofessor	 
+1375	Forsorgsleder	 
+1376	Forsknings- og Udviklingsleder	 
+1377	Forskn.rådsprofessor	 
+1378	Forskn.koordinator	 
+1379	Forsknings-og ph.d koordinator	 
+1380	Forstander	 
+1381	Forstfuldmægtig	 
+1382	Forsker	 
+1383	Forstkandidat	 
+1385	Forskningssekretær	 
+1387	Forskningsprof.m.særlige opg.	 
+1388	Forstkandidat Skovbrugsvidensk	 
+1389	Forskningstekniker - FU	 
+1390	Forsøgsassistent	 
+1392	Forsøgsleder	 
+1393	Forsøgsmedhjælper	 
+1394	Forsøgstekniker	 
+1395	Forsøgsmedarbejder	 
+1396	Forsøgskonsulent	 
+1397	Forsøgs- og driftskoordinator	 
+1398	Forsøgsperson	 
+1401	Forvalter	 
+1413	Fotoadministrator	 
+1414	Fotografelev	 
+1415	Fotograf	 
+1418	Fotografmedhjælper	 
+1425	Fr.	 
+1428	Frekvensplanlægger	 
+1429	Freelance Tolk	 
+1431	Frisør	 
+1432	Frisørmester	 
+1437	Koblingsleder	 
+1438	Koordinerende leder	 
+1442	Fritids/kulturkoor.	 
+1443	Frivilligkoordinator	 
+1444	Frølaborant	 
+1445	Fuldmægtig	 
+1446	Fuldmægtig	 
+1447	Fuldmægtig	 
+1448	Fuldmægtigelev	 
+1449	Fuldmægt,akademiing	 
+1451	Fungerende Leder	 
+1452	Fulsmægtig specialist	 
+1453	Fuldtidsekspert i Kosovo	 
+1454	Fungerende Kontorch.	 
+1455	Fungerende Rektor	 
+1456	Funktionschef	 
+1457	Funktionschef Ac	 
+1458	Funktionschef Hk	 
+1459	Funktionsleder	 
+1460	Fuldmægtigspecialist	 
+1472	Fyrkontrollør	 
+1475	Fyrpasser	 
+1480	Fysiker	 
+1481	Fysioterapeut	 
+1482	Fysioterapeutlærer	 
+1502	Fængselsoverlærer	 
+1504	Fængselspræst	 
+1505	Fængselssygepl.	 
+1506	Fængselslæge	 
+1511	Fødevarechef	 
+1512	Fødevareberedskabschef	 
+1531	Førstebibliotekar	 
+1602	Garagemester	 
+1606	Garderobeleder	 
+1610	Gartner	 
+1611	Gartner - ADM	 
+1613	Gartnerformand	 
+1614	Gartneriarbejder	 
+1615	Gartnermedhjælper	 
+1616	Gartneritekniker	 
+1617	Gartnerielev	 
+1623	Generalkonsul	 
+1626	Generalsekretær	 
+1627	Geodæt	 
+1629	Geograf	 
+1632	Geofysiker	 
+1633	Geolog	 
+1634	GIS-medarbejder	 
+1635	Geokemiker	 
+1636	GIS-koordinator	 
+1637	Geodatalog	 
+1638	Gis-Geolog	 
+1639	GIS - Specialist	 
+1645	Glasblæser	 
+1647	Glasvasker	 
+1649	Globaliseringsprofessor	 
+1652	Grafikerelev	 
+1654	Grafisk Konsulent	 
+1655	Grafiker	 
+1656	Grafisk Designer	 
+1658	Grafisk Trykker	 
+1662	Grevinde	 
+1664	Gruppeleder	 
+1665	GVS-installatør	 
+1670	Gymnasielærer	 
+1671	Gymnasiesekretær	 
+1672	Gymnastikinspektør	 
+1673	Guide	 
+1674	Gæsteforelæser	 
+1676	Gæsteprofessor	 
+1677	Gæstelærer	 
+1678	Gæstelærer	 
+1681	Gårdejer	 
+1683	Gæsteforsker	 
+1722	Handelsattache	 
+1732	Handelsmedarbejder	 
+1737	Handelsråd	 
+1741	Handelsrådgiver	 
+1743	Havariinspektør	 
+1745	Havearbejder	 
+1757	Havnebetjent	 
+1763	Havneinspektør	 
+1773	Helseassistent	 
+1775	Helsefysiker	 
+1776	Hazard Assessment Manager	 
+1777	Hg-Elev	 
+1780	Histolaborant	 
+1783	Hjælpelærer	 
+1784	Hjælpepræst	 
+1794	Honorarlønnede dyrlæge	 
+1795	Hon.lønnet U.titel	 
+1797	Holdleder	 
+1800	Hortonom	 
+1805	Hospitalschef	 
+1810	Hospitalslaborant	 
+1820	Hovedbogholder	 
+1822	Hovmester	 
+1823	HR-fuldmægtig	 
+1825	HR-assistent	 
+1829	HR-koordinator	 
+1830	Hr.	 
+1831	HR- og servicechef	 
+1832	Hr-Chef	 
+1834	HR-Konsulent	 
+1835	Leder af HR-Udvikling	 
+1837	HR-medarbejder	 
+1838	Humanbiolog	 
+1840	Husassistent	 
+1841	Husbetjent	 
+1842	HR- og Økonomikonsulent	 
+1845	Husholdningslærer	 
+1846	Husinspektør	 
+1847	Husmand	 
+1849	Husmoder	 
+1852	Hydrolog	 
+1853	Hygiejnesygeplejersk	 
+1860	Højesteretsdommer	 
+1884	Håndværker - FU	 
+1885	Håndværker	 
+1890	Håndværkerformand	 
+1895	Ingeniørpraktikant	 
+1897	Institutadministrator	 
+1898	Infrastrukturchef	 
+1899	Informationsassistent	 
+1901	Ikt-Chef	 
+1906	Immaterialretschef	 
+1910	Indkøbsmedarbejder	 
+1911	Indkøbs-og servicekoordinator	 
+1912	Indkøber	 
+1913	Indkøbskonsulent	 
+1914	Indlæser	 
+1915	Indkøbsassistent	 
+1916	Indkøbschef	 
+1917	Indkøbsleder	 
+1918	Indretningsarkitekt	 
+1920	Informationsrådgiver	 
+1921	Industriråd	 
+1922	Informationflyveleder	 
+1923	Industritekn.lærl.	 
+1924	Informatikmedarb.	 
+1925	Informationschef	 
+1926	Informationsmedarbejder	 
+1928	Informationsleder	 
+1929	Informationskonsul.	 
+1930	Ingeniør	 
+1931	Informationssikkerhedschef	 
+1933	Ingeniørassistent	 
+1934	Ingeniørdocent	 
+1935	Informatikchef	 
+1936	Informatikkoordinat.	 
+1937	Info.koordinator	 
+1938	Info.specialist	 
+1939	Informatikassistent	 
+1940	IT-Administrator	 
+1941	IT-forretningskonsulent.	 
+1942	IT-fuldmægtig	 
+1945	Inspektør	 
+1946	Innovationspilot	 
+1948	IT-Sikkerhedschef	 
+1949	IT-Sikkerhedskons.	 
+1950	Installationsmester	 
+1951	Installatør	 
+1954	Int.studievejleder	 
+1956	Institutionsleder	 
+1957	Institutchef	 
+1958	Institutleder	 
+1959	IT-Arkitekt	 
+1960	Instrukt.klinikass.	 
+1961	Instruktionsjordemd.	 
+1962	Instruktionslaborant	 
+1963	Instruktionssygepl.	 
+1964	IT-driftkonsulent	 
+1965	Instruktør	 
+1966	Instruktor	 
+1967	IT-Revisor	 
+1968	Instruktørass.	 
+1971	IT-Koordinator	 
+1972	IT-Tekniker	 
+1973	Interviewer	 
+1974	Internat. Konsulent	 
+1975	Inventarbetjent	 
+1978	Interviewadministrat	 
+1980	Inventarkonduktør	 
+1981	IT-Chef	 
+1982	IT-Medarbejder	 
+1983	IT-Leder	 
+1984	IT-Konsulent	 
+1985	IT-Direktør	 
+1986	IT-Inspektør	 
+1987	IT-Supporterelev	 
+1990	IT-Systemarkitekt	 
+1994	IT-Driftleder	 
+1995	IT-Driftchef	 
+1996	IT-Udvikl.konsulent	 
+1998	IT-Supporter	 
+2000	IT-Udviklingschef	 
+2001	IT-Systemspecialist	 
+2002	IT-Projektleder	 
+2003	IT-Projektkoordinator	 
+2005	Jordbrugstekniker	 
+2009	Journalmedarbejder	 
+2010	Jordemoder	 
+2013	Journalkoordinator	 
+2014	Journalleder	 
+2015	Journalist	 
+2017	Journalistpraktikant	 
+2020	Junior Research Assistant	 
+2021	Jurist	 
+2022	Jobkonsulent	 
+2023	IT-Systemansvarlig	 
+2024	IT-Ingeniør	 
+2026	IT-specialist	 
+2027	Juridisk Konsulent	 
+2029	Intern revisor	 
+2030	Juridisk Chef	 
+2034	Indkøbskoordinator	 
+2035	IT-driftsmedarbejder	 
+2037	Jur.spec.konsulent	 
+2038	IT-driftskoordinator	 
+2040	IT-Projektchef	 
+2041	Jur.chefkonsulent	 
+2043	IT-info.specialist	 
+2044	IT-driftmedarb.elev	 
+2046	IT-sys.medarb.,HK	 
+2047	IT-sys.medarb.,AC	 
+2048	IT-sikkerhedskoord.	 
+2049	Jordbrugsteknolog	 
+2051	IT-Systemmedarbejder	 
+2052	IT-Funktionsleder	 
+2053	IT-systemmedarbejder	 
+2054	Institutsekretær	 
+2056	IT-vejleder	 
+2057	Int.stud.adm.sagsb.	 
+2058	IT-udvikler	 
+2060	Institutadm.	 
+2061	Inst.administrator	 
+2062	International sekr.	 
+2063	International medarb	 
+2064	IT-Sikkerhedsmedarb.	 
+2066	IT-Sekretær	 
+2068	IT-supportmedarbejder	 
+2069	IT-Supportleder	 
+2071	IT-Funktionsleder	 
+2072	Intergrationsmedarbejder	 
+2073	IT-driftmedarbejder	 
+2074	Industrielektriker	 
+2075	Institutdirektør	 
+2076	Jobcenterchef	 
+2078	IT-senior konsulent	 
+2079	IT proceskonsulent	 
+2080	Informationsspecialist	 
+2083	It-medarbejder FU	 
+2084	International Researcher	 
+2085	IT-systemadministrator	 
+2086	Industriteknikerlærling	 
+2087	IT-kontraktchef	 
+2090	International chef	 
+2091	International koordinator	 
+2120	Kandidat	 
+2122	Kandidatstipendiat	 
+2125	Kantineassistent	 
+2126	Kantinebestyrer	 
+2127	Kantineleder	 
+2128	Kantinemedhjælper	 
+2129	Kapelmester	 
+2130	Kaptajn	 
+2131	Kapelmusiker	 
+2132	Kapelregissør	 
+2150	Kartograf	 
+2154	Karrosserismed	 
+2166	Kasserer	 
+2175	Kedelpasser	 
+2179	Kemiingeniør	 
+2180	Kemiker	 
+2182	Kemiker	 
+2183	Kemotekniker	 
+2185	Keramiker	 
+2187	Kgl.kammersanger	 
+2194	Klaverstemmer	 
+2200	Kleinsmed	 
+2201	Klinisk Lærer Odonto	 
+2202	Klinikass.instruktør	 
+2203	Klinikassistentelev	 
+2204	Klinikassistent	 
+2205	Klinikassistent-1	 
+2206	Klinikchef	 
+2207	Klinikmedhjælper	 
+2208	Klinisk Assistent	 
+2209	Klinikbetjent	 
+2210	Klitfoged	 
+2212	Klinisk diætist	 
+2213	Klimaformidler	 
+2214	Klinisk Diætass.	 
+2215	Klinisk Koordinator	 
+2217	Klinisk Professor	 
+2218	Klinisk Lektor	 
+2226	Kogerske	 
+2229	Klinikveterinær	 
+2230	Kok	 
+2234	Klinisk Lærer Alm.me	 
+2241	Kolonnemedhjælper	 
+2242	Kolonnefører	 
+2260	Kommissarius	 
+2261	Kommiteret	 
+2262	Kommitteret for rektor	 
+2271	Kommunikationsrådgiver	 
+2273	Kommunefoged	 
+2274	Kommunefogedass.	 
+2276	Kommunikationschef	 
+2277	Kommunikationsrådgiv	 
+2278	Kommunikationskonsulent	 
+2279	Kommunikationsmedarbejder	 
+2280	Komponist	 
+2283	Koncernindkøber	 
+2284	Koncertmester	 
+2285	Koncernøkonomichef	 
+2286	Koncern HR chef	 
+2287	Koncern IT- Koordinator	 
+2288	Koncernindkøbskoordinator	 
+2289	Koncernregnskabskoordinator	 
+2290	Koncerndirektør	 
+2295	Konservator	 
+2297	Konservatorassistent	 
+2301	Konserveringstekniker	 
+2302	Konserveringstekn.	 
+2303	Konst. Byretsdommer	 
+2304	Konst.kulturchef	 
+2306	Konst. Biblioteksleder	 
+2310	Konstruktør	 
+2313	Konsularmedarbejder med visum	 
+2314	Konsularmedarbejder uden visum	 
+2315	Konsul	 
+2316	Konsularmedarbejder	 
+2317	Konsulent	 
+2319	Konsulent (edb)	 
+2320	Kontorassistent	 
+2330	Kontorbetjent	 
+2332	Kontorbetjentformand	 
+2336	Kontorchef	 
+2337	Kontorelev	 
+2340	Kontorfuldmægtig	 
+2345	Kontorfunktionær	 
+2346	Kontorkoordinator	 
+2347	Kontorkonsulent	 
+2350	Kontorleder	 
+2351	Kontorlærling	 
+2352	Kontormedhjælper	 
+2354	Kontormedarbejder	 
+2355	Kontorsekretær	 
+2358	Kontorvikar	 
+2364	Kontrolchef	 
+2365	Kontrollør	 
+2367	Kontraheringschef	 
+2372	Koordinator for udbud & indkøb	 
+2373	Koordinator	 
+2374	Korassistent	 
+2385	Korpsmester	 
+2391	Korrekturlæser	 
+2392	Korrespondent	 
+2393	Korsyngemester	 
+2394	Korregissør	 
+2395	Korrespondent	 
+2403	Korttekniker	 
+2404	Kort- og Landm.tekn.	 
+2407	Kostumeassistent	 
+2408	Kredsdommer	 
+2410	Kredsdommerkandidat	 
+2411	Kredschef	 
+2412	Kostumiere	 
+2414	Kostumiereassistent	 
+2419	Kredsfuldmægtig	 
+2422	Krim.forsorgsleder	 
+2424	Kriminolog	 
+2428	Kst.landsdommer	 
+2429	Kvalitetsmedarbejder	 
+2430	Kryptoassistent	 
+2431	Kunsthån.koordinator	 
+2432	Kunstformidler	 
+2434	Kunstpilot	 
+2436	Kundechef	 
+2438	Kvalitetskoordinator	 
+2441	Kulturformidler	 
+2442	Kulturråd	 
+2446	Kunsthistoriker	 
+2450	Kunstner	 
+2451	Kursistmedarbejder	 
+2452	Kursuslærer	 
+2453	Kursist	 
+2454	Kursuskoordinator	 
+2455	Kursusleder	 
+2456	Kunstregistrator	 
+2457	Kursussekretær	 
+2458	Kundemedarbejder	 
+2460	Kustode	 
+2461	Kursuskonsulent	 
+2462	Kundekoordinator	 
+2463	Kursusvejleder	 
+2467	Kvalansv.udd.chef	 
+2468	Kvalitetschef	 
+2469	Kvalitetskonsulent	 
+2470	Kvartermester	 
+2473	Kvotaansat Adjunkt	 
+2480	Købmand	 
+2481	Køkkenassistent	 
+2482	Køkkenassistent	 
+2483	Køkkenassistentelev	 
+2485	Køkkenchef	 
+2486	Køkkenleder	 
+2487	Køkkenlederassistent	 
+2488	Køkkenmedhjælper	 
+2490	Kølemontør	 
+2493	Køreprøvesagkyndig	 
+2495	Kysttekniker	 
+2497	Kundekonsulent	 
+2498	Kødkontrolchef	 
+2596	Kystteknisk Chef	 
+2601	Lovchef	 
+2602	Lokalekoordinator	 
+2604	Laborantpraktikant	 
+2605	Laborant	 
+2606	Laboratoriefaglig medarbejder	 
+2608	Laborantstuderende	 
+2609	Laborantelev	 
+2610	Laborantvikar	 
+2613	Laboratorieassist.-1	 
+2615	Laboratorieassistent	 
+2618	Laboratoriebetjent	 
+2620	Laboratoriechef	 
+2622	Laboratorieforstand.	 
+2623	Laboratoriefuldm.	 
+2625	Laboratoriefunkt.	 
+2626	Laboratorieingeniør	 
+2628	Laboratorieleder	 
+2629	Laboratoriemedhjælp.	 
+2630	Laboratoriemekaniker	 
+2631	Laboratoriemester	 
+2632	Laboratorieoverass.	 
+2633	Laboratorietekniker Specialist	 
+2634	Laboratoriekoord.	 
+2635	Laboratorietekniker	 
+2636	Lab.specialist	 
+2638	Lagerarbejder	 
+2639	Lagerassistent	 
+2640	Lagerfunktionær	 
+2642	Lager- og Handelsarb.	 
+2643	Lager - og logistikoperatør	 
+2644	Lagerforvalter	 
+2646	Lagermedhjælper	 
+2654	Landbrugsarbejder	 
+2656	Landbrugselev	 
+2658	Landbrugsleder	 
+2660	Landbrugsmedhjælper	 
+2661	Landbrugsmedarbejder	 
+2664	Landbrugsteknolog	 
+2665	Landbrugstekniker	 
+2666	Landinspektør	 
+2669	Landmålingstekniker	 
+2675	Landsarkivar	 
+2676	Landsdommer	 
+2679	Landskabsarkitekt	 
+2681	Landskonsulent	 
+2684	Leanchef	 
+2685	Leankoordinator	 
+2689	Led. Forsøgsmedarb.	 
+2692	Ledende Min.sekr.	 
+2693	Ledende Bioanalytik.	 
+2694	Ledende Konservator	 
+2695	Ledende Psykolog	 
+2698	Ledende Laborant	 
+2699	Leder	 
+2700	Leder/vej- og Trafik	 
+2702	Ledende Inspektor	 
+2703	Leder af konsularafdelingen	 
+2706	Leder af Drift Kt.	 
+2708	Leder af Edb.funkt.	 
+2710	Leder af Intern Service	 
+2711	Leder af Haverikommissionen	 
+2712	Leder af Studieadm.	 
+2713	Leder af Videncenter	 
+2714	Leder af kommunikationsafd.	 
+2715	Lektor	 
+2717	Lektorvikar	 
+2718	Lektor	 
+2719	Lektor	 
+2720	Lektor,cand.pæd.	 
+2721	Ledende Bibliotekar	 
+2722	Levnedsmid.kandidat	 
+2723	Levnedsmiddeltekn.	 
+2724	Lektor	 
+2727	Lic.pharm.	 
+2728	Lic.scient	 
+2729	Lic.techn.	 
+2730	Lektor	 
+2731	Lektor	 
+2736	Levnedsmiddeling.	 
+2737	Ligningsrådsmedlem	 
+2740	Litograf	 
+2742	Leder af handelsafdelingen	 
+2771	Logistikmedarbejder	 
+2778	Logistikfuldmægtig	 
+2779	Logistikkoordinator	 
+2780	Logistikoverass.	 
+2784	Lufthavnsarbejder	 
+2785	Luftfartsinspektør	 
+2786	Luftfartskontrollør	 
+2787	Luftfartsassistentaspirant	 
+2788	Lufthavnschef	 
+2797	Tonemestre	 
+2801	Ledelsessekretær	 
+2802	Ledelsessupporter	 
+2803	Luftfartstekniker	 
+2804	Ledelseskonsulent	 
+2805	Luftfartsteleinspektør	 
+2811	Ledende Forsøgstekn.	 
+2813	Ledende Jordbrugstek	 
+2818	Leder af Kom.center	 
+2819	Lægemiddelinspektør	 
+2820	Læge	 
+2821	Lægekonsulent	 
+2823	Lægeassistent	 
+2827	Lægesekretær	 
+2830	Lærer	 
+2834	Lærer	 
+2835	Lærervikar	 
+2838	Lærerkandidat	 
+2839	Lærer	 
+2840	Lærling	 
+2842	Lønafdelingsleder	 
+2843	Lønchef	 
+2844	Lønningsassistent	 
+2846	Lønmedarbejder	 
+2847	Lønbogholder	 
+2848	Lønningskoordinator	 
+2849	Lønsagsbehandler	 
+2851	Ledende Tandlæge	 
+2852	Ledende socialrådgiver	 
+2853	Ledende sekretær	 
+2859	Lektor, Cand.merc.	 
+2860	Lektor, Akademiing.	 
+2861	Lektor, Cand. Mag.	 
+2862	Lektor, Cand. Scient	 
+2863	Lektor, C.techn.soc.	 
+2864	Lektor,civilingeniør	 
+2865	Lektor, Ingeniør	 
+2866	Lektor	 
+2867	Lektor, Arkitekt	 
+2869	Lektor, Cand.polit.	 
+2870	Lektor, ph.d.	 
+2871	Lektor	 
+2872	Lektor, Mag.scient.	 
+2873	Lektor,maritime Udd.	 
+2875	Lektor, Cand. Mag.	 
+2876	Logistikleder	 
+2878	Logistikassistent	 
+2879	Lektor,civilingeniør	 
+2880	Logistikchef	 
+2882	Lektor, Ingeniør	 
+2884	Lektor, Cand.interpr	 
+2885	Lektor, Cand.ling.m.	 
+2894	Løn -og Pers.medarb	 
+2896	Lønkoordinator	 
+2897	Løn/pers.konsulent	 
+2898	Lønkonsulent	 
+2903	M.f.	 
+2905	Mag.art.	 
+2906	Mag.scient.	 
+2908	Mag.scient.soc.	 
+2915	Magasinforvalter	 
+2920	Marinbiolog	 
+2921	Marin Tekniker	 
+2922	Maringeolog	 
+2923	Maritim ulykkesopklarer	 
+2925	Magister	 
+2930	Major	 
+2931	Markedskoordinator	 
+2933	Markedsmedarbejder	 
+2934	Markedsføringsspec.	 
+2936	Marketingskonsulent	 
+2937	Marketingsalgchef	 
+2939	Marketingkoordinator	 
+2940	Maler	 
+2944	Markedschef	 
+2945	Markedsføringsleder	 
+2946	Marketingassistent	 
+2947	Markedsføringsmedarb	 
+2948	Marketingmedarbejder	 
+2949	Markedsføringschef	 
+2950	Markedsføringskonsulent	 
+2951	Malerelev	 
+2953	Markmedarbejder	 
+2954	Marketingchef	 
+2957	Maskinarbejder	 
+2959	Maskinassistent	 
+2960	Maskinchef	 
+2961	Maskinfører	 
+2963	Maskiningeniør	 
+2966	Maskinist	 
+2967	Maskinkonsulent	 
+2969	Maskinmester	 
+2980	Maskinsmed	 
+2985	Massør	 
+2990	Maskintekniker	 
+2992	Mastra-konsulent	 
+3000	Materielforvalter	 
+3018	Matrikeltekniker	 
+3033	Mediegrafikerelev	 
+3034	Mediegrafisk Medarb.	 
+3035	Medhjælper	 
+3037	Medhjælperske	 
+3038	Medietekniker	 
+3039	Medieassistent	 
+3041	Mediechef	 
+3042	Medlem	 
+3044	Medl.af Europa-Parl.	 
+3045	Medievagter	 
+3046	Medicinsk sekretær	 
+3049	Mejeriingeniør	 
+3050	Mekaniker	 
+3055	Mekanikerlærling	 
+3068	Metalarbejder	 
+3075	Meteorolog	 
+3079	Miljøkoordinator	 
+3081	Midlertidig folketingsmedlem	 
+3085	Midlertidig Tjeneste	 
+3086	Midlertidig Vikar	 
+3087	Miljøtekniker	 
+3088	Miljøassistent	 
+3089	Miljøkonsulent	 
+3090	Minister	 
+3091	Minister-Råd	 
+3093	Ministerialbetjent	 
+3094	Minerydningstekniker	 
+3095	Ministerialbtjvikar	 
+3097	Ministersekretær	 
+3098	Ministerialbetjent	 
+3099	Mikrobiolog	 
+3104	Model	 
+3115	Molekylærbiolog	 
+3120	MTV-konsulent	 
+3130	Montør	 
+3145	Multimediemedarbejder	 
+3148	Murer	 
+3155	Museumsarbejder	 
+3156	Museumsassistent	 
+3157	Museumsbetjent	 
+3158	Museumschef	 
+3159	Museumsdirektør	 
+3162	Museumshåndværker	 
+3166	Museumsinspektør	 
+3168	Museumskonsulent	 
+3169	Museumsopsynsbetjent	 
+3170	Museumsleder	 
+3172	Museumssekretær	 
+3174	Museumsvagt	 
+3175	Musikarkivar	 
+3177	Musikassistent	 
+3179	Musiker	 
+3181	Musiklærer	 
+3182	Musikpædagog	 
+3191	Møbelsnedker	 
+3192	Myndighedschef	 
+3193	Måletekniker	 
+3200	Målemedhjælper	 
+3202	Naturskoleleder	 
+3203	Naturvejleder	 
+3204	Naturgeograf	 
+3205	Netværks- og systemadministr.	 
+3206	National ekspert	 
+3208	Nattevagt	 
+3209	Navigationslærer	 
+3212	Navigatør	 
+3222	Net-Redaktør	 
+3223	Netværksadministra.	 
+3224	Netværkschef	 
+3225	Netværkstekniker	 
+3227	Netværkskoordinator	 
+3230	Næstformand	 
+3231	Nt-Administrator	 
+3240	Nævnsformand	 
+3242	Nævnsmedlem	 
+3300	Oceanograf	 
+3305	Oceanograf	 
+3314	Observator	 
+3315	Observatør	 
+3316	Offsettrykker	 
+3321	Oldfrue	 
+3322	Oldfrueassistent	 
+3324	Områdedirektør	 
+3328	Områdeleder	 
+3329	Områdeleder - FU	 
+3330	Omsorgsassistent	 
+3332	Områdechef	 
+3334	Omsorgsmedhjælper	 
+3337	Omformertekniker	 
+3340	Omviser	 
+3346	Oprensningsassistent	 
+3348	Operachef	 
+3350	Operasanger	 
+3351	Operatør	 
+3352	Opmåler	 
+3353	Opmålingsleder	 
+3354	Opholdsstipendiat	 
+3360	Opsynsbetjent	 
+3361	Opsynsmand	 
+3363	Optiker	 
+3364	Opgavekoordinator	 
+3365	Organist	 
+3366	Organisationschef	 
+3367	Opgaveleder	 
+3368	Ordbogsredaktør	 
+3369	Organisationskonsulent	 
+3371	Oticon-stipendiat	 
+3383	Overassistent	 
+3397	Overbibliotekar	 
+3415	Overflyveleder	 
+3423	Overfotograf	 
+3427	Overfysioterapeut	 
+3430	Overgartner	 
+3438	Overinspektør	 
+3482	Overlaborant	 
+3483	Overlæge	 
+3484	Overlæge-1	 
+3486	Overlærer	 
+3503	Overmontagemester	 
+3505	Overmontør	 
+3513	Overpedel	 
+3535	Overskibsinspektør	 
+3548	Overstyrmand	 
+3549	Oversygeplejerske	 
+3552	Oversætter	 
+3555	Overtandlæge	 
+3562	Overtelegrafist	 
+3585	Overvet. sygeplejer	 
+3595	Pau-underviser	 
+3601	Pc administrator	 
+3605	Personaleadm koordinator	 
+3612	Parkeringskontrollør	 
+3614	Pakkerimedarbejder	 
+3615	Pastor	 
+3616	Patentchef	 
+3617	Patentspecialist	 
+3618	Patentingeniør	 
+3619	Patientklagenævnsm.	 
+3620	Pedel	 
+3621	Pedelleder	 
+3622	Pedelassistent	 
+3623	Pedelmedhjælper	 
+3624	Pedel	 
+3625	Pensionist	 
+3626	Personalemedarbejder	 
+3627	Pensionskonsulent	 
+3629	Personaleassistent	 
+3630	Personalechef	 
+3632	Personalekonsulent	 
+3633	Personalefuldmægtig	 
+3636	Ph.d. Studerende	 
+3637	Ph.d.	 
+3638	Skolepraktikelev	 
+3639	Piccoline	 
+3640	Piccolo	 
+3641	Personaleudvik.kons	 
+3642	Planlægningsmedarb.	 
+3643	Personalejur.kons.	 
+3644	Phare-Ekspert	 
+3647	Planlægger	 
+3648	Planlægningschef	 
+3649	Planlægningskonsulent	 
+3650	Planteavlskonsulent	 
+3651	Patentvederlag	 
+3653	Personalesekretær	 
+3654	Personalesagsbehandler	 
+3655	Ph.d.-stipendiat	 
+3656	Patentmedarbejder	 
+3657	Personvognsmekanikerelev	 
+3658	Planlægningsleder	 
+3662	Pers.adm.sekretær	 
+3664	Ph.d.-sekretær	 
+3671	Politiassessor	 
+3678	Politiassistent-R	 
+3681	Politibetjent-R	 
+3685	Politifuldmægtig	 
+3689	Politimester	 
+3693	Pometmester	 
+3695	Portner	 
+3703	Post Doc.	 
+3705	Projektingeniør	 
+3708	Post- og Trykkerimedarbejder	 
+3709	Postmedarbejder	 
+3715	Postdoc	 
+3716	Procesanalytiker	 
+3721	Produktionsteknolog	 
+3731	Pressekoordinator	 
+3732	Procesteknolog	 
+3733	Pressemedarbejder	 
+3734	Praktiksekretær	 
+3735	Praktikant	 
+3736	Praktikleder	 
+3737	Praktiklærer	 
+3738	Praktik- og praksiskoordinator	 
+3742	Praktisk Omsorgsmed.	 
+3743	Praktisk Medarbejder	 
+3745	Projektassistent	 
+3746	Projectchef	 
+3747	Projectkonsulent	 
+3748	Producent	 
+3750	Pressesekretær	 
+3751	Pressechef	 
+3752	Presseråd	 
+3753	Presse-Kulturmedarb.	 
+3754	Proceskoordinator	 
+3755	Procesmedarbejder	 
+3756	Produktionstekniker	 
+3757	Presserådgiver	 
+3758	Praktikvejleder	 
+3759	Producer	 
+3760	Produktionschef	 
+3761	Produktionsleder	 
+3762	Produktionsassistent	 
+3763	Professor	 
+3767	 Professor emeritus.	 
+3768	Programredaktør	 
+3769	Programsekretær	 
+3770	Projektforsker	 
+3771	Programmør	 
+3772	Projektmedarbejder	 
+3773	Projektleder	 
+3774	Projektadministrator	 
+3775	Professionsbachelor	 
+3776	Produktionsmedarb.	 
+3777	Prorektor	 
+3779	Projektvejleder	 
+3780	Professor MSA	 
+3782	Projektkoordinator	 
+3783	Projektattache	 
+3784	Prod.koordinator	 
+3785	Projektseniorforsker	 
+3789	Prorektor, Ingeniør	 
+3792	Produktchef	 
+3793	Programmør/planlægg.	 
+3794	Programleder	 
+3795	Prod.skolelærer	 
+3796	Præparator	 
+3797	Præsident	 
+3801	Produktudvikler	 
+3805	Præst	 
+3806	Projektsekretær	 
+3810	Prøveassistent	 
+3811	Programkoordinator	 
+3813	Programme Manager	 
+3816	Prøvetager	 
+3820	Psykiater	 
+3821	Psykiatrisk Overlæge	 
+3822	Postmester	 
+3824	Publikumsassistent	 
+3825	Psykolog	 
+3827	Publ.koordinator	 
+3828	Psykologisk Kons.	 
+3829	Publikumschef	 
+3830	Pædagog	 
+3831	Pædagogpraktikant	 
+3832	Produktionplanlæg.	 
+3833	Pædagogisk faglig koordinator	 
+3834	Pædagogisk Medhjælp	 
+3835	Pædagog.-Adm. Medarb	 
+3836	Programdirektør	 
+3837	Pædagogisk Konsulent	 
+3838	Pædagogleder	 
+3840	Prorektor, studiechef	 
+3841	Projektanalytiker	 
+3842	Pædagogisk Omsorgsm.	 
+3843	Projektchef/Souschef	 
+3844	Prodekan	 
+3845	Pædagogisk administrativ leder	 
+3847	Projektchef	 
+3848	Programchef	 
+3849	Projektleder ESDH	 
+3850	Pædagogisk assistent	 
+3851	Projektkonsulent	 
+3852	Pædagogisk Leder	 
+3853	Projektøkonom	 
+3855	Projektsygeplejerske	 
+3860	Praktikant FU	 
+4011	Radiograf	 
+4013	Radiograflærer	 
+4020	Radiomekaniker	 
+4021	Radiomontør	 
+4025	Radioprøvemester	 
+4035	Radiotekniker	 
+4048	Receptionsassistent	 
+4053	Receptionssekretær	 
+4054	Receptionist	 
+4055	Redaktionssekretær	 
+4056	Redaktør	 
+4058	Referent	 
+4059	Regionalkonsulent	 
+4063	Regionschef	 
+4066	Regionsleder	 
+4069	Registreringsmedarb.	 
+4070	Regissør	 
+4072	Registrator	 
+4073	Regnskabsansvarlig	 
+4074	Regnskabschef	 
+4075	Regnskabsfuldmægtig	 
+4076	Regnskabsfører	 
+4077	Regnskabselev	 
+4078	Regnskabskoordinator	 
+4079	Regnskabskonsulent	 
+4081	Regnskabsassistent	 
+4082	Regnskabsleder	 
+4083	Regnskabsmedarbejder	 
+4085	Regnskabsspecialist	 
+4087	Regnskabscontroller	 
+4090	Rektor	 
+4091	Rektorsekretær	 
+4093	Rekvisitør	 
+4099	Rengøringsleder	 
+4100	Rengøringsassistent	 
+4102	Rengøringsinspektør	 
+4106	Rengøringskoordinator	 
+4109	Reprofotograf	 
+4112	Reprokopist	 
+4115	Reparatør	 
+4116	Repetitør	 
+4117	Ressourcedirektør	 
+4118	Ressourcedirektør	 
+4120	Reservelæge	 
+4121	Reservelæge-1	 
+4123	Reservepolitibetjent	 
+4124	Reservoiringeniør	 
+4134	Retsassistent	 
+4135	Retsassessor	 
+4137	Retsmed.akademisk personale	 
+4138	Retsmedicinsk kontorpersonale	 
+4139	Retsbud	 
+4140	Retsformand	 
+4143	Retsgenetiker	 
+4145	Retskemiker	 
+4150	Retspræsident	 
+4165	Revisionschef	 
+4170	Revisor	 
+4180	Rigsadvokat	 
+4182	Rigsadvokat fuldmægtig	 
+4184	Rigsarkivar	 
+4187	Rigsrevisor	 
+4189	Rigsombudsmand	 
+4190	Risk Manager	 
+4206	Røntgentekniker	 
+4220	Rådgivende Ingeniør	 
+4222	Rådgiver	 
+4225	Rådsformand	 
+4230	Rådsmedlem	 
+4284	Sagkyndig Konsulent	 
+4290	Salgsleder	 
+4295	Salgskonsulent	 
+4296	Samlings- og forskningschef	 
+4297	Salgskoordinator	 
+4304	Salgsassistent	 
+4308	Samarbejdsprofessor	 
+4309	Sagsbehandler	 
+4311	SAP-konsulent	 
+4313	Sanger i Operakoret	 
+4314	Sanitør	 
+4315	Scenefunktionær	 
+4317	Scenograf	 
+4318	Scenemester	 
+4319	Scenemesterass.	 
+4320	Scholarstipendiat	 
+4321	Scenechef	 
+4333	Sekretariatsleder	 
+4334	Sekretariatsmedarb.	 
+4335	Sekretariatleder	 
+4336	Sekretariatschef	 
+4337	Sekretær	 
+4338	Sekretær	 
+4339	Sekretær/reception.	 
+4340	Sekr. f. Folketingets direktør	 
+4341	Sekretær/folketingets formand	 
+4342	Senior Systemingeniør	 
+4343	Senior Kysttekniker	 
+4344	Seniorkonsulent	 
+4345	Senior Examiner	 
+4346	Senior forskningskonsulent	 
+4347	Senioranklager	 
+4348	Senioranklager Grønland	 
+4351	Sektionschef	 
+4352	Seniormedarbejder	 
+4353	Sektionsingeniør	 
+4354	Sektionsleder	 
+4355	Sektordirektør	 
+4356	Sekretariats-og HR-chef	 
+4357	Senior IT-medarbejder	 
+4360	Seminarieadjunkt	 
+4362	Senioranalytiker	 
+4363	Seminarielektor	 
+4364	Sektorekspert	 
+4365	Seminarielærer	 
+4367	Seminarierektor	 
+4368	Senior Konsulent	 
+4369	Senioringeniør	 
+4370	Senior projektleder	 
+4371	Senior Rådgiver	 
+4373	Seniorforsker	 
+4374	Seniorrådgiver	 
+4375	Seniorudv.ingeniør	 
+4377	Seniordyrlæge	 
+4378	Seniorgeolog	 
+4379	Shippingsassistent	 
+4382	Seniorgeodatalog	 
+4384	Serviceingeniør	 
+4385	Serolog	 
+4387	Servicemedarbejder	 
+4389	Servicetekniker	 
+4390	Serviceassistent	 
+4392	Servicechef	 
+4393	Sessionslæge	 
+4394	Stabsmedarbejder	 
+4395	Serviceformand	 
+4397	Serviceleder	 
+4398	Serviceassistentelev	 
+4401	Seminarieadjunkt/-lektor	 
+4402	Servicekoordinator	 
+4403	Shiping Koordinator	 
+4404	Sikkerh.kontorfuldm.	 
+4405	Sikringstekniker	 
+4407	Seismikmedarbejder	 
+4409	Signalør	 
+4410	Sikringschef	 
+4414	Sikkerhedskoordinator	 
+4416	Sikkerhedsleder	 
+4417	Sikkerhedsrådgiver	 
+4418	Sikkerhedschef	 
+4424	Skelettekniker	 
+4434	Skibsfører	 
+4435	Skibsinspektør	 
+4454	Skolemedhjælper	 
+4457	Skibsassistent	 
+4458	Skipper	 
+4459	Skolerengøringsass.	 
+4462	Skolebetjentmedhj.	 
+4464	Skolehjemsassistent	 
+4466	Skolebetjent	 
+4468	Skolechef	 
+4471	Skoleinspektør	 
+4472	Skolekonsulent	 
+4473	Skoleleder	 
+4478	Skolebetjent	 
+4484	Skolepraktikelev	 
+4485	Skovløber	 
+4490	Skovarbejder	 
+4492	Skovfoged	 
+4493	Skovbruger	 
+4494	Skov og Naturteknikerelev	 
+4495	Skovrider	 
+4497	Skov- og naturtekniker	 
+4498	Skov-Og Landsk.ing.	 
+4499	Skriveleder	 
+4500	Skrædder	 
+4501	Skræddermester	 
+4503	Skuespilchef	 
+4505	Skuespiller	 
+4508	Slagter	 
+4509	Slagteriarbejder	 
+4510	SLS-Koordinator	 
+4511	Slagteriforv.ass.	 
+4512	Slagteriforvalter	 
+4513	Sling studerende	 
+4517	Slotsbetjent	 
+4520	Slotsforvalter	 
+4521	Slotsgartner	 
+4523	Sluse- og havnebetjent	 
+4525	Smagsdommer	 
+4535	Smed	 
+4540	Smørrebrødsjomfru	 
+4543	Social-/Sundhedshj.	 
+4544	Social-/ Sundhedsass	 
+4550	Snedker	 
+4551	Snedkermester	 
+4552	Socialformidler	 
+4553	Socialkoordinator	 
+4558	Socialkonsulent	 
+4563	Socialrådgiver	 
+4565	Socialpædagog	 
+4566	Sociolog	 
+4567	Software-Udvikler	 
+4570	Softwareingeniør	 
+4571	Sognefoged	 
+4572	Solodanser	 
+4575	Souschef	 
+4576	Specialtandlægekons.	 
+4577	Specialkonsulent	 
+4578	Speciallægekonsulent	 
+4579	Specialattache	 
+4580	Specialarbejder	 
+4581	Speciallæge	 
+4582	Specialmedarbejder	 
+4583	Specialist	 
+4584	Specialstuderende	 
+4587	Stabsjurist	 
+4588	Specialanklager	 
+4589	Stabscontrolle	 
+4591	Sous- og afdelingschef	 
+4592	Sproglærer	 
+4593	Sproglig Konsulent	 
+4594	Stabsmedarbejder	 
+4596	Specialanklager Grønland	 
+4603	Stagiaire	 
+4604	Sportekniker	 
+4605	Speciallæge under uddannelse	 
+4609	Stationsleder	 
+4616	Statsadvokatassessor	 
+4618	Statist	 
+4619	Statistformand	 
+4620	Statistisk Konsulent	 
+4622	Statistiker	 
+4625	Statsadvokat	 
+4626	Statsadvokatfuldm.	 
+4627	Statsaut. Revisor	 
+4628	Statsamtmand	 
+4629	Statsamtsfuldmægtig	 
+4630	Statsbiolog	 
+4631	Statsgeodæt	 
+4632	Statsgeolog	 
+4633	Statsseismolog	 
+4634	Statsrevisor	 
+4635	Statskonsulent	 
+4640	Stedf.kontorleder	 
+4641	Stedfortræder	 
+4643	Stereooperatør	 
+4644	Stenhugger	 
+4648	Stewardesse	 
+4649	Studie- og IT-chef	 
+4650	Stiftamtmand	 
+4651	Strategi-og proceschef	 
+4652	Strategisk chef	 
+4653	Strategimedarbejder	 
+4654	Styringschef	 
+4655	Stipendiat	 
+4657	Stud.adm.sagsbeh.	 
+4661	Stud.jur.	 
+4662	Stud.mag.	 
+4666	Studieadjunkt	 
+4667	Stud.polit.	 
+4670	Stud.scient.	 
+4673	Stud.scient.pol.	 
+4674	Studentervejleder	 
+4675	Studerende	 
+4676	Stud.arch.	 
+4677	Studenterstudievejl.	 
+4678	Studentervikar	 
+4679	Studiekonsulent	 
+4680	Studieleder	 
+4681	Studielektor	 
+4682	Studiekoordinator	 
+4683	Studievejleder	 
+4684	Studiesekretær	 
+4685	Studenterkoordinator	 
+4686	Studenterinstruktør	 
+4687	Studentermedhjælper	 
+4688	Studentermedhj,bibl	 
+4689	Studieadministrator	 
+4690	Stukkatør	 
+4691	Stud.techn.	 
+4692	Studiegruppevejleder	 
+4693	Studiechef	 
+4694	Studiekontorleder	 
+4695	Styrelseschef	 
+4697	Styrelsesmedlem	 
+4698	Styrmand	 
+4699	Studielektor	 
+4700	Styrmand 3.	 
+4701	Styrmand 1.	 
+4702	Styrmand 2.	 
+4703	Studieadministrativ chef	 
+4704	Studenterunderviser	 
+4705	Stævningsmand	 
+4706	Studierektor	 
+4707	Studieadministrativ medarb.	 
+4708	Studienævnssekretær	 
+4709	Studie/eksam.medarb	 
+4710	Studieadministrativ it-medarb.	 
+4712	SU-medarbejder	 
+4713	SU-sekretær	 
+4714	Sufflør	 
+4715	Suffløse	 
+4716	Sundhedsinformatiker	 
+4718	Studieadministrationssekretær	 
+4723	Sundhedsplejerske	 
+4725	Supportchef	 
+4726	Supportmedarbejder	 
+4727	Support.koordinator	 
+4728	Sundhedsfaglig medarbejder	 
+4732	Svagstrømsingeniør	 
+4734	Studentermedhjælp Fu	 
+4737	Sygehusapoteker	 
+4738	Sygehjælper	 
+4739	Studerende FU	 
+4743	Sygeplejeassistent	 
+4744	Sygepl.fagl.leder	 
+4746	Sygeplejesekretær	 
+4747	Sygeplejelærer	 
+4748	Sygeplejerske	 
+4750	Synteseingeniør	 
+4751	Systemkoordinator	 
+4753	Systemingeniør	 
+4756	Systemadministrator	 
+4758	Systemassistent	 
+4759	Systemspecialist	 
+4760	Systemanalytiker	 
+4761	Systemchef	 
+4762	Systemkonsulent	 
+4763	Systemplanlægger	 
+4764	Systemprogrammør	 
+4766	Systemmedarbejder	 
+4767	Systemudvikler	 
+4769	Systemeksp.konsulent	 
+4771	Systemtekniker	 
+4773	Sælger	 
+4776	Særlig vederlæggelse	 
+4778	Særlig rådgiver for minister	 
+4779	Særlig repræsentant	 
+4782	Specialarbejder (reserve)	 
+4813	Tandplejer	 
+4814	Tandlæge	 
+4815	Tandlæge Under Udd.	 
+4816	Tandlægekonsulent	 
+4817	Tandlægefaglig konsulent	 
+4818	Tandtekniker	 
+4819	Tandtekniker-Elev	 
+4825	Teamleder	 
+4830	Tapetserer	 
+4834	Teaterchef	 
+4836	Teatermaler	 
+4839	Teaterlæge	 
+4843	Tegnsprogsassistent	 
+4845	Tegner	 
+4846	Tegnsprogstolk	 
+4850	Tegnerelev	 
+4851	Teknikchef	 
+4852	Teknikumingeniør	 
+4854	Teknisk Direktør	 
+4855	Tekniker	 
+4856	Teknikumingeniør	 
+4857	Teknisk Assistent	 
+4858	Teknisk Chef	 
+4860	Teknologiråd	 
+4862	Teknisk Konsulent	 
+4863	Teknisk Leder	 
+4864	Teknisk Medarbejder	 
+4865	Teknisk Medhjælper	 
+4867	Teknisk Cellebiolog	 
+4868	Teknisk Tegner	 
+4870	Teknisk Rådgiver	 
+4871	Teknisk Sagsbehandl.	 
+4873	Teknisk Servicemedarbejder	 
+4875	Tekn.chefkonsulent	 
+4877	Teknisk projektleder	 
+4878	Teknisk Koordinator	 
+4879	Teknisk serviceleder	 
+4881	Tekn.spec.konsulent	 
+4883	Tekstbehandler	 
+4884	Tekn.kvalitetssekr.	 
+4890	Teknisk Supervisor	 
+4892	Teknisk-sakyndige	 
+4926	Telemester	 
+4929	Temaleder	 
+4939	Teknisk Koordinator	 
+4940	Teknikspecialist	 
+4941	Teknisk designer	 
+4942	TIC koordinator	 
+4943	Tilkalde Tolk	 
+4944	Tilkaldevikar	 
+4945	Teknisk designerelev	 
+4946	Tilskærerske	 
+4947	Tilsynsvagt	 
+4948	Tilsynstekniker	 
+4949	Tilsynsf.ved Læsesk.	 
+4950	Tilsynsassistent	 
+4951	Tilsynsformand	 
+4952	Tilsynsførende Ass.	 
+4955	Tilsynschef	 
+4956	Tilsynsleder	 
+4958	Tilsynsførende Dyrl.	 
+4959	Tilsynsførende	 
+4960	Timelærer	 
+4961	Timelønnet Lærer	 
+4963	Timelønnet Vikar	 
+4965	Timelønnet Dyrlæge	 
+4966	Timelønnet tilsynstekniker	 
+4970	Timelærer A	 
+4971	Timelærer B	 
+4972	Timelærer C	 
+4974	Timelærer	 
+4976	Timelærer	 
+4977	Timelærer	 
+4978	Timelærer	 
+4979	Timelærer Sats I-Iii	 
+4983	Toldassistent	 
+4998	Toldfunktionær	 
+5006	Toldopsynsmand	 
+5010	Toldpatruljemester	 
+5015	Tolk	 
+5016	Tonemester	 
+5022	Topograf	 
+5024	Tourneleder	 
+5029	Trainee	 
+5030	Trafikelev	 
+5031	Trafikchef	 
+5032	Trafikdirektør	 
+5034	Trafikinformationschef	 
+5035	Vejdriftstekniker	 
+5036	Trafikkoordinator	 
+5037	Trafikledelseskoordinator	 
+5038	Trafiksignalkoordinator	 
+5039	Trafikinformationskoordinator	 
+5042	Translatør	 
+5052	Trykkerileder	 
+5053	Trykkerimedarbejder	 
+5054	Turnuskoordinator	 
+5055	Turnusplanlægger	 
+5061	TV Tekniker	 
+5062	TV- og streamingmedarbejder	 
+5065	Typograf	 
+5070	Tækker	 
+5080	Tømrer	 
+5084	Ubefaren Skibsass.	 
+5099	Uddannelseschef	 
+5100	Uddannelsesdirektør	 
+5102	Uddannelsessekretær	 
+5105	Uddannelsesassistent	 
+5107	Uddannelseskonsulent	 
+5108	Uddannelsesleder	 
+5109	Uddannelsesplanlæg.	 
+5110	Udd.-/Underv.kons.	 
+5111	Uddannelsesvejleder	 
+5112	Udd.koordinator	 
+5113	Udenlandsk Lektor	 
+5114	Udbudskoordinator	 
+5115	Udbudschef	 
+5116	Udpeget af Dk Flygtningehjælp	 
+5121	Udstillingsassistent	 
+5122	Udstillingsinspektør	 
+5123	Udstillingschef	 
+5127	Udviklingsmedarb.	 
+5128	Udvikl.koordinator	 
+5129	Udviklingsingeniør	 
+5131	Udviklingskonsulent	 
+5132	Udvalgsformand	 
+5133	Udvalgsmedlem	 
+5134	Udviklingschef	 
+5136	Udviklingslektor	 
+5137	Udviklingschef IT & Økonomi	 
+5141	Udviklingsleder	 
+5142	Udviklingsdirektør	 
+5148	Underdirektør	 
+5161	Undersøgelsesleder	 
+5163	Underviser	 
+5164	Undervisningsadjunkt	 
+5167	Undervisn.konsulent	 
+5168	Undervisningskonsulent	 
+5169	Undervisn.vejleder	 
+5170	Undervisningsass.	 
+5172	Undervisningsleder	 
+5175	Unix-Administrator	 
+5176	Universitetsdirektør	 
+5204	Vedligeholdelseschef	 
+5205	Vagt	 
+5207	Vagtbetjent	 
+5210	Vagtfunktionær	 
+5214	Vagtleder	 
+5217	Vagtmester	 
+5218	Vagtmesterassistent	 
+5219	Vagtmestermedhjælper	 
+5221	Vagtplanlægger	 
+5230	Varmemester	 
+5231	Varemærkechef	 
+5232	Valideringstekniker	 
+5240	Vaskeriassistent	 
+5250	Vejcenterchef	 
+5252	Vejformand	 
+5255	Vederlagslønnet Pens	 
+5256	Ventilationsmontør	 
+5257	Veterinærkonsulent	 
+5258	Veterinærchef	 
+5260	Vej- og Trafikchef	 
+5261	Vejregelkoordinator	 
+5262	Vejleder	 
+5263	Vejledningsfaglig chef	 
+5264	Vejrobservatør	 
+5265	Vejassistent	 
+5267	Veterinærstuderende	 
+5269	Vet.nærsygeplejerske	 
+5270	Veterinærdirektør	 
+5271	Veterinærinspektør	 
+5272	Veterinærsygepl.elev	 
+5274	Viceafdelingsinspek.	 
+5276	Viceinstitutchef	 
+5277	Viceberedskabsmester	 
+5278	Vejmand	 
+5279	Vicebibl.direktør	 
+5280	Vicedirektør	 
+5281	Veterinær Radiograf	 
+5282	Viceforstander	 
+5283	Vicefængselsinspek.	 
+5284	Veterinærsygeplejerske	 
+5285	Viceluftfartsinspektør	 
+5286	Viceinspektør	 
+5288	Vicekontorchef	 
+5289	Vejtilsynsmedarbejder	 
+5290	Vejdirektør	 
+5291	Vejteknisk Chef	 
+5292	Viceinstitutdirektør	 
+5294	Ventilationsrådgiver	 
+5295	Vicecampusleder	 
+5297	Vicepræsident	 
+5300	Vicerektor	 
+5303	Vicesekretariatschef	 
+5305	Viceskoleinspektør	 
+5309	Vicestatsobducent	 
+5312	Vicestudierektor	 
+5313	Videojournalist	 
+5314	Videnmedarbejder	 
+5315	Vicevært	 
+5316	Viceværtsassistent	 
+5320	Videnskabelig Ass.	 
+5321	Videnskabelig assistent	 
+5322	Videnskabelig Medarb	 
+5323	Viceoperachef	 
+5324	Videncenterchef	 
+5325	Videnskabelig medhjælp - ADM	 
+5326	Videnskabelig medhjælp - FU	 
+5330	Vikar	 
+5331	Vikar A	 
+5332	Vintervagt og administration	 
+5333	Vintervagt og tilsyn	 
+5334	Vildtforvaltningsk.	 
+5335	Vinterkoordinator	 
+5336	Vinduespolerer	 
+5337	Vintervagt	 
+5338	Virksomhedsjurist	 
+5339	Vinterservicekoordinator	 
+5340	Visitator	 
+5350	Voksenelev	 
+5351	Vurderingsinspektør	 
+5352	Vurderingschef	 
+5353	Volontør	 
+5354	Vurderingsformand	 
+5355	Vurderingsmand	 
+5356	VVS-montør	 
+5360	VVS-installatør	 
+5366	Værftsleder	 
+5370	Værkfører	 
+5371	Værkmester	 
+5385	Værkstedsassistent	 
+5389	Værkstedsformand	 
+5390	Værkstedsfunktionær	 
+5392	Værkstedsleder	 
+5397	Værkstedsmedarbejder	 
+5400	Værktøjsmager	 
+5420	Våbenmekaniker	 
+5424	Web-medarbejder	 
+5425	Web-Koordinator	 
+5426	Webmaster	 
+5427	Webredaktør	 
+5428	Webmaster &-udvikler	 
+5429	Webmaster	 
+5431	Web-udvikler	 
+6006	Økonom	 
+6009	Økonoma	 
+6010	Økonoma	 
+6012	Økonomaassistent	 
+6015	Økonomi- og Adm.chef	 
+6016	Økonomimedarbejder	 
+6021	Økonomi- og ressourcedirektør	 
+6022	Økonomichef	 
+6023	Økonomidirektør	 
+6024	Økonomifuldmægtig	 
+6025	Økonomi og Pers.chef	 
+6026	Økonomi- og Adm.leder	 
+6027	Økonomiassistent	 
+6028	Økonomikonsulent	 
+6030	Økonomikoordinator	 
+6031	Økonomileder	 
+6033	Økonomisekretær	 
+6036	Økonomisk Rådgiver	 
+6048	Åmand	 
+6050	Årsvikar	 
+6105	Efterindtægtsmodt.	 
+7205	Afdelingsleder (F)	 
+7301	Trafikinspektør (F)	 
+7303	Trafikinformatør	 
+7304	Trafiktekniker	 
+7306	Trafikplanlægger	 
+12000	Adjunkt	Kun efter aftale med Forskningsministeriets departementet
+12001	Adjunkt	Kun efter aftale med Forskningsministeriets departementet
+12010	Afdelingstandlæge	Kun efter aftale med Forskningsministeriets departementet
+12015	Amanuensis	Kun efter aftale med Forskningsministeriets departementet
+12025	Dekan	Kun efter aftale med Forskningsministeriets departementet
+12030	Ekstern Lektor	Kun efter aftale med Forskningsministeriets departementet
+12035	Forskningsassistent	Kun efter aftale med Forskningsministeriets departementet
+12036	Forskningsadjunkt	Kun efter aftale med Forskningsministeriets departementet
+12037	Forskningslektor	Kun efter aftale med Forskningsministeriets departementet
+12038	Forskningsprofessor	Kun efter aftale med Forskningsministeriets departementet
+12039	Forskningsstipendiat	Kun efter aftale med Forskningsministeriets departementet
+12045	Kandidatstipendiat	Kun efter aftale med Forskningsministeriets departementet
+12050	Klinisk Assistent	Kun efter aftale med Forskningsministeriets departementet
+12055	Klinisk Kandidat	Kun efter aftale med Forskningsministeriets departementet
+12060	Klinisk Lektor	Kun efter aftale med Forskningsministeriets departementet
+12065	Klinisk Lærer	Kun efter aftale med Forskningsministeriets departementet
+12066	Klinisk Lærer	Kun efter aftale med Forskningsministeriets departementet
+12067	Klinisk Lærer	Kun efter aftale med Forskningsministeriets departementet
+12075	Klinisk Professor	Kun efter aftale med Forskningsministeriets departementet
+12080	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12081	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12082	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12083	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12090	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12091	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12093	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12094	Lektor	Kun efter aftale med Forskningsministeriets departementet
+12110	Professor	Kun efter aftale med Forskningsministeriets departementet
+12111	Professor	Kun efter aftale med Forskningsministeriets departementet
+12112	Professor	Kun efter aftale med Forskningsministeriets departementet
+12113	Professor Mso	Kun efter aftale med Forskningsministeriets departementet
+12120	Rektor	Kun efter aftale med Forskningsministeriets departementet
+12122	Forsker	Kun efter aftale med Forskningsministeriets departementet
+12123	Seniorforsker	Kun efter aftale med Forskningsministeriets departementet
+12124	Studielektor	Kun efter aftale med Forskningsministeriets departementet
+12125	Specialtandlægekand.	Kun efter aftale med Forskningsministeriets departementet
+12126	Studieadj. 1.-3. år	Kun efter aftale med Forskningsministeriets departementet
+12127	Studieadj. 4. og flg. år	Kun efter aftale med Forskningsministeriets departementet
+12128	Studieadjunkt	Kun efter aftale med Forskningsministeriets departementet
+12130	Undervisningsass.	Kun efter aftale med Forskningsministeriets departementet
+12140	Videnskabelig assistent	Kun efter aftale med Forskningsministeriets departementet
+14014	Administrationschef	Må kun anvendes af Banedanmark
+14017	Afdelingsleder	Må kun anvendes af Banedanmark
+14018	Administrerende Direktør	Må kun anvendes af Banedanmark
+14020	Agronom	Må kun anvendes af Banedanmark
+14021	Afdelingsingeniør	Må kun anvendes af Banedanmark
+14028	Akademiingeniør	Må kun anvendes af Banedanmark
+14036	Arbejdsmiljøkonsulent	Må kun anvendes af Banedanmark
+14038	Arbejdsmarkedskonsulent	Må kun anvendes af Banedanmark
+14039	Analysekonsulent	Må kun anvendes af Banedanmark
+14040	Arbejdersleder	Må kun anvendes af Banedanmark
+14042	Arkitekt	Må kun anvendes af Banedanmark
+14048	Assist. Projektleder	Må kun anvendes af Banedanmark
+14052	Assistent	Må kun anvendes af Banedanmark
+14055	Akademiøkonom	Må kun anvendes af Banedanmark
+14056	Bachelor	Må kun anvendes af Banedanmark
+14060	Business Controller	Må kun anvendes af Banedanmark
+14062	Befaren skibsassistent	Må kun anvendes af Banedanmark
+14077	Bygningshåndværker	Må kun anvendes af Banedanmark
+14078	Bygningsingeniør	Må kun anvendes af Banedanmark
+14079	Banehåndværker (T)	Må kun anvendes af Banedanmark
+14080	Budgetchef	Må kun anvendes af Banedanmark
+14084	Bygningskonstruktør	Må kun anvendes af Banedanmark
+14089	Bogholder	Må kun anvendes af Banedanmark
+14091	Byggetekniker	Må kun anvendes af Banedanmark
+14092	Bibliotekar	Må kun anvendes af Banedanmark
+14093	Biblioteksleder	Må kun anvendes af Banedanmark
+14097	Booking/operation Medarbejder	Må kun anvendes af Banedanmark
+14103	Centerleder	Må kun anvendes af Banedanmark
+14105	Civilingeniør	Må kun anvendes af Banedanmark
+14109	Cateringassistent	Må kun anvendes af Banedanmark
+14112	Chefkonsulent	Må kun anvendes af Banedanmark
+14115	Controller	Må kun anvendes af Banedanmark
+14118	Chefsekretær	Må kun anvendes af Banedanmark
+14119	Civiløkonom	Må kun anvendes af Banedanmark
+14121	Driftsassistent	Må kun anvendes af Banedanmark
+14122	Driftschef	Må kun anvendes af Banedanmark
+14123	Debitorbogholder	Må kun anvendes af Banedanmark
+14128	Diplomingeniør	Må kun anvendes af Banedanmark
+14132	Direktionssekretær	Må kun anvendes af Banedanmark
+14133	Direktør	Må kun anvendes af Banedanmark
+14136	Driftsspecialist	Må kun anvendes af Banedanmark
+14140	Edb-Chef	Må kun anvendes af Banedanmark
+14141	Driftsøkonom	Må kun anvendes af Banedanmark
+14143	Direktionsassistent	Må kun anvendes af Banedanmark
+14146	Edb-Medarbejder	Må kun anvendes af Banedanmark
+14148	Egu-Elev	Må kun anvendes af Banedanmark
+14149	Edb-Tekniker	Må kun anvendes af Banedanmark
+14151	Disponent	Må kun anvendes af Banedanmark
+14155	Chefjurist	Må kun anvendes af Banedanmark
+14160	Eksportingeniør	Må kun anvendes af Banedanmark
+14161	Efterindtægtsmodtager	Må kun anvendes af Banedanmark
+14168	Elektriker	Må kun anvendes af Banedanmark
+14170	Elinstallatør	Må kun anvendes af Banedanmark
+14173	Entrepriseleder	Må kun anvendes af Banedanmark
+14177	Erhvervselev	Må kun anvendes af Banedanmark
+14178	Ekspeditionssekretær	Må kun anvendes af Banedanmark
+14184	Finanschef	Må kun anvendes af Banedanmark
+14189	Forstkandidat	Må kun anvendes af Banedanmark
+14196	Fuldmægtig	Må kun anvendes af Banedanmark
+14199	Forretningsudviklingschef	Må kun anvendes af Banedanmark
+14200	Finansbogholder	Må kun anvendes af Banedanmark
+14203	Fysioterapeut	Må kun anvendes af Banedanmark
+14205	Gastronom	Må kun anvendes af Banedanmark
+14206	Fagarbejdsleder	Må kun anvendes af Banedanmark
+14231	Geolog	Må kun anvendes af Banedanmark
+14234	Gruppeleder	Må kun anvendes af Banedanmark
+14249	HR-Chef	Må kun anvendes af Banedanmark
+14252	Håndværker	Må kun anvendes af Banedanmark
+14253	HR-Konsulent	Må kun anvendes af Banedanmark
+14255	Håndværker (Eli)	Må kun anvendes af Banedanmark
+14256	Informationsmedarbejder	Må kun anvendes af Banedanmark
+14259	Indkøbschef	Må kun anvendes af Banedanmark
+14260	Indkøber	Må kun anvendes af Banedanmark
+14261	Indkøbskoordinator	Må kun anvendes af Banedanmark
+14262	Indkøbsmedarbejder	Må kun anvendes af Banedanmark
+14263	Indkøbskonsulent	Må kun anvendes af Banedanmark
+14265	Informationschef	Må kun anvendes af Banedanmark
+14266	Ingeniør	Må kun anvendes af Banedanmark
+14267	International Koordinator	Må kun anvendes af Banedanmark
+14268	IT-Medarbejder	Må kun anvendes af Banedanmark
+14269	IT-Specialist	Må kun anvendes af Banedanmark
+14270	Infrastrukturplanlægger	Må kun anvendes af Banedanmark
+14271	Ingeniørassistent	Må kun anvendes af Banedanmark
+14272	IT-Assistent	Må kun anvendes af Banedanmark
+14273	Ingeniør Praktikant	Må kun anvendes af Banedanmark
+14274	IT-Konsulent	Må kun anvendes af Banedanmark
+14275	IT-Chef	Må kun anvendes af Banedanmark
+14276	IT-Koordinator	Må kun anvendes af Banedanmark
+14277	IT-Projektleder	Må kun anvendes af Banedanmark
+14279	IT-Leder	Må kun anvendes af Banedanmark
+14280	Jernbanearbejder	Må kun anvendes af Banedanmark
+14281	Jernbanearbejder (F)	Må kun anvendes af Banedanmark
+14284	IT-Projektmedarbejder	Må kun anvendes af Banedanmark
+14288	IT-Udvikler	Må kun anvendes af Banedanmark
+14289	IT Driftschef	Må kun anvendes af Banedanmark
+14290	IT-Supporter	Må kun anvendes af Banedanmark
+14294	Journalist	Må kun anvendes af Banedanmark
+14299	Kontraktholder	Må kun anvendes af Banedanmark
+14300	Juridisk Medarbejder	Må kun anvendes af Banedanmark
+14303	Jurist	Må kun anvendes af Banedanmark
+14305	Kontorelev	Må kun anvendes af Banedanmark
+14306	Kok	Må kun anvendes af Banedanmark
+14308	Kommunikationsmedarbejder	Må kun anvendes af Banedanmark
+14309	Kommunikationschef	Må kun anvendes af Banedanmark
+14311	Kommunikationsleder	Må kun anvendes af Banedanmark
+14312	Kommunikationskoordinator	Må kun anvendes af Banedanmark
+14315	Konsulent	Må kun anvendes af Banedanmark
+14318	Kemiingeniør	Må kun anvendes af Banedanmark
+14322	Korrespondent	Må kun anvendes af Banedanmark
+14323	Kreditorbogholder	Må kun anvendes af Banedanmark
+14327	Kørestrømsmontør	Må kun anvendes af Banedanmark
+14333	Kantineleder	Må kun anvendes af Banedanmark
+14334	Kontorassistent	Må kun anvendes af Banedanmark
+14335	Kommunikationskonsulent	Må kun anvendes af Banedanmark
+14336	Kontorchef	Må kun anvendes af Banedanmark
+14338	Kantineassistent	Må kun anvendes af Banedanmark
+14340	Kursuscenterchef	Må kun anvendes af Banedanmark
+14341	Kantinemedhjælper	Må kun anvendes af Banedanmark
+14343	Kontorfunktionær	Må kun anvendes af Banedanmark
+14345	Kontorfuldmægtig	Må kun anvendes af Banedanmark
+14350	Laborant	Må kun anvendes af Banedanmark
+14351	Kvalitetskonsulent	Må kun anvendes af Banedanmark
+14353	Kursussekretær	Må kun anvendes af Banedanmark
+14354	Kørestrømstekniker	Må kun anvendes af Banedanmark
+14356	Kokelev	Må kun anvendes af Banedanmark
+14360	Kontorbetjent	Må kun anvendes af Banedanmark
+14362	Kvalitetschef	Må kun anvendes af Banedanmark
+14363	Kursuscenterleder	Må kun anvendes af Banedanmark
+14382	Lagerarbejder	Må kun anvendes af Banedanmark
+14384	Lagerkoordinator	Må kun anvendes af Banedanmark
+14392	Landinspektør	Må kun anvendes af Banedanmark
+14413	Landmålingstekniker	Må kun anvendes af Banedanmark
+14426	Logistikmedarbejder	Må kun anvendes af Banedanmark
+14427	Ligestillingskonsulent	Må kun anvendes af Banedanmark
+14434	Læge	Må kun anvendes af Banedanmark
+14436	Lægekonsulent	Må kun anvendes af Banedanmark
+14448	Lærling	Må kun anvendes af Banedanmark
+14449	Lønkonsulent	Må kun anvendes af Banedanmark
+14455	Magister	Må kun anvendes af Banedanmark
+14461	Maskinkører	Må kun anvendes af Banedanmark
+14465	Medarbejder	Må kun anvendes af Banedanmark
+14467	Markedsføringschef	Må kun anvendes af Banedanmark
+14468	Museumsinspektør	Må kun anvendes af Banedanmark
+14470	Marketingsassistent	Må kun anvendes af Banedanmark
+14472	Medhjælper	Må kun anvendes af Banedanmark
+14479	Markedskoordinator	Må kun anvendes af Banedanmark
+14483	Maskinmester	Må kun anvendes af Banedanmark
+14504	Maskintekniker	Må kun anvendes af Banedanmark
+14509	Netværksadministrator	Må kun anvendes af Banedanmark
+14514	Miljømedarbejder	Må kun anvendes af Banedanmark
+14516	Overassistent	Må kun anvendes af Banedanmark
+14520	Områdechef	Må kun anvendes af Banedanmark
+14522	Projektkoordinator	Må kun anvendes af Banedanmark
+14538	Produktionsdirektør	Må kun anvendes af Banedanmark
+14539	Personalechef	Må kun anvendes af Banedanmark
+14541	Personalekonsulent	Må kun anvendes af Banedanmark
+14542	Planlægningschef	Må kun anvendes af Banedanmark
+14545	Planlægger	Må kun anvendes af Banedanmark
+14546	Praktikant	Må kun anvendes af Banedanmark
+14550	Projektassistent	Må kun anvendes af Banedanmark
+14553	Pressechef	Må kun anvendes af Banedanmark
+14554	Projektmedarbejder	Må kun anvendes af Banedanmark
+14555	Projektchef	Må kun anvendes af Banedanmark
+14557	Projektleder	Må kun anvendes af Banedanmark
+14558	Projektkonsulent	Må kun anvendes af Banedanmark
+14560	Psykolog	Må kun anvendes af Banedanmark
+14562	Regnskabsassistent	Må kun anvendes af Banedanmark
+14571	Redaktør	Må kun anvendes af Banedanmark
+14574	Regionschef	Må kun anvendes af Banedanmark
+14575	Restaurantchef	Må kun anvendes af Banedanmark
+14579	Revisor	Må kun anvendes af Banedanmark
+14580	Revisionschef	Må kun anvendes af Banedanmark
+14585	Regnskabsleder	Må kun anvendes af Banedanmark
+14586	Regnskabsmedarbejder	Må kun anvendes af Banedanmark
+14588	Rengøringsassistent	Må kun anvendes af Banedanmark
+14590	Receptionist	Må kun anvendes af Banedanmark
+14595	Regnskabschef	Må kun anvendes af Banedanmark
+14598	Regnskabskonsulent	Må kun anvendes af Banedanmark
+14616	Sanitør	Må kun anvendes af Banedanmark
+14623	Sekretær	Må kun anvendes af Banedanmark
+14626	Smørrebrødsjomfru	Må kun anvendes af Banedanmark
+14630	Sekretariatschef	Må kun anvendes af Banedanmark
+14637	Sektionschef	Må kun anvendes af Banedanmark
+14651	Sekretariatsleder	Må kun anvendes af Banedanmark
+14652	Sektionsleder	Må kun anvendes af Banedanmark
+14655	Serviceassistent	Må kun anvendes af Banedanmark
+14659	Sektorchef	Må kun anvendes af Banedanmark
+14660	Servicemedarbejder	Må kun anvendes af Banedanmark
+14662	Sikkerheds- og Kvalitetschef	Må kun anvendes af Banedanmark
+14670	Teknisk designer	Må kun anvendes af Banedanmark
+14671	Tekniker	Må kun anvendes af Banedanmark
+14672	Sikringsingeniør	Må kun anvendes af Banedanmark
+14673	Sikringstekniker	Må kun anvendes af Banedanmark
+14678	Systemadministrator	Må kun anvendes af Banedanmark
+14684	Skovingeniør	Må kun anvendes af Banedanmark
+14685	Souschef	Må kun anvendes af Banedanmark
+14690	Salgskonsulent	Må kun anvendes af Banedanmark
+14691	Skovtekniker	Må kun anvendes af Banedanmark
+14692	Sektionsleder	Må kun anvendes af Banedanmark
+14694	Salgskoordinator	Må kun anvendes af Banedanmark
+14695	Specialkonsulent	Må kun anvendes af Banedanmark
+14696	Specialist	Må kun anvendes af Banedanmark
+14697	Socialrådgiver	Må kun anvendes af Banedanmark
+14699	Stabschef	Må kun anvendes af Banedanmark
+14707	Sygeplejerske	Må kun anvendes af Banedanmark
+14713	Studentermedhjælper	Må kun anvendes af Banedanmark
+14714	Teknisk Konsulent	Må kun anvendes af Banedanmark
+14715	Supportleder	Må kun anvendes af Banedanmark
+14719	Tilbudschef	Må kun anvendes af Banedanmark
+14721	Teknisk Assistent	Må kun anvendes af Banedanmark
+14722	Teknisk Chef	Må kun anvendes af Banedanmark
+14723	Trafikdisponent	Må kun anvendes af Banedanmark
+14737	Teknikumingeniør	Må kun anvendes af Banedanmark
+14740	Tjener	Må kun anvendes af Banedanmark
+14743	Underdirektør	Må kun anvendes af Banedanmark
+14745	Trafikleder	Må kun anvendes af Banedanmark
+14750	Uddannelseskonsulent	Må kun anvendes af Banedanmark
+14751	Uddannelseschef	Må kun anvendes af Banedanmark
+14754	Vedligeholdelseschef	Må kun anvendes af Banedanmark
+14755	Udviklingschef	Må kun anvendes af Banedanmark
+14758	Voksenerhvervselev	Må kun anvendes af Banedanmark
+14760	Vicedirektør	Må kun anvendes af Banedanmark
+14761	Uddannelsesleder	Må kun anvendes af Banedanmark
+14762	Værkstedsassistent	Må kun anvendes af Banedanmark
+14763	Værkstedschef	Må kun anvendes af Banedanmark
+14765	Teamleder	Må kun anvendes af Banedanmark
+14774	Udviklingskonsulent	Må kun anvendes af Banedanmark
+14776	Trafikdisponent aspirant	Må kun anvendes af Banedanmark
+14777	Værkstedsleder	Må kun anvendes af Banedanmark
+14778	Værkmester	Må kun anvendes af Banedanmark
+14781	Supervisor	Må kun anvendes af Banedanmark
+14787	Tilbudsassistent	Må kun anvendes af Banedanmark
+14789	Teknisk Designerelev	Må kun anvendes af Banedanmark
+14792	Voksenelev	Må kun anvendes af Banedanmark
+14795	Web-Designer	Må kun anvendes af Banedanmark
+14798	Økonomichef	Må kun anvendes af Banedanmark
+14799	Økonomidirektør	Må kun anvendes af Banedanmark
+14803	Økonomikonsulent	Må kun anvendes af Banedanmark
+14804	Økonomimedarbejder	Må kun anvendes af Banedanmark
+21001	Bestyrelsesformand	Må kun anvendes af Banedanmark
+21003	Bestyrelsesmedlem	Må kun anvendes af Banedanmark
+21016	Kontorfunktionær	Må kun anvendes af Banedanmark
+21017	Kontorassistent	Må kun anvendes af Banedanmark
+21019	Lagermedhjælper	Må kun anvendes af Banedanmark
+21022	Medarbejder	Må kun anvendes af Banedanmark
+21025	Rengøringsassistent	Må kun anvendes af Banedanmark
+21026	Rengøringsassistent	Må kun anvendes af Banedanmark
+21029	Studerende	Må kun anvendes af Banedanmark
+21030	Tekniker	Må kun anvendes af Banedanmark
+21038	Underviser	Må kun anvendes af Banedanmark
+21044	Assistent	Må kun anvendes af Banedanmark
+21049	Instruktør (Extern)	Må kun anvendes af Banedanmark
+21054	Servicemedarbejder	Må kun anvendes af Banedanmark
+21063	Medhjælper	Må kun anvendes af Banedanmark
+21067	Tjener	Må kun anvendes af Banedanmark
+21068	Cafeteriaassistent	Må kun anvendes af Banedanmark
+21071	Kok	Må kun anvendes af Banedanmark
+21072	Smørrebrødsjomfru	Må kun anvendes af Banedanmark
+21073	Cateringmedarbejder	Må kun anvendes af Banedanmark
+21078	Trafikdisponent	Må kun anvendes af Banedanmark
+21079	Studentermedhjælper	Må kun anvendes af Banedanmark
+23010	Vederlag. Pensionist	Må kun anvendes af Banedanmark
+30304	Menig	Må kun anvendes af Banedanmark
+35300	Håndværker	Må kun anvendes af Banedanmark
+35340	Korpsmester	Må kun anvendes af Banedanmark
+35400	Menig	Må kun anvendes af Banedanmark
+35450	Mester	Må kun anvendes af Banedanmark
+39021	Sektionschef(r)	Må kun anvendes af Banedanmark
+39031	Sektionsleder(r)	Må kun anvendes af Banedanmark
