@@ -3,7 +3,7 @@ block container
     select.form-control(chosen, data-placeholder="Choose a configuration", ng-model="jc", ng-options="c as c.name for c in configurations", style="width: 50%")
     article.col-lg-6
         header.page-header Job category config
-        form.form-horizontal(role="form")
+        form.form-horizontal(role="form", name="config")
             div.form-group
                 label.control-label.col-lg-2 Name
                 div.col-lg-10
@@ -11,35 +11,41 @@ block container
             div.form-group
                 label.control-label.col-lg-2 Category
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a category", ng-model="jc.category", ng-options="c as c for c in categories")
+                    select.form-control(chosen, data-placeholder="Choose a category", ng-model="jc.category", ng-options="c as c for c in categories", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 LKO
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a LKO", ng-model="jc.lko", ng-options="l.kode as (l.kode + ': ' + l.navn) for l in lkos")
+                    select.form-control(chosen, data-placeholder="Choose a LKO", ng-model="jc.lko", ng-options="l.kode as (l.kode + ': ' + l.navn) for l in lkos", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 PKAT
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.nummer as (p.nummer + ': ' + p.navn) for p in pkats")
+                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.nummer as (p.nummer + ': ' + p.navn) for p in pkats", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 STIKO
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.nummer as (s.nummer + ': ' + s.stilling) for s in stikos")
+                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.nummer as (s.nummer + ': ' + s.stilling) for s in stikos", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 Salary class
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a salary class", ng-model="jc.sc", ng-options="sc as sc for sc in salaryClasses")
+                    select.form-control(chosen, data-placeholder="Choose a salary class", ng-model="jc.sc", ng-options="sc as sc for sc in salaryClasses", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 Salary form
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a salary from", ng-model="jc.sf", ng-options="sf as sf for sf in salaryForms")
+                    select.form-control(chosen, data-placeholder="Choose a salary from", ng-model="jc.sf", ng-options="sf as sf for sf in salaryForms", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 Salary level
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a salary level", ng-model="jc.sl", ng-options="sl as sl for sl in salaryLevels")
+                    select.form-control(chosen, data-placeholder="Choose a salary level", ng-model="jc.sl", ng-options="sl as sl for sl in salaryLevels", ng-required="true")
+            div.form-group
+                label.control-label.col-lg-2 Valid
+                div.col-lg-3
+                    input.form-control(type="text", datepicker-popup="dd-MM-yyyy", max="jc.to", ng-model="jc.from", ng-required="true")
+                div.col-lg-3
+                    input.form-control(type="text", datepicker-popup="dd-MM-yyyy", min="jc.from", ng-model="jc.to", ng-required="true")
             hr
             footer.btn-group.btn-group-justified
                 section.btn-group
-                    button.btn.btn-success(type="submit") Save
+                    button.btn.btn-success(type="submit", ng-disabled="config.$invalid") Save
                 section.btn-group
                     button.btn.btn-warning(type="reset") Cancel
                 section.btn-group

@@ -1,4 +1,4 @@
-angular.module('app', ['ngResource', 'localytics.directives']).controller('ctrl', ['$scope', '$resource', '$http', function($scope, $resource, $http) {
+angular.module('app', ['ngResource', 'localytics.directives', 'ui.bootstrap']).controller('ctrl', ['$scope', '$resource', '$http', function($scope, $resource, $http) {
     $scope.stikos = $resource('/api/stiko').query();
     $scope.pkats = $resource('/api/pkat').query();
     $scope.lkos = $resource('/api/lko').query();
