@@ -1,0 +1,26 @@
+{
+  "name": "aarhus",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mdmsua/aarhus",
+  "authors": [
+    "Dmytro Morozov <mdmsua@icloud.com>"
+  ],
+  "main": "server.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-resource": "~1.2.16",
+    "angular-chosen-localytics": "~1.0.6",
+    "angular-ui-select2": "~0.0.5",
+    "angular": "~1.2.16",
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.0",
+    "angular-bootstrap": "~0.10.0"
+  }
+}
