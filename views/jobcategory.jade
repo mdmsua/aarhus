@@ -1,5 +1,6 @@
 extends layout
 block container
+    select.form-control(chosen, data-placeholder="Choose a configuration", ng-model="jc", ng-options="c as c.name for c in configurations", style="width: 50%")
     article.col-lg-6
         header.page-header Job category config
         form.form-horizontal(role="form")
@@ -14,15 +15,15 @@ block container
             div.form-group
                 label.control-label.col-lg-2 LKO
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a LKO", ng-model="jc.lko", ng-options="l.kode as l.navn for l in lkos")
+                    select.form-control(chosen, data-placeholder="Choose a LKO", ng-model="jc.lko", ng-options="l.kode as (l.kode + ': ' + l.navn) for l in lkos")
             div.form-group
                 label.control-label.col-lg-2 PKAT
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.nummer as p.navn for p in pkats")
+                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.nummer as (p.nummer + ': ' + p.navn) for p in pkats")
             div.form-group
                 label.control-label.col-lg-2 STIKO
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.nummer as s.stilling for s in stikos")
+                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.nummer as (s.nummer + ': ' + s.stilling) for s in stikos")
             div.form-group
                 label.control-label.col-lg-2 Salary class
                 div.col-lg-10

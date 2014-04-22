@@ -6,9 +6,50 @@ angular.module('app', ['ngResource', 'localytics.directives']).controller('ctrl'
     $scope.salaryClasses = Array.apply(null, Array(100)).map(function (_, i) {if (i > 0) return i;});
     $scope.salaryForms = Array.apply(null, Array(6)).map(function (_, i) {if (i > 0) return i;});
     $scope.salaryLevels = Array.apply(null, Array(56)).map(function (_, i) {if (i > 0) return i;});
+    $scope.configurations = [{
+        name: 'Sample configuration',
+        category: 'Professor',
+        lko: '10013',
+        pkat: '101',
+        stiko: '3763',
+        sc: 10,
+        sf: 5,
+        sl: 50
+    }];
     $scope.getHistory = function () {
         $http.get('/api/history').then(function(response) {
-            $scope.history = response.data;
+            var history = [];
+            var data = response.data;
+            data.forEach(function (period) {
+                var values = [];
+                var index = Number((Math.random() * 10).toFixed());
+                values.push({
+                    key: 'LKO',
+                    value: $scope.lkos[index].kode + ' (' + $scope.lkos[index].navn + ')'
+                });
+                values.push({
+                    key: 'PKAT',
+                    value: $scope.pkats[index].nummer + ' (' + $scope.pkats[index].navn + ')'
+                });
+                values.push({
+                    key: 'STIKO',
+                    value: $scope.stikos[index].nummer + ' (' + $scope.stikos[index].stilling + ')'
+                });
+                values.push({
+                    key: 'Salary class',
+                    value: $scope.salaryClasses[index] || 1
+                });
+                values.push({
+                    key: 'Salary form',
+                    value: $scope.salaryForms[index] || 1
+                });
+                values.push({
+                    key: 'Salary level',
+                    value: $scope.salaryLevels[index] || 1
+                });
+                period.values = values;
+            });
+            $scope.history = data;
         });
     };
 }]);

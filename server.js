@@ -29,7 +29,7 @@ if (env === 'import') {
 var stiko = new Stiko(new Task(tableService, 'stiko', 'stiko'));
 var pkat = new Pkat(new Task(tableService, 'pkat', 'pkat'));
 var lko = new Lko(new Task(tableService, 'lko', 'lko'));
-var history = new History();
+var history = new History(tableService);
 var jobcategory = new JobCategory();
 
 app.get('/job-category-config', jobcategory.index);
