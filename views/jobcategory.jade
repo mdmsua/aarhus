@@ -19,11 +19,11 @@ block container
             div.form-group
                 label.control-label.col-lg-2 PKAT
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.nummer as (p.nummer + ': ' + p.navn) for p in pkats", ng-required="true")
+                    select.form-control(chosen, data-placeholder="Choose a PKAT", ng-model="jc.pkat", ng-options="p.kode as (p.kode + ': ' + p.navn) for p in pkats", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 STIKO
                 div.col-lg-10
-                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.nummer as (s.nummer + ': ' + s.stilling) for s in stikos", ng-required="true")
+                    select.form-control(chosen, data-placeholder="Choose a STIKO", ng-model="jc.stiko", ng-options="s.kode as (s.kode + ': ' + s.navn) for s in stikos", ng-required="true")
             div.form-group
                 label.control-label.col-lg-2 Salary class
                 div.col-lg-10

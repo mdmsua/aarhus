@@ -1,13 +1,8 @@
-module.exports = Employee;
-
-function Employee() {
-}
-
-Employee.index = function (req, res) {
+exports.index = function (req, res) {
     res.render('employee');
 };
 
-Employee.search = function (req, res) {
+exports.search = function (req, res) {
     if (req.body.q)
         res.render('employee', { employees: [
             {
@@ -26,6 +21,6 @@ Employee.search = function (req, res) {
     else res.render('employee');
 };
 
-Employee.get = function (req, res) {
+exports.get = function (req, res) {
     res.render('employee', { employee: { ssn: req.params.ssn } });
 };

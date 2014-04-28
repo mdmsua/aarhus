@@ -1,11 +1,12 @@
 var nconf = require('nconf'),
     azure = require('azure'),
     bodyParser = require('body-parser'),
-    Api = require('./Routes/Api'),
-    JobCategory = require('./Routes/JobCategory'),
-    Employee = require('./Routes/Employee'),
+    path = require('path'),
     express = require('express'),
-    apiRouter = express.Router();
+    apiRouter = express.Router(),
+    Api = require('./routes/api'),
+    Employee = require('./routes/employee'),
+    JobCategory = require('./routes/jobcategory');
 
 var app = express();
 app.set('view engine', 'jade');
@@ -19,20 +20,32 @@ var tableService = azure.createTableService(nconf.get('AZURE_STORAGE_ACCOUNT'), 
 
 var env = process.env.NODE_ENV || '';
 if (env === 'import') {
-    var Import = require('./modules/Import');
-    var setup = new Import(tableService);
-    setup.stiko();
-    setup.pkat();
-    setup.lko();
-    setup.sted();
+    var imports = process.argv[2].split(',');
+    imports.forEach(function (key) {
+        try {
+            var module = require(path.join('./modules', key))(tableService);
+            module.install(function (errors) {
+                if (errors && errors.length) {
+                    errors.forEach(function (error) {
+                        console.error(error);
+                    });
+                }
+                else
+                    console.success('%s setup OK', key);
+            });
+        }
+        catch (error) {
+            console.error('%s setup FAIL: %s', key, error);
+        }
+    });
 }
 
 var api = new Api(tableService);
 
 apiRouter.get('/lko', api.lko);
 apiRouter.get('/pkat', api.pkat);
+apiRouter.get('/sted', api.sted);
 apiRouter.get('/stiko', api.stiko);
-apiRouter.get('/history', api.history);
 
 app.use('/api', apiRouter);
 
