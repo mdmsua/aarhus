@@ -5,7 +5,7 @@ var Task = require('../Task'),
 
 function Import(tableService) {
     this.tableService = tableService;
-    this.getWords = function(file, callback) {
+    this.getWords = function (file, callback) {
         fs.readFile(__dirname + '/' + file, function (error, data) {
             if (error) callback(error);
             data.toString().split('\n').forEach(function (line) {
@@ -25,7 +25,7 @@ Import.prototype.stiko = function () {
         var entity = {
             nummer: length > 0 ? words[0] : '',
             stilling: length > 1 ? words[1] : '',
-            yderligere_oplysninger: length > 2 ? words[2]: ''
+            yderligere_oplysninger: length > 2 ? words[2] : ''
         };
         task.insertEntity(entity, 'nummer', function () {
             console.log('STIKO ' + entity.nummer + ': ' + entity.stilling);
@@ -68,6 +68,33 @@ Import.prototype.lko = function () {
         };
         task.insertEntity(entity, 'kode', function () {
             console.log('LKO ' + entity.kode + ': ' + entity.navn);
+        });
+    });
+};
+
+Import.prototype.sted = function (callback) {
+    var self = this;
+    var task = new Task(self.tableService, 'sted', 'sted', function (error) {
+        if (error) callback(error);
+        fs.readFile(__dirname + '/sted.txt', function (error, data) {
+            if (error) callback(error);
+            data.toString().split('\n').forEach(function (line) {
+                var code = Number(line.slice(0, 4));
+                var name = line.slice(5).trim();
+                if (/^\d{4}/.test(name)) {
+                    name = name.slice(5).trim();
+                }
+                var entity = {
+                    kode: code,
+                    navn: name
+                };
+                task.insertEntity(entity, 'kode', function (error, entity) {
+                    if (error)
+                        console.error(error);
+                    else
+                        console.log('STED %d: %s', entity.kode, entity.navn);
+                });
+            });
         });
     });
 };

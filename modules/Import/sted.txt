@@ -1,0 +1,772 @@
+1000-1000-Arts
+1005-1005-Dansk Smerteforskningscenter
+1007-1007-Center for Journalistiske
+1010-1010-Sundhedstjenesteforskning
+1011-1011-Klinisk Socialmedicin
+1015-1015-Fødevarer og Jordbrug(DCA), Nat.C.
+1024-1024-Center for Undervisning og Læring
+1027-1027-Havebrugsproduktion
+1028-1028-Biosystemteknologi
+1031-1031-Center for Undervisningsudvikling
+1032-1032-Antikmuseet
+1036-1036-Agroøkologi, Institut for
+1037-1037-AU, Institut for Husdyrvidenskab
+1038-1038-Genetik & Genomforsk. Cent. f.
+1039-1039-Institut for Fødevarer
+1040-1040-Miljø og Energi(DCE), Nat.C.
+1041-1041-StudiePlan
+1042-1042-Studieinformation
+1044-1044-Arktisk Miljø
+1045-1045-Atmosfærisk Miljø
+1046-1046-Ferskvandsøkologi
+1047-1047-Forsknings-, Overvågnings- og Råd.
+1048-1048-AU IT, Support, ST, Roskilde
+1049-1049-Marin Økologi
+1051-1051-Miljøkemi og Mikrobiologi
+1052-1052-ST Økonomi, Roskilde
+1055-1055-AUL,AR, Moesgård
+1057-1057-AUL, AR, Kasernen
+1058-1058-AUL, AR, Nobel
+1060-1060-AIL, ST, Katrinebjerg
+1061-1061-Systemanalyse
+1062-1062-Terrestrisk Økologi
+1063-1063-Vildtbiologi og Biodiversitet
+1065-1065-Biblioteket, ASB
+1069-1069-Erhvervsøkonomi
+1071-1071-Institut for Marketing og Organisat
+1072-1072-Institut for Erhvervskommunikation
+1074-1074-Nationaløkonomi
+1076-1076-Automation og Systemteknologi
+1081-1081-AU HR, ST,  Foulum
+1088-1088-Klinisk Genetisk Afdeling
+1090-1090-Artsrådet
+1091-1091-Markdrift
+1093-1093-Askov
+1094-1094-Foulumgaard
+1095-1095-Jyndevad
+1096-1096-Kvæg
+1097-1097-Svin
+1099-1099-Fjerkræ
+1106-1106-Fødevarekemi og -teknologi
+1107-1107-Mælke- og Ægkvalitet
+1108-1108-au, Vegetabilier
+1109-1109-Afdelingsfunktion, IFK, DJF
+1110-1110-Europastudier, fag
+1111-1111-Klima og Vand
+1113-1113-Produktionssystemer
+1115-1115-Jordfysik og Jordressourcer
+1116-1116-Jord og Næringsstoffer
+1117-1117-Afdelingsfunktion, JPM. DJF
+1120-1120-Europastudier, Studienævnet for
+1123-1123-Forskningscenter Bygholm
+1127-1127-AU IT, Support, ST, Foulum
+1128-1128-HBS Institutsekretariat, Foulum
+1129-1129Husdyrernæring og miljø
+1130-1130-Center for Semiotik
+1134-1134-Adfærd og Stressbiologi
+1140-1140-Molekylær Genetik og Bioteknologi
+1141-1141-Molekylær Genetik og Systembiologi
+1144-1144-PBS Afdelingsfunktion, DJF
+1146-1146-Plantepatologi og Entomologi
+1147-1147-Pesticidforskning og Miljøkemi
+1155-1155-Teknisk forvaltning, Fuglsangs All
+1156-1156-AU IT, Support, BS, Fuglesangs All
+1158-1158-Efter- og videreuddannelsesområdet,
+1162-1162-IT-vest, samarbejdende universitete
+1168-1168-Internationale studier, fag
+1170-1170-Danmarks Pædagogiske Univ.skole
+1173-1173-AU Forskning og Talent, AR, Emdrup
+1176-1176- AU Talent og Forskning, Forsknings
+1177-1177-AU Studier, Campus Emdrup
+1183-1183-AR Økonomi, Emdrup
+1184-1184-AU HR, AR,  Emdrup
+1186-1186-Arts Byg2 Bygningsdrift, Campus Emd
+1188-1188-AU IT System & Udvikling, Emdrup
+1189-1189-AU Library, AR, Emdrup
+1191-1191-Center for Børnelitteratur
+1205-1205-Foto/medie afdelingen, Moesgård
+1210-1210-Forhistorisk Arkæologi, fag
+1212-1212-AU IT Klient platforme,Emdrup
+1220-1220-Middelalder-og Renæssancearkæologi,
+1230-1230-Antropologi og Etnografi
+1232-1232-Bogholderi, DPB
+1243-1243-Klinisk Biokemisk Afdeling NBG
+1244-1244-Anæstesiologisk Afdeling NBG
+1246-1246-School of Engineering
+1247-1247-Institut for Ingeniørvidenskab
+1251-1251-Karkirurgisk Afdeling
+1252-1252-Plastikkirurgisk Afdeling
+1256-1256-Geatrisk afdeling G
+1257-1257-Radiologisk afdeling, THG
+1259-1259-Billeddiagnotisk afdeling, SKS
+1260-1260-Antro., Ark. og Ling., Studienhed
+1264-1264-Mammakirurgisk Center, Aalborg
+1268-1268-Anæstesiologisk afdeling, Randers
+1269-1269-Gynækol./Obstetrisk afdeling, Rande
+1270-1270-Ortopædkirurgisk afdeling, Randers
+1271-1271-Klinisk Biokemisk afdeling, Randers
+1272-1272-Børneafdeling, Randers
+1273-1273-Radiologisk afdeling, Randers
+1275-1275-Anæstesiologisk afdeling, Silkeborg
+1278-1278-Ortopædkirurgisk afdeling, Silkebor
+1279-1279-Klinisk Biokemisk afdeling, Silkebo
+1280-1280-Medicinsk afdeling, Silkeborg
+1281-1281-Radiologisk afdeling, Silkeborg
+1285-1285-Kirurgisk afdeling, Holstebro
+1286-1286-Ortopædkir. afdeling, Holstebro
+1287-1287-Aarhus Universitet
+1288-1288-Medicinsk Forskning, Holstebro
+1289-1289-Radiologisk afdeling, Holstebro
+1291-1291-Arbejdsmed. kli., Herning
+1292-1292-Gynæko./Obste. afd. Herning
+1293-1293-Kirurgisk afdeling, Herning
+1294-1294-Medicinsk afdeling, Herning
+1295-1295-Børneafdeling, Herning
+1297-1297-Kvindeafdelingen, Viborg
+1298-1298-Kirurgisk afdeling, Viborg
+1300-1300-Historie
+1301-1301-Medicinsk afdeling, Viborg
+1302-1302-Børneafdeling, Viborg
+1310-1310-Historie, Studien.
+1315-1315-Kirurgisk afdeling, Vendsyssel, Hjø
+1322-1322-Indisk
+1326-1326-Kirurgisk afdeling, Horsens
+1327-1327-Medicinsk afdeling, Horsens
+1329-1329-Fertilitetsklinikken
+1344-1344-Forskertræning
+1348-1348-Fransk
+1349-1349-Klassisk Filologi
+1350-1350-Klassisk Arkæologi
+1351-1351-Spansk
+1352-1352-Italiensk
+1354-1354-Tysk
+1357-1357-AU Studieadm., Foulum
+1361-1361-GCP-enheden Aalborg
+1364-1364-Påskehøjgaardcentret - SUN
+1365-1365-Molekylær medicinsk afdeling MOMA
+1368-1368-Center for IT og Læring
+1370-1370-Læring, Tuborgvej 164, Kbh. NV
+1371-1371-Didaktik
+1372-1372-Pædagogik
+1379-1379-Markforsøg
+1391-1391-AU HR, HE
+1395-1395-Geologi
+1398-1398-AU IT
+1399-1399-AU IT System & Udvikling
+1402-1402-Pelsdyrforsøgsfarm
+1404-1404-Rådgivnings- og Støttecenter, SDU
+1405-1405-Rådgivnings- og Støttecenter, DPU/K
+1407-1407-Marin Økologi, Roskilde
+1408-1408-Marin Økologi, Silkeborg
+1410-1410-Filosofi
+1411-1411-Vildtbiologi og Biodiversitet, Kalø
+1417-1417-AU HR, ST, Roskilde
+1418-1418-AU IT Generelle app., Roskilde
+1419-1419-Center for Sundhed, Menneske og Kul
+1420-1420-Filosofi, Studien.
+1421-1421-AU IT Support, ST, Silkeborg
+1422-1422-AU IT, Support, ST, Kalø
+1423-1423-Økonomi- og Komm.sekretar (DMU)
+1424-1424-AU IT Sikkerhed
+1425-1425-AU IT Sekretariat
+1426-1426-AU IT Staben
+1430-1430-Idehistorie
+1440-1440-Idehistorie, Studien.
+1464-1464-Sekr. f. Universitetscent. i Beijin
+1500-1500-Dramaturgi
+1520-1520-Kunsthistorie
+1530-1530-Kunsthistorie, Studien.
+1540-1540-Litteraturhistorie
+1545-1545-AU Driftsøkonomi, HE
+1551-1551-Retorik
+1556-1556-Økonomi, DJF
+1558-1558-Epidemiologi og management
+1559-1559-Integrativ Fysiologi
+1560-1560-Æstetik og Kultur
+1561-1561-Immunologi og mikrobiologi
+1562-1562-Molekylær ernæring og cellebiologi
+1565-1565-CORE
+1571-1571-Center for Museologi
+1580-1580-Musikvidenskab
+1585-1585-AU IT Klient platforme
+1586-1586-AU IT Generelle applikationer
+1587-1587-AU IT Support, AR og FA
+1591-1591-QGM
+1593-1593-Intensiv
+1594-1594-Efteruddannelse, DPU
+1600-1600-Center for Scienceuddannelsen
+1602-1602-SUN Rengøringsområdet
+1609-1609-Ortopædkirurgisk Forskningslaborato
+1610-1610-Nordisk Sprog og Litteratur
+1611-1611-AU Økonomi og Planlægning
+1614-1614-Indkøbskontoret
+1615-1615-Forskningsstøtteenheden
+1618-1618-Kvalitetsenheden
+1620-1620-Nordisk Sprog og Litt. Studien.
+1624-1624-Plastiskkirurgisk Afdeling Z
+1629-1629-Særlige rådgivere f. uni. led.
+1630-1630-Informations- og Medievidenskab
+1631-1631-Informationsvidenskab
+1632-1632-Medievidenskab
+1634-1634-Studien. f. Information-/Medieviden
+1641-1641-Cent. f. Geomikrobiologi
+1643-1643-Tand-, mund- og kæbekirurgisk afdel
+1646-1646-Cent. f. Avanceret Visualisering
+1650-1650-Medievidenskab, Studien.
+1657-1657-AU Kommunikation, AR
+1658-1658-AU Driftsøkonomi, AR
+1659-1659-AU Studieadm. AR
+1660-1660-Cent. f. Jysk Dialektforskning
+1662-1652-AU Forskning og Talent, AR
+1663-1663-AU HR, AR
+1674-1674-Forsøgsbiogasanlæg
+1677-1677-Digital Design
+1680-1680-AU IT support AR og FA, Emdrup
+1683-1683-Europæiske, Russiske og Int. stud
+1689-1689-Karrierecentret, ASB
+1694-1694-Arts-dekanatet
+1696-1696-Dekansekretariatet, Arts
+1700-1700-Engelsk
+1701-1701-BI-enheden
+1702-1702-Kvindeafdelingen, Horsens
+1703-1703-ICOA
+1721-1721-Fransk
+1722-1722-Spansk
+1723-1723-Italiensk
+1724-1724-Brasiliansk
+1766-1766-Forplantningsbiologi
+1767-1767-Kvantitativ Genetik og Bioinforma.
+1769-1769-Øko. Jordbrug og Fødev,Int.cent.f.
+1770-1770-Tysk
+1771-1771-AU Forskning og Talent
+1772-1772-Talent
+1773-1773-Forskning
+1774-1774-Branding
+1775-1775-Medier
+1776-1776-Events
+1777-1777-AU Viden
+1778-1778-AU Library
+1779-1779-Driftsøkonomi
+1783-1783-Forretnings- og systemstøtte
+1784-1784-AU IT Service & Support
+1785-1785-AU TEK, AR+BS
+1786-1786-AU TEK, ST
+1787-1787-AU TEK, HE
+1789-1789-Driftsområde, DMU
+1790-1790-AU Forskning og Talent, ST
+1792-1792-AU Forskning, BS
+1793-1793-AU Kommunikation, AR, Emdrup
+1794-1794-AU Kommunikation, Roskilde
+1795-1795-AU Kommunikation, Foulum
+1796-1796-AU Kommunikation, HE
+1800-1800-Studienævnene på HE
+1802-1802-AU Driftsøkonomi, Foulum
+1803-1803-Identifikation ikke placeret
+1804-1804-Biblioteksfunktioner, ST
+1807-1807-Institut for Miljøvidenskab
+1810-1810-Lingvistik
+1816-1816-Institut for Kultur og Samfund
+1817-1817-Institut for Æstestik og Komm.
+1818-1818-Uddannelse og Pædagogik, Inst.f.
+1819-1819-Center for Undervisningsudvikling
+1821-1821-BSS, Adm. Og tekniske funktioner
+1823-1823-AU TEK, ST, Foulum
+1824-1824-BSS Byg2 Bygningsdrift, Campus Hern
+1830-1830-Asienstudier, faggruppe
+1831-1831-Optagelse til kandidatuddannelser
+1834-1834-Driftsstab
+1835-1835-Uddannelseskvalitet og studienævnsb
+1836-1836-Undervisning og eksamen (UVAEKA), A
+1837-1837-Vejledning og studieinformation, AR
+1838-1838-Vejledning og studieinformation, BS
+1839-1839-Undervisning og eksamen (UVAEKA), B
+1841-1841-Uddannelseskvalitet og studienævnsb
+1842-1842-Uddannelseskvalitet og studienævnsb
+1843-1843-Undervisning og eksamen (UVAEKA), S
+1844-1844-Uddannelseskvalitet og studienævnsb
+1845-1845-Undervisning og eksamen (UVAEKA), H
+1846-1846-Vejledning og studieinformation, HE
+1847-1847-Digital
+1848-1848-Stab
+1849-1849-AU IT Portefølje, Aarhus
+1852-1852-AU Talent og Forskning, Stab
+1856-1856-AU Studier, Klinik
+1857-1857-Ansatte ved Studenterrådet
+1858-1858-ST, Censur
+1859-1859-Uddannelses og Pædagogik, Aarhus
+1860-1860-Østeuropastudier, fag
+1862-1862-Center for Rusmiddelforskning, Købe
+1864-1864-Dekanat, ST
+1866-1866-DCL - Nationalt Center$for Kultur o
+1870-1870-Slavisk og Østasiatisk, Studienævne
+1873-1873-AU IT Administrative applikationer
+1874-1874-Netværksteam, Aarhus
+1875-1875-Skyen, Aarhus
+1877-1877-AU IT Sikkerhed, Foulum
+1881-1881-AU IT Adm. app., Emdrup
+1883-1883-AU IT Adm. app., Silkeborg
+1885-1885-AU IT Netværksteam, Foulum
+1886-1886-AU IT Netværksteam, Roskilde
+1887-1887-AU IT Skyen, Emdrup
+1888-1888-AU IT Skyen, Foulum
+1889-1889-AU IT Skyen, Roskilde
+1903-1903-AU HR Org.udv. & arb.mil, Roskilde
+1904-1904-AU HR Org.udv. & arb.mil., Emdrup
+1912-1912-Biblioteker, Arts
+1920-1920-Arkæologi, faggruppe
+1930-1930-Historie og Klassiske Studier, fagg
+1938-1938-Medier, Tek-DPU
+1940-1940-Filosofi$og Idéhistorie, faggruppe
+1945-1945-Ingeniørhøjskolen AU
+1946-1946-Institut for Biomedicin
+1950-1950-Æstetiske Fag
+1954-1954-Inst. of Advanced Studies
+1959-1959-MADALGO
+1960-1960-Nordisk
+1963-1963-AU Viden, Emdrup
+1965-1965-Arctic Research Centre
+1970-1970-Sprog, Litteratur og Kultur
+1971-1971-Arctic Research Centre, Roskilde
+1972-1972-Arctic Research Centre, Silkeborg
+1981-1981-Center for Akutforskning
+1983-1983-Identifikation ikke placeret, Emdru
+1986-1986-Administrationscenter, AR
+1987-1987-Administrationscenter, BSS
+1988-1988-Administrationscenter, HE
+1989-1989-Administrationscenter, ST
+1990-1990-Sekretariatet
+1992-1992-Elektronik og Computerteknologi
+1993-1993-Kommunikationssystemer
+1994-1994-Indlejrede systemer
+1995-1995-Elektronik og Biomediko
+1996-1996-Fotonik
+1997-1997-Signalprocessering
+1998-1998-Software Engineering
+1999-1999-Sekretariatet, Dalgas Avenue
+2000-2000-Health
+2001-2001-Byggeri og Bygningsdesign
+2003-2003-Integreret energidesign og bæredygt
+2004-2004-Geoteknik og Bærende konstruktion
+2006-2006-Materialer
+2008-2008-AU Studier, HE
+2009-2009-Strukturel mekanik
+2010-2010-Det Lægevidenskabelige Studienævn
+2011-2011-Fluid mekanik
+2012-2012-Sekretariatet, Blichers Allé
+2013-2013-Bioteknologi og kemiteknologi
+2014-2014-Bioteknologi
+2016-2016-Kemiteknologi
+2017-2017-Bæredygtige energisystemer
+2019-2019-Operations Management
+2022-2022-Genomekspression, stabilitet og tek
+2023-2023-Genmedicin
+2024-2024-Molekylær celle- og udviklingsbiolo
+2025-2025-Sekretariat, C.F. Møllers Allé
+2026-2026-Teknikerværksted, C.F. Møllers Allé
+2027-2027-Molekylær Ernæring
+2028-2028-Proteinvidenskab
+2029-2029-Strukturel Biologi
+2030-2030-Fællestrykkeriet - SUN
+2031-2031-Dyrestald, Øst
+2033-2033-AU IT, Support, HE, Aarhus
+2034-2034-Molekylær intervention
+2036-2036-Plante Molekylærbiologi
+2037-2037-Sekretariat
+2038-2038-Teknikerværksted, Gustav Wied
+2039-2039-Medicinerhuset
+2040-2040-Center for Medicinsk Uddannelse
+2041-2041-Sekretariat, Foulum
+2042-2042-Sekretariat, Årslev
+2043-2043-Planter, Fødevarer og Klima
+2044-2044-Differenti og biofunkt. fødevarer
+2045-2045-AU Studieadm. IHA
+2046-2046-Diff. og biofunkt. fødevarer, Årsle
+2047-2047-Sekretariatet, Folkesundhed
+2048-2048-AU IT Support, ST, Dalgas, Aarhus
+2049-2049-AU IT Klient platforme, Finland 20
+2050-2050-AU Forskning og Talent, HE
+2053-2053-AU IT, Generelle appl., Finlandsgad
+2055-2055-AU IT, Support, AR og FA, Aarhus, W
+2056-2056-Master i Klinisk Sygepleje
+2057-2057-Kandidat i Sygeplejevidenskab
+2058-2058-Præhospitalet
+2059-2059-AU Alumni
+2061-2061-BCE Lipid Technology
+2062-2062-BCE Protein Engineering
+2065-2065-BCE Bioenergy
+2066-2066-CAE Construction Dynamics
+2067-2067-CAE Construction Enginering
+2068-2068-Campus Udvikling
+2069-2069-AU Økonomi og Planlægning
+2070-2070-Den Sundhedsfaglige Kandidatuddanne
+2071-2071-AU Økonomi og Planlægning
+2073-2073-AU Økonomi og Planlægning
+2074-2074-AU Økonomi og Planlægning
+2075-2075-AU Økonomi og Planlægning
+2076-2076-AU Økonomi og Planlægning
+2077-2077-AU Økonomi og Planlægning
+2078-2078-AU Økonomi og Planlægning
+2079-2079-AU Økonomi og Planlægning
+2080-2080-Kandidatuddannelse i Biomedicinsk T
+2081-2081-AU Økonomi og Planlægning
+2082-2082-AU Økonomi og Planlægning
+2083-2083-ST Byg4 Bygningsdrift, Årslev
+2084-2084-ST Byg6 Bygningdrift, Dalgas Avenue
+2085-2085-Danmarkshistorien.dk
+2089-2089-Klassisk Arkæologi, fag (1453)
+2090-2090-Sekretariat
+2091-2091-Sekretariat, Syd
+2092-2092-Sekretariat, Øst
+2093-2093-Sekretariat, Vest
+2094-2094-Teknisk service, Øst
+2095-2095-Teknisk service, Syd
+2096-2096-Teknisk service, Vest
+2097-2097-Dyrestald, Syd
+2098-2098-Dyrestald, Vest
+2100-2100-Almen Medicin
+2101-2101-Forskning og uddannelse, Øst
+2103-2103-Japanske studier, fag
+2104-2104-Kinesiske studier, fag
+2105-2105-Arabisk og Islamstudier, fag
+2106-2106-Antro. og Etno., fag (Nobelparken)
+2107-2107-Center for Interacting Minds (IMC)
+2113-2113-Teologi, faggruppe
+2114-2114-Kultur og Samfund, institutsekretar
+2115-2115-Kultur & Samfund lokalsekretariat
+2116-2116-Kultur & Samfund lokalsekretariat
+2117-2117-Kultur & Samfund lokalsekretariat,
+2118-2118-Arkæologisk IT, Moesgård
+2120-2120-Specialeuddannelsen i almen medicin
+2121-2121-Forskningsenheden for Almen Praksis
+2122-2122-Informationen, Fuglesangs Alle
+2123-2123-Sekretariat
+2125-2125-Teknisk service
+2126-2126-Sekretariat
+2127-2127-Uddannelse
+2128-2128-Uddannelse, Finlandsgade
+2130-2130-Center for Industrial Cooperation
+2131-2131-CDIO Development Lab
+2132-2132-CDIO Development lab,Finlandsgade
+2133-2133-Elektronik og computerteknologi
+2134-2134-Signalbehandling
+2135-2135-Kommunikationsteknologi
+2136-2136-Indlejrede systemer
+2137-2137-Elektronik, Finlandsgade
+2138-2138-Software Engineering
+2139-2139-Elektronik, Birk
+2140-2140-Maskinteknik
+2141-2141-Maskinkonstruktion
+2142-2142-Energi- og systemdesign
+2143-2143-Materialer
+2145-2145-Bioprocesteknologi
+2148-2148-Bygningsteknik
+2149-2149-Anlægsteknik
+2150-2150-Konstruktionsdesign og geoteknik
+2151-2151-Energi- og miljødesign
+2152-2152-Adgangskursus
+2153-2153-Adgangskursus, Birk
+2154-2154-Bygningsdrift
+2155-2155-Bygningsdrift, Dalgas
+2156-2156-Bygningsdrift, Dalgas 12
+2157-2157-Bygningsdrift, Finlandsgade
+2159-2159-Omnibus-uniavisen på AU
+2160-2160-BSS Executive
+2163-2163-Medievidenskab og Journalistik
+2164-2164-Digital Design
+2166-2166-Semiotik
+2168-2168-Oplevelsesøkonomi
+2169-2169-Tysk og Romansk
+2176-2176-IÆK's institutsekretariat
+2177-2177-IÆK's institutsekr.,Katrinebjerg
+2178-2178-IÆK's institutsekr.
+2179-2179-IÆK's institutsekr., bygning 1485
+2181-2181-Participatory Inform.Technology
+2193-2193-Efter og videreudannelsesområdet
+2197-2197-AU Karriere, BO
+2200-2200-Den basale sektor
+2210-2210-Forskning og uddannelse, Syd
+2211-2211-Institut for Folkesundhed
+2214-2214-ST Økonomi, Årslev
+2215-2215-ST Økonomi, Flakkebjerg
+2221-2221-Applikationsteamet
+2222-2222-Apllikationsteamet, Emdrup
+2223-2223-Arkitekturstab
+2224-2224-Integrationsteamet
+2230-2230-Biostatistik
+2231-2231-AU Viden, BO, Emdrup
+2240-2240-Epidemiologi
+2241-2241-Teknik
+2244-2244-Science Museerne
+2247-2247-Fiskesundhed
+2248-2248-Enviromental social science
+2249-2249-Epidemiologisk Grundfsk., Cent. f.
+2250-2250 - Farmakologi
+2251-2251-Driftsenhed
+2252-2252-Udviklings- og projektstab
+2254-2254-Psylokologisk Institut,København
+2256-2256-Sekretariat, Finlandsgade
+2260-2260-Fysiologi og Biofysik
+2261-2261-Arts & BSS Bygningsservice
+2262-2262-KAR, AR Tåsingegade
+2263-2263-INNO-X
+2267-2267-AU Library, AR, Katrinebjerg
+2269-2269-Fysiologi
+2270-AU
+2280-2280-Forskning og uddannelse, Vest
+2290-AU
+2304-2304-Journalistik
+2306-2306-Kemi, INANO-bygning
+2308-2308-DANDRITE
+2310-2310-Miljø- og Arbejdsmedicin
+2313-2313-Team for læse-skrive vejledning
+2318-2318-Center for Arktisk Sundhed
+2319-2319-StudieStatistik
+2320-2320-Institut for Retsmedicin
+2321-2321-Sekretariat,retsmedicin
+2325-2325-Retskemisk
+2326-2326-AU IT, Support HE, Katrinebjergvej
+2330-2330-Retspatologisk
+2332-2332-Biomedical Technology
+2335-2335-BIOS Roskilde
+2336-2336-BIOS Kalø
+2337-2337-BIOS Silkeborg
+2338-2338-BIOS Aarhus
+2339-2339-Arktisk økosystemøkologi
+2340-2340-Havpattedyrforskning
+2341-2341-Plante- og insektøkologi
+2342-2342-Oplandsanalyse og miljøforvaltning
+2343-2343-Vandløbs- og ådalsøkologi
+2350-2350-Atmospheric chemistry
+2351-2351-Sekretariat
+2352-2352-Enviromental microbiology
+2353-2353-Emission modeling (EMMI)
+2354-2354-Enviromental social science
+2357-2357-Rejsegruppen
+2358-2358-Kreditorgruppen
+2359-2359-Debitorgruppen
+2360-2360-Balancegruppen
+2400-2400-Institut for Klinisk Medicin
+2401-2401-Anæstesiologisk Afdeling, SKS
+2402-2402-Anæstesiologisk Afdeling, NBG
+2403-2403-Anæstesiologisk Afdeling, TGH
+2404-2404-Færdighedslaboratoriet NBG
+2405-2405-Translational Neuropsychiatry Unit
+2406-2406-Dermato-Venerologisk Afdeling S
+2407-2407-Akutafdelingen, Viborg
+2410-2410-GCP-enheden ved Aarhus Universitets
+2411-2411-Arbejdsmedicinsk klinik
+2412-2412-Klinisk Epidemiologi
+2413-2413-Enhed for Bioinformatik
+2415-2415-Reumatologisk Afdeling, NBG
+2416-2416-PET-Centret, forskningsafdeling
+2417-2417-Stereologi
+2418-2418-Molekylær Medicinsk Forsk.enhed
+2421-2421-Arbejdsmedicinsk Klinik, NBG
+2423-2423-Afdeling for Medicinsk Fysik
+2424-2424-Klinisk fysiologi og nuclearmedicin
+2425-2425-Urinvejskirurgisk Afdeling K, SKS
+2426-2426-Kirurgisk Afdeling L, NBG
+2427-2427-Hjerte-Lunge-Karkirurgisk Afd. T,
+2428-2428-Kirurgisk Afdeling P, THG
+2429-2429-Ortopædkirurgisk Afdeling E, THG
+2430-2430-Organkirurgisk afd., Randers
+2433-2433-Klinisk Immunologisk Afdeling, SKS
+2434-2434-Klinisk Biokemisk Afdeling, NBG
+2435-2435-Klinisk Biokemisk Afdeling, SKS
+2436-2436-Klinisk Mikrobiologisk Afdeling, SK
+2437-2437-Klinisk Biokemisk Afdeling, Viborg
+2450-2450-Ortopædkirurgisk Afdeling E, NBG
+2451-2451-T-Forskning
+2452-2452-Neurokirurgisk Afdeling NK, NBG
+2453-2453-Neurologisk Afdeling F, NBG
+2454-2454-Gynækologisk/Obstetrisk afd. Y- SKS
+2455-2455-Øjenafdelingen (Oftalmologi), NBG
+2456-2456-Y-Forskningslaboratorium
+2457-2457-The MR Research Centre
+2458-2458-Medicinsk Afd. V, NBG
+2459-2459-Lungemedicinsk Afdeling, NBG
+2461-2461-Regionshospital Hammel Neurocenter
+2462-2462-Øre-Næse-Hals-Sygdomme, afdeling H
+2463-2463-Forskningslaboratoriet for Biokemis
+2464-2464-Elektronmikroskopisk Laboratorium
+2465-2465-Patologisk Institut, THG
+2466-2466-Patologisk Institut; NBG
+2467-2467-Klinisk Biokemisk Afdeling, THG
+2470-2470-Børne- og Ungdomspsykiatrisk Region
+2471-2471-Psykiatrien i Region Midtjylland
+2472-2472-Børneafdeling, SKS
+2473-2473-Onkologisk Afdeling D, NBG
+2474-2474-Eksperimentel Klinisk Onkologi, Afd
+2476-2476-Radiologisk afdeling, NBG
+2477-2477-Neurofysiologisk Afdeling, NBG
+2481-2481-Perinatal epidemiologi, SKS
+2482-2482-Forskningsklinikken for Funktionell
+2483-2483-Center for Funktionelt Integrativ N
+2489-2489-Medicinsk Forskningslaboratorium
+2490-2490-Medicinsk Endokrinologisk Afd.,  ME
+2491-2491-Nyremedicinsk Afdeling C
+2492-2492-Hjertemedicinsk Afdeling B, SKS
+2493-2493-Infektionsmedicinsk Afdeling Q, SKS
+2494-2494-Hæmatologisk Afd. R, THG
+2495-2495-Medicinsk-Kardiologisk Afdeling A,
+2496-2496-Medicinsk afd., Randers
+2498-2498-Medicinsk Endokrinologisk Afd., MEA
+2501-2501-Urologisk afdeling, Aalborg Sygehus
+2502-2502-Ortopædkirurgi Nordjylland, Klinik
+2503-2503-Kirurgisk Gastroenterologisk Afdeli
+2504-2504-Hjerte-, Lungekirurgisk Afdeling
+2507-2507-Neurologisk Afdeling, Aalborg Sygeh
+2508-2508-Gynækologisk-Obstetrisk Afdeling, A
+2509-2509-Børneafdelingen, Aalborg Sygehus
+2510-2510-Onkologisk Afdeling, Aalborg Sygehu
+2511-2511-Radiologisk Afdeling, Aalborg Sygeh
+2513-2513-Medicinsk Gastroenterologisk Afdeli
+2515-2515-Kardiologisk Afdeling, Aalborg Syge
+2516-2516-Klinisk Mikrobiologisk Afdeling, Aa
+2518-2518-Klinisk Epidemiologisk Afdeling, Aa
+2524-2524-Infektionsmedicinsk Afdeling, Aalbo
+2525-2525-Hæmatologisk Afdeling, Aalborg Syge
+2528-2528-Reumatologisk Afdeling, Medicinsk C
+2580-2580-Aalborg Psykiatriske Sygehus
+2600-2600-Miljø og Energi (DCE),Silkeborg
+2700-2700-Sygeplejevidenskab
+2710-2710-Sygeplejevidenskab, Studien.
+2720-2720-Masteruddannelse i Klinisk Sygeple
+2800-2800-Institut for Odontologi
+2820-2820-Ortodonti
+2821-2821-Oral Radiologi
+2822-2822-Oral Fysiologi
+2823-2823-Oral Biologi
+2824-2824-Pædodonti
+2825-2825-Tandsygdomslære
+2826-2826-Kæbekirurgi og Oral  Patol.
+2827-2827-Protetik
+2828-2828-Parodontologi
+2830-2830-Den kommunale børnetandklinik
+2842-2842-Fællesklinikken - Odontologi
+2843-2843-Centrallaboratoriet
+2900-2900-Skolen for Klinikassistenter,Tandpl
+3000-3000-School of Business and Social Scien
+3010-3010-Dekanatet, BSS
+3015-3015-AU IT, Support, BS, Aarhus
+3016-3016-AU IT, Support, BS, Aarhus, Barthol
+3020-3020-BSS, Biblioteker
+3050-3050-Forskeruddannelsen
+3060-3060-BSS Økonomi, Aarhus
+3070-3070-AU HR, BSS
+3080-3080-AU Kommunikation, BSS
+3090-3090-AU Studier, BSS
+3100-3100-Institut for Økonomi
+3131-3131-AU IT, Support, HE, Aarhus, Barthol
+3140-3140-Det Økonomiske Studienævn
+3150-3150-Forskeruddannelsen, Økonomi
+3200-3200-Juridisk Institut
+3231-3231-AU IT, Support, HE, Aarhus, Skejby
+3240-3240-Reprofunktion - Juridisk Faggruppe
+3250-3250-Forskerudd. - Juridisk Faggruppe
+3400-3400-Institut for Statskundskab
+3431-3431-AU IT, Support, HE, Aarhus, Vennely
+3440-3440-Studienævnet for Statskundskab og S
+3500-3500-Psykologisk Institut
+3630-3630-Center for Rusmiddelforskning
+3650-3650-CIRRAU - Centre for Integrated Regi
+3670-3670-Dansk Center for Forskningsanalyse
+3810-3810-AU Herning
+3817-3817-AU Studier,  Herning
+3818-3818-BSS Økonomi, Herning
+3820-3820-AU IT, Support, BS, Herning
+3821-3821-AU Kommunikation, BSS, Herning
+3822-3822-AU Forskning og Talent, BS
+4000-4000-Det Teologiske Fakultet
+4100-4100-Gammel og Ny Testamente, fag
+4200-4200-Kirkehistorie og Praktisk Teologi,
+4300-4300-Systematisk Teologi, fag
+4400-4400-Religionsvidenskab, fag
+4510-4510-Grundtvig Centeret
+4511-4511-Grundtvig Centeret, afd. KBH.
+4560-4560-Forskerskole, Teologi
+4900-4900-Studienævnet for Teologi
+4910-4910-Studienævnet for Religionsvidenskab
+5000-5000-Science and Technology
+5010-5010-ST, Bedømmer, studentermedhjælp mm.
+5013-5013-Aarhus School of Engineering
+5016-5016-Support, ST, Aarhus
+5018-5018-ST Økonomi, Aarhus
+5020-5020-AU HR, ST
+5021-AU
+5022-5022-AU Kommunikation, ST
+5040-5040-ST, Studievejledere mm
+5050-5050-AU Studier, ST
+5051-5051-Vejledning og studieinformation, ST
+5100-5100-Institut for Matematik
+5114-5114-Center for Bioinformatik (BiRC)
+5150-5150-Institut for Datalogi
+5200-5200-Institut for Fysik og Astronomi
+5201-5201-Fysik, sekretariat
+5213-5213-Interdisciplinary Nanoscience Cente
+5214-5214-Interdisciplinær Nanoscience Forske
+5215-5215-Sekretariat, INANO
+5217-5217-INANO-Bioscience,Gustav Wied
+5218-5218-INANO Kemi
+5219-5219-INANO-Kemi, Gustav Wied
+5220-5220-INANO-Fysik, Ny Munkegade
+5221-INANO-Fysik, Gustav Wied
+5222-5222-INANO MBG, CF Møllers Alle
+5223-5223-INANO-MBG, Gustav Wied 10
+5224-5224-INANO-MBG, Gustav Wied 14
+5300-5300-Institut for Kemi
+5400-5400-Institut for Molekylærbiologi og Ge
+5401-5401-Molekylærbiologisk Institut
+5500-5500-Institut for Bioscience
+5501-5501-Økoinformatik og Biodiversitet
+5502-5502-Plantebiologi
+5503-5503-Genetik og Økologi
+5504-5504-Mikrobiologi
+5506-5506-Zoofysiologi
+5510-5510-Science Museerne - Herbariet
+5515-5515-Marin Økologi, Aarhus
+5600-5600-Institut for Geoscience
+5700-5700-Videnskabsstudier
+5760-5760-Steno Museet
+5800-5800-Idræt
+6000-6000-AU Administration
+6001-6001-Rektoratet
+6002-6002-Universitetsdirektøren
+6006-6006-AU Stab og Strategi
+6010-6010-Økonomistyring
+6011-6011-Regnskab
+6012-6012-AU HR Løn
+6021-6021-Optagelse til bacheloruddannelser
+6022-6022-Statens Uddannelsesstøtte
+6023-6023-Information, Støtte og vejledning
+6024-6024-Rådgivnings- og Støttecenter
+6030-6030-AU HR Personalejura
+6033-6033-AU HR Kompetenceudvikling
+6035-6035-Intern Post
+6036-6036-AU HR Organisationsudvikling og arb
+6040-6040-Drift og Teknologi, Aarhus
+6050-6050-Campus Service
+6071-6071-Det Humanistiske Fakultets Administ
+6072-6072-Dekanatet, Health
+6075-6075-Dekansekretariatet, Science and Tec
+6200-6200-AU Studier
+6300-6300-AU HR
+7100-7100-ST Byg2 Bygningsdrift, Parken og Gu
+7200-7200-ST Byg1 Bygningsdrift, Ny Munkegade
+7300-7300-Health Byg Drift
+7500-7500-BSS Byg1 Bygningsdrift, Universitet
+7501-7501-BSS Byg1 Rengøring, Universitetspar
+7600-7600-Arts Byg1 Bygningsdrift, Nobel, Kas
+7800-7800-Gartnerafdelingen
+7900-7900-ST Byg3 Bygningsdrift, Katrinebjerg
+8000-8000-Aarhus Universitet
+8106-8106-Aarhus Universitet
+8107-8107-AU Center for Entreprenørskab og In
+8224-8224-Technology Transfer Office
+8300-8300-AU Kommunikation
+8311-8311-Omstilling
+8420-8420-Studenterrådet
+8472-8472-Specialpædagogisk Støtte
+8500-8500-Internationalt Center
+8810-8810-Optagelse til deltids-/åben uddanne
+8825-8825-Studievalg, Østjylland

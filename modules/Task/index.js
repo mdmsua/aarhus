@@ -3,14 +3,13 @@ module.exports = Task;
 var async = require('async'),
     underscore = require('underscore');
 
-function Task(storageClient, tableName, partitionKey) {
+function Task(storageClient, tableName, partitionKey, callback) {
     this.storageClient = storageClient;
     this.tableName = tableName;
     this.partitionKey = partitionKey;
     this.storageClient.createTableIfNotExists(tableName, function (error) {
-        if (error) {
-            throw error;
-        }
+        if (error) callback(error);
+        callback();
     });
 }
 
@@ -32,11 +31,11 @@ Task.prototype.insertEntity = function (item, prop, callback) {
     var self = this;
     item.PartitionKey = self.partitionKey;
     item.RowKey = self.partitionKey + '_' + item[prop];
-    self.storageClient.insertEntity(self.tableName, item, function (error) {
+    self.storageClient.insertEntity(self.tableName, item, function (error, entity) {
         if (error) {
             callback(error);
         }
-        callback(null);
+        callback(null, entity);
     });
 };
 

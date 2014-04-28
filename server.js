@@ -1,17 +1,17 @@
 var nconf = require('nconf'),
     azure = require('azure'),
-    Task = require('./modules/Task'),
-    Stiko = require('./routes/Stiko'),
-    Pkat = require('./routes/Pkat'),
-    Lko = require('./routes/Lko'),
-    History = require('./routes/History'),
-    JobCategory = require('./routes/JobCategory'),
-    express = require('express');
+    bodyParser = require('body-parser'),
+    Api = require('./Routes/Api'),
+    JobCategory = require('./Routes/JobCategory'),
+    Employee = require('./Routes/Employee'),
+    express = require('express'),
+    apiRouter = express.Router();
 
 var app = express();
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/bower_components'));
+app.use(bodyParser());
 
 nconf.file('settings.json').env();
 
@@ -24,19 +24,23 @@ if (env === 'import') {
     setup.stiko();
     setup.pkat();
     setup.lko();
+    setup.sted();
 }
 
-var stiko = new Stiko(new Task(tableService, 'stiko', 'stiko'));
-var pkat = new Pkat(new Task(tableService, 'pkat', 'pkat'));
-var lko = new Lko(new Task(tableService, 'lko', 'lko'));
-var history = new History();
-var jobcategory = new JobCategory();
+var api = new Api(tableService);
 
-app.get('/job-category-config', jobcategory.index);
-app.get('/api/stiko', stiko.get);
-app.get('/api/pkat', pkat.get);
-app.get('/api/lko', lko.get);
-app.get('/api/history', history.get);
+apiRouter.get('/lko', api.lko);
+apiRouter.get('/pkat', api.pkat);
+apiRouter.get('/stiko', api.stiko);
+apiRouter.get('/history', api.history);
+
+app.use('/api', apiRouter);
+
+app.get('/job-category-config', JobCategory.index);
+app.get('/employee', Employee.index);
+app.post('/employee', Employee.search);
+app.get('/employee/:ssn', Employee.get);
+app.get('/employee/new', Employee.get);
 
 app.listen(process.env.PORT || 8192);
 
