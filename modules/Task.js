@@ -58,7 +58,7 @@ Task.prototype.queryEntity = function(rowKey, callback) {
 
 Task.prototype.insertEntity = function (item, callback) {
     var self = this;
-    item.PartitionKey = self.partitionKey;
+    item.PartitionKey = item.partitionKey || self.partitionKey;
     item.RowKey = item[self.rowKeyProperty];
     self.storageClient.insertEntity(self.tableName, item, function (error, entity) {
         if (callback) {

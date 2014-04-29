@@ -3,13 +3,13 @@ var azure = require('azure'),
     Import = require("../modules/Import"),
     task;
 
-module.exports = Activitet;
+module.exports = Aktivitet;
 
-function Activitet(tableService, callback) {
+function Aktivitet(tableService, callback) {
     task = new Task(tableService, 'kodenavn', 'aktivitet', 'kode', callback);
 }
 
-Activitet.prototype.install = function(callback) {
+Aktivitet.prototype.install = function(callback) {
     var setup = new Import('aktivitet.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
@@ -25,7 +25,7 @@ Activitet.prototype.install = function(callback) {
     });
 };
 
-Activitet.prototype.all = function (callback) {
+Aktivitet.prototype.all = function (callback) {
     var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'aktivitet');
     task.queryEntities(query, function (error, entities) {
         callback(error, entities);

@@ -1,0 +1,1219 @@
+1000	8000	Arts	1141
+1005	2400	Smerteforskningscenter, Dansk	
+1007	1817	Journalistiske Univ.udd., Cent.f.	1421
+1010	2211	Sundhedstjenesteforskning	
+1011	2211	Klinisk Socialmedicin	
+1012	6074	Teologisk Fagsekretariat	1141
+1013	6074	Teologisk Studienævnssekretariat	1141
+1015	5000	Fødevarer og Jordbrug(DCA), Nat.C.	
+1020	1829	CEPOME	
+1024	3000	Undervisning og Læring, Center for	
+1025	1036	Plantebeskyt. og Skadedyr	
+1027	1039	Planter, Fødevarer og Bæredygtig.	
+1028	2013	Air Quality Engineering	
+1029	1808	DJF Fakultetssekr. - centerservice	
+1031	1819	Team for Studiekompetence	1611
+1032	1350	AntikMuseet	1321
+1034	1808	Fakultetssekretariat - DJF	
+1036	5000	Agroøkologi, Institut for	
+1037	5000	Husdyrvidenskab, Institut for	
+1038	5400	Kvantitativ Genetik og Genomforskn., Cent. F.	
+1039	5000	Fødevarer, Institut for	
+1040	5000	Miljø og Energi(DCE), Nat.C., Roskilde	
+1041	2251	StudiePlan	
+1042	6023	Vejledning og studieinformation	
+1043	1618	Kvalitetssikringssystem	
+1044	2335	Arktisk miljø	
+1045	1807	Atmospheric modeling, ATMO	
+1046	2337	Sø-økologi	
+1047	1040	Forsknings-, Overvågnings- og Råd.	
+1048	5016	AU IT, Support, ST, Roskilde	
+1049	2335	Anvendt marin økologi og modellering	
+1051	1807	Miljøkemi og Mikrobiologi	
+1052	2209	ST Økonomi, Roskilde	
+1055	1058	AUL, AR, Moesgård	1188
+1057	1058	AUL, AR, Kasernen	1188
+1058	2205	AUL, AR, Nobel	1188
+1059	1058	Biblioteket, Ringgaden	1188
+1060	1804	AUL, ST, Katrinebjerg	
+1061	1807	Environmental chemistry & toxicology, MITO	
+1062	2337	Jordfaunaøkologi og økotoksikologi	
+1063	2336	Biodiversitet	
+1065	3020	AUL, BSS, Fuglesangs Allé	
+1069	3100	Erhvervsøkonomi	
+1071	3000	Marketing og Organisation, Inst. f	
+1072	3000	Erhvervskommunikation, Inst. f.	
+1073	3200	Juridisk Institut, TEK-ASB	
+1074	3100	Nationaløkonomi	
+1075	1028	Miljø- og Klimateknik	
+1076	1028	Automation og Systemteknologi	
+1077	2700	Kliniske retningslinjer, Cent. f.	
+1078	1034	Bestyrelse, DJF	
+1079	1034	Dekanat, DJF	
+1080	1034	Sekretariat, DJF	
+1081	5020	AU HR, ST,  Foulum	
+1082	1034	Regnskab, DJF	
+1083	6011	AU Regnskab, Tek-DJF	
+1084	1034	Afdelingsfunktion, ADM, DJF	
+1088	2400	Klinisk Genetisk Afdeling	
+1090	1000	Artsrådet	1191
+1091	1037	Markdrift	
+1093	1036	Markforsøg Askov	
+1094	1036	Markforsøg Foulumgård	
+1095	1036	Markforsøg Jyndevad	
+1096	1037	Kvæg	
+1097	1037	Svin	
+1099	1037	Fjerkræ	
+1106	1039	Fødevarekemi og -teknologi	
+1107	1106	Mælke- og Ægkvalitet	
+1108	1039	Fødevarer, Metabolomics og Sensorik	
+1109	1039	Sekretariat	
+1110	1683	Europastudier, fag	1311
+1111	1036	Klima og Vand	
+1112	1036	Geografiske og Sociale Studier	
+1113	1036	Jordbrugsprod. og Bæredygtighed	
+1115	1036	Jordfysik og Hydropedologi	
+1116	1036	Jordbiologi og Næringsstoffer	
+1117	1036	Sekretariat, AGRO Foulum	
+1118	1029	DAD Afdelingsfunktion, DJF	
+1119	1930	Jean Monnet Center of Excellence	1311
+1120	1930	Europastudier, Studienævnet for	1311
+1121	1029	Kommunikationsenheden	
+1122	1029	Centerdrift Foulum	
+1123	1247	Forskningscenter Bygholm	
+1124	1029	Centerdrift Årslev	
+1125	1029	Centerdrift Flakkebjerg	
+1126	1029	Centerdrift Sorgenfri	
+1127	5016	AU IT, Support, ST, Foulum	
+1128	1037	ANIS Institutfunktion	
+1129	1037	Husdyrernæring og miljø	
+1130	1817	Semiotik, Cent. f.	1411
+1134	1037	Adfærd og Stressbiologi	
+1136	5400	GBI Afdelingsfunktion	
+1138	5400	Biostatistik	
+1140	5400	Afgrødegenetik og Bioteknologi	
+1141	5400	Molekylær Genetik og Systembiologi	
+1143	5400	Statistik og Beslutningsteori	
+1144	1036	Sekretariat, AGRO Flakkebjerg	
+1146	1036	Entomologi og Plantepatologi	
+1147	1036	Afgrødesundhed	
+1153	6011	AU Regnskab, Tek-ASB	
+1155	1785	BSS Byg3 Drift	
+1156	3015	AU IT, Support, BS, Fuglesangs Allé	
+1158	2193	AU EVU, BSS	
+1168	1683	Internationale studier, fag	1311
+1169	2400	Psykiatriske Sygehus, Brønderslev	
+1170	1809	Danmarks Pædagogiske Univ.skole	1141
+1171	1699	Dekanatet, DPU	1211
+1172	1809	Administration, DPU	1141
+1173	1662	AU Forskning og Talent, AR, Emdrup	
+1174	1172	Internationalt kontor, DPU	1141
+1176	1615	Forskningsstøtteenheden, Emdrup	
+1177	1659	AU Studier, Campus Emdrup	
+1179	1815	Ph.d. studienævn, DPU	1141
+1180	1815	Kandidatstudienævnet, DPU	1141
+1181	1815	Masterstudienævnet, DPU	1141
+1183	2207	AR Økonomi, Emdrup	
+1184	1663	AU HR, AR,  Emdrup	
+1185	1587	AU IT, Support, AR og FA, Emdrup	
+1186	1785	Arts Byg2 Drift	
+1187	1172	Services, DPU	1141
+1188	1399	AU IT System & Udvikling, Emdrup	
+1189	2205	AUL, AR, Emdrup	1188
+1191	1817	Børnelitteratur, Center for	1411
+1197	1814	Etik og Ret, Center for	1141
+1198	1814	Kvalificering, lærere og pædagoger	1141
+1202	1170	Socialanalytisk samtidsdiagn., DPU	1141
+1203	1177	DPU-sekretariatet i Århus	
+1204	1172	DPU forlag	1141
+1205	2114	Foto/medie afdelingen, Moesgård	1311
+1206	1172	Reproafdeling, DPU	1141
+1210	1920	Forhistorisk Arkæologi, fag	1311
+1211	1425	AU IT Sekretariat,Emdrup	
+1212	1585	AU IT Klient platforme,Emdrup	
+1213	1172	Reception, DPU	1141
+1218	1191	Børnekulturnetværket, Sekr.f., DPU	1411
+1220	1920	Middelalder- og Renæs.ark., fag	1311
+1225	1189	Fornyelse af materialer, DPB	1188
+1226	1189	Udlånsvagt / Blackboard, DPB	1188
+1227	1189	Afhentning af materialer, DPB	1188
+1228	6031	Journalkontoret, Emdrup	
+1229	1920	Vikingetids- og middelal, Cent. f.	1311
+1230	1816	Antro. og Etno., fag (Moesgård)	1311
+1231	1189	Sekretariat, kurser og regn., DPB	1188
+1232	1189	Bogholderi, DPB	1188
+1233	1189	Lærings- og ressourcecenter, DPB	1188
+1235	1172	Kantine, DPU	1141
+1236	1172	Direktørens sekretariat, DPU	1141
+1237	5100	T.N. Thiele Centre	
+1242	2400	Molekylær Diagnostisk Laboratorium	
+1243	2434	Klinisk Biokemisk Afdeling NBG	
+1244	2402	Anæstesiologisk Afdeling NBG	
+1246	1247	School of Engineering	
+1247	5000	Ingeniørvidenskab, Institut for	
+1248	2400	Specialkirurgisk Center	
+1249	1248	Mammakirurgisk Klinik	
+1251	1248	Karkirurgisk Afdeling	
+1252	1248	Plastikkirurgisk Afdeling	
+1256	2400	Geatrisk afdeling G	
+1257	1356	Radiologisk afdeling, THG	
+1258	2400	Færdighedslaboratoriet, SKS	
+1259	2400	Billeddiagnostisk afd., SKS	
+1260	1920	Antro., Ark. og Ling., Studien. f	1311
+1264	2400	Mammakirurgisk Center, Aalborg	
+1266	2400	Børne- og Ungdomspsykiatri, AAL	
+1268	2400	Anæstesiologisk afd., Randers	
+1269	2400	Gynækol./Obstetrisk afd., Randers	
+1270	2400	Ortopædkirurgisk afd., Randers	
+1271	2400	Klinisk Biokemisk afd., Randers	
+1272	2400	Børneafdeling, Randers	
+1273	2400	Radiologisk afd., Randers	
+1275	2400	Anæstesiologisk afd., Silkeborg	
+1276	2400	Gynækol./Obstetr. afd., Silkeborg	
+1277	2400	Kirurgisk afd., P, Silkeborg	
+1278	2400	Ortopædkirurgisk afd., Silkeborg	
+1279	2400	Klinisk Biokemisk afd., Silkeborg	
+1280	2400	Medicinsk afd., Silkeborg	
+1281	2400	Radiologisk afd., Silkeborg	
+1283	2400	Anæstesiologisk afd., Holstebro	
+1284	2400	Gynækol./Obstestr. afd., Holstebro	
+1285	2400	Kirurgisk afd., Holstebro	
+1286	2400	Ortopædkir. afd., Holstebro	
+1287	2400	Klinisk Biokemisk afd., Holstebro	
+1288	2400	Medicinsk Forskning, Holstebro	
+1289	2400	Radiologisk afd., Holstebro	
+1291	2400	Arbejdsmed. kli., Herning-kl. epi.	
+1292	2400	Gynæko./Obste. afd., Herning	
+1293	2400	Kirurgisk afd., Herning	
+1294	2400	Medicinsk afd., Herning	
+1295	2400	Børneafd., Herning	
+1297	2400	Kvindeafdelingen, Viborg	
+1298	2400	Kirurgisk afd., Viborg	
+1299	2400	Klinisk fysiologisk afd., Viborg	
+1300	1930	Historie, fag	1311
+1301	2400	Medicinsk afd., Viborg	
+1302	2400	Børneafdeling, Viborg	
+1304	2400	Psykiatrisk sygehus, Viborg	
+1307	2400	Børne- og Ungdomspsy., Viborg	
+1309	1930	Nordatlantiske Studier, Cent. f.	1311
+1310	1930	Historie, Studien.	1311
+1311	2400	Kirurgisk afd., Himmerland - Hobro	
+1312	2400	Medicinsk afd., Himmerland - Farsø	
+1313	2400	Medicinsk afd., Himmerland - Hobro	
+1315	2400	Kirurgisk afd., Vendsyssel - HJ.	
+1316	2400	Med. afd., Vendsyssel-Frederiksh.	
+1317	2400	Med. afd., Vendsyssel - Hjørring	
+1318	2400	Reumatolo. afd., Vendsyssel - HJ.	
+1322	1830	Sydasienstudier, fag	1311
+1323	2400	Kirurgisk afd., Fredericia	
+1324	2400	Medicinsk afd., Fredericia	
+1326	2400	Kirurgisk afd., Horsens	
+1327	2400	Medicinsk afd., Horsens	
+1329	2400	Fertilitetsklinikken	
+1344	2100	Forskertræningen	
+1346	1724	Brasiliansk	1411
+1348	1721	Fransk	1411
+1349	2088	Klassisk Filologi, fag	1311
+1350	2088	Klassisk Arkæologi, fag (1461)	1311
+1351	1722	Spansk	1411
+1352	1723	Italiensk	1411
+1354	1770	Tysk	1411
+1355	1814	Sortehavsstudier, Cent. f.	1141
+1356	2400	Diagnostisk Radiologi NBG/THG	
+1357	5050	AU Studieadm., Foulum	
+1359	1350	Antikstudier, Cent. f.	1311
+1361	2400	GCP-enheden Aalborg	
+1362	2400	Ortopædkirurgisk afd. Horsens	
+1363	2400	Hudklinikken	
+1364	2400	Påskehøjgaardcentret - SUN	
+1365	2400	Molekylær medicinsk afd. (MOMA)	
+1367	1817	Digital Urban Living, Center for	1411
+1368	1819	Team for Didaktisk udvikling	1611
+1375	1204	DPU Kommunikation	1141
+1376	1818	Kompetenceudvikling, Nat.center f.	1141
+1378	1028	Driftsfunktion, DJF	
+1379	1036	Markforsøg Flakkebjerg	
+1382	1037	Rugballegaard - skal lukkes	
+1383	3070	AU HR, BSS,  Fuglesangs Allé	
+1384	3060	AU Driftsøkonomi, ASB-Budget	
+1391	6300	AU HR, HE	
+1393	2400	Kirurgisk Afdeling, Thy-Mors	
+1394	2400	Medicinsk Afdeling, Thy-Mors	
+1395	5600	Geoscience, C.F. Møllers Allé	
+1396	5600	Geoscience, Ny Munkegade	
+1397	1172	Århus afdeling	1141
+1398	6000	AU IT	
+1399	1398	AU IT System & Udvikling, Aarhus	
+1400	1920	Buddhisme og modernitet	1311
+1402	1037	Mink	
+1403	6024	Rådgivnings- og Støttecenter, HIH	1613
+1404	6024	Team for Uddannelsesrådgivning, Odense	1613
+1405	6024	Team for Uddannelsesrådgivning, Emdrup	1613
+1407	2335	Marin biodiversitet og eksperimentel økologi	
+1408	2337	Marin økologi	
+1410	1940	Filosofi, fag	1311
+1411	2336	Faunaøkologi	
+1412	1061	Systemanalyse, Roskilde	
+1413	1061	Systemanalyse, Rønde	
+1414	1047	Forsknings-, Overvågnings- og Rådg	
+1415	1047	Forskn-, Overvågn- og Rådgivn- Sek	
+1416	1052	Økonomi- og Komm. sekretariat DMU	
+1417	5020	AU HR, ST, Roskilde	
+1418	1586	AU IT Generelle app., Roskilde	
+1419	1940	Sundhed, Menneske og Kul, Cent. f.	1311
+1420	1940	Filosofi, Studien.	1311
+1421	5016	AU IT, Support, ST, Silkeborg	
+1422	5016	AU IT, Support, ST, Kalø	
+1423	2209	ST Økonomi, Silkeborg	
+1424	1426	AU IT Sikkerhed, Aarhus	
+1425	1426	AU IT Sekretariat, Aarhus	
+1426	1398	AU IT Staben, Aarhus	
+1430	1940	Idéhistorie, fag	1311
+1440	1940	Idéhistorie, Studien.	1311
+1464	8500	Universitetscent.i Beijing, Sekr.f	
+1500	2170	Dramaturgi	1411
+1510	1950	Dramaturgi, Studien.	1411
+1520	2171	Kunsthistorie	1411
+1530	1950	Kunsthistorie, Studien.	1411
+1540	2173	Litteraturhistorie	1411
+1545	1611	HE Økonomi	
+1548	1785	Driftsområde TEO/ADM	
+1550	1950	Litteraturhistorie, Studien.	1411
+1551	2173	Retorik	1411
+1553	1027	IHP Afdelingsfunktion	
+1555	1034	SAFE	
+1556	1802	Økonomi, DJF	
+1557	1029	Centerdrift Universitetsparken	
+1558	1037	Epidemiologi og management	
+1559	1037	Integrativ fysiologi	
+1560	2171	Æstetik og Kultur	1411
+1561	1037	Immunologi og mikrobiologi	
+1562	1037	Molekylær ernæring og cellebiologi	
+1563	1037	Økologiplatform	
+1564	1069	ARC - Accounting Research Centre	
+1565	1071	CORE	
+1567	1074	Corporate Performance, Center for	
+1568	1072	Leksikografi, Center f.	
+1570	1950	Æstetik og Kultur, Studien.	1411
+1571	1814	Museologi, Center for	1141
+1572	1074	Research in Integration, Education	
+1573	3200	Juridisk Institut, Hermodsvej	
+1574	1069	Operations Research Applications	
+1576	1072	Knowledge Communication Lab	
+1579	5400	Biogenesis and Metabolism	
+1580	2170	Musikvidenskab	1411
+1584	1950	J.P. Jacobsen Selskabet	1411
+1585	6040	AU IT Klient platforme, Aarhus	
+1586	6040	AU IT, Generelle applikationer, Aarhus	
+1587	1784	AU IT, Support, AR og FA, Aarhus	
+1589	2260	Mind	
+1590	1950	Musikvidenskab, Studien.	1411
+1591	5100	QGM	
+1592	1920	BASIC	1311
+1593	1037	Intensive forsøgsfaciliteter	
+1594	2194	AU EVU, AR, Emdrup	
+1596	1662	AU Forskning og Talent, AR, Emdrup, Int. Forskn.	
+1597	1405	Rådgivn.- og støtte, scanner DPU,	1613
+1599	2400	Klinisk Genetisk Afdeling, AAL	
+1600	5000	Scienceuddannelse, Center f.	
+1602	1787	Health Byg Rengøring	
+1603	6071	HUM-Økonomicenter	1141
+1604	2400	Medicinsk afd., Dr. Ingrids Hosp.	
+1605	2400	Kirurgisk afd., Dr. Ingrids Hosp.	
+1606	2525	Hæmatologisk Afdeling, Forskningen	
+1609	2400	Ortopædkirurgisk Forskningslab.	
+1610	2167	Nordisk Sprog og Litt.	1411
+1611	6000	AU Økonomi og planlægning	
+1612	6600	Finanskontoret	
+1614	1611	Indkøb	
+1615	1773	Forskningsstøtteenheden	
+1616	8312	Business Liaison Office	1141
+1617	2260	Vascular Smooth Muscle Group	
+1618	2251	Driftssekretariat	
+1620	1960	Nordisk Sprog og Litt., Studien.	1411
+1621	2400	Neurocentret	
+1623	3400	Sociologiske Studier, Center for	
+1624	2400	Plastiskkirurgisk Afdeling Z	
+1626	2400	Plastikkirurgisk Afdeling (AAL)	
+1629	6006	Særlige rådgivere f. Uni. led.	
+1630	1817	Informations- og Mediev.	1411
+1631	2162	Informationsvidenskab	1411
+1632	2163	Medievidenskab	1411
+1633	1851	Kommunikation, Forskerskole	1141
+1634	1630	Informations-/Medievid., Studien.f	1411
+1635	1395	Geofysiksamarbejdet	
+1636	1817	Science-Technology-Soci, Cent. f.	1411
+1637	1817	Digital Æstetik-forskning, Cent.f.	1411
+1638	1396	Marslaboratoriet	
+1639	1817	Internetforskning, Cent. f.	1411
+1640	1630	Informationsvidenskab, Studien.	1411
+1641	5500	Geomikrobiologi, Cent. f.	
+1642	6030	Valgsekretariatet	
+1643	2400	Tand-, mund- og kæbekirurgisk afde	
+1644	1818	Stratetisk Uddannelsesforskning, Cent. F.	1141
+1646	1817	Avanceret Visualisering , Cent. f.	1422
+1647	1040	NoNaKlim	
+1650	1630	Medievidenskab, Studien.	1411
+1651	1040	REBECa	
+1652	1040	AeroBactics	
+1653	1040	ZERO	
+1654	1040	Nuuk Basic	
+1655	5100	CSGB	
+1656	6071	HUM Fakultetssekretariat (Nobel)	1141
+1657	8300	AU Kommunikation, AR	
+1658	2207	AR Økonomi, Aarhus	
+1659	6200	AU Studier, AR	
+1660	1817	Jysk Dialektforskning, Cent.f.	1411
+1662	1771	AU Forskning og Talent, AR	
+1663	6300	AU HR, AR	
+1664	1656	HUM Sprogservice	1141
+1665	1040	COST 639	
+1666	1040	ECODYN	
+1667	1040	FARO Secretariat	
+1668	1040	HYPER	
+1669	1040	Kyoto34	
+1670	1040	NordBio2010	
+1671	1040	AIRPOLIFE	
+1672	1040	ECOINNOVATION	
+1673	1040	Natur og Miljø	
+1674	1247	Forsøgsbiogasanlæg	
+1675	1037	Slagteri - skal lukkes	
+1676	1036	Agrohydrologi og Vandkvalitet	
+1677	2162	Digital Design, Langelandsgade	1411
+1678	1641	Baltic gas	
+1680	1587	AU IT support AR og FA, Emdrup	
+1683	1816	Områdestudier Europa, faggruppe	1311
+1684	2400	Medico-teknisk Afdeling - MTA	
+1686	1814	Platform f. Stab.Demo.Rettigheder	1141
+1688	1156	IKT Service Desk	
+1689	2197	KAR, BSS	
+1691	3080	AU Kommunikation, BSS, ASB	
+1692	5000	Theory of Interact.Comp., Cent. f.	
+1693	5150	Found. of Electr.Markets, Cent. f.	
+1694	1000	Arts - dekanatet	1211
+1696	1694	Dekansekretariatet, Arts	1211
+1699	1694	Dekansekretariatet, Arts (Emdrup)	1211
+1700	1817	Engelsk	1411
+1701	1611	BI - enheden	
+1702	2400	Kvindeafdelingen, Horsens	
+1703	3000	ICOA	
+1704	1040	Ecofinders	
+1705	8312	Genvej til Ny Viden	1141
+1708	1817	Irske Studier Aarhus, Cent. f.	1411
+1709	1817	Amerikanske Studier, Cent. f.	1411
+1720	1970	Klassisk	1411
+1721	2169	Fransk	1411
+1722	2169	Spansk	1411
+1723	2169	Italiensk	1411
+1724	2169	Brasiliansk	1411
+1727	1720	Borges Centeret	1411
+1729	1817	Latinamerikastudier, Cent. f.	1411
+1762	1040	Koordinationsenheden for forskning	
+1765	5400	MB International Student Programme (MOBIL)	
+1766	1037	Forplantningsbiologi	
+1767	5400	Kvantitativ Genetik og Bioinforma.	
+1768	1037	Foderfabrik - skal lukkes	
+1769	5000	Øko. Jordbrug og Fødev,Int.cent.f.	
+1770	2169	Tysk	1411
+1771	6000	AU Forskning og Talent	
+1772	1771	Talent	
+1773	1771	Forskning	
+1774	8300	Branding	
+1775	8300	Medier	
+1776	8300	Events	
+1777	6000	AU Viden	
+1778	1777	AU Library	
+1779	1611	ADM Økonomi	
+1781	1611	Planlægning	
+1782	2251	Optag	
+1783	2251	StudieSystem Design	
+1784	1398	AU IT Service  & Support, Aarhus	
+1785	6050	Arts & BSS Bygningsservice	
+1786	6050	ST Bygningsservice	
+1787	6050	Health Bygningsservice	
+1788	1785	Driftsområde, ASB	
+1789	1786	ST Byg5 Drift	
+1790	1771	AU Forskning og Talent, ST	
+1791	1790	AU Forskning og Talent, ST, Foulum	
+1792	1771	AU Forskning og Talent, BSS	
+1793	1657	AU Kommunikation, AR, Emdrup	
+1794	5022	AU Kommunikation, ST, Roskilde	
+1795	5022	AU Kommunikation, ST, Foulum	
+1796	8300	AU Kommunikation, HE	
+1798	1658	AU Driftsøkonomi, AR, Tek-ASB	
+1799	6010	Budgetkontoret, Tek-DJF	
+1800	2000	Studienævnene på HE	
+1801	6036	AU HR Org.udv. & arb.mil, Foulum	
+1802	2209	ST Økonomi, Foulum	
+1803	6000	Identifikation af ikke placeret	
+1804	1778	AUL, ST	
+1805	1701	Bi-enhed, Tek-DJF	
+1806	6300	HR Service-funktioner	
+1807	5000	Miljøvidenskab, Inst. f.	
+1808	5000	ST, Adm. og tekniske funktioner	
+1809	1000	Arts, Adm. og tekniske funktioner	1141
+1810	2165	Lingvistik	1411
+1814	1000	Arts, Centre	1141
+1815	1000	Arts, Studienævn	1141
+1816	1000	Kultur og Samfund, Institut for	1311
+1817	1000	Æstetik og Komm., Inst. f.	1411
+1818	1000	Uddannelse og pædagogik, Inst. f.	1510
+1819	1000	Underv.udv. og Dig.Medier, Cent. f	1611
+1821	3010	BSS, Adm. Og tekniske funktioner	
+1823	1786	ST Byg4 Drift Foulum	
+1824	1785	BSS Byg2 Drift	
+1829	2000	HE Centre m.m.	
+1830	1816	Asienstudier, faggruppe	1311
+1831	1782	Optagelse til kandidatuddannelser	
+1832	1782	Internationalisering	
+1833	1618	Statistik og analyse	
+1834	6200	Diftsstab	
+1835	1659	SNUK, AR	
+1836	1659	Undervisning og eksamen (UVAEKA), AR	
+1837	1659	Vejledning og studieinformation, AR	
+1838	3090	Vejledning og studieinformation, BSS	
+1839	3090	Undervisning og eksamen (UVAEKA), BSS	
+1840	1930	Østasiatisk, Studien.	1311
+1841	3090	SNUK, BSS	
+1842	5050	SNUK, ST	
+1843	5050	Undervisning og eksamen (UVAEKA), ST	
+1844	2008	SNUK, HE	
+1845	2008	Undervisning og eksamen (UVAEKA), HE	
+1846	2008	Vejledning og studieinformation, H	
+1847	8300	Digital	
+1848	8300	Stab, AU Kommunikation	
+1849	1426	AU IT Portefølje, Aarhus	
+1851	1000	Arts Phd-skole	1141
+1852	1771	Stab, AU Forskning og Talent	
+1855	5000	Studienævnene på ST	
+1856	2008	AU Studier, Klinik	
+1857	8000	Ansatte ved Studenterrådet	
+1858	1864	ST, Censur	
+1859	1818	Uddannelse og Pædagogik, Aarhus, Institut for	1510
+1860	1683	Østeuropastudier, fag	1311
+1864	5000	Dekanat, ST	
+1865	1864	ST, VKR-Postdocs	
+1866	1000	Kultur og Læring(DCL) Nat.C.	1911
+1867	2000	Sun.tj.f. og Sun.øko.(DCH) Nat.C.	
+1868	2000	Partikelterapi(DCP), Nat.C.	
+1870	1930	Slavisk og Østasiatisk, Studien. f	1311
+1873	6040	AU IT Administrative applikationer, Aarhus	
+1874	6040	AU IT Netværksteam, Aarhus	
+1875	6040	AU IT Skyen, Aarhus	
+1876	1399	AU IT System & Udvikling,Silkeborg	
+1877	1424	AU IT Sikkerhed, Foulum	
+1878	1586	AU IT Generelle app, Herning	
+1879	1586	AU IT Generelle app., Silkeborg	
+1880	1849	AU IT Portefølje, Emdrup	
+1881	1873	AU IT Adm. app., Emdrup	
+1882	1873	AU IT Adm. app., Foulum	
+1883	5016	AU IT, ST, Support, Årslev	
+1884	1874	AU IT Netværksteam, Emdrup	
+1885	1874	AU IT Netværksteam, Foulum	
+1886	1874	AU IT Netværksteam, Roskilde	
+1887	1875	AU IT Skyen, Emdrup	
+1888	1875	AU IT Skyen, Foulum	
+1889	1875	AU IT Skyen, Roskilde	
+1890	1875	AU IT Skyen, Emdrup, Tek-DMU	
+1891	1875	AU IT Skyen, Tek-DJF	
+1892	1784	AU IT Service  & Support, Tek-DJF	
+1893	5022	AU Kommunikation, ASE	
+1894	1399	AU IT System & Udvikling, Tek-ASB	
+1895	1425	AU IT Sekretariat, Tek-ASB	
+1896	1585	AU IT Klient platforme, Tek-ASB	
+1897	1586	AU IT Generelle applikationer, Tek-ASB	
+1898	1784	AU IT Service  & Support, Tek-ASB	
+1899	1849	AU IT Portefølje, Tek-ASB	
+1900	6040	AU IT Drift og Teknologi, Tek-ASB	
+1901	6033	AU HR Kompetenceenheden, Tek-ASB	
+1902	6036	AU HR Org.udv. og arb.mil, Tek-DJF	
+1903	6036	AU HR Org.udv. & arb.mil, Roskilde	
+1904	6036	AU HR Org.udv. & arb.mil., Emdrup	
+1905	6036	AU HR Org.udv. & arb.mil., Tek-ASB	
+1906	1663	AU HR, AR, Tek-ASB	
+1907	3070	AU HR, BSS, Tek-ASB	
+1908	1391	AU HR, HE, Tek-DJF	
+1909	5020	AU HR, ST, Tek-DJF	
+1910	1417	AU HR, ST, Roskilde, Tek-DPU	
+1911	6012	Løn, Roskilde	
+1912	1000	Biblioteker, Arts	1188
+1913	1842	Udd.kval. og stud.betj. ST, Tek-DJF	
+1914	5051	Inform. Og vejl, ST, Tek-DJF	
+1917	1618	Uddannelsesjuridsk Service	
+1920	1816	Arkæologi, faggruppe	1311
+1921	1851	Arkæologisk Forskerskole	1141
+1922	1851	Antropologi, Forskerskole	1141
+1926	8472	SPS-administration, Tek-DPU	
+1928	1024	Undervisning og Læring,C. Tek-ASB	
+1929	1657	AU Kommunik, AR, Tek-ASB	
+1930	1816	Historie og Klassiske Studier	1311
+1931	1851	Historie, Forskerskole	1141
+1932	1774	Branding, Tek-ASB	
+1933	1776	Events, Tek-ASB	
+1934	1796	AU Kommunikation, HE, Tek-ASB	
+1935	1847	Digital, Tek-ASB	
+1938	1775	Medier, Emdrup	
+1939	5022	AU Kommunikation, ST, Tek-DMU	
+1940	1816	Filosofi og Idéhistorie, faggruppe	1311
+1941	1848	Stab, AU Kommunikation, Tek-DJF	
+1942	5500	Bioscience, Institut,  Tek-DMU	
+1943	1587	AU IT, Support, AR og FA, Emdrup, TEK-8000	
+1944	1935	Digital, Tek-DPU	
+1945	5000	Ingeniørhøjskolen AU	
+1946	2000	Biomedicin, Inst. f.	
+1947	8000	Centre på universitetsniveau	
+1948	6011	AU Regnskab, Tek-DMU	
+1949	6031	Journalkontoret, ST	
+1950	1817	Æstetiske Fag	1411
+1951	1851	Æstetikfaglig Forskerskole	1141
+1952	6011	AU Regnskab, Emdrup	
+1953	6011	AU Regnskab, Roskilde	
+1954	1947	Advanced Studies,Aarhus Inst. of	
+1955	1048	Dekansekretariatet, ST, tek-DMU	
+1956	1048	IT	
+1957	1048	IT	
+1959	5150	MADALGO	
+1960	1817	Nordisk	1411
+1961	1851	Sprogvidenskabelig Forskersk. Nord	1141
+1962	2170	Musikvidenskab, Niels Juels Gade	1411
+1963	1777	AU Viden, BO	
+1965	2333	Arctic Research Centre	
+1966	2333	Arktisk Forskningscenter	
+1967	1965	Arctic Research C., Ole Worms Allé	
+1968	1965	Arctic Research C., Høegh Guldbergs Gade	
+1969	1965	Arctic Research C., Bartholins Allé	
+1970	1817	Sprog, Litt. og Kultur	1411
+1971	1965	Arctic Research Centre, Roskilde	
+1972	1965	Arctic Research Centre, Silkeborg	
+1973	1965	Arctic Research Centre, Aalborg	
+1974	1965	Arctic Research C., Wilhelm Meyers Allé	
+1975	1965	Arctic Research Centre, Kalø	
+1976	1965	Arctic Research C., Brendstrupgårdsvej	
+1977	1965	Arctic Research C., C.F. Mølle Allé	
+1978	2800	Oral Epidemiologi og Folkesundhed	
+1981	2400	Akutforskning, Cent. F.	
+1982	1031	Team for Studiekompetence, Emdrup	
+1983	1803	Identifikation af ikke placeret	
+1984	1817	DIGHUMLAB	
+1986	6006	Administrationscenter, AR	
+1987	6006	Administrationscenter, BSS	
+1988	6006	Administrationscenter, HE	
+1989	6006	Administrationscenter, ST	
+1990	1247	Sekretariatet	
+1991	1247	Center for Industrial Cooperation	
+1992	1247	Elektronik og computerteknologi	
+1993	1992	Kommunikationssystemer	
+1994	1992	Indlejrede systemer	
+1995	1992	Integrated Electronics	
+1996	1992	Fotonik	
+1997	1992	Signalprocessering	
+1998	1992	Software Engineering	
+1999	1990	Sekretariatet, Dalgas Avenue	
+2000	8000	Health	
+2001	1247	Byggeri og bygningsdesign	
+2002	2001	Byggeri og konstruktion	
+2003	2001	Integreret energidesign og bæredygtighed	
+2004	2001	Geoteknik og bærende konstruktioner	
+2005	1247	Mekanik	
+2006	2005	Materialer	
+2007	2019	Operations Management, Dalgas Avenue	
+2008	6200	AU Studier, HE	
+2009	2005	Flexible Multibody	
+2010	1800	Lægevidenskab, Studien.	
+2011	2005	Fluid mekanik	
+2012	1990	Sekretariatet, Blichers Allé	
+2013	1247	Bioteknologi og kemiteknologi	
+2014	2013	Bioteknologi	
+2015	2014	Bioteknologi, Dalgas Avenue	
+2016	2013	Chemical Membranes and Sensors	
+2017	2011	Bæredygtige energisystemer	
+2018	1247	Research Business Manager	
+2019	2005	Operations Management	
+2020	1800	Odontologi, Studien.	
+2022	5400	Genomekspression, stabilitet og teknologi	
+2023	5400	Genmedicin	
+2024	5400	Molekylær celle- og udviklingsbiologi	
+2025	2037	Sekretariat, C.F.Møllers Allé	
+2026	2038	Teknikerværksted, C.F.Møllers Allé	
+2027	5400	Molekylær Ernæring	
+2028	5400	Proteinvidenskab	
+2029	5400	Strukturel Biologi	
+2030	1946	Fællestrykkeriet - SUN	
+2031	2124	Dyrestald, Øst	
+2032	2290	Substratafdeling	
+2033	1784	AU IT, Support, HE, Aarhus	
+2034	5400	Molekylær intervention	
+2035	1778	AUL. HE	
+2036	5400	Plante Molekylærbiologi	
+2037	5400	Sekretariat	
+2038	5400	Teknikerværksted, Gustav Wied	
+2039	1829	Medicinerhuset	
+2040	1829	Medicinsk Uddannelse, Center f.	
+2041	2037	Sekretariat, Foulum	
+2042	1109	Sekretariat, Årslev	
+2043	1039	Planter, Fødevarer og Klima	
+2044	1039	Differenti. og biofunkt. fødevarer	
+2045	5050	AU Studier, ASE	
+2046	2044	Diff. og biofunkt. fødevarer, Årslev	
+2047	2211	Sekretariatet, Folkesundhed	
+2048	5016	AU IT, Support, ST, Dalgas, Aarhus	
+2049	1585	AU IT Klient platforme, Finland 20	
+2050	1771	AU Forskning og Talent, HE	
+2051	5016	AU IT, Support, ST, Flakkebjerg	
+2052	1873	AU IT, Adm. Applikationer, Fuglesangs Allé	
+2053	1586	AU IT, Generelle appl., Finlandsgade	
+2054	2033	AU IT, Support, HE, Wilhelm Meyers Allé	
+2055	1587	AU IT, Support, AR og FA, Aarhus, Willemoesgade	
+2056	2700	Master i Klinisk Sygepleje	
+2057	2700	Kandidat i Sygeplejevidenskab	
+2058	2400	Præhospitalet	
+2059	1777	AU Alumne	
+2060	2211	MPH - Public Health, Master of	
+2061	2013	BCE Lipid Technology	
+2062	2013	BCE Protein Engineering	
+2063	2013	Plastic and Polymer Engineering	
+2064	2013	BCE Manure technologies and biogas	
+2065	2013	BCE Bioenergy	
+2066	2001	CAE Construction Dynamics	
+2067	2001	CAE Construction Enginering	
+2068	6050	Campus Udvikling	
+2069	1785	Arts Byg1 Rengøring	
+2070	1800	Sundhedsfagl. kand.udd.	
+2071	1785	BSS Byg3 Rengøring	
+2073	1786	ST Drift Rønde	
+2074	1786	ST Drift Silkeborg	
+2075	1786	ST Byg1 Rengøring, Matematik	
+2076	1786	ST Byg1 Rengøring, Fysik	
+2077	1786	ST Byg2 Rengøring Parken	
+2078	1786	ST Byg2 Rengøring Kemi & Gustav W	
+2079	1786	ST Byg3 Rengøring	
+2080	1800	Biomedicinsk Teknik, kand.udd.	
+2081	1786	ST Byg4 Rengøring, Foulum	
+2082	1786	ST Byg4 Drift Flakkebjerg	
+2083	1786	ST Byg4 Drift Årslev	
+2084	1786	ST Byg6 Drift	
+2085	1300	Danmarkshistorien.dk	
+2086	1300	Dansk Center for Byhistorie	
+2087	1300	Center for Erhvervshistorie	
+2088	1930	Klassiske Studier, faggruppe	
+2089	1350	Klassisk Arkæologi, fag (1453)	
+2090	1946	Sekretariat	
+2091	2090	Sekretariat, Syd	
+2092	2090	Sekretariat, Øst	
+2093	2090	Sekretariat, Vest	
+2094	2125	Teknisk service, Øst	
+2095	2125	Teknisk service, Syd	
+2096	2125	Teknisk service, Vest	
+2097	2124	Dyrestald, Syd	
+2098	2124	Dyrestald, Vest	
+2099	1946	Forskning og uddannelse	
+2100	2211	Almen Medicin	
+2101	2099	Forskning og uddannelse, Øst	
+2103	1830	Japanske studier, fag	
+2104	1830	Kinesiske studier, fag	
+2105	1830	Arabisk og Islamstudier, fag	
+2106	1230	Antro. og Etno., fag (Nobelparken)	
+2107	1230	Interacting Minds Centre (IMC)	
+2108	1230	Sociologiske Studier (CESAU), C. f	
+2112	1965	Arctic Research C., N. Munkeg. 120	
+2113	1816	Teologi, faggruppe	
+2114	1816	Kultur og Samfund, institutsek.	
+2115	2114	Kultur & Samfund lokalsek. 1451	
+2116	2114	Kultur & Samfund lokalsek. 1463	
+2117	2114	Kultur & Samfund lokals. Moesgård	
+2118	2114	Arkæologisk IT, Moesgård	
+2120	2100	Almen medicin, Specialeuddannelsen	
+2121	2100	Almen Praksis, Forskningsenheden	
+2122	8311	Informationen, Fuglesangs Alle	
+2123	5100	Sekretariat	
+2124	1946	Dyrestald	
+2125	1946	Teknisk service	
+2126	1945	Sekretariat	
+2127	1945	Uddannelse	
+2128	2127	Uddannelse, Finlandsgade	
+2129	2127	Uddannelse, Langelandsgade	
+2130	1945	Center for Industrial Cooperation	
+2131	1945	CDIO Development Lab	
+2132	2131	CDIO Development Lab, Finlandsgade	
+2133	1945	Elektronik og computerteknologi	
+2134	2133	Signalbehandling	
+2135	2133	Kommunikationsteknologi	
+2136	2133	Indlejrede systemer	
+2137	2133	Elektronik	
+2138	2133	Software Engineering	
+2139	2133	Elektronik, Herning	
+2140	1945	Maskinteknik	
+2141	2140	Maskinkonstruktion	
+2142	2140	Energi- og systemdesign	
+2143	2140	Materialer	
+2144	1945	Bioteknologi og kemi	
+2145	2144	Bioprocesteknologi	
+2146	2145	Bioteknologi	
+2147	2144	Kemiteknologi	
+2148	1945	Bygningsteknik	
+2149	2148	Anlægsteknik	
+2150	2148	Konstruktionsdesign og geoteknik	
+2151	2148	Energi- og miljødesign	
+2152	1945	Adgangskursus	
+2153	2152	Adgangskursus, Herning	
+2154	1945	Bygningsdrift	
+2155	2154	Bygningsdrift, Dalgas	
+2156	2154	Bygningsdrift, Dalgas 12	
+2157	2154	Bygningsdrift, Finlandsgade	
+2158	5150	Sekretariat	
+2159	8300	Omnibus - uniavisen på AU	
+2160	3000	BSS Executive	
+2161	2400	Psykiatrisk Forskningsenhed Vest	
+2162	1817	Informationsv.  og Digital Design	
+2163	1817	Medievidenskab og Journalistik	
+2164	2162	Digital design	
+2165	1817	Semiotik og Lingvistik	
+2166	2165	Semiotik	
+2167	1817	Nordisk og Oplevelsesøkonomi	
+2168	2167	Oplevelsesøkonomi	
+2169	1817	Tysk og Romansk	
+2170	1817	Dramaturgi og Musikvidenskab	
+2171	1817	Kunsthis., Æst. & Kul., Museologi	
+2172	2171	Museologi	
+2173	1817	Litt. -his., Retorik og Børnelitt.	
+2174	2173	Børnelitteratur	
+2175	2173	Børnelitteratur, Emdrup	
+2176	1817	IÆK's institutsekretariat	
+2177	2176	IÆK's institutsekr., Katrinebjerg	
+2178	2176	IÆK's institutsekr., bygning 1481	
+2179	2176	IÆK's institutsekr., bygning 1485	
+2180	1817	Æstetik og Komm., Studienævnet for	
+2181	1817	Participatory Inform. Technology	
+2182	1817	Canadian Studies Centre	
+2183	1817	Centre for Theatre Lab. Studies	
+2184	1817	Center for Interaktionsdesign	
+2187	1838	Studievejledningen for Økonomi	
+2188	1838	Studievejled. for Erhvervsøkonomi	
+2189	1838	Studievejledningen for Jura	
+2190	1838	Studievejledningen for Psykologi	
+2191	1838	Studievejled. for Statskundskab	
+2192	1838	Studiev.led. Erhv.komm. & Erhv.spg	
+2193	1777	AU EVU, BO	
+2194	2193	AU EVU, AR	
+2195	2193	AU EVU, HE	
+2196	2193	EVU, ST	
+2197	1777	AU Karriere, BO	
+2198	2197	KAR, AR	
+2199	2197	KAR, HE	
+2200	2000	Den basale sektor	
+2201	2197	KAR, ST	
+2202	2290	Bartholinbygn. - fælles funktioner	
+2203	1689	KAR, BSS, Bartholin	
+2204	1963	AU Viden, BO, Aarhus	
+2205	1778	AUL, AR	
+2207	1611	AR Økonomi	
+2208	1611	BSS Økonomi	
+2209	1611	ST Økonomi	
+2210	2099	Forskning og uddannelse Syd	
+2211	2000	Folkesundhed, Inst. f.	
+2214	2209	ST Økonomi, Årslev	
+2215	2209	ST Økonomi, Flakkebjerg	
+2216	2209	ST Økonomi, Kalø	
+2217	2209	ST Økonomi, IHA	
+2219	1611	Stab	
+2220	2260	Biofysik	
+2221	1399	Applikationsteamet	
+2222	2221	Applikationsteamet, Emdrup	
+2223	1399	Arkitekturstab	
+2224	1399	Integrationsteamet	
+2225	2800	Sterilcentralen	
+2226	2800	Sekretariatet	
+2227	2800	Kirurgiklinikken	
+2228	2800	Klinikreceptionen	
+2229	2194	AU EVU, AR, Aarhus	
+2230	2211	Biostatistik	
+2231	1963	AU Viden, BO, Emdrup	
+2232	1689	KAR, BSS, Fuglesangs Allé	
+2233	1804	Fysik & Steno	
+2234	1804	Matematik	
+2235	1804	Foulum	
+2236	1804	Flakkebjerg	
+2237	1804	Kalø	
+2238	1804	Geoscience	
+2239	1804	Kemi	
+2240	2211	Epidemiologi	
+2241	1804	Teknik	
+2242	2035	Folkesundhed	
+2243	2035	Sundhedsvidenskab	
+2244	5000	Science Museerne	
+2245	2244	Væksthusene	
+2246	2244	Ole Rømer Observatoriet	
+2247	1037	Fiskesundhed	
+2248	2354	Environmental social science, SAMI, Silkeborg	
+2249	2240	Epidemiologisk Grundfsk., Cent. f.	
+2250	2260	Farmakologi	
+2251	6200	Driftsenhed	
+2252	6200	Udviklings- og projektstab	
+2253	1834	Midlertidig enhed til placering af ansatte	
+2254	3500	Psykologisk Institut, København	
+2255	2176	Censor, IÆK	
+2256	2126	Sekretariat, Finlandsgade	
+2257	2131	CDIO Development Lab, Herning	
+2258	2250	Klinisk Farmakologisk Center	
+2259	1864	ST, Studentermedhjælp	
+2260	1946	Fysiologi og Biofysik	
+2261	1785	AR & BSS Bygn.S., Fuglesangs Allé	
+2262	2198	KAR, AR  Tåsingegade	
+2263	2000	INNO-X	
+2264	1965	Arctic Research C. Herning	
+2265	1965	Arctic Research C. Barth. Allé 16	
+2266	1965	Arctic Research C. Fuglesangs Allé	
+2267	1058	AUL, AR, Katrinebjerg	
+2268	6006	Studenteridræt	9141
+2269	2260	Fysiologi	
+2270	2260	Human Genetik	
+2271	1587	AU IT Support AR FA Fuglesanges A.	
+2280	2099	Forskning og uddannelse, Vest	
+2287	2260	BioBase	
+2290	2260	Medicinsk Mikrobiologi	
+2304	2163	Journalistik	
+2305	1191	Forfatterskolen for Børnelitteratur	
+2306	5300	Kemi, iNANO-bygning	
+2307	5300	Kemi, Pavillon 2	
+2308	5400	DANDRITE	
+2310	2211	Miljø- og Arbejdsmedicin	
+2312	1368	Team for Didaktisk udvikling, Emdrup	
+2313	1819	Team for Læse-skrive vejledning	
+2314	2313	Team for Læse-skrive vejledning, Emdrup	
+2315	1819	Team for Sekretariat	
+2316	2315	Team for Sekretariat, Trøjborg	
+2317	2315	Team for Sekretariat, Emdrup	
+2318	2310	Arktisk Sundhed, Cent. f.	
+2319	2251	StudieStatistik	
+2320	2000	Retsmedicin, Institut for	
+2321	2320	Sekretariat, retsmedicin	
+2322	2013	Flow-proces Technology	
+2323	2013	BCE Manure technologies and biogas	
+2324	2001	(Day)Lighting Design	
+2325	2320	Retskemisk	
+2326	2033	AU IT, Support, HE, Katrinebjergvej 89F	
+2327	2005	Structural Composites and Digital Engineering	
+2328	2005	Robotics	
+2329	2005	Nano Engineering	
+2330	2320	Retspatologisk	
+2331	2005	Biomechanical Engineering	
+2332	1992	Biomedical Technology	
+2333	5500	BIOS AAR	
+2334	5500	BIOS RKS	
+2335	2334	BIOS Roskilde	
+2336	2334	BIOS Kalø	
+2337	2334	BIOS Silkeborg	
+2338	2334	BIOS Aarhus	
+2339	2335	Arktisk økosystemøkologi	
+2340	2335	Havpattedyrforskning	
+2341	2337	Plante- og insektøkologi	
+2342	2337	Oplandsanalyse og miljøforvaltning	
+2343	2337	Vandløbs- og ådalsøkologi	
+2350	1807	Atmospheric chemistry and physics, ATCP	
+2351	1807	Sekretariat	
+2352	1807	Environmental microbiology & biotechnology, EMBI	
+2353	1807	Emission modeling & enviromental geography, EMMI	
+2354	1807	Environmental social science, SAMI	
+2356	2400	Tilknyttede Klinisk Medicin	
+2357	6011	Rejsegruppen	
+2358	6011	Kreditorgruppen	
+2359	6011	Debitorgruppen	
+2360	6011	Balancegruppen	
+2361	6011	Ledelse	
+2400	2000	Klinisk Medicin, Inst f.	
+2401	2400	Anæstesiologisk  Afd. , SKS	
+2402	2400	Anæstesiologisk Afdeling NBG	
+2403	2402	Anæstesiologisk Afdeling, TGH	
+2404	2400	Færdighedslaboratoriet, NBG	
+2405	2400	Translational Neuropsychiatry Unit	
+2406	2400	Dermato-Venerologisk Afd. S	
+2410	2400	GCP-enheden v. Aarhus Uni.hosp.	
+2411	2400	Arbejdsmedicinsk klinik	
+2412	2400	Klinisk Epidemiologi	
+2413	2400	Bioinformatik, Enhed for	
+2415	2400	Reumatologisk Afdeling, NBG	
+2416	2400	PET-Centret, forskningsafdeling	
+2417	2466	Stereologi	
+2418	2400	Molekylær Medicinsk Forsk.enhed	
+2421	2400	Arbejdsmedicinsk Klinik, NBG	
+2423	2473	Medicinsk Fysik, Afd.f.	
+2424	2400	Klinisk fysiologi og nuclearmed.	
+2425	2400	Urinvejskirurgisk Afdeling K, SKS	
+2426	2400	Kirurgisk Afdeling L, NBG	
+2427	2400	Hjerte-Lunge-Karkir. Afd. T, SKS	
+2428	2400	Kirurgisk Afdeling P, THG	
+2429	2400	Ortopædkirurgisk Afdeling E, THG	
+2430	2400	Organkirurgisk afd., Randers	
+2433	2400	Klinisk Immunologisk Afdeling, SKS	
+2434	2400	Klinisk Biokemisk Afdeling NBG	
+2435	2400	Klinisk Biokemisk Afdeling, SKS	
+2436	2400	Klinisk Mikrobiologisk Afd., SKS	
+2440	2400	Molekylære Kræftforskn, Forskersk.	
+2447	2400	Psykiatrisk Demografi, Afd.f.	
+2448	2035	Psykiatrisk Forskningsbibliotek	
+2450	2400	Ortopædkirurgisk Afdeling E, NBG	
+2451	2400	T-Forskning	
+2452	2400	Neurokirurgisk Afdeling, NBG	
+2453	2400	Neurologisk Afdeling F, NBG	
+2454	2400	Gynækologi-Obstetrik - SKS	
+2455	2400	Øjenafdelingen (Oftalmologi), NBG	
+2456	2400	Y-Forskningslaboratorium	
+2457	2400	MR Research Centre	
+2458	2400	Medicinsk Afd. V, NBG	
+2459	2400	Lungemedicinsk Afdeling, NBG	
+2462	2400	Øre-Næse-Hals-Sygdomme, afdeling H	
+2463	2400	Biokemisk Patologi, Forsk.lab. f.	
+2464	2400	Elektronmikroskopisk Laboratorium	
+2465	2400	Patologisk Institut, THG	
+2466	2400	Patologisk Institut, NBG	
+2467	2434	Klinisk Biokemisk Afdeling, THG	
+2470	2400	Børne- og Ungdomspsyk. regcenter	
+2471	2400	Psykiatrien i Region Midtjylland	
+2472	2400	Børneafdeling, SKS	
+2473	2400	Onkologisk Afdeling D, NBG	
+2474	2473	Eksp. Klinisk Onkologi, Afd. f.	
+2476	1356	Radiologisk afdeling, NBG	
+2477	2400	Neurofysiologisk Afdeling, NBG	
+2480	2400	Pet-centret, grundforskning	
+2481	2400	Perinatal epidemiologi, SKS	
+2482	2400	Funktionelle Lidelser, Fsk.kli.	
+2483	2400	Fkt. Integrativ Neurovidenskab,Cnt	
+2489	2400	Medicinsk Forskningslaboratorium	
+2490	2400	Medicinsk Endokrin. Afd., MEA, NBG	
+2491	2400	Nyremedicinsk Afd. C, SKS	
+2492	2400	Hjertemedicinsk Afdeling B, SKS	
+2493	2400	Infektionsmedicinsk Afdeling Q, SK	
+2494	2400	Hæmatologisk Afd. R, THG	
+2495	2400	Medicinsk Kardiologisk Afd.A, THG	
+2496	2400	Medicinsk afd., Randers	
+2497	2400	Øvrige sygehuse, intern medicin	
+2498	2400	Medicinsk Endokrinologisk Afd., MEA, THG	
+2499	2400	Medicinsk Forskning, Holstebro	
+2500	2400	Anæstesisektor Nordjylland	
+2501	2400	Urologisk afdeling, AAL	
+2502	2400	Ortopædkirurgi Nordjylland	
+2503	2400	Kirurgisk Gastroent. Afd.A, AAL	
+2504	1248	Hjerte-Lungekir. Afd., AAL	
+2505	2400	Klinisk Biokemisk Syd, FBE, AAL	
+2506	2400	Neurokirurgisk afd. K, AAL	
+2507	2400	Neurologisk Afd., AAL	
+2508	2400	Gynækologisk-Obstetrisk Afd., AAL	
+2509	2400	Børneafdelingen, AAL	
+2510	2400	Onkologisk Afdeling, AAL	
+2511	2400	Radiologisk Afdeling, AAL	
+2512	2400	Nyremedicinsk Afdeling, AAL	
+2513	2400	Med. Gastroent. Afd., AAL	
+2514	2400	Med. Endokrin. Afd, AAL	
+2515	2400	Kardiologisk Afdeling, AAL	
+2516	2400	Klinisk Mikrobiologisk Afd., AAL	
+2518	2400	Klinisk Epidemiologisk, AAL	
+2520	2400	Sygehusledelsen, AAL	
+2521	2400	Universitetshosp., Afd.f., AAL	
+2522	2400	Klinisk sygepleje, fsk.enhed, AAL	
+2523	2400	Centerledelsen, Med.center, AAL	
+2524	2400	Infektionsmedicinsk Afd., AAL	
+2525	2400	Hæmatologisk Afdeling, Aalborg	
+2526	2400	Lungemedicinsk Afdeling, AAL	
+2527	2400	Geriatrisk Afdeling, AAL	
+2528	2400	Reumatologisk Afdeling, AAL	
+2529	2400	Øre-Næse-Halskirurgisk Afd., AAL	
+2530	2400	Øjenafdelingen, AAL	
+2531	2400	Kæbekirurgisk Afdeling, AAL	
+2532	2400	Arbejdsmedicinsk Klinik, AAL	
+2533	2400	Socialmedicinsk Enhed, AAL	
+2534	2400	Patologisk Institut, AAL	
+2535	2400	Klinisk Immunologi, AAL	
+2536	2400	Nuklearmedicinsk Afdeling, AAL	
+2537	2400	Terapiafdelingen, AAL	
+2539	2400	Visceral biom. og smerte, c.f.,AAL	
+2540	2400	Kardiovaskulært Forskningsc., AAL	
+2580	2400	Psykiatrisk Sygehus, Aalborg	
+2581	2400	Geriatrisk Afdeling, Århus Sygehus	
+2600	1040	Miljø og Energi(DCE), Nat.C., Silkeborg	
+2700	2211	Sygeplejevidenskab	
+2710	1800	Sygeplejevidenskab, Studien.	
+2720	1800	Masteruddannelse i Klinisk Sygeple	
+2800	2000	Odontologi, Institut for	
+2820	2800	Ortodonti	
+2821	2800	Oral Radiologi	
+2822	2800	Klinisk Oral Fysiologi	
+2823	2800	Oral Biologi	
+2824	2800	Pædodonti	
+2825	2800	Tandsygdomslære	
+2826	2800	Kæbekirurgi og Oral Patol.	
+2827	2800	Protetik	
+2828	2800	Parodontologi	
+2830	2800	Børnetandklinik, den kommunale	
+2842	2800	Fællesklinikken - Odontologi	
+2843	2800	Centrallaboratoriet	
+2900	2000	SKT - Skolen for Klin.-ass., TP og KT	
+3000	8000	Business and Social Sciences	
+3010	3000	Dekanatet, BSS	
+3015	1784	AU IT, Support, BS, Aarhus	
+3016	3015	AU IT, Support, BS, Aarhus, Bartholin 2	
+3017	3015	Helpdesk Økonomi	
+3018	3015	Helpdesk Statskundskab	
+3019	2033	AU IT, Support, HE, Aarhus, Skovagervej	
+3020	1778	AUL, BSS	
+3050	3000	BS, Forskeruddannelsen	
+3060	2208	BSS Økonomi, Aarhus	
+3070	6300	AU HR, BSS	
+3080	8300	AU Kommunikation, BSS	
+3090	6200	AU Studier, BSS	
+3100	3000	Økonomi, Inst. f.	
+3113	3100	Analytical Finance, Center f.	
+3131	2033	AU IT, Support, HE, Aarhus, Bartholin 2	
+3132	3020	Økonomisk Bibliotek	
+3140	3100	Økonomisk Studien.	
+3200	3000	Juridisk Institut	
+3211	3200	Offentlig Ret	
+3212	3200	Privatret	
+3213	3200	Proces- og Kriminalvid.	
+3214	3200	Retslære	
+3231	2033	AU IT, Support, HE, Aarhus, Skejby	
+3232	3020	Juridisk Bibliotek	
+3233	3200	Reprofunktion - Juridisk Faggruppe	
+3240	3200	Juridisk Studien.	
+3400	3000	Statskundskab, Inst. f.	
+3431	2033	AU IT, Support, HE, Aarhus, Vennelyst	
+3432	3020	Bibliotek for Statskundskab	
+3433	3400	Reprofunktion - Statskundskab	
+3440	3400	Statskundskab,Samfundsf., Studien.	
+3500	3000	Psykologisk Institut	
+3532	3020	Psykologisk Institut, Biblioteket	
+3810	3000	AU Herning	
+3817	3090	AU Studier,  Herning	
+3818	2208	BSS Økonomi, Herning	
+3819	7500	Teknisk Support	
+3820	3015	AU IT, Support, BS, Herning	
+3821	3080	AU Kommunikation, BSS, Herning	
+3822	1792	AU Forskning og Talent, BS, Herning	
+3823	3020	AU-HIHB	
+4000	1809	Teologiske Fakultet	1141
+4020	1058	Teologi, Bibliotek	1188
+4100	2113	Gammel og Ny Testamente, fag	1311
+4200	2113	Kirkehist. og Prakt. Teologi, fag	1311
+4300	2113	Systematisk Teologi, fag	1311
+4321	4300	Bioetik og Nanoetik, Cent. f.	1311
+4400	1816	Religionsvidenskab, fag	1311
+4510	4200	Grundtvig Centeret	1311
+4511	4510	Grundtvig Centeret, afd. KBH.	1311
+4550	4300	SamtidsReligion, Cent. f.	1311
+4560	1851	Teologi, Forskerskole	1141
+4900	1815	Teologi, Studien.	1141
+4910	1815	Religionsvidenskab, Studien.	1141
+5000	8000	Science and Technology	
+5008	5000	Scientific Computing, Center for	
+5009	5000	EKNA (Erhvervskontakt naturvidensk	
+5010	1864	ST, Bedømmere	
+5011	1808	Reprocenteret NAT	
+5012	5022	Aktuel Naturvidenskab	
+5013	5000	Aarhus School of Engineering	
+5014	1786	Naturvidenskabs Bygningsservice	
+5016	1784	AU IT, ST - Campus, Aarhus	
+5017	5016	AU IT, Support, ST, Katrinebjerg, Aarhus	
+5018	2209	ST Økonomi, Aarhus	
+5019	5050	Studiecenter Science	
+5020	6300	AU HR, ST	
+5022	8300	AU Kommunikation, ST	
+5040	1864	ST, Studievejledere mm	
+5050	6200	AU Studier, ST	
+5051	5050	Vejledning og studieinformation, ST	
+5100	5000	Matematik, Institut for	
+5101	5100	Matematik	
+5103	5100	Teoretisk Stat. og Op.ana.	
+5104	5100	MaPhySto	
+5110	5150	BRICS	
+5113	5150	Pervasive Computing, Cent. f.	
+5114	5000	Bioinformatik, Cent. f.	
+5150	5000	Datalogi, Institut for	
+5200	5000	Fysik og Astronomi, Inst. f.	
+5201	5200	Fysik, sekretariat	
+5202	5200	Fysik, iNANO-bygning	
+5210	5200	ACAP	
+5213	5000	Interdisciplinær Nanotek., Cent.f.	
+5214	5000	Nanoscience, Interdisc. Forskersk.	
+5215	5213	Sekretariat, iNANO-huset	
+5216	5213	INANO-Bioscience, Ny Munkegade	
+5217	5213	INANO-Bioscience, iNANO-huset	
+5218	5213	INANO-Kemi, Langelandsgade	
+5219	5213	INANO-Kemi, GiNANO-huset	
+5220	5213	INANO-Fysik, Ny Munkegade	
+5221	5213	INANO-Fysik, iNANO-huset	
+5222	5213	INANO-MBG, CF Møllers Allé	
+5223	5213	INANO-MBG, Gustav Wied 10	
+5224	5213	INANO-MBG, iNANO-huset	
+5225	5213	INANO-ENG, iNANO-huset	
+5300	5000	Kemi, Institut for	
+5400	5000	Molekylærbiologi og Genetik, Inst. f.	
+5401	5400	MBI - i INCUBA Science park	
+5410	5400	Plantebioteknologi, Cent. f.	
+5420	5400	Proteinkemi, Lab. f.	
+5440	5400	Molekylær Gerontologi, Cent. f.	
+5500	5000	Bioscience, Institut for	
+5501	2333	Økoinformatik og biodiversitet	
+5503	2333	Genetik, økologi og evolution	
+5504	2333	Mikrobiologi	
+5506	2333	Zoofysiologi	
+5510	2244	Herbariet	
+5513	5515	MarinBiologisk Feltstation	
+5514	5515	Forsøgskutteren Genetica II	
+5515	2333	Akvatisk biologi	
+5600	5000	Geoscience, Institut for	
+5607	5600	Luminescensdatering, Lab. f.	
+5620	5600	Geologisk Feltlab. Mønsted	
+5621	5600	Geologisk Feltstation, Klim	
+5760	2244	Steno Museet	
+5800	2211	Idræt	
+5900	1855	Aarhus Graduate School of Science	
+5910	1855	Studienævn A	
+5980	1855	Studienævn B	
+6000	8000	AU Administration	
+6001	8000	Rektoratet	9021
+6002	6001	Universitetsdirektøren	9021
+6006	6000	AU Stab og Strategi	
+6010	1611	Økonomisekretariatet	
+6011	1611	Regnskab	
+6012	6300	AU HR, Løn	
+6021	1782	Optagelse til bacheloruddan.	
+6022	6023	Statens Uddannelsesstøtte	
+6023	6200	Information, Støtte og vejledning	
+6024	1819	Team for Uddannelsesrådgivning	1613
+6030	6300	AU HR, Personalejura	
+6031	1806	Journalkontoret	
+6033	6300	AU HR, Kompetenceudvikling	
+6035	6050	Intern Post	
+6036	6300	AU HR, Org.udv. og Arb.miljø	
+6040	1398	AU IT, Drift og Teknologi, Aarhus	
+6050	1611	Campus Service	
+6071	1809	Humanistisk Fak. Administration	1141
+6072	2000	Dekanatet, HE	
+6074	1809	Teologisk Fakultetssekr.	1141
+6075	1864	Dekansekretariatet, ST	
+6200	6000	AU Studier	
+6300	6000	AU HR	
+6600	1611	AU Økonomiforvaltning	
+7100	1786	ST Byg2 Drift	
+7200	1786	ST Byg1 Drift	
+7300	1787	Health Byg Drift	
+7400	1787	Driftsområde SUN II	
+7500	1785	BSS Byg1 Drift	
+7501	1785	BSS Byg1 Rengøring	
+7600	1785	Arts Byg1 Drift	
+7700	1785	Driftsområde NORD-VEST	
+7800	6050	Gartnerteamet	
+7900	1786	ST Byg3 Drift	
+8000	8000		
+8106	5000	Orion Planetarium	
+8107	1000	Entreprenørskab og Innovation	1141
+8202	8000	Universitetsbestyrelsen	
+8219	1426	E-læringsenheden	
+8224	1777	Technology Transfer Office	
+8300	6000	AU Kommunikation	
+8311	6050	Omstilling	
+8312	8107	AU Outreach (AUO)	1141
+8472	6023	Specialpædagogisk Støtte	
+8500	1771	Internationalt Center	
+8702	6036	Arbejdsmiljø	
+8810	2193	Optag. Til deltids-/åben uddannelse	
+8825	6023	Studievalg, Østjylland

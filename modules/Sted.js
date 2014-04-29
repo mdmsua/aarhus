@@ -11,14 +11,14 @@ function Sted(tableService, callback) {
 
 Sted.prototype.install = function(callback) {
     var setup = new Import('sted.txt');
-    setup.getLines(function (error, lines) {
+    setup.getWords('\t', function (error, words) {
         if (error) {
             callback(error); return;
         }
-        var steds = lines.map(function (line) {
+        var steds = words.map(function (word) {
             return {
-                kode: (line[0] || '').toString().trim(),
-                navn: (line[1] || '').trim()
+                kode: (word[0] || '').toString().trim(),
+                navn: (word[1] || '').trim()
             };
         });
         task.batchEntities(steds, callback);
