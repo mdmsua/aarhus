@@ -1,0 +1,33 @@
+Undervisningsassistent cand. I-III	5170	82	342	4619	Timer m/ 2 dec.	101
+HIH undervisningsassistent	5170	82	342	4619		121
+HIH undervisningsassistent	5170	82	342	4619		124
+Undervisningsassistent studerende (disp.)	5170	107	343	4654
+Instruktor	1966	107	347	4652		1
+Instruktor	1966	107	347	4740	Årligt antal timer med 2 dec.	
+Hjælpelærer	1783	107	347	4652	Timer m/ 2 dec.	1
+Studenterstudievejleder	4677	107	532	4655
+Studentermedhjælp SUL	4687	107	512	4631		0
+Studentervejleder (tutor)	4674	240	533	6881		2
+Ekstern lektor	12030	106	341	4638		1
+Ekstern lektor	12030	106	341	4720
+Ekstern lektor	12030	106	341	4643
+Studenterprogrammør	4675	239	521	4986
+HK studerende	4675	240	511	4986
+DPU HK studerende	4675	240	511	4986
+HIH HK studerende	4675	240	511	4986
+Gæstelærer, lektor niveau	1677	82	353	4638		1
+Gæstelærer, u.ass.niveau	1677	82	353	4619		101
+Bedømmelseshonorar vejl.v.psyk.	477	82	355	4743	Antal:100
+Eksamensvagt, tilsynsførende	1131	82	531	6881	Timer med 2 dec.	1
+Censor B	830	82	351	4664		202
+Censor C	830	82	351	5950	Antal halve timer	
+Censor D	830	82	351	4664	Timer med 2 dec.	204
+Censor E	830	82	351	5970	Hele timer og min.	
+Censorformandskab	830	82	351	4747		
+Instruktør/træner	1965	82	534	4760		0
+Læger: stud. i teori	12066	105	344	4619		101
+Klinisk lektor sats A	12060	105	321	4626	Antal 290,00	1
+Klinisk lektor sats B	12060	105	321	4626	Antal 145,00	2
+Klinisk lektor sats C	12060	105	321	4626	Antal 72,50	3
+Ph.D.-studerende	3636	554	221	5790	Antal rater pr. måned
+Ph.D.-studerende	3636	553	346	4690	Årlige timer/1924

@@ -7,13 +7,13 @@ function Import(file) {
     this.file = file;
 }
 
-Import.prototype.getWords = function (callback) {
+Import.prototype.getWords = function (delimiter, callback) {
     var self = this;
     fs.readFile(path.join(__dirname, self.file), function (error, data) {
         if (error) { callback(error); return; }
         var words = [];
         data.toString().split('\n').forEach(function (line) {
-            words.push(line.split('\t'));
+            words.push(line.split(delimiter));
         });
         callback(null, words);
     });

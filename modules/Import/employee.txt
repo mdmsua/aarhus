@@ -1,0 +1,13 @@
+0111640130	Vilhelm J.	Hansen	    VJH	vjh@contoso.com		            15622	81401	1	3812	431	01.03.2014
+0110472455	Enok M.	    Kjeldsen	EMK	emk@contoso.com	202-555-0141	913307	88501	1	2102	462	01.03.2014
+0508891547	Viktoria T.	Olesen	    VTO	vto@contoso.com		            11479	81501	1	4211	347	01.03.2014
+1508852424	Maiken G.	Karstensen	MGK	mgk@contoso.com	202-555-0154	12609	81501	1	1510	511	01.03.2014
+0901711992	Ragnar M.	Henningsen	RMH	rmh@contoso.com		            12084	32104	1	4026	341	01.03.2014
+0511871581	Beata C.	Hummel	    BCH	bch@contoso.com	202-555-0195	900477	81301	1	1311	342	01.03.2014
+0302631603	Asger G.	Pallesen	AGP	agp@contoso.com		            90203	81301	1	5311	351	01.03.2014
+2305881344	Laila H.	Troelsen	LHT	lht@contoso.com	202-555-0160	16092	55526	1	9351	532	01.03.2014
+1806501782	Svante W.	Kaspersen	SWK	swk@contoso.com		            11725	11725	1	1951	534	01.03.2014
+1312431188	Petra R.	Gunnarsen	PRG	prg@contoso.com	202-555-0194	16117	55951	1	9351	531	01.03.2014
+2707801584	Mogens A.	Norup	    MAN	man@contoso.com		            16092	55526	1	9351	532	01.03.2014
+0411430871	Rita O.	    Johansen	ROJ	roj@contoso.com	202-555-0160	11479	81601	1	4211	465	01.03.2014
+1210861579	Andreas B.	Dam	        ABD	abd@contoso.com		            11479	81601	1	4211	532	01.03.2014

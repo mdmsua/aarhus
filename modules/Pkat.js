@@ -11,7 +11,7 @@ function Pkat(tableService, callback) {
 
 Pkat.prototype.install = function(callback) {
     var setup = new Import('pkat.txt');
-    setup.getWords(function (error, words) {
+    setup.getWords('\t', function (error, words) {
         if (error) {
             callback(error); return;
         }

@@ -44,6 +44,18 @@ Task.prototype.queryEntities = function (query, callback) {
     });
 };
 
+Task.prototype.queryEntity = function(rowKey, callback) {
+    var self = this;
+    self.storageClient.queryEntity(self.tableName, self.partitionKey, rowKey, function (error, entity) {
+        if (error && callback) {
+            callback(error);
+            return;
+        }
+        if (callback)
+            callback(null, entity);
+    });
+};
+
 Task.prototype.insertEntity = function (item, callback) {
     var self = this;
     item.PartitionKey = self.partitionKey;

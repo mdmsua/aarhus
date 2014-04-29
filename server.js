@@ -19,19 +19,21 @@ nconf.file('settings.json').env();
 var tableService = azure.createTableService(nconf.get('AZURE_STORAGE_ACCOUNT'), nconf.get('AZURE_STORAGE_ACCESS_KEY'));
 
 var env = process.env.NODE_ENV || '';
-if (env === 'import') {
+if (env === 'setup') {
     var imports = process.argv[2].split(',');
     imports.forEach(function (key) {
         try {
-            var module = require(path.join('./modules', key))(tableService);
-            module.install(function (errors) {
-                if (errors && errors.length) {
-                    errors.forEach(function (error) {
-                        console.error(error);
-                    });
-                }
-                else
-                    console.success('%s setup OK', key);
+            var module = require(path.join(__dirname, 'modules', key));
+            var instance = new module(tableService, function () {
+                instance.install(function (errors) {
+                    if (errors && errors.length) {
+                        errors.forEach(function (error) {
+                            console.error(error);
+                        });
+                    }
+                    else
+                        console.log('%s setup OK', key);
+                });
             });
         }
         catch (error) {

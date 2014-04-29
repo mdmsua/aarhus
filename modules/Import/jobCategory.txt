@@ -1,0 +1,106 @@
+999	 Skal afklares
+712	 Gæsteingeniørdocent
+752	 Indlån VIP, postdoc. niv.
+482	 PKU-elev
+347	 Studenterunderviser
+463	 Bygningsdrift
+116	 Statsobducent og professor
+715	 Adjunkt (Ing.)
+152	 Forskningsassistent
+141	 Amanuensis
+353	 Gæsteforelæser/gæstelærer
+466	 It-funktioner
+113	 Forskningsprofessor
+311	 Klinisk professor
+127	 Docent
+161	 Afdelingstandæge
+532	 Studenterstudievejl/faglige vejl
+361	 Videnskabelig medhjælp
+755	 Indlån TAP
+821	 Gæste PHD
+422	 Fuldmægtig
+131	 Adjunkt
+211	 Kandidatstipendiat
+811	 Ekstern VIP
+512	 Studentermedhjælp, SUL
+413	 Institutleder
+124	 Seniorforsker
+441	 Driftsleder
+345	 Klinisk lærer, almen medicin
+621	 Andet stipendiat
+135	 Studieadjunkt
+910	 Efterindtægt (udbt. til efterlevende)
+713	 Lektor (Ing.)
+461	 Tekniker
+342	 Undervisningsassistent
+611	 Scholarstipendiat
+138	 Forsker
+464	 Undervisning, SKT
+891	 Ekstern Andet
+716	 Amanuensis
+153	 Klinisk assistent
+354	 Kursuslærer (postgraduat)
+142	 Udenlandsk lektor
+753	 Indlån VIP, før postdoc. niv
+472	 Rengøringsass./Sanitør
+114	 Professor med særlige opgaver
+10	  AER bidrag
+162	 Kliniske lærer. odont
+483	 Øvrige praktikanter
+351	 Censur int./ekst.ankekommision
+761	 Adjungeret professor
+411	 Administrativ leder
+121	 Lektor
+125	 Studielektor
+133	 Forskningsadjunkt
+212	 Lønnet ph.d-stipendat
+612	 Trainee
+812	 Emeritus VIP
+521	 Studenterprogrammør
+414	 Prodekan
+451	 Teknisk AC-personale og journalist
+128	 Seniorrådgiver
+321	 Klinisk lektor
+533	 Tutor
+841	 Ekstern TAP
+431	 Kontorfunkt. korrespond.
+714	 Gæstelektor (Ing.)
+462	 Gartner/dyrepasser
+343	 SUL Undervisningsassistent
+139	 Projektforsker
+352	 Bedømmer
+465	 Laborant
+111	 Professor
+901	 Særlig vederlæggelse
+711	 Ingeniørdocent
+151	 Forskningsstipendiat
+136	 Undervisningsadjunkt
+346	 Ph.d. timeløn
+920	 Bestyrelse
+163	 Videreuddannelsesstilling, Odontologi
+511	 Studerende, HK
+762	 Adjungeret lektor
+123	 Forskningslektor
+412	 Dekan
+126	 Vicestatsobducent
+751	 Indlån VIP, professorniv.
+531	 Eksamensvagt
+154	 Videnskabelig assistent
+355	 Praktikantvejleder
+481	 Elev/lærling
+754	 Indlån PHD
+115	 Forskningsprofessor (MSO)
+421	 Administrativt personale
+341	 Ekstern lektor
+452	 Ledende tandlæge
+129	 Projektseniorforsker
+534	 Andet medhjælp
+137	 Post doc.
+881	 Forskningsaktiv studerende
+432	 Biblioteksfunktioner
+221	 SU ph.d-stipendiat
+344	 Klinisk lærer, sygehusafd.
+134	 Adjunkt med srærlige opgaver
+613	 Opholdsstipendiat
+813	 Ekstern underviser DVIP
+902	 Kompensation til forsøgspersoner
