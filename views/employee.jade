@@ -8,14 +8,14 @@ block container
                         input.form-control(type="text", name="q")
                         span.input-group-btn
                             button.btn.btn-primary(type="submit")
-                                span.glyphicon.glyphicon-search &nbsp;Search
+                                span.glyphicon.glyphicon-search &nbsp;Søg
                             a.btn.btn-success(type="button", href="/employee/new")
-                                span.glyphicon.glyphicon-plus &nbsp;Create
+                                span.glyphicon.glyphicon-plus &nbsp;Opret
     if employees
         article.row
             section.page-header
                 h1= employees.length
-                    small &nbsp;results
+                    small &nbsp;resultater
             ul.list-unstyled
                 - each employee in employees
                     li
@@ -28,74 +28,77 @@ block container
         form(name="employeeForm", role="form")
             fieldset.col-lg-6
                 div.col-lg-6.form-group(ng-class="{ 'has-success': employeeForm.firstName.$valid, 'has-error': employeeForm.firstName.$dirty && employeeForm.firstName.$invalid }")
-                    label.control-label(for="firstName") First name
-                    input.form-control(type="text", name="firstName", placeholder="First name", ng-required="true", ng-model="employee.firstName")
+                    label.control-label(for="firstName") Fornavn
+                    input.form-control(type="text", name="firstName", placeholder="Fornavn", ng-required="true", ng-model="employee.firstName")
                 div.col-lg-6.form-group(ng-class="{ 'has-success': employeeForm.lastName.$valid, 'has-error': employeeForm.lastName.$dirty && employeeForm.lastName.$invalid }")
-                    label.control-label(for="lastName") Last name
-                    input.form-control(type="text", name="lastName", placeholder="Last name", ng-required="true", ng-model="employee.lastName")
+                    label.control-label(for="lastName") Efternavn
+                    input.form-control(type="text", name="lastName", placeholder="Efternavn", ng-required="true", ng-model="employee.lastName")
                 div.col-lg-3.form-group(ng-class="{ 'has-success': employeeForm.ssn.$valid, 'has-error': employeeForm.ssn.$dirty && employeeForm.ssn.$invalid }")
-                    label.control-label(for="ssn") SSN
-                    input.form-control(type="text", name="ssn", placeholder="SSN", ng-required="true", ng-model="employee.ssn")
+                    label.control-label(for="ssn") CPR-nummer
+                    input.form-control(type="text", name="ssn", placeholder="CPR-nummer", ng-required="true", ng-model="employee.ssn")
                 div.col-lg-3.form-group(ng-class="{ 'has-success': employeeForm.salaryGroupNumber.$valid, 'has-error': employeeForm.salaryGroupNumber.$dirty && employeeForm.salaryGroupNumber.$invalid }")
-                    label.control-label(for="salaryGroupNumber") Salary group #
-                    input.form-control(type="number", name="salaryGroupNumber", min="0", placeholder="Salary group number", ng-required="true", ng-model="employee.salaryGroupNumber")
+                    label.control-label(for="salaryGroupNumber") Løngruppenummer
+                    input.form-control(type="number", name="salaryGroupNumber", min="0", placeholder="Løngruppenummer", ng-required="true", ng-model="employee.salaryGroupNumber")
+                div.col-lg-3.form-group(ng-class="{ 'has-success': employeeForm.auid.$valid, 'has-error': employeeForm.auid.$dirty && employeeForm.auid.$invalid }")
+                    label.control-label(for="auid") AU-ID
+                    input.form-control(type="text", name="auid", min="0", placeholder="AU-ID", ng-required="true", ng-model="employee.initials")
                 div.row
                 div.col-lg-4.form-group(ng-class="{ 'has-error': employeeForm.primaryEmail.$invalid }")
-                    label.control-label(for="primaryEmail") Primary email
-                    input.form-control(type="email", name="primaryEmail", placeholder="Primary email", ng-model="employee.primaryEmail")
+                    label.control-label(for="primaryEmail") Primær e-mail
+                    input.form-control(type="email", name="primaryEmail", placeholder="Primær e-mail", ng-model="employee.primaryEmail")
                 div.col-lg-4.form-group(ng-class="{ 'has-error': employeeForm.personalEmail.$invalid }")
-                    label.control-label(for="personalEmail") Personal email
-                    input.form-control(type="email", name="personalEmail", placeholder="Personal email", ng-model="employee.personalEmail")
+                    label.control-label(for="personalEmail") Privat e-mail
+                    input.form-control(type="email", name="personalEmail", placeholder="Privat e-mail", ng-model="employee.personalEmail")
                 div.col-lg-4.form-group(ng-class="{ 'has-error': employeeForm.telephoneNumber.$invalid }")
-                    label.control-label(for="telephoneNumber") Telephone number
-                    input.form-control(type="tel", name="telephoneNumber", placeholder="Telephone number", ng-model="employee.telephoneNumber")
+                    label.control-label(for="telephoneNumber") Telefonnummer
+                    input.form-control(type="tel", name="telephoneNumber", placeholder="Telefonnummer", ng-model="employee.telephoneNumber")
                 hr
                 footer.btn-group.btn-group-justified
                     section.btn-group
-                        button.btn.btn-success(type="submit", ng-disabled="employeeForm.$invalid") Save
+                        button.btn.btn-success(type="submit", ng-disabled="employeeForm.$invalid") Gem
                     section.btn-group
-                        button.btn.btn-warning(type="reset") Cancel
+                        button.btn.btn-warning(type="reset") Annuller
                     section.btn-group
-                        button.btn.btn-default(type="button", ng-click="getHistory()") History
+                        button.btn.btn-default(type="button", ng-click="getHistory()") Oversigt
             fieldset.col-lg-3(ng-if="!employee.ssn")
                 div.form-group.col-lg-12
-                    label(for="jobCategory") Job category
+                    label(for="jobCategory") Jobkategori
                     select.form-control(name="jobCategory")
                 div.form-group.col-lg-6
-                    label(for="validFrom") Valid from
+                    label(for="validFrom") Startdato
                     input.form-control(type="date", ng-model="employee.jobCategory.validFrom")
                 div.form-group.col-lg-6
-                    label(for="validTo") Valid to
+                    label(for="validTo") Slutdato
                     input.form-control(type="date", ng-model="employee.jobCategory.validTo")
                 div.form-group.col-lg-12
                     label(for="pkat") PKAT
                     select.form-control(name="pkat")
                 div.form-group.col-lg-6
-                    label(for="salaryNumber") Salary number
+                    label(for="salaryNumber") SalaryNo
                     p.form-control-static 000
             fieldset.col-lg-3(ng-if="!employee.ssn")
                 div.form-group.col-lg-12
-                    label(for="organisation") Organisation
+                    label(for="organisation") Enhed
                     select.form-control(name="organisation")
                 div.form-group.col-lg-6
-                    label(for="validFrom") Valid from
+                    label(for="validFrom") Startdato
                     input.form-control(type="date", ng-model="employee.organisation.validFrom")
                 div.form-group.col-lg-6
-                    label(for="validTo") Valid to
+                    label(for="validTo") Slutdato
                     input.form-control(type="date", ng-model="employee.organisation.validTo")
                 div.form-group.col-lg-12
-                    label(for="location") Location
+                    label(for="location") Stedkode
                     select.form-control(name="pkat", ng-model="employee.organisation.location")
                 div.form-group.col-lg-12
-                    label(for="account") Account
+                    label(for="account") Delregnskab
                     select.form-control(name="account", ng-model="employee.organisation.account")
                 div.form-group.col-lg-12
-                    label(for="project") Project
+                    label(for="project") Projekt
                     select.form-control(name="project", ng-model="employee.organisation.project")
                 div.form-group.col-lg-12
-                    label(for="activity") Activity
+                    label(for="activity") Aktivitet
                     select.form-control(name="activity", ng-model="employee.organisation.activity")
-        fieldset.form-horizontal.col-lg-6(ng-if="employee.ssn")
+        fieldset.form-horizontal.col-lg-6(ng-if="employee.ssns")
             div.page-header
                 span.pull-right.glyphicon.glyphicon-pencil
                 h3 01.01.2013 - 01.01.2014
