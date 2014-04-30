@@ -1,0 +1,5 @@
+1	   Forudlønnet 
+2	   Bagudlønnet
+3	   Timelønnet
+4	   Uddannelsesydelse
+5	   Halvmånedslønnet

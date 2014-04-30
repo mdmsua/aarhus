@@ -1,0 +1,73 @@
+extends layout
+block container
+    article.col-lg-6
+        - configuration = configuration || {}
+        header.page-header
+            h1 Jobkategori konfiguration
+        form.form-horizontal(role="form", name="config")
+            div.form-group
+                label.control-label.col-lg-2 Stillingstype
+                div.col-lg-10
+                    select.form-control.select2(data-placeholder="Vælg stillingstype", multiple="multiple")
+                        option
+                        each stilling in stillings
+                            option(value=stilling.kode, selected=stilling.kode == configuration.st)= stilling.navn
+            div.form-group
+                label.control-label.col-lg-2 LKO
+                div.col-lg-10
+                    select.form-control.select2(data-placeholder="Vælg LKO")
+                        option
+                            each lko in lkos
+                                option(value=lko.kode, selected=lko.kode == configuration.lko)= lko.navn
+            div.form-group
+                label.control-label.col-lg-2 PKAT
+                div.col-lg-10
+                    select.form-control.select2(data-placeholder="Vælg PKAT")
+                        option
+                        each pkat in pkats
+                            option(value=pkat.kode, selected=pkat.kode == configuration.pkat)= pkat.navn
+            div.form-group
+                label.control-label.col-lg-2 STIKO
+                div.col-lg-10
+                    select.form-control.select2(data-placeholder="Vælg STIKO")
+                        option
+                            each stiko in stikos
+                                option(value=stiko.kode, selected=stiko.kode == configuration.stiko)= stiko.navn
+            div.form-group
+                label.control-label.col-lg-2 Lønform
+                div.col-lg-10
+                    select.form-control.select2(data-placeholder="Vælg lønform")
+                        option
+                            each salaryForm in salaryForms
+                                option(value=salaryForm.kode, selected=salaryForm.kode == configuration.salaryForm)= salaryForm.navn
+            div.form-group
+                label.control-label.col-lg-2 Lønklasse
+                div.col-lg-10
+                    select.form-control(data-placeholder="Vælg lønklasse")
+                        option
+                        each salaryClass in salaryClasses
+                            option(value=salaryClass, selected=salaryClass == configuration.salaryClass)= salaryClass
+            div.form-group
+                label.control-label.col-lg-2 Lønanvisning
+                div.col-lg-10
+                    select.form-control(data-placeholder="Vælg lønanvisning")
+                        option
+                            each salaryLevel in salaryLevels
+                                option(value=salaryLevel, selected=salaryLevel == configuration.salaryLevel)= salaryLevel
+            div.form-group
+                label.control-label.col-lg-2 Start-/lukkedato
+                div.col-lg-3
+                    input.form-control(type="date")
+                div.col-lg-3
+                    input.form-control(type="date")
+            hr
+            footer.btn-group.btn-group-justified
+                section.btn-group
+                    button.btn.btn-success(type="submit") Gem
+                section.btn-group
+                    button.btn.btn-warning(type="reset") Annuller
+                section.btn-group
+                    button.btn.btn-default(type="button") Revisionslog
+    article.col-lg-6
+        header.page-header
+            h1 Revisionslog

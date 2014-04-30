@@ -46,7 +46,7 @@ Task.prototype.queryEntities = function (query, callback) {
 
 Task.prototype.queryEntity = function(rowKey, callback) {
     var self = this;
-    self.storageClient.queryEntity(self.tableName, self.partitionKey, rowKey, function (error, entity) {
+    self.storageClient.queryEntity(self.tableName, self.partitionKey, rowKey.toString(), function (error, entity) {
         if (error && callback) {
             callback(error);
             return;

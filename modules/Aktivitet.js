@@ -1,4 +1,5 @@
-var azure = require('azure'),
+var Q = require('Q'),
+    azure = require('azure'),
     Task = require("../modules/Task"),
     Import = require("../modules/Import"),
     task;
@@ -9,11 +10,12 @@ function Aktivitet(tableService, callback) {
     task = new Task(tableService, 'kodenavn', 'aktivitet', 'kode', callback);
 }
 
-Aktivitet.prototype.install = function(callback) {
+Aktivitet.prototype.install = function (callback) {
     var setup = new Import('aktivitet.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
-            callback(error); return;
+            callback(error);
+            return;
         }
         var aktivitets = words.map(function (word) {
             return {
@@ -26,8 +28,13 @@ Aktivitet.prototype.install = function(callback) {
 };
 
 Aktivitet.prototype.all = function (callback) {
+    var deferred = Q.defer();
     var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'aktivitet');
     task.queryEntities(query, function (error, entities) {
-        callback(error, entities);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entities);
     });
+    return deferred.promise.nodeify(callback);
 };

@@ -1,4 +1,5 @@
-var azure = require('azure'),
+var Q = require('Q'),
+    azure = require('azure'),
     uuid = require('node-uuid'),
     Task = require("../modules/Task"),
     Import = require("../modules/Import"),
@@ -10,11 +11,12 @@ function JobCategoryConfig(tableService, callback) {
     task = new Task(tableService, 'jobCategoryConfig', 'job-category-config', 'uuid', callback);
 }
 
-JobCategoryConfig.prototype.install = function(callback) {
+JobCategoryConfig.prototype.install = function (callback) {
     var setup = new Import('jobCategoryConfig.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
-            callback(error); return;
+            callback(error);
+            return;
         }
         var jobCategoryConfigs = words.map(function (word) {
             return {
@@ -33,14 +35,24 @@ JobCategoryConfig.prototype.install = function(callback) {
 };
 
 JobCategoryConfig.prototype.all = function (callback) {
+    var deferred = Q.defer();
     var query = azure.TableQuery.select().from('jobCategoryConfig');
     task.queryEntities(query, function (error, entities) {
-        callback(error, entities);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entities);
     });
+    return deferred.promise.nodeify(callback);
 };
 
 JobCategoryConfig.prototype.one = function (uuid, callback) {
+    var deferred = Q.defer();
     task.queryEntity(uuid, function (error, entity) {
-        callback(error, entity);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entity);
     });
+    return deferred.promise.nodeify(callback);
 };

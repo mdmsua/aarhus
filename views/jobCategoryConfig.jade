@@ -1,0 +1,86 @@
+extends layout
+block container
+    select.form-control.select2.pull-left.input-lg(data-placeholder="Vælg konfiguration", style="width: 88%")
+        - configuration = configuration || {}
+        option
+        each config in configurations
+            option(value=config.uuid, selected=config.uuid == configuration.uuid)= config.stilling
+    a.btn.btn-primary.pull-right(href="/job-category-config") Opret jobkategori
+    article.col-lg-6
+        header.page-header
+            h1 Jobkategori konfiguration
+        form.form-horizontal(role="form", name="config")
+            div.form-group
+                label.control-label.col-lg-2 Navn
+                div.col-lg-10
+                    input.form-control(type="text", required="required", value=configuration.stilling)
+            div.form-group
+                label.control-label.col-lg-2 Beskrivelse
+                div.col-lg-10
+                    textarea.form-control
+                        =configuration.description
+            div.form-group
+                div.col-lg-offset-2.col-lg-10
+                    div.checkbox
+                        label
+                            input(type="checkbox")
+                            | Ignorer auto oprettelse i SLS
+            footer.form-group
+                div.col-lg-offset-2.col-lg-10
+                    div.btn-group.btn-group-justified
+                        div.btn-group
+                            button.btn.btn-success(type="submit") Gem
+                        div.btn-group
+                            button.btn.btn-warning(type="reset") Annuller
+                        if configuration.uuid
+                            div.btn-group
+                                button.btn.btn-danger(onclick="confirm('Er du sikker på, at du vil slette konfigurationen?')") Slet
+                        div.btn-group
+                            button.btn.btn-default(type="button") Revisionslog
+    if configuration.uuid
+        article.col-lg-6
+            header.page-header
+                h1
+                    | Detaljer
+                    - var url = "/job-category-config/" + configuration.uuid + "/detail"
+                    small
+                        a.btn.btn-primary.pull-right(href=url)
+                            span.glyphicon.glyphicon-plus
+                            |&nbsp;Tilføj ny
+            each detail, index in details || []
+                section.list-group
+                    article.list-group-item
+                        h3.list-group-item-heading
+                            | #{detail.period}
+                            div.pull-right
+                                - var url = "/job-category-config/" + configuration.uuid + "/detail/" + configuration.uuid
+                                a(href=url)
+                                    span.glyphicon.glyphicon-pencil
+                                button.btn-link(onclick="confirm('Er du sikker på, at du vil slette denne post?')")
+                                    span.glyphicon.glyphicon-trash
+                        table.table
+                            thead
+                                tr
+                                    th LKO
+                                    th PKAT
+                                    th STIKO
+                                    th Stilling
+                                    th Lønform
+                                    th Lønklasse
+                                    th Lønanvisning
+                            tbody
+                                tr
+                                    td= detail.lko
+                                    td= detail.pkat
+                                    td= detail.stiko
+                                    td= detail.stilling
+                                    td= detail.salaryForm
+                                    td= detail.salaryClass
+                                    td= detail.salaryLevel
+block scripts
+    script.
+        $(function() {
+             $(".select2").on("change", function(obj) {
+                 window.location = "/job-category-config/" + obj.val;
+             });
+         });

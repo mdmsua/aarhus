@@ -1,4 +1,5 @@
-var azure = require('azure'),
+var Q = require('Q'),
+    azure = require('azure'),
     Task = require("../modules/Task"),
     Import = require("../modules/Import"),
     task;
@@ -9,11 +10,12 @@ function Employee(tableService, callback) {
     task = new Task(tableService, 'employee', 'employee', 'ssn', callback);
 }
 
-Employee.prototype.install = function(callback) {
+Employee.prototype.install = function (callback) {
     var setup = new Import('employee.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
-            callback(error); return;
+            callback(error);
+            return;
         }
         var employees = words.map(function (word) {
             return {
@@ -36,14 +38,24 @@ Employee.prototype.install = function(callback) {
 };
 
 Employee.prototype.all = function (callback) {
+    var deferred = Q.defer();
     var query = azure.TableQuery.select().from('employee');
     task.queryEntities(query, function (error, entities) {
-        callback(error, entities);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entities);
     });
+    return deferred.promise.nodeify(callback);
 };
 
 Employee.prototype.one = function (ssn, callback) {
+    var deferred = Q.defer();
     task.queryEntity(ssn, function (error, entity) {
-        callback(error, entity);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entity);
     });
+    return deferred.promise.nodeify(callback);
 };

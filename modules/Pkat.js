@@ -1,4 +1,5 @@
-var azure = require('azure'),
+var Q = require('Q'),
+    azure = require('azure'),
     Task = require("../modules/Task"),
     Import = require("../modules/Import"),
     task;
@@ -9,11 +10,12 @@ function Pkat(tableService, callback) {
     task = new Task(tableService, 'kodenavn', 'pkat', 'kode', callback);
 }
 
-Pkat.prototype.install = function(callback) {
+Pkat.prototype.install = function (callback) {
     var setup = new Import('pkat.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
-            callback(error); return;
+            callback(error);
+            return;
         }
         var pkats = words.map(function (word) {
             return {
@@ -26,8 +28,24 @@ Pkat.prototype.install = function(callback) {
 };
 
 Pkat.prototype.all = function (callback) {
+    var deferred = Q.defer();
     var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'pkat');
     task.queryEntities(query, function (error, entities) {
-        callback(error, entities);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entities);
     });
+    return deferred.promise.nodeify(callback);
+};
+
+Pkat.prototype.one = function (pkat, callback) {
+    var deferred = Q.defer();
+    task.queryEntity(pkat, function (error, entity) {
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entity);
+    });
+    return deferred.promise.nodeify(callback);
 };

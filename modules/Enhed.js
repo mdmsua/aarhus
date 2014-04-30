@@ -1,4 +1,5 @@
-var azure = require('azure'),
+var Q = require('Q'),
+    azure = require('azure'),
     Task = require("../modules/Task"),
     Import = require("../modules/Import"),
     task;
@@ -32,8 +33,13 @@ Enhed.prototype.install = function (callback) {
 };
 
 Enhed.prototype.all = function (callback) {
+    var deferred = Q.defer();
     var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'enhed');
     task.queryEntities(query, function (error, entities) {
-        callback(error, entities);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entities);
     });
+    return deferred.promise.nodeify(callback);
 };

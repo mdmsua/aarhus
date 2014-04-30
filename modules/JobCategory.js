@@ -1,4 +1,5 @@
-var azure = require('azure'),
+var Q = require('Q'),
+    azure = require('azure'),
     Task = require("../modules/Task"),
     Import = require("../modules/Import"),
     task;
@@ -9,11 +10,12 @@ function JobCategory(tableService, callback) {
     task = new Task(tableService, 'kodenavn', 'job-category', 'kode', callback);
 }
 
-JobCategory.prototype.install = function(callback) {
+JobCategory.prototype.install = function (callback) {
     var setup = new Import('jobCategory.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
-            callback(error); return;
+            callback(error);
+            return;
         }
         var jobCategories = words.map(function (word) {
             return {
@@ -26,8 +28,24 @@ JobCategory.prototype.install = function(callback) {
 };
 
 JobCategory.prototype.all = function (callback) {
+    var deferred = Q.defer();
     var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'job-category');
     task.queryEntities(query, function (error, entities) {
-        callback(error, entities);
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entities);
     });
+    return deferred.promise.nodeify(callback);
+};
+
+JobCategory.prototype.one = function (jobCategory, callback) {
+    var deferred = Q.defer();
+    task.queryEntity(jobCategory, function (error, entity) {
+        if (error)
+            deferred.reject(error);
+        else
+            deferred.resolve(entity);
+    });
+    return deferred.promise.nodeify(callback);
 };

@@ -3,15 +3,13 @@ var nconf = require('nconf'),
     bodyParser = require('body-parser'),
     path = require('path'),
     express = require('express'),
-    apiRouter = express.Router(),
-    Api = require('./routes/api'),
-    Employee = require('./routes/employee'),
-    JobCategory = require('./routes/jobcategory');
+    JobCategoryConfig = require('./routes/jobcategoryconfig');
 
 var app = express();
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/bower_components'));
+app.use(express.static(__dirname + '/bower_components/bootstrap'));
 app.use(bodyParser());
 
 nconf.file('settings.json').env();
@@ -42,20 +40,12 @@ if (env === 'setup') {
     });
 }
 
-var api = new Api(tableService);
+var jobCategoryConfig = new JobCategoryConfig(tableService);
 
-apiRouter.get('/lko', api.lko);
-apiRouter.get('/pkat', api.pkat);
-apiRouter.get('/sted', api.sted);
-apiRouter.get('/stiko', api.stiko);
-
-app.use('/api', apiRouter);
-
-app.get('/job-category-config', JobCategory.index);
-app.get('/employee', Employee.index);
-app.post('/employee', Employee.search);
-app.get('/employee/:ssn', Employee.get);
-app.get('/employee/new', Employee.get);
+app.get('/job-category-config', jobCategoryConfig.index.bind(jobCategoryConfig));
+app.get('/job-category-config/:uuid', jobCategoryConfig.get.bind(jobCategoryConfig));
+app.get('/job-category-config/:id/detail', jobCategoryConfig.detail.bind(jobCategoryConfig));
+app.get('/job-category-config/:uuid/detail/:id', jobCategoryConfig.detail.bind(jobCategoryConfig));
 
 app.listen(process.env.PORT || 8192);
 

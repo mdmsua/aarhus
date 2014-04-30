@@ -197,11 +197,10 @@ block container
                         label.control-label.col-lg-4(for="activity") Activity
                         div.col-lg-8
                             p.form-control-static Activity 3
-if employee
-    block scripts
+block scripts
+    if employee
         script(src="/app/employee/application.js")
         script(src="/app/employee/controller.js")
-unless employee
-    block scripts
+    unless employee
         script.
             angular.module('app', []).controller('ctrl', function() { });
