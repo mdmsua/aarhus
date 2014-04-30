@@ -1,11 +1,14 @@
 extends layout
 block container
-    select.form-control.select2.pull-left.input-lg(data-placeholder="Vælg konfiguration", style="width: 80%")
-        - configuration = configuration || {}
-        option
-        each config in configurations
-            option(value=config.uuid, selected=config.uuid == configuration.uuid)= config.stilling
-    a.btn.btn-primary.pull-right(href="/job-category-config") Opret jobkategori
+    form.form-inline
+        div.form-group.col-lg-11
+            select.form-control.select2.input-lg(data-placeholder="Vælg konfiguration", style="width: 100%")
+                - configuration = configuration || {}
+                option
+                each config in configurations
+                    option(value=config.uuid, selected=config.uuid == configuration.uuid)= config.stilling
+        div.form-group.col-lg-1
+            a.btn.btn-primary.btn-sm(href="/job-category-config") Opret jobkategori
     article.col-lg-6
         header.page-header
             h1 Jobkategori konfiguration
