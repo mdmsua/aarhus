@@ -1,4 +1,4 @@
-module.exports = Task;
+"use strict";
 
 function Task(storageClient, tableName, partitionKey, rowKeyProperty, callback) {
     this.storageClient = storageClient;
@@ -7,8 +7,11 @@ function Task(storageClient, tableName, partitionKey, rowKeyProperty, callback) 
     this.rowKeyProperty = rowKeyProperty;
     this.storageClient.createTableIfNotExists(tableName, function (error) {
         if (callback) {
-            if (!error) callback();
-            else callback(error);
+            if (!error) {
+                callback();
+            } else {
+                callback(error);
+            }
         }
     });
 }
@@ -30,29 +33,29 @@ function nextPage(entities, continuation, callback) {
 Task.prototype.queryEntities = function (query, callback) {
     var self = this;
     self.storageClient.queryEntities(query, function (error, entities, continuation) {
-        if (!error) {
+        if (error) {
+            callback(error);
+        } else {
             if (continuation.nextPartitionKey && continuation.nextRowKey) {
                 nextPage(entities, continuation, callback);
-            }
-            else
+            } else {
                 callback(null, entities.map(function (entity) {
                     delete entity._;
                     return entity;
                 }));
+            }
         }
-        else callback(error);
     });
 };
 
-Task.prototype.queryEntity = function(rowKey, callback) {
+Task.prototype.queryEntity = function (rowKey, callback) {
     var self = this;
     self.storageClient.queryEntity(self.tableName, self.partitionKey, rowKey.toString(), function (error, entity) {
-        if (error && callback) {
+        if (error) {
             callback(error);
-            return;
-        }
-        if (callback)
+        } else {
             callback(null, entity);
+        }
     });
 };
 
@@ -62,8 +65,11 @@ Task.prototype.insertEntity = function (item, callback) {
     item.RowKey = item[self.rowKeyProperty];
     self.storageClient.insertEntity(self.tableName, item, function (error, entity) {
         if (callback) {
-            if (!error) callback(null, entity);
-            else callback(error);
+            if (error) {
+                callback(error);
+            } else {
+                callback(null, entity);
+            }
         }
     });
 };
@@ -71,11 +77,17 @@ Task.prototype.insertEntity = function (item, callback) {
 Task.prototype.updateEntity = function (item, callback) {
     var self = this;
     self.storageClient.queryEntity(self.tableName, self.partitionKey, item, function (error, entity) {
-        if (!error) self.storageClient.updateEntity(self.tableName, entity, function (error) {
-            if (!error) callback(null);
+        if (error) {
             callback(error);
-        });
-        else callback(error);
+        } else {
+            self.storageClient.updateEntity(self.tableName, entity, function (error, entity) {
+                if (error) {
+                    callback(error);
+                } else {
+                    callback(null, entity);
+                }
+            });
+        }
     });
 };
 
@@ -100,3 +112,5 @@ Task.prototype.batchEntities = function (items, callback) {
     });
     callback(errors);
 };
+
+module.exports = Task;

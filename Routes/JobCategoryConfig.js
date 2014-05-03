@@ -1,3 +1,5 @@
+"use strict";
+
 var Q = require("Q"),
     _ = require("underscore"),
     moment = require('moment'),
@@ -7,8 +9,6 @@ var Q = require("Q"),
     Lko = require("../modules/Lko"),
     JobCategory = require("../modules/JobCategory"),
     SalaryForm = require("../modules/SalaryForm");
-
-module.exports = JobCategoryConfig;
 
 moment.lang('da');
 
@@ -73,9 +73,11 @@ JobCategoryConfig.prototype.detail = function (req, res) {
                 stikos: stikos,
                 stillings: stillings,
                 salaryForms: salaryForms,
-                salaryClasses: Array.apply(null, Array(100)).map(function (_, i) {if (i > 0) return i;}),
-                salaryLevels: Array.apply(null, Array(56)).map(function (_, i) {if (i > 0) return i;})
+                salaryClasses: Array.apply(null, new Array(100)).map(function (_, i) { if (i > 0) { return i; } }),
+                salaryLevels: Array.apply(null, new Array(56)).map(function (_, i) { if (i > 0) { return i; } })
             });
         });
     });
 };
+
+module.exports = JobCategoryConfig;

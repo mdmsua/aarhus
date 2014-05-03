@@ -1,51 +1,12 @@
-var Q = require('Q'),
-    azure = require('azure'),
-    Task = require("../modules/Task"),
-    Import = require("../modules/Import"),
-    task;
+"use strict";
 
-module.exports = Lko;
+var util = require('util'),
+    KodeNavn = require("../modules/KodeNavn");
 
-function Lko(tableService, callback) {
-    task = new Task(tableService, 'kodenavn', 'lko', 'kode', callback);
+function Lko(tableService) {
+    KodeNavn.call(this, tableService, 'lko');
 }
 
-Lko.prototype.install = function (callback) {
-    var setup = new Import('lko.txt');
-    setup.getWords('\t', function (error, words) {
-        if (error) {
-            callback(error);
-            return;
-        }
-        var lkos = words.map(function (word) {
-            return {
-                kode: (word[0] || '').trim(),
-                navn: (word[1] || '').trim()
-            };
-        });
-        task.batchEntities(lkos, callback);
-    });
-};
+util.inherits(Lko, KodeNavn);
 
-Lko.prototype.all = function (callback) {
-    var deferred = Q.defer();
-    var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'lko');
-    task.queryEntities(query, function (error, entities) {
-        if (error)
-            deferred.reject(error);
-        else
-            deferred.resolve(entities);
-    });
-    return deferred.promise.nodeify(callback);
-};
-
-Lko.prototype.one = function (lko, callback) {
-    var deferred = Q.defer();
-    task.queryEntity(lko, function (error, entity) {
-        if (error)
-            deferred.reject(error);
-        else
-            deferred.resolve(entity);
-    });
-    return deferred.promise.nodeify(callback);
-};
+module.exports = Lko;

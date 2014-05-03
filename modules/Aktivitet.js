@@ -1,40 +1,12 @@
-var Q = require('Q'),
-    azure = require('azure'),
-    Task = require("../modules/Task"),
-    Import = require("../modules/Import"),
-    task;
+"use strict";
 
-module.exports = Aktivitet;
+var util = require('util'),
+    KodeNavn = require("../modules/KodeNavn");
 
-function Aktivitet(tableService, callback) {
-    task = new Task(tableService, 'kodenavn', 'aktivitet', 'kode', callback);
+function Aktivitet(tableService) {
+    KodeNavn.call(this, tableService, 'aktivitet');
 }
 
-Aktivitet.prototype.install = function (callback) {
-    var setup = new Import('aktivitet.txt');
-    setup.getWords('\t', function (error, words) {
-        if (error) {
-            callback(error);
-            return;
-        }
-        var aktivitets = words.map(function (word) {
-            return {
-                kode: (word[0] || '').trim(),
-                navn: (word[1] || '').trim()
-            };
-        });
-        task.batchEntities(aktivitets, callback);
-    });
-};
+util.inherits(Aktivitet, KodeNavn);
 
-Aktivitet.prototype.all = function (callback) {
-    var deferred = Q.defer();
-    var query = azure.TableQuery.select().from('kodenavn').where('PartitionKey eq ?', 'aktivitet');
-    task.queryEntities(query, function (error, entities) {
-        if (error)
-            deferred.reject(error);
-        else
-            deferred.resolve(entities);
-    });
-    return deferred.promise.nodeify(callback);
-};
+module.exports = Aktivitet;

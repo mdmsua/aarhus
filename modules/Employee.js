@@ -1,17 +1,16 @@
-var Q = require('Q'),
-    azure = require('azure'),
-    Task = require("../modules/Task"),
-    Import = require("../modules/Import"),
-    task;
+"use strict";
 
-module.exports = Employee;
+var Q = require('Q'),
+    Task = require("../modules/Task"),
+    Import = require("../modules/Import");
 
 function Employee(tableService, callback) {
-    task = new Task(tableService, 'employee', 'employee', 'ssn', callback);
+    this.task = new Task(tableService, 'employee', 'employee', 'ssn', callback);
 }
 
 Employee.prototype.install = function (callback) {
-    var setup = new Import('employee.txt');
+    var self = this,
+        setup = new Import('employee.txt');
     setup.getWords('\t', function (error, words) {
         if (error) {
             callback(error);
@@ -33,29 +32,33 @@ Employee.prototype.install = function (callback) {
                 date: new Date((word[11] || '').trim())
             };
         });
-        task.batchEntities(employees, callback);
+        self.task.batchEntities(employees, callback);
     });
 };
 
 Employee.prototype.all = function (callback) {
-    var deferred = Q.defer();
-    var query = azure.TableQuery.select().from('employee');
-    task.queryEntities(query, function (error, entities) {
-        if (error)
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === 'dev' ? null : require('azure').TableQuery.select().from('employee');
+    this.task.queryEntities(query, function (error, entities) {
+        if (error) {
             deferred.reject(error);
-        else
+        } else {
             deferred.resolve(entities);
+        }
     });
     return deferred.promise.nodeify(callback);
 };
 
 Employee.prototype.one = function (ssn, callback) {
     var deferred = Q.defer();
-    task.queryEntity(ssn, function (error, entity) {
-        if (error)
+    this.task.queryEntity(ssn, function (error, entity) {
+        if (error) {
             deferred.reject(error);
-        else
+        } else {
             deferred.resolve(entity);
+        }
     });
     return deferred.promise.nodeify(callback);
 };
+
+module.exports = Employee;
