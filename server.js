@@ -4,8 +4,7 @@ var bodyParser = require('body-parser'),
     express = require('express'),
     JobCategoryConfig = require('./routes/jobcategoryconfig'),
     app = express(),
-    tableService = null,
-    fn = null;
+    tableService = null;
 
 function development(callback) {
     var MongoClient = require('mongodb').MongoClient,
@@ -59,15 +58,8 @@ app.use(express.static(__dirname + '/bower_components'));
 app.use(express.static(__dirname + '/bower_components/bootstrap'));
 app.use(bodyParser());
 
-var env = process.env.NODE_ENV || '';
-switch (env) {
-case '':
-    fn = production;
-    break;
-case 'dev':
-    fn = development;
-    break;
-}
+var env = process.env.NODE_ENV || '',
+    fn = env === 'dev' ? development : production;
 
 fn(function () {
     setup();
