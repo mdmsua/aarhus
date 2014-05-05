@@ -9,6 +9,7 @@ MongoService.prototype.createTable = function (table, callback) {
         if (error) {
             callback(error);
         } else {
+            collection.ensureIndex({ PartitionKey: 1, RowKey: 1 });
             callback(null, collection);
         }
     });
@@ -19,7 +20,9 @@ MongoService.prototype.createTableIfNotExists = function (table, callback) {
         if (error) {
             callback(error);
         } else {
-            callback(null, collection);
+            collection.ensureIndex({ PartitionKey: 1, RowKey: 1 }, { unique: true}, function (error, index) {
+                callback(null, collection);
+            });
         }
     });
 };

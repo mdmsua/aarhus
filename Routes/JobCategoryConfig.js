@@ -35,7 +35,7 @@ JobCategoryConfig.prototype.get = function (req, res) {
             self.pkat.one(config.pkat),
             self.stiko.one(config.stiko),
             self.jobCategory.one(config.st),
-            self.salaryForm.one(((Math.random() * 10).toFixed()) % 6 + 1),
+            self.salaryForm.one(new Date().getDate() % 6),
             self.jobCategoryConfig.all()]).spread(function (lko, pkat, stiko, stilling, salaryForm, configurations) {
             res.render("jobCategoryConfig", {
                 configuration: config,
@@ -48,8 +48,8 @@ JobCategoryConfig.prototype.get = function (req, res) {
                         stiko: stiko.kode + ": " + stiko.navn,
                         stilling: stilling.kode + ": " + stilling.navn,
                         salaryForm: salaryForm.kode + ": " + salaryForm.navn,
-                        salaryClass: 1,
-                        salaryLevel: 2
+                        salaryClass: new Date().getMonth() + 1,
+                        salaryLevel: new Date().getMonth() + 1
                     }
                 ]
             });
@@ -66,6 +66,9 @@ JobCategoryConfig.prototype.detail = function (req, res) {
             self.stiko.all(),
             self.jobCategory.all(),
             self.salaryForm.all()]).spread(function (lkos, pkats, stikos, stillings, salaryForms) {
+            config.salaryForm = new Date().getDate() % 6;
+            config.salaryClass = new Date().getMonth() + 1;
+            config.salaryLevel = new Date().getMonth() + 1;
             res.render("jobCategoryConfigDetail", {
                 configuration: config,
                 lkos: lkos,
@@ -73,8 +76,8 @@ JobCategoryConfig.prototype.detail = function (req, res) {
                 stikos: stikos,
                 stillings: stillings,
                 salaryForms: salaryForms,
-                salaryClasses: Array.apply(null, new Array(100)).map(function (_, i) { if (i > 0) { return i; } }),
-                salaryLevels: Array.apply(null, new Array(56)).map(function (_, i) { if (i > 0) { return i; } })
+                salaryClasses: Array.apply(null, new Array(100)).map(function (_, i) { return i; }).splice(1),
+                salaryLevels: Array.apply(null, new Array(56)).map(function (_, i) { return i; }).splice(1)
             });
         });
     });

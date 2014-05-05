@@ -5,8 +5,8 @@ html(lang="dk")
         link(href='/bootstrap.min.css', rel='stylesheet')
         link(href='/bootstrap-custom.css', rel='stylesheet')
         link(href='/select2/select2.css', rel='stylesheet')
-        link(href='/select2/select2-bootstrap.css', rel='stylesheet')
-        //link(href='/select2-bootstrap-css/select2-bootstrap.css', rel='stylesheet')
+        //link(href='/select2/select2-bootstrap.css', rel='stylesheet')
+        link(href='/select2-bootstrap-css/select2-bootstrap.css', rel='stylesheet')
         style.
             .container {
                 width: 98%;
@@ -29,10 +29,13 @@ html(lang="dk")
                                 a(href="/employee") Medarbejder
         section.container
             block container
+        script(src='/modernizr/modernizr.js')
         script(src='/jquery/dist/jquery.min.js')
         script(src='/select2/select2.min.js')
         block scripts
         script.
-            $(function() {
-                $(".select2").select2({ allowClear: true });
-            });
+            if (!Modernizr.touch) {
+                $(function() {
+                    $(".select2").select2({ allowClear: true });
+                });
+            }

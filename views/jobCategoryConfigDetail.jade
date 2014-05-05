@@ -17,8 +17,8 @@ block container
                 div.col-lg-10
                     select.form-control.select2(data-placeholder="Vælg LKO")
                         option
-                            each lko in lkos
-                                option(value=lko.kode, selected=lko.kode == configuration.lko)= lko.navn
+                        each lko in lkos
+                            option(value=lko.kode, selected=lko.kode == configuration.lko)= lko.navn
             div.form-group
                 label.control-label.col-lg-2 PKAT
                 div.col-lg-10
@@ -31,33 +31,33 @@ block container
                 div.col-lg-10
                     select.form-control.select2(data-placeholder="Vælg STIKO")
                         option
-                            each stiko in stikos
-                                option(value=stiko.kode, selected=stiko.kode == configuration.stiko)= stiko.navn
+                        each stiko in stikos
+                            option(value=stiko.kode, selected=stiko.kode == configuration.stiko)= stiko.navn
             div.form-group
                 label.control-label.col-lg-2 Lønform
                 div.col-lg-10
                     select.form-control.select2(data-placeholder="Vælg lønform")
                         option
-                            each salaryForm in salaryForms
-                                option(value=salaryForm.kode, selected=salaryForm.kode == configuration.salaryForm)= salaryForm.navn
+                        each salaryForm in salaryForms
+                            option(value=salaryForm.kode, selected=salaryForm.kode == configuration.salaryForm)= salaryForm.navn
             div.form-group
                 label.control-label.col-lg-2 Lønklasse
                 div.col-lg-10
-                    select.form-control(data-placeholder="Vælg lønklasse")
+                    select.form-control.select2(data-placeholder="Vælg lønklasse")
                         option
                         each salaryClass in salaryClasses
                             option(value=salaryClass, selected=salaryClass == configuration.salaryClass)= salaryClass
             div.form-group
                 label.control-label.col-lg-2 Lønanvisning
                 div.col-lg-10
-                    select.form-control(data-placeholder="Vælg lønanvisning")
+                    select.form-control.select2(data-placeholder="Vælg lønanvisning")
                         option
-                            each salaryLevel in salaryLevels
-                                option(value=salaryLevel, selected=salaryLevel == configuration.salaryLevel)= salaryLevel
+                        each salaryLevel in salaryLevels
+                            option(value=salaryLevel, selected=salaryLevel == configuration.salaryLevel)= salaryLevel
             div.form-group
                 label.control-label.col-lg-2 Start-/lukkedato
                 div.col-lg-3
-                    input.form-control(type="date")
+                    input.form-control(type="date", value="01-01-2014")
                 div.col-lg-3
                     input.form-control(type="date")
             hr
