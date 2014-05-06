@@ -23,7 +23,7 @@ function JobCategoryConfig(tableService) {
 
 JobCategoryConfig.prototype.index = function (req, res) {
     this.jobCategoryConfig.all(function (error, configurations) {
-        res.render('jobCategoryConfig', { configurations: configurations });
+        res.render('jobCategoryConfig', { title: 'Jobkategori konfiguration', configurations: configurations });
     });
 };
 
@@ -35,7 +35,7 @@ JobCategoryConfig.prototype.get = function (req, res) {
             self.pkat.one(config.pkat),
             self.stiko.one(config.stiko),
             self.jobCategory.one(config.st),
-            self.salaryForm.one(new Date().getDate() % 6),
+            self.salaryForm.one(new Date().getDate() % 5),
             self.jobCategoryConfig.all()]).spread(function (lko, pkat, stiko, stilling, salaryForm, configurations) {
             res.render("jobCategoryConfig", {
                 configuration: config,
@@ -66,7 +66,7 @@ JobCategoryConfig.prototype.detail = function (req, res) {
             self.stiko.all(),
             self.jobCategory.all(),
             self.salaryForm.all()]).spread(function (lkos, pkats, stikos, stillings, salaryForms) {
-            config.salaryForm = new Date().getDate() % 6;
+            config.salaryForm = new Date().getDate() % 5;
             config.salaryClass = new Date().getMonth() + 1;
             config.salaryLevel = new Date().getMonth() + 1;
             res.render("jobCategoryConfigDetail", {
