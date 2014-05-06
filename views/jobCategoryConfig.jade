@@ -49,7 +49,7 @@ block container
                     small
                         a.btn.btn-primary.pull-right(href=url)
                             span.glyphicon.glyphicon-plus
-                            |&nbsp;Tilføj ny
+                            | &nbsp;Tilføj ny
             each detail, index in details || []
                 section.list-group
                     article.list-group-item
@@ -83,8 +83,11 @@ block container
 block scripts
     script.
         $(function() {
-             $("#jobCategoryConfig").on("change", function(obj) {
+             if (!Modernizr.touch) {
+                $(".select2").select2({ allowClear: true });
+            }
+            $("#jobCategoryConfig").on("change", function(obj) {
                 var value = obj.val || this.value;
-                 window.location = "/job-category-config/" + value;
-             });
-         });
+                    window.location = "/job-category-config/" + value;
+                });
+            });

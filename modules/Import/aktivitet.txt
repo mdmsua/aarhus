@@ -1,5 +1,0 @@
-1	Almindelig virksomhed, AU
-2	Kommerciel indtægtsdækket virksomhed, AU
-3	Retsmedicinske undersøgelser, AU
-4	Tilskudsfinansieret forskningsvirksomhed, AU
-5	Andre tilskudsfinansierede aktiviteter, AU

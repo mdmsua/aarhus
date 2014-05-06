@@ -1,0 +1,11 @@
+1	Almindelig virksomhed, AU
+2	Kommerciel indtægtsdækket virksomhed, AU
+3	Retsmedicinske undersøgelser, AU
+4	Tilskudsfinansieret forskningsvirksomhed, AU
+5	Andre tilskudsfinansierede aktiviteter, AU
+6	UDDANNELSESFORSKNING
+9	GRØNLANDSBESKATTEDE
+901	ERSTAT 19220590
+902	ERSTAT 19220591
+903	ERSTAT 19220595
+904	ERSTAT 19220597

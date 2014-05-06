@@ -1,0 +1,94 @@
+extends ../layout
+block container
+    form(role="form")
+        fieldset.col-lg-6
+            div.col-lg-6.form-group
+                label.control-label(for="firstName") Fornavn
+                input.form-control(type="text", name="firstName", placeholder="Fornavn", required="required",)
+            div.col-lg-6.form-group
+                label.control-label(for="lastName") Efternavn
+                input.form-control(type="text", name="lastName", placeholder="Efternavn", required="required")
+            div.col-lg-3.form-group
+                label.control-label(for="ssn") CPR-nummer
+                input.form-control(type="text", name="ssn", placeholder="CPR-nummer", required="required")
+            div.col-lg-3.form-group
+                label.control-label(for="salaryGroupNumber") Løngruppenummer
+                input.form-control(type="number", name="salaryGroupNumber", min="0", placeholder="Løngruppenummer", required="required")
+            div.col-lg-3.form-group
+                label.control-label(for="auid") AU-ID
+                input.form-control(type="text", name="auid", min="0", placeholder="AU-ID", required="required")
+            div.col-lg-3.form-group
+                label.control-label(for="fraDato") Fra dato
+                input.form-control(type="date", name="fraDato", placeholder="Fra dato", required="required")
+            div.col-lg-4.form-group
+                label.control-label(for="primaryEmail") Primær e-mail
+                input.form-control(type="email", name="primaryEmail", placeholder="Primær e-mail")
+            div.col-lg-4.form-group
+                label.control-label(for="personalEmail") Privat e-mail
+                input.form-control(type="email", name="personalEmail", placeholder="Privat e-mail")
+            div.col-lg-4.form-group
+                label.control-label(for="telephoneNumber") Telefonnummer
+                input.form-control(type="tel", name="telephoneNumber", placeholder="Telefonnummer")
+            div.col-lg-12.form-group
+                footer.btn-group.btn-group-justified
+                    section.btn-group
+                        button.btn.btn-success(type="submit") Gem
+                    section.btn-group
+                        button.btn.btn-warning(type="reset") Annuller
+                    section.btn-group
+                        button.btn.btn-default(type="button") Oversigt
+        fieldset.col-lg-6
+            div.form-group.col-lg-12
+                label(for="jobCategory") Jobkategori
+                select.form-control.select2(id="jobCategoryConfig", name="jobCategory", data-placeholder="Vælg konfiguration")
+                    option
+                    each jobCategoryConfig in jobCategoryConfigs
+                        option(value=jobCategoryConfig.uuid)= jobCategoryConfig.stilling
+            div.form-group.col-lg-12
+                label(for="pkat") PKAT
+                input.form-control(id="pkat", name="pkat", type="hidden", data-placeholder="Vælg PKAT")
+            div.form-group.col-lg-12#config
+                table.table
+                    thead
+                        tr
+                            th LKO
+                            th STIKO
+                            th Stilling
+                            th Lønform
+                            th Lønklasse
+                            th Lønanvisning
+                            th
+                    tbody
+                        tr
+                            td#lko
+                            td#stiko
+                            td#stilling
+                            td#salaryForm
+                            td#salaryClass
+                            td#salaryLevel
+                            td
+                                a#jobCategory(href="javascript:void(0)") Vis konfiguration
+block scripts
+    script.
+        $(function () {
+            if (!Modernizr.touch) {
+                $("#jobCategoryConfig").select2();
+                $("#pkat").select2({ query: function() { } });
+            }
+            $("#config").hide();
+            $("#jobCategoryConfig").on("change", function (obj) {
+                var value = obj.val || this.value;
+                $.get("/employee/config/" + value, function(data) {
+                    $("#pkat").select2({ data: data.pkats });
+                    $("#pkat").select2("data", data.pkats[0]);
+                    document.getElementById("lko").innerHTML = data.lko;
+                    document.getElementById("stiko").innerHTML = data.stiko;
+                    document.getElementById("stilling").innerHTML = data.stilling;
+                    document.getElementById("salaryForm").innerHTML = data.salaryForm;
+                    document.getElementById("salaryClass").innerHTML = data.salaryClass;
+                    document.getElementById("salaryLevel").innerHTML = data.salaryLevel;
+                    document.getElementById("jobCategory").href = "/job-category-config/" + value;
+                    $("#config").show();
+                });
+            });
+        });

@@ -38,7 +38,7 @@ Employee.prototype.install = function (callback) {
 
 Employee.prototype.all = function (callback) {
     var deferred = Q.defer(),
-        query = process.env.NODE_ENV === 'dev' ? null : require('azure').TableQuery.select().from('employee');
+        query = process.env.NODE_ENV === 'dev' ? { table: 'employee' } : require('azure').TableQuery.select().from('employee');
     this.task.queryEntities(query, function (error, entities) {
         if (error) {
             deferred.reject(error);

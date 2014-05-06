@@ -1,7 +1,7 @@
 doctype html
 html(lang="dk")
     head
-        title
+        title= title
         link(href='/bootstrap.min.css', rel='stylesheet')
         link(href='/bootstrap-custom.css', rel='stylesheet')
         link(href='/select2/select2.css', rel='stylesheet')
@@ -22,20 +22,16 @@ html(lang="dk")
                             span.icon-bar
                         a.navbar-brand(href="/") Aarhus
                     nav.navbar-collapse.collapse.navbar-inverse-collapse
+                        - routes = []
+                        - routes.push({ name: "Jobkategori konfiguration", href: "/job-category-config" })
+                        - routes.push({ name: "Medarbejder", href: "/employee" })
                         ul.nav.navbar-nav
-                            li
-                                a(href="/job-category-config") Jobkategori konfiguration
-                            li
-                                a(href="/employee") Medarbejder
+                            each route in routes
+                                li(class=title == route.name ? 'active' : '')
+                                    a(href=route.href) #{route.name}
         section.container
             block container
         script(src='/modernizr/modernizr.js')
         script(src='/jquery/dist/jquery.min.js')
         script(src='/select2/select2.min.js')
         block scripts
-        script.
-            if (!Modernizr.touch) {
-                $(function() {
-                    $(".select2").select2({ allowClear: true });
-                });
-            }

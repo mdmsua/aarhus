@@ -1,4 +1,4 @@
-module.exports = Import;
+"use strict";
 
 var fs = require('fs'),
     path = require('path');
@@ -10,7 +10,10 @@ function Import(file) {
 Import.prototype.getWords = function (delimiter, callback) {
     var self = this;
     fs.readFile(path.join(__dirname, self.file), function (error, data) {
-        if (error) { callback(error); return; }
+        if (error) {
+            callback(error);
+            return;
+        }
         var words = [];
         data.toString().split('\n').forEach(function (line) {
             words.push(line.split(delimiter));
@@ -25,8 +28,8 @@ Import.prototype.getLines = function (callback) {
         if (error) { callback(error); return; }
         var lines = [];
         data.toString().split('\n').forEach(function (line) {
-            var code = Number(line.slice(0, 4));
-            var name = line.slice(5);
+            var code = Number(line.slice(0, 4)),
+                name = line.slice(5);
             if (/^\d{4}/.test(name)) {
                 name = name.slice(5);
             }
@@ -35,3 +38,5 @@ Import.prototype.getLines = function (callback) {
         callback(null, lines);
     });
 };
+
+module.exports = Import;
