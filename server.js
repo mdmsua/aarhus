@@ -35,18 +35,19 @@ function setup() {
     imports.forEach(function (key) {
         if (key) {
             try {
+                console.log("Installing %s", key);
                 var Module = require(path.join(__dirname, 'modules', key)),
-                    instance = new Module(tableService, function () {
-                        instance.install(function (errors) {
-                            if (errors && errors.length) {
-                                errors.forEach(function (error) {
-                                    console.error(error);
-                                });
-                            } else {
-                                console.log('%s setup OK', key);
-                            }
+                    instance = new Module(tableService);
+                console.log("Ready to setup %s", key);
+                instance.install(function (errors) {
+                    if (errors && errors.length) {
+                        errors.forEach(function (error) {
+                            console.error(error);
                         });
-                    });
+                    } else {
+                        console.log('%s setup OK', key);
+                    }
+                });
             } catch (error) {
                 console.error('%s setup FAIL: %s', key, error);
             }
@@ -82,6 +83,7 @@ fn(function () {
         .get('/', employee.index.bind(employee))
         .post('/', employee.search.bind(employee))
         .get('/new', employee.create.bind(employee))
+        .get('/organisations', employee.organisations.bind(employee))
         .get('/:ssn', employee.get.bind(employee))
         .get('/config/:uuid', employee.config.bind(employee));
     app.listen(process.env.PORT || 8192);

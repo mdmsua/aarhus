@@ -30,6 +30,16 @@ block container
                 label.control-label(for="telephoneNumber") Telefonnummer
                 input.form-control(type="tel", name="telephoneNumber", placeholder="Telefonnummer")
             div.col-lg-12.form-group
+                label.control-label(for="roller") Roller
+                select.form-control(id="roller", name="roller", placeholder="Vælg roller", multiple="multiple")
+                    option(value="Timelønnede") Timelønnede
+                    option(value="Sekretær") Sekretær
+                    option(value="Finansmedarbejder") Finansmedarbejder
+                    option(value="Administrator") Administrator
+            div.col-lg-12.form-group
+                label.control-label(for="enheder") Enheder
+                select.form-control(id="enheder", name="enheder", placeholder="Vælg enheder", multiple="multiple")
+            div.col-lg-12.form-group
                 footer.btn-group.btn-group-justified
                     section.btn-group
                         button.btn.btn-success(type="submit") Gem
@@ -46,7 +56,7 @@ block container
                         option(value=jobCategoryConfig.uuid)= jobCategoryConfig.stilling
             div.form-group.col-lg-12
                 label(for="pkat") PKAT
-                input.form-control(id="pkat", name="pkat", type="hidden", data-placeholder="Vælg PKAT")
+                select.form-control(id="pkat", name="pkat", data-placeholder="Vælg PKAT")
             div.form-group.col-lg-12#config
                 table.table
                     thead
@@ -71,16 +81,22 @@ block container
 block scripts
     script.
         $(function () {
-            if (!Modernizr.touch) {
-                $("#jobCategoryConfig").select2();
-                $("#pkat").select2({ query: function() { } });
+            var touch = Modernizr.touch;
+            if (!touch) {
+                $("#jobCategoryConfig, #roller, #enheder, #pkat").select2();
             }
             $("#config").hide();
+            $("#enheder").parent().hide();
             $("#jobCategoryConfig").on("change", function (obj) {
                 var value = obj.val || this.value;
                 $.get("/employee/config/" + value, function(data) {
-                    $("#pkat").select2({ data: data.pkats });
-                    $("#pkat").select2("data", data.pkats[0]);
+                    var $pkat = $("#pkat"),
+                        pkats = data.pkats || [],
+                        first = pkats[0] || {};
+                    pkats.forEach(function (item) {
+                        $pkat.append($("<option></option>").attr("value", item.id).text(item.text));
+                    });
+                    touch ? $pkat.val(first.id) : $pkat.select2("val", first.id);
                     document.getElementById("lko").innerHTML = data.lko;
                     document.getElementById("stiko").innerHTML = data.stiko;
                     document.getElementById("stilling").innerHTML = data.stilling;
@@ -90,5 +106,22 @@ block scripts
                     document.getElementById("jobCategory").href = "/job-category-config/" + value;
                     $("#config").show();
                 });
+            });
+            $("#roller").on("change", function (obj) {
+                var values = obj.val || $(this).val() || [],
+                    enheder = document.getElementById("enheder");
+                if (values.indexOf("Sekretær") > -1 || values.indexOf("Finansmedarbejder") > -1) {
+                    var options = enheder.options;
+                    if (!options || (options && !options.length)) {
+                        $.get("/employee/organisations", function (data) {
+                            data.forEach(function (d) {
+                                $(enheder).append($("<option></option>").attr("value", d.id).text(d.text));
+                            });
+                        });
+                    }
+                    $(enheder).parent().show();
+                } else {
+                    $(enheder).parent().hide();
+                }
             });
         });

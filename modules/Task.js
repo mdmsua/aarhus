@@ -1,5 +1,7 @@
 "use strict";
 
+var uuid = require("node-uuid");
+
 function Task(storageClient, tableName, partitionKey, rowKeyProperty, callback) {
     this.storageClient = storageClient;
     this.tableName = tableName;
@@ -61,8 +63,12 @@ Task.prototype.queryEntity = function (rowKey, callback) {
 
 Task.prototype.insertEntity = function (item, callback) {
     var self = this;
-    item.PartitionKey = item.partitionKey || self.partitionKey;
-    item.RowKey = item[self.rowKeyProperty];
+    if (!item.PartitionKey) {
+        item.PartitionKey = self.partitionKey || uuid.v4();
+    }
+    if (!item.RowKey) {
+        item.RowKey = item[self.rowKeyProperty] || uuid.v4();
+    }
     self.storageClient.insertEntity(self.tableName, item, function (error, entity) {
         if (callback) {
             if (error) {
@@ -94,22 +100,32 @@ Task.prototype.updateEntity = function (item, callback) {
 Task.prototype.batchEntities = function (items, callback) {
     var self = this,
         batches = [],
-        errors = [];
+        errors = [],
+        i;
     while (items.length) {
         batches.push(items.splice(0, 100));
     }
-    batches.forEach(function (batch) {
-        self.storageClient.beginBatch();
-        batch.forEach(function (item) {
-            self.insertEntity(item);
-        });
-        self.storageClient.commitBatch(function (error) {
-            if (error) {
-                errors.push(error);
-                console.error(error);
-            }
-        });
-    });
+    for (i = batches.length - 1; i; i -= 1) {
+        (function (i) {
+            var batch = batches[i],
+                length = batch.length;
+            setTimeout(function () {
+                console.log("Batch %d of %d entities", i, length);
+                self.storageClient.beginBatch();
+                batch.forEach(function (item) {
+                    self.insertEntity(item);
+                });
+                self.storageClient.commitBatch(function (error) {
+                    if (error) {
+                        errors.push(error);
+                        console.error(error);
+                    } else {
+                        console.log("Batch %d committed", i);
+                    }
+                });
+            }, i * 100);
+        })(i);
+    }
     callback(errors);
 };
 
