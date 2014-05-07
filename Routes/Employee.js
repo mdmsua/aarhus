@@ -8,7 +8,8 @@ var util = require("util"),
     Stiko = require("../modules/Stiko"),
     Lko = require("../modules/Lko"),
     JobCategory = require("../modules/JobCategory"),
-    SalaryForm = require("../modules/SalaryForm");
+    SalaryForm = require("../modules/SalaryForm"),
+    Enhed = require("../modules/Enhed");
 
 function Employee(tableService) {
     this.employee = new EmployeeService(tableService);
@@ -18,6 +19,7 @@ function Employee(tableService) {
     this.lko = new Lko(tableService);
     this.jobCategory = new JobCategory(tableService);
     this.salaryForm = new SalaryForm(tableService);
+    this.enhed = new Enhed(tableService);
 }
 
 Employee.prototype.index = function (req, res) {
@@ -99,6 +101,17 @@ Employee.prototype.get = function (req, res, next) {
 Employee.prototype.create = function (req, res) {
     this.jobCategoryConfig.all(function (error, jobCategoryConfigs) {
         res.render("employee/create", { title: "Medarbejder", jobCategoryConfigs: jobCategoryConfigs });
+    });
+};
+
+Employee.prototype.organisations = function (req, res) {
+    this.enhed.all(function (error, enheder) {
+        res.json(enheder.map(function (enhed) {
+            return {
+                id: enhed.kode,
+                text: enhed.navn
+            };
+        }));
     });
 };
 
