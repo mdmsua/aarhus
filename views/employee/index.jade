@@ -2,14 +2,14 @@ extends ../layout
 block container
     unless employee
         article.row
-            form.form-inline(role="form", name="search", action="/employee", method="post")
+            form.form-inline(role="form", name="search", action="/medarbejder", method="post")
                 div.form-group.col-lg-12
                     div.input-group.input-group-lg
                         input.form-control(type="text", name="q")
                         span.input-group-btn
                             button.btn.btn-primary(type="submit")
                                 span.glyphicon.glyphicon-search &nbsp;Søg
-                            a.btn.btn-success(type="button", href="/employee/new")
+                            a.btn.btn-success(type="button", href="/medarbejder/new")
                                 span.glyphicon.glyphicon-plus &nbsp;Opret
     if employees
         article.row
@@ -19,5 +19,5 @@ block container
             ul.list-unstyled
                 - each employee in employees
                     li
-                        - var href = "/employee/" + employee.ssn
+                        - var href = "/medarbejder/" + employee.ssn
                         a.btn.btn-link.btn-lg(href=href)= employee.name

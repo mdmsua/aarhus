@@ -15,10 +15,9 @@ function development(callback) {
     MongoClient.connect("mongodb://localhost:27017/aarhus", function (error, db) {
         if (error) {
             throw error;
-        } else {
-            tableService = new MongoService(db);
-            callback(tableService);
         }
+        tableService = new MongoService(db);
+        callback(tableService);
     });
 }
 
@@ -65,7 +64,9 @@ var employeeRouter = express.Router();
 var jobCategoryConfigRouter = express.Router();
 
 app.use('/job-category-config', jobCategoryConfigRouter);
+app.use('/jobkategori', jobCategoryConfigRouter);
 app.use('/employee', employeeRouter);
+app.use('/medarbejder', employeeRouter);
 
 var env = process.env.NODE_ENV || '',
     fn = env === 'dev' ? development : production;

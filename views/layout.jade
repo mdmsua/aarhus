@@ -5,7 +5,6 @@ html(lang="dk")
         link(href='/bootstrap.min.css', rel='stylesheet')
         link(href='/bootstrap-custom.css', rel='stylesheet')
         link(href='/select2/select2.css', rel='stylesheet')
-        //link(href='/select2/select2-bootstrap.css', rel='stylesheet')
         link(href='/select2-bootstrap-css/select2-bootstrap.css', rel='stylesheet')
         style.
             .container {
@@ -23,8 +22,9 @@ html(lang="dk")
                         a.navbar-brand(href="/") Aarhus
                     nav.navbar-collapse.collapse.navbar-inverse-collapse
                         - routes = []
-                        - routes.push({ name: "Jobkategori konfiguration", href: "/job-category-config" })
-                        - routes.push({ name: "Medarbejder", href: "/employee" })
+                        - routes.push({ name: "Jobkategori", href: "/jobkategori" })
+                        - routes.push({ name: "Medarbejder", href: "/medarbejder" })
+                        - routes.push({ name: "Registrering", href: "/registrering" })
                         ul.nav.navbar-nav
                             each route in routes
                                 li(class=title == route.name ? 'active' : '')

@@ -8,7 +8,7 @@ block container
                 each config in configurations
                     option(value=config.uuid, selected=config.uuid == configuration.uuid)= config.stilling
         div.form-group.col-lg-2
-            a.btn.btn-primary.pull-right(href="/job-category-config") Opret jobkategori
+            a.btn.btn-primary.pull-right(href="/jobkategori") Opret jobkategori
     article.col-lg-6
         header.page-header
             h1 Jobkategori konfiguration
@@ -45,7 +45,7 @@ block container
             header.page-header
                 h1
                     | Detaljer
-                    - var url = "/job-category-config/" + configuration.uuid + "/detail"
+                    - var url = "/jobkategori/" + configuration.uuid + "/detail"
                     small
                         a.btn.btn-primary.pull-right(href=url)
                             span.glyphicon.glyphicon-plus
@@ -56,7 +56,7 @@ block container
                         h3.list-group-item-heading
                             | #{detail.period}
                             div.pull-right
-                                - var url = "/job-category-config/" + configuration.uuid + "/detail/" + configuration.uuid
+                                - var url = "/jobkategori/" + configuration.uuid + "/detail/" + configuration.uuid
                                 a(href=url)
                                     span.glyphicon.glyphicon-pencil
                                 button.btn-link(onclick="confirm('Er du sikker på, at du vil slette denne post?')")
@@ -88,6 +88,6 @@ block scripts
             }
             $("#jobCategoryConfig").on("change", function(obj) {
                 var value = obj.val || this.value;
-                    window.location = "/job-category-config/" + value;
+                    window.location = "/jobkategori/" + value;
                 });
             });

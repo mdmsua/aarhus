@@ -99,7 +99,7 @@ block scripts
             $("#enheder, #pkat").parent().hide();
             $("#jobCategoryConfig").on("change", function (obj) {
                 var value = obj.val || this.value;
-                $.get("/employee/config/" + value, function(data) {
+                $.get("/medarbejder/config/" + value, function(data) {
                     var $pkat = $("#pkat"),
                         pkats = data.pkats || [],
                         first = pkats[0] || {};
@@ -125,7 +125,7 @@ block scripts
                     var options = enheder.options;
                     if (!options || (options && !options.length)) {
                         $("#enheder-progress").show();
-                        $.get("/employee/organisations", function (data) {
+                        $.get("/medarbejder/organisations", function (data) {
                             data.forEach(function (d) {
                                 $(enheder).append($("<option></option>").attr("value", d.id).text(d.text));
                             });
