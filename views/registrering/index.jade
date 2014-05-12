@@ -1,0 +1,42 @@
+extends ../layout
+block container
+    section.row
+        a.btn.btn-primary.btn-lg.col-lg-2.col-lg-offset-5(href="/registrering/ny") Ny
+    if registreringer && registreringer.length
+        section.row
+            table.table
+                thead
+                    tr
+                        th Dato
+                        th Projekt
+                        th Aktivitet
+                        th Sted
+                        th Delregnskab
+                        th Felt 1
+                        th Felt 2
+                        th Felt 3
+                        th Felt 4
+                        th Godkendelsesmeddelelsen
+                tbody
+                    each registrering in registreringer
+                        - var godkendelsesstatus = registrering.godkendelsesstatus, cls = ""
+                        - var projekt = (registrering.projekt || "_").split("_")[1]
+                        - var aktivitet = (registrering.aktivitet || "_").split("_")[1]
+                        - var sted = (registrering.sted || "_").split("_")[1]
+                        - var delregnskab = (registrering.delregnskab || "_").split("_")[1]
+                        case godkendelsesstatus
+                            when "godkendt"
+                                cls = "success"
+                            when "afvist"
+                                cls = "danger"
+                        tr(class=cls, data-godkendelsesstatus=godkendelsesstatus)
+                            td= registrering.dato
+                            td= projekt
+                            td= aktivitet
+                            td= sted
+                            td= delregnskab
+                            td= registrering.felt1
+                            td= registrering.felt2
+                            td= registrering.felt3
+                            td= registrering.felt4
+                            td= registrering.godkendelsesmeddelelsen

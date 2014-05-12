@@ -23,7 +23,7 @@ function JobCategoryConfig(tableService) {
 
 JobCategoryConfig.prototype.index = function (req, res) {
     this.jobCategoryConfig.all(function (error, configurations) {
-        res.render('jobCategoryConfig', { title: 'Jobkategori konfiguration', configurations: configurations });
+        res.render('jobCategoryConfig', { title: 'Jobkategori', configurations: configurations });
     });
 };
 

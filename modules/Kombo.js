@@ -48,11 +48,41 @@ Kombo.prototype.install = function (callback) {
 Kombo.prototype.all = function (callback) {
     var deferred = Q.defer(),
         query = process.env.NODE_ENV === 'dev' ? { table: 'kombo' } : require('azure').TableQuery.select().from('kombo');
-    this.task.queryEntities(query, function (error, entities) {
+    this.komboTask.queryEntities(query, function (error, entities) {
         if (error) {
             deferred.reject(error);
         } else {
             deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Kombo.prototype.project = function (kode, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === 'dev' ?
+                { table: 'kombo', query: { PartitionKey: kode } } :
+                require('azure').TableQuery.select().from('kombo').where("PartitionKey eq ?", kode);
+    this.komboTask.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Kombo.prototype.activity = function (project, activity, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === 'dev' ?
+                { table: 'kombo', query: { $and: [ { PartitionKey: project }, { RowKey: activity } ] } } :
+                require('azure').TableQuery.select().from('kombo').where("PartitionKey eq ? and RowKey eq ?", project, activity);
+    this.komboTask.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities[0]);
         }
     });
     return deferred.promise.nodeify(callback);

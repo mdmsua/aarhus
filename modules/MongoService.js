@@ -28,7 +28,13 @@ MongoService.prototype.createTableIfNotExists = function (table, callback) {
 };
 
 MongoService.prototype.deleteEntity = function (table, entityDescriptor, callback) {
-
+    this.db.createCollection(table, function (error, collection) {
+        if (error) {
+            callback(error);
+        } else {
+            collection.remove({ $and: [{ PartitionKey: entityDescriptor.PartitionKey }, { RowKey: entityDescriptor.RowKey } ] }, true, callback);
+        }
+    });
 };
 
 MongoService.prototype.deleteTable = function (table, callback) {

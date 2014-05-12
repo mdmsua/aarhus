@@ -52,7 +52,7 @@ Task.prototype.queryEntities = function (query, callback) {
 
 Task.prototype.queryEntity = function (rowKey, callback) {
     var self = this;
-    self.storageClient.queryEntity(self.tableName, self.partitionKey, rowKey.toString(), function (error, entity) {
+    self.storageClient.queryEntity(self.tableName, self.partitionKey, process.env.NODE_ENV === 'dev' ? rowKey : rowKey.toString(), function (error, entity) {
         if (error) {
             callback(error);
         } else {
@@ -95,6 +95,10 @@ Task.prototype.updateEntity = function (item, callback) {
             });
         }
     });
+};
+
+Task.prototype.deleteEntity = function (item, callback) {
+    this.storageClient.deleteEntity(this.tableName, item, callback);
 };
 
 Task.prototype.batchEntities = function (items, callback) {

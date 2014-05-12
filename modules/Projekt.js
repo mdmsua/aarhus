@@ -7,8 +7,8 @@ var util = require('util'),
     KodeNavn = require('../modules/KodeNavn');
 
 function Projekt(tableService) {
-    KodeNavn.call(this, tableService, 'aktivitet');
-    this.task = new Task(tableService, 'kodenavn', 'projekt', 'kode', function () { });
+    KodeNavn.call(this, tableService, 'projekt');
+    this.task = new Task(tableService, 'kodenavn', 'projekt', 'kode');
 }
 
 util.inherits(Projekt, KodeNavn);

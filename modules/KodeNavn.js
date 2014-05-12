@@ -54,4 +54,43 @@ KodeNavn.prototype.one = function (id, callback) {
     return deferred.promise.nodeify(callback);
 };
 
+KodeNavn.prototype.rows = function (count, callback) {
+    var deferred = Q.defer(),
+        query = require("azure").TableQuery.select().from("kodenavn").where("PartitionKey eq ? and RowKey le ?", this.kodenavn, count.toString());
+    this.task.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+KodeNavn.prototype.query = function (query, callback) {
+    var deferred = Q.defer();
+    this.task.queryEntities({ table: "kodenavn", query: query }, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+KodeNavn.prototype.names = function (codes, callback) {
+    var deferred = Q.defer(),
+        promises = [],
+        self = this;
+    codes.forEach(function (code) {
+        promises.push(self.one(Number(code)));
+    });
+    Q.all(promises)
+        .done(function (names) {
+            deferred.resolve(names);
+        });
+    return deferred.promise.nodeify(callback);
+};
+
 module.exports = KodeNavn;

@@ -1,0 +1,175 @@
+extends ../layout
+block container
+    aside.col-lg-3.col-md-3.col-sm-3
+        article.panel.panel-default
+            header.panel-heading
+                | Skabeloner
+                span.pull-right.badge= skabeloner.length
+            div.list-group
+                each skabelon in skabeloner
+                    a.list-group-item(href="javascript:void()", data-skabelon=skabelon)= skabelon.RowKey
+        article.panel.panel-default
+            header.panel-heading
+                | Kladder
+                span.pull-right.badge= kladder.length
+            div.list-group
+                each kladde in kladder
+                    a.list-group-item(href="javascript:void()", data-kladde=kladde)= kladde.oprettet
+    form.form-horizontal(role="form", method="post")
+        fieldset.col-lg-6.col-md-6.col-sm-6
+            div.form-group
+                label.control-label.col-lg-2(for="projekt") Projekt
+                div.col-lg-10
+                    select.form-control(id="projekt", placeholder="Vælg projekt")
+                        option
+                        each projekt in projekter
+                            option(value=projekt.kode)= projekt.navn
+                    input(type="hidden", name="projekt")
+            div.form-group
+                label.control-label.col-lg-2(for="aktivitet") Aktivitet
+                div.col-lg-10
+                    select.form-control(id="aktivitet", placeholder="Vælg aktivitet", disabled="disabled")
+                        option
+                    input(type="hidden", name="aktivitet")
+            div.form-group
+                label.control-label.col-lg-2(for="sted") Sted
+                div.col-lg-10
+                    input.form-control(id="sted", disabled)
+                    input(type="hidden", name="sted")
+            div.form-group
+                label.control-label.col-lg-2(for="delregnskab") Delregnskab
+                div.col-lg-10
+                    input.form-control(id="delregnskab", disabled)
+                    input(type="hidden", name="delregnskab")
+            div.form-group
+                label.control-label.col-lg-2(for="kommentar") Kommentar
+                div.col-lg-10
+                    textarea.form-control(name="kommentar")
+            footer.form-group
+                div.col-lg-offset-2.col-lg-10
+                    div.btn-group.btn-group-justified
+                        div.btn-group
+                            button.btn.btn-success(type="submit") Send
+                        div.btn-group
+                            button.btn.btn-warning(type="reset") Annuller
+                        div.btn-group
+                            button.btn.btn-info(type="submit", formaction="/registrering/kladde") Gem som kladde
+                        div.btn-group
+                            button.btn.btn-default#skabelonbtn(type="button") Gem som skabelon
+            div.form-group#skabelonfrm
+                label.control-label.col-lg-2 Skabelon
+                div.col-lg-10
+                    div.input-group
+                        input.form-control(type="text", name="skabelon")
+                        span.input-group-btn
+                            button.btn.btn-default(type="submit", formaction="/registrering/skabelon") Gem
+        fieldset.col-lg-3.col-md-3.col-sm-3
+            div.form-group
+                label.control-label.col-lg-2(for="dato") Dato
+                div.col-lg-10
+                    input.form-control(name="dato", type="date", placeholder="Dato")
+            div.form-group
+                label.control-label.col-lg-2(for="felt1") Felt 1
+                div.col-lg-10
+                    input.form-control(name="felt1", type="number", value="0")
+            div.form-group
+                label.control-label.col-lg-2(for="felt2") Felt 2
+                div.col-lg-10
+                    input.form-control(name="felt2", type="number", value="0")
+            div.form-group
+                label.control-label.col-lg-2(for="felt3") Felt 3
+                div.col-lg-10
+                    input.form-control(name="felt3", type="number", value="0")
+            div.form-group
+                label.control-label.col-lg-2(for="felt4") Felt 4
+                div.col-lg-10
+                    input.form-control(name="felt4", type="number", value="0")
+            div.form-group
+                div.col-lg-offset-2.col-lg-10
+block scripts
+    script.
+        $(function () {
+            var touch = Modernizr.touch,
+                $projekt_ = $("#projekt"),
+                $projekt = $("[name='projekt']"),
+                $aktivitet_ = $("#aktivitet"),
+                $aktivitet = $("[name='aktivitet']"),
+                $skabelonbtn = $("#skabelonbtn"),
+                $skabelonfrm = $("#skabelonfrm"),
+                $sted_ = $("#sted"),
+                $delregnskab_ = $("#delregnskab"),
+                $sted = $("[name='sted']"),
+                $delregnskab = $("[name='delregnskab']"),
+                $kommentar = $("[name='kommentar']"),
+                $dato = $("[name='dato']"),
+                $felt1 = $("[name='felt1']"),
+                $felt2 = $("[name='felt2']"),
+                $felt3 = $("[name='felt3']"),
+                $felt4 = $("[name='felt4']"),
+                sted = "",
+                delregnskab = "",
+                aktivitet = "",
+                projekt = "";
+            if (!touch) {
+                $projekt_.select2(); $aktivitet_.select2();
+            }
+            $skabelonfrm.hide();
+            $projekt_.on("change", function (obj) {
+                var value = obj.val || this.value;
+                $projekt.val(value + "_" + this.options[this.selectedIndex].text);
+                $sted.val(""); $sted_.val(""); $delregnskab.val(""); $delregnskab_.val("");
+                $aktivitet_.attr("disabled", "disabled").find("option").remove();
+                $.get("/registrering/projekt/" + value, function (aktiviteter) {
+                    aktiviteter.forEach(function (aktivitet) {
+                        $aktivitet_.append($("<option></option>").attr("value", aktivitet.id).text(aktivitet.text));
+                    });
+                    $aktivitet_.removeAttr("disabled");
+                });
+            });
+            $aktivitet_.on("change", function (obj) {
+                var value = obj.val || this.value;
+                $aktivitet.val(value + "_" + this.options[this.selectedIndex].text);
+                $.get("/registrering/aktivitet/" + $projekt_.val() + "/" + value, function (data) {
+                    sted = data.sted;
+                    $sted_.val(sted.split("_")[1]);
+                    $sted.val(sted);
+                    delregnskab = data.delregnskab;
+                    $delregnskab_.val(delregnskab.split("_")[1]);
+                    $delregnskab.val(delregnskab);
+                });
+            });
+            $skabelonbtn.on("click", function() {
+                $skabelonfrm.toggle();
+            });
+            $("aside").on("click", "a", function() {
+                $("aside a.active").removeClass("active");
+                $(this).addClass("active");
+                var skabelon = $(this).data("skabelon"),
+                    kladde = $(this).data("kladde"),
+                    data = skabelon || kladde,
+                    projekt = data.projekt.split("_")[0],
+                    aktivitet = data.aktivitet.split("_")[0];
+                if (projekt) {
+                    $.get("/registrering/projekt/" + projekt, function (aktiviteter) {
+                        aktiviteter.forEach(function (aktivitet) {
+                            $aktivitet_.append($("<option></option>").attr("value", aktivitet.id).text(aktivitet.text));
+                        });
+                        $aktivitet_.removeAttr("disabled");
+                        $aktivitet.val(data.aktivitet);
+                        touch ? $aktivitet_.val(projekt) : $aktivitet_.select2("val", aktivitet);
+                    });
+                }
+                touch ? $projekt_.val(projekt) : $projekt_.select2("val", projekt);
+                $projekt.val(data.projekt);
+                $sted.val(data.sted);
+                $sted_.val(data.sted);
+                $delregnskab.val(data.delregnskab);
+                $delregnskab_.val(data.delregnskab.split("_")[1]);
+                $kommentar.val(data.kommentar);
+                $dato.val(data.dato);
+                $felt1.val(data.felt1);
+                $felt2.val(data.felt2);
+                $felt3.val(data.felt3);
+                $felt4.val(data.felt4);
+            });
+        });

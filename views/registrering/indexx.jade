@@ -1,0 +1,169 @@
+extends ../layout
+block container
+    - var projekt, aktivitet, sted, delregnskab
+    section.row
+        a.btn.btn-primary.btn-lg.col-lg-2.col-lg-offset-5(href="/registrering/ny") Ny
+    ul.nav.nav-tabs
+        if registreringer && registreringer.length
+            li.active
+                a(href="#registreringer", data-toggle="tab") Registreringer
+        if kladder && kladder.length
+            li
+                a(href="#kladder", data-toggle="tab")
+                    | Kladder
+                    | &nbsp;
+                    span.badge= kladder.length
+        if skabeloner && skabeloner.length
+            li
+                a(href="#skabeloner", data-toggle="tab")
+                    | Skabeloner
+                    | &nbsp;
+                    span.badge= skabeloner.length
+    article.tab-content
+        if registreringer && registreringer.length
+            section.tab-pane.active#registreringer
+                //article
+                //    ul.nav.nav-pills
+                //        li
+                //            a(href="javascript:void()") &times;
+                //        li
+                //            a(href="javascript:void()") Godkendt
+                //        li
+                //            a(href="javascript:void()") Afvist
+                //        li
+                //            a(href="javascript:void()") Afventer
+                article
+                    table.table
+                        thead
+                            tr
+                                th Dato
+                                th Projekt
+                                th Aktivitet
+                                th Sted
+                                th Delregnskab
+                                th Felt 1
+                                th Felt 2
+                                th Felt 3
+                                th Felt 4
+                                th Godkendelsesmeddelelsen
+                        tbody
+                            each registrering in registreringer
+                                - var godkendelsesstatus = registrering.godkendelsesstatus, cls = ""
+                                - projekt = (registrering.projekt || "_").split("_")[1]
+                                - aktivitet = (registrering.aktivitet || "_").split("_")[1]
+                                - sted = (registrering.sted || "_").split("_")[1]
+                                - delregnskab = (registrering.delregnskab || "_").split("_")[1]
+                                case godkendelsesstatus
+                                    when "godkendt"
+                                        cls = "success"
+                                    when "afvist"
+                                        cls = "danger"
+                                tr(class=cls, data-godkendelsesstatus=godkendelsesstatus)
+                                    td= registrering.dato
+                                    td= projekt
+                                    td= aktivitet
+                                    td= sted
+                                    td= delregnskab
+                                    td= registrering.felt1
+                                    td= registrering.felt2
+                                    td= registrering.felt3
+                                    td= registrering.felt4
+                                    td= registrering.godkendelsesmeddelelsen
+        if kladder
+            section.tab-pane#kladder
+                article
+                    table.table
+                        thead
+                            tr
+                                th Dato
+                                th Projekt
+                                th Aktivitet
+                                th Sted
+                                th Delregnskab
+                                th Felt 1
+                                th Felt 2
+                                th Felt 3
+                                th Felt 4
+                                th Oprettet
+                                th
+                        tbody
+                            each kladde in kladder
+                                - projekt = (kladde.projekt || "_").split("_")[1]
+                                - aktivitet = (kladde.aktivitet || "_").split("_")[1]
+                                - sted = (kladde.sted || "_").split("_")[1]
+                                - delregnskab = (kladde.delregnskab || "_").split("_")[1]
+                                tr
+                                    td= kladde.dato
+                                    td= projekt
+                                    td= aktivitet
+                                    td= sted
+                                    td= delregnskab
+                                    td= kladde.felt1
+                                    td= kladde.felt2
+                                    td= kladde.felt3
+                                    td= kladde.felt4
+                                    td
+                                        a(href="/registrering/kladde/" + kladde.RowKey)= kladde.oprettet
+                                    td
+                                        button.btn-link(type="submit", name="sletKladde", data-id=kladde.RowKey)
+                                            span.glyphicon.glyphicon-trash
+        if skabeloner
+            section.tab-pane#skabeloner
+                article
+                    table.table
+                        thead
+                            tr
+                                th Dato
+                                th Projekt
+                                th Aktivitet
+                                th Sted
+                                th Delregnskab
+                                th Felt 1
+                                th Felt 2
+                                th Felt 3
+                                th Felt 4
+                                th Navn
+                                th
+                        tbody
+                            each skabelon in skabeloner
+                                - projekt = (skabelon.projekt || "_").split("_")[1]
+                                - aktivitet = (skabelon.aktivitet || "_").split("_")[1]
+                                - sted = (skabelon.sted || "_").split("_")[1]
+                                - delregnskab = (skabelon.delregnskab || "_").split("_")[1]
+                                tr
+                                    td= skabelon.dato
+                                    td= projekt
+                                    td= aktivitet
+                                    td= sted
+                                    td= delregnskab
+                                    td= skabelon.felt1
+                                    td= skabelon.felt2
+                                    td= skabelon.felt3
+                                    td= skabelon.felt4
+                                    td
+                                        a(href="/registrering/skabelon/" + skabelon.RowKey)= skabelon.RowKey
+                                    td
+                                        button.btn-link(type="submit", name="sletSkabelon", data-id=skabelon.RowKey)
+                                            span.glyphicon.glyphicon-trash
+    form.hidden(role="form", action="/registrering/kladde/", method="post", id="sletKladde")
+    form.hidden(role="form", action="/registrering/skabelon/", method="post", id="sletSkabelon")
+block scripts
+    script.
+        $(function() {
+            var $sletKladde = $("#sletKladde"),
+                $sletSkabelon = $("#sletSkabelon");
+            $("#kladder").on("click", "button[name='sletKladde']", function() {
+                if (confirm("Er du sikker på, at du vil slette kladden?")) {
+                    var id = $(this).data("id");
+                    $sletKladde.attr("action", $sletKladde.attr("action") + id);
+                    $sletKladde.submit();
+                }
+            });
+            $("#skabeloner").on("click", "button[name='sletSkabelon']", function() {
+                if (confirm("Er du sikker på, at du vil slette slet skabelonen?")) {
+                    var id = $(this).data("id");
+                    $sletSkabelon.attr("action", $sletSkabelon.attr("action") + id);
+                    $sletSkabelon.submit();
+                }
+            });
+        });
