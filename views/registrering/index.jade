@@ -1,42 +1,123 @@
 extends ../layout
 block container
     section.row
-        a.btn.btn-primary.btn-lg.col-lg-2.col-lg-offset-5(href="/registrering/ny") Ny
+        form.form-inline(role="form", action="/registrering/ny")
+            div.form-group.col-lg-5
+                select.form-control(id="jobkategori", name="jobkategori", data-placeholder="Vælg jobkategori", style="width:100%")
+                    option
+                        each jobkategori in jobkategorier
+                            option(value=jobkategori.uuid)= jobkategori.stilling
+            div.form-group.col-lg-5
+                select.form-control(id="enhed", name="enhed", data-placeholder="Vælg enhed", style="width:100%")
+                    option
+                        each enhed in enheder
+                            option(value=enhed.kode)= enhed.navn
+            div.form-group.col-lg-2
+                button.btn.btn-primary.btn-sm(type="submit", style="width:100%") Ny
     if registreringer && registreringer.length
+        hr
         section.row
+            article
+                ul.nav.nav-pills
+                    - var godkendt = registreringer.filter(function (registrering) { return registrering.godkendelsesstatus === "godkendt"; }).length
+                    - var afvist = registreringer.filter(function (registrering) { return registrering.godkendelsesstatus === "afvist"; }).length
+                    - var afventer = registreringer.filter(function (registrering) { return !registrering.godkendelsesstatus; }).length
+                    li
+                        a.text-muted(href="javascript:void(0)", data-godkendelsesstatus="x") &times;
+                    li
+                        a.text-success(href="javascript:void(0)", data-godkendelsesstatus="godkendt") Godkendt &nbsp;
+                            span.badge= godkendt
+                    li
+                        a.text-danger(href="javascript:void(0)", data-godkendelsesstatus="afvist") Afvist &nbsp;
+                            span.badge= afvist
+                    li
+                        a.text-primary(href="javascript:void(0)", data-godkendelsesstatus="") Afventer &nbsp;
+                            span.badge= afventer
             table.table
                 thead
                     tr
+                        th(name="jobkategori") Jobkategori
+                        th(name="enhed") Enhed
                         th Dato
                         th Projekt
                         th Aktivitet
                         th Sted
                         th Delregnskab
-                        th Felt 1
-                        th Felt 2
-                        th Felt 3
-                        th Felt 4
+                        th Værdi
                         th Godkendelsesmeddelelsen
                 tbody
                     each registrering in registreringer
-                        - var godkendelsesstatus = registrering.godkendelsesstatus, cls = ""
-                        - var projekt = (registrering.projekt || "_").split("_")[1]
-                        - var aktivitet = (registrering.aktivitet || "_").split("_")[1]
-                        - var sted = (registrering.sted || "_").split("_")[1]
-                        - var delregnskab = (registrering.delregnskab || "_").split("_")[1]
+                        - var godkendelsesstatus = registrering.godkendelsesstatus || "", cls = ""
+                        - var projekt = (registrering.projekt || "_").toString().split("_")[1]
+                        - var aktivitet = (registrering.aktivitet || "_").toString().split("_")[1]
+                        - var sted = (registrering.sted || "_").toString().split("_")[1]
+                        - var delregnskab = (registrering.delregnskab || "_").toString().split("_")[1]
+                        - var jobkategori = (registrering.jobkategori || "_").toString().split("_")[1]
+                        - var enhed = (registrering.enhed || "_").toString().split("_")[1]
                         case godkendelsesstatus
                             when "godkendt"
                                 cls = "success"
                             when "afvist"
                                 cls = "danger"
-                        tr(class=cls, data-godkendelsesstatus=godkendelsesstatus)
+                        tr(class=cls,
+                            godkendelsesstatus=godkendelsesstatus,
+                            jobkategori=(registrering.jobkategori || "_").toString().split("_")[0]
+                            enhed=(registrering.enhed || "_").toString().split("_")[0])
+                            td(name="jobkategori")= jobkategori
+                            td(name="enhed")= enhed
                             td= registrering.dato
                             td= projekt
                             td= aktivitet
                             td= sted
                             td= delregnskab
                             td= registrering.felt1
-                            td= registrering.felt2
-                            td= registrering.felt3
-                            td= registrering.felt4
                             td= registrering.godkendelsesmeddelelsen
+block scripts
+    script.
+        $(function() {
+            var touch = Modernizr.touch;
+            if (!touch) {
+                $("#jobkategori, #enhed").select2({allowClear: true});
+            }
+            $("#jobkategori").on("change", function() {
+                var jobkategori = $(this).val();
+                if (jobkategori) {
+                    $("td[name='jobkategori'], th[name='jobkategori'], tbody tr").hide();
+                    $("tbody tr[jobkategori='" + jobkategori + "']").show();
+                } else {
+                    $("td[name='jobkategori'], th[name='jobkategori'], tbody tr").show();
+                }
+            });
+            $("#enhed").on("change", function() {
+                var enhed = $(this).val();
+                if (enhed) {
+                    $("td[name='enhed'], th[name='enhed'], tbody tr").hide();
+                    $("tbody tr[enhed='" + enhed + "']").show();
+                } else {
+                    $("td[name='enhed'], th[name='enhed'], tbody tr").show();
+                }
+            });
+            $("article").on("click", "ul > li > a", function() {
+                $("article li.active").removeClass("active");
+                var status = $(this).data("godkendelsesstatus");
+                var $trs = $("tbody tr");
+                $trs.hide();
+                switch (status) {
+                    case "x":
+                        $trs.show();
+                        break;
+                    case "":
+                        $("tbody tr[godkendelsesstatus='']").show();
+                        break;
+                    case "godkendt":
+                        $("tbody tr[godkendelsesstatus='godkendt']").show();
+                        break;
+                    case "afvist":
+                        $("tbody tr[godkendelsesstatus='afvist']").show();
+                        break;
+                }
+                if (status !== "x") {
+                    $(this).parent().addClass("active");
+                }
+            });
+        });

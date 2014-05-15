@@ -119,16 +119,18 @@ fn(function () {
     employeeRouter
         .get('/', employee.index.bind(employee))
         .post('/', employee.search.bind(employee))
-        .get('/new', employee.create.bind(employee))
+        .get('/new', employee.getProjects.bind(employee))
         .get('/organisations', employee.organisations.bind(employee))
         .get('/:ssn', employee.get.bind(employee))
         .get('/config/:uuid', employee.config.bind(employee));
     registrationRouter
         .get('/', registration.index.bind(registration))
         .get('/ny', registration.create.bind(registration))
-        .get('/projekt/:kode', registration.project.bind(registration))
-        .get('/aktivitet/:projekt/:kode', registration.activity.bind(registration))
+        .get('/sted/:sted', registration.forLocation.bind(registration))
         .post('/kladde', registration.saveDraft.bind(registration))
+        .get('/jobkategori/:jobkategori', registration.forJobCategory.bind(registration))
+        .get('/enhed/:enhed', registration.forOrganization.bind(registration))
+        .get('/delregnskab/:projekt/:aktivitet', registration.account.bind(registration))
         //.post('/kladde/:id', registration.deleteDraft.bind(registration))
         .post('/skabelon', registration.saveTemplate.bind(registration))
         //.post('/skabelon/:id', registration.deleteTemplate.bind(registration))

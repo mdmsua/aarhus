@@ -53,4 +53,16 @@ Enhed.prototype.one = function (kode, callback) {
     return deferred.promise.nodeify(callback);
 };
 
+Enhed.prototype.query = function (query, callback) {
+    var deferred = Q.defer();
+    this.task.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
 module.exports = Enhed;

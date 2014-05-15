@@ -79,7 +79,11 @@ MongoService.prototype.queryEntities = function (tableQuery, callback) {
         if (error) {
             callback(error);
         } else {
-            collection.find(tableQuery.query || {}, { _id: 0 }).toArray(function (error, documents) {
+            var find = collection.find(tableQuery.query || {}, { _id: 0 });
+            if (tableQuery.top) {
+                find = find.limit(tableQuery.top);
+            }
+            find.toArray(function (error, documents) {
                 if (error) {
                     callback(error);
                 } else {
@@ -95,7 +99,7 @@ MongoService.prototype.queryEntity = function (table, partitionKey, rowKey, call
         if (error) {
             callback(error);
         } else {
-            collection.findOne({ RowKey: rowKey }, { _id: 0 },
+            collection.findOne({ $and: [ { PartitionKey: partitionKey }, { RowKey: rowKey } ] }, { _id: 0 },
                 function (error, documents) {
                     if (error) {
                         callback(error);

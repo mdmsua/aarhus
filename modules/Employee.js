@@ -25,7 +25,7 @@ Employee.prototype.install = function (callback) {
                 email: (word[4] || '').trim(),
                 phone: (word[5] || '').trim(),
                 project: Number((word[6] || '').trim()),
-                activity: Number((word[7] || '').trim()),
+                byProjectActivity: Number((word[7] || '').trim()),
                 account: Number((word[8] || '').trim()),
                 location: Number((word[9] || '').trim()),
                 jobCategory: Number((word[10] || '').trim()),

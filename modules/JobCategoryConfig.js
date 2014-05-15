@@ -60,4 +60,19 @@ JobCategoryConfig.prototype.one = function (uuid, callback) {
     return deferred.promise.nodeify(callback);
 };
 
+JobCategoryConfig.prototype.top = function (count, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === 'dev' ?
+                { table: 'jobCategoryConfig', top: count } :
+                require('azure').TableQuery.select().from('jobCategoryConfig').top(count);
+    this.task.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
 module.exports = JobCategoryConfig;

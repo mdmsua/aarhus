@@ -98,9 +98,9 @@ Employee.prototype.get = function (req, res, next) {
     });
 };
 
-Employee.prototype.create = function (req, res) {
+Employee.prototype.getProjects = function (req, res) {
     this.jobCategoryConfig.all(function (error, jobCategoryConfigs) {
-        res.render("employee/create", { title: "Medarbejder", jobCategoryConfigs: jobCategoryConfigs });
+        res.render("employee/getProjects", { title: "Medarbejder", jobCategoryConfigs: jobCategoryConfigs });
     });
 };
 

@@ -16,37 +16,80 @@ block container
                 each kladde in kladder
                     a.list-group-item(href="javascript:void()", data-kladde=kladde)= kladde.oprettet
     form.form-horizontal(role="form", method="post")
-        fieldset.col-lg-6.col-md-6.col-sm-6
+        fieldset.col-lg-9.col-md-9.col-sm-9
             div.form-group
-                label.control-label.col-lg-2(for="projekt") Projekt
-                div.col-lg-10
-                    select.form-control(id="projekt", placeholder="Vælg projekt")
+                label.control-label.col-lg-3(for="dato") Dato
+                div.col-lg-2
+                    input.form-control(name="dato", type="date", placeholder="Dato")
+            div.form-group
+                label.control-label.col-lg-3(for="jobkategori") Jobkategori
+                div.col-lg-6
+                    select.form-control(id="jobkategori", placeholder="Vælg jobkategori")
                         option
-                        each projekt in projekter
+                        each jk in jobkategorier
+                            option(value=jk.uuid, selected=jk.uuid == jobkategori)= jk.stilling
+                    input(type="hidden", name="jobkategori")
+            div.form-group
+                label.control-label.col-lg-3(for="enhed") Enhed
+                div.col-lg-6
+                    select.form-control(id="enhed", placeholder="Vælg enhed", disabled=!enheder)
+                        option
+                        each e in enheder || []
+                            option(value=e.kode, selected=e.kode == enhed)= e.navn
+                    input(type="hidden", name="enhed")
+            div.form-group
+                label.control-label.col-lg-3(for="sted") Sted
+                div.col-lg-6
+                    select.form-control(id="sted", placeholder="Vælg sted", disabled=!steder)
+                        option
+                            each sted in steder || []
+                                option(value=sted.kode, selected=steder.length === 1)= sted.navn
+                    input(type="hidden", name="sted")
+            div.form-group
+                label.control-label.col-lg-3(for="projekt") Projekt
+                div.col-lg-6
+                    select.form-control(id="projekt", placeholder="Vælg projekt", disabled=!projekter)
+                        option
+                        each projekt in projekter || []
                             option(value=projekt.kode)= projekt.navn
                     input(type="hidden", name="projekt")
             div.form-group
-                label.control-label.col-lg-2(for="aktivitet") Aktivitet
-                div.col-lg-10
-                    select.form-control(id="aktivitet", placeholder="Vælg aktivitet", disabled="disabled")
+                label.control-label.col-lg-3(for="aktivitet") Aktivitet
+                div.col-lg-6
+                    select.form-control(id="aktivitet", placeholder="Vælg aktivitet", disabled=!aktiviteter)
                         option
+                            each aktivitet in aktiviteter || []
+                                option(value=aktivitet.kode, selected=aktiviteter.length === 1)= aktivitet.navn
                     input(type="hidden", name="aktivitet")
             div.form-group
-                label.control-label.col-lg-2(for="sted") Sted
-                div.col-lg-10
-                    input.form-control(id="sted", disabled)
-                    input(type="hidden", name="sted")
-            div.form-group
-                label.control-label.col-lg-2(for="delregnskab") Delregnskab
-                div.col-lg-10
-                    input.form-control(id="delregnskab", disabled)
+                label.control-label.col-lg-3(for="delregnskab") Delregnskab
+                div.col-lg-6
+                    select.form-control(id="delregnskab", placeholder="Vælg delregnskab", disabled=!delregnskaber)
+                        option
+                            each delregnskab in delregnskaber || []
+                                option(value=delregnskab.kode, selected=delregnskaber.length === 1)= delregnskab.navn
                     input(type="hidden", name="delregnskab")
             div.form-group
-                label.control-label.col-lg-2(for="kommentar") Kommentar
-                div.col-lg-10
-                    textarea.form-control(name="kommentar")
+                label.control-label.col-lg-3(for="lko") Lønkode
+                div.col-lg-6
+                    select.form-control(id="lko", placeholder="Vælg lønkode", disabled=!lkos)
+                        option
+                            each lko in lkos || []
+                                option(value=lko.kode, selected=lkos.length === 1)= lko.navn
+                    input(type="hidden", name="lko")
+            div.form-group
+                label.control-label.col-lg-3(for="felt1") Værdi
+                div.col-lg-2
+                    input.form-control(name="felt1", type="number", value="0", placeholder="Værdi")
+                    input.form-control(name="felt2", type="hidden", value="0")
+                    input.form-control(name="felt3", type="hidden", value="0")
+                    input.form-control(name="felt4", type="hidden", value="0")
+            div.form-group
+                label.control-label.col-lg-3(for="kommentar") Kommentar
+                div.col-lg-6
+                    textarea.form-control(name="kommentar", placeholder="Kommentar")
             footer.form-group
-                div.col-lg-offset-2.col-lg-10
+                div.col-lg-offset-3.col-lg-6
                     div.btn-group.btn-group-justified
                         div.btn-group
                             button.btn.btn-success(type="submit") Send
@@ -57,48 +100,29 @@ block container
                         div.btn-group
                             button.btn.btn-default#skabelonbtn(type="button") Gem som skabelon
             div.form-group#skabelonfrm
-                label.control-label.col-lg-2 Skabelon
-                div.col-lg-10
+                label.control-label.col-lg-3 Skabelon
+                div.col-lg-6
                     div.input-group
                         input.form-control(type="text", name="skabelon")
                         span.input-group-btn
                             button.btn.btn-default(type="submit", formaction="/registrering/skabelon") Gem
-        fieldset.col-lg-3.col-md-3.col-sm-3
-            div.form-group
-                label.control-label.col-lg-2(for="dato") Dato
-                div.col-lg-10
-                    input.form-control(name="dato", type="date", placeholder="Dato")
-            div.form-group
-                label.control-label.col-lg-2(for="felt1") Felt 1
-                div.col-lg-10
-                    input.form-control(name="felt1", type="number", value="0")
-            div.form-group
-                label.control-label.col-lg-2(for="felt2") Felt 2
-                div.col-lg-10
-                    input.form-control(name="felt2", type="number", value="0")
-            div.form-group
-                label.control-label.col-lg-2(for="felt3") Felt 3
-                div.col-lg-10
-                    input.form-control(name="felt3", type="number", value="0")
-            div.form-group
-                label.control-label.col-lg-2(for="felt4") Felt 4
-                div.col-lg-10
-                    input.form-control(name="felt4", type="number", value="0")
-            div.form-group
-                div.col-lg-offset-2.col-lg-10
 block scripts
     script.
         $(function () {
             var touch = Modernizr.touch,
+                $jobkategori_ = $("#jobkategori"),
+                $jobkategori = $("[name='jobkategori']"),
+                $enhed_ = $("#enhed"),
+                $enhed = $("[name='enhed']"),
                 $projekt_ = $("#projekt"),
                 $projekt = $("[name='projekt']"),
                 $aktivitet_ = $("#aktivitet"),
                 $aktivitet = $("[name='aktivitet']"),
                 $skabelonbtn = $("#skabelonbtn"),
                 $skabelonfrm = $("#skabelonfrm"),
+                $sted = $("[name='sted']"),
                 $sted_ = $("#sted"),
                 $delregnskab_ = $("#delregnskab"),
-                $sted = $("[name='sted']"),
                 $delregnskab = $("[name='delregnskab']"),
                 $kommentar = $("[name='kommentar']"),
                 $dato = $("[name='dato']"),
@@ -106,37 +130,123 @@ block scripts
                 $felt2 = $("[name='felt2']"),
                 $felt3 = $("[name='felt3']"),
                 $felt4 = $("[name='felt4']"),
-                sted = "",
-                delregnskab = "",
-                aktivitet = "",
-                projekt = "";
+                $lko_ = $("#lko"),
+                $lko = $("[name='lko']"),
+                temp = {};
             if (!touch) {
-                $projekt_.select2(); $aktivitet_.select2();
+                $projekt_.select2();
+                $aktivitet_.select2();
+                $jobkategori_.select2();
+                $enhed_.select2();
+                $lko_.select2();
+                $sted_.select2();
+                $delregnskab_.select2();
             }
             $skabelonfrm.hide();
-            $projekt_.on("change", function (obj) {
-                var value = obj.val || this.value;
-                $projekt.val(value + "_" + this.options[this.selectedIndex].text);
-                $sted.val(""); $sted_.val(""); $delregnskab.val(""); $delregnskab_.val("");
-                $aktivitet_.attr("disabled", "disabled").find("option").remove();
-                $.get("/registrering/projekt/" + value, function (aktiviteter) {
-                    aktiviteter.forEach(function (aktivitet) {
-                        $aktivitet_.append($("<option></option>").attr("value", aktivitet.id).text(aktivitet.text));
+            $jobkategori_.on("change", function () {
+                var jobkategori = $(this).val();
+                $jobkategori.val(jobkategori + "_" + this.options[this.selectedIndex].text);
+                $enhed_.attr("disabled", "disabled").find("option").remove();
+                $lko_.attr("disabled", "disabled").find("option").remove();
+                $.get("/registrering/jobkategori/" + jobkategori, function (data) {
+                    data.organizations.forEach(function (organization) {
+                        $enhed_.append($("<option></option>").attr("value", organization.id).text(organization.text));
                     });
+                    if (data.organizations.length === 1) {
+                        touch ? $enhed_.val(data.organizations[0].id) : $enhed_.select2("val", data.organizations[0].id);
+                        $enhed_.trigger("change");
+                    } else if (temp.enhed) {
+                        $enhed_.val(temp.enhed.split("_")[0]);
+                        $enhed_.trigger("change");
+                    }
+                    $enhed_.removeAttr("disabled");
+                    data.lkos.forEach(function (lko) {
+                        $lko_.append($("<option></option>").attr("value", lko.id).text(lko.text));
+                    });
+                    if (data.lkos.length === 1) {
+                        touch ? $lko_.val(data.lkos[0].id) : $lko_.select2("val", data.lkos[0].id);
+                        $lko_.trigger("change");
+                    } else if (temp.lko) {
+                        $lko_.val(temp.lko.split("_")[0]);
+                        $lko_.trigger("change");
+                    }
+                    $lko_.removeAttr("disabled");
+                });
+            });
+            $enhed_.on("change", function () {
+                var enhed = $(this).val();
+                $enhed.val(enhed + "_" + this.options[this.selectedIndex].text);
+                $sted_.attr("disabled", "disabled").find("option").remove();
+                $.get("/registrering/enhed/" + enhed, function (locations) {
+                    locations.forEach(function (location) {
+                        $sted_.append($("<option></option>").attr("value", location.id).text(location.text));
+                    });
+                    if (locations.length === 1) {
+                        touch ? $sted_.val(locations[0].id) : $sted_.select2("val", locations[0].id);
+                        $sted_.trigger("change");
+                    } else if (temp.sted) {
+                        $sted_.val(temp.sted.split("_")[0]);
+                        $sted_.trigger("change");
+                    }
+                    $sted_.removeAttr("disabled");
+                });
+            });
+            $sted_.on("change", function () {
+                var sted = $(this).val();
+                $sted.val(sted + "_" + this.options[this.selectedIndex].text);
+                $projekt_.attr("disabled", "disabled").find("option").remove();
+                $aktivitet_.attr("disabled", "disabled").find("option").remove();
+                $delregnskab_.attr("disabled", "disabled").find("option").remove();
+                $.get("/registrering/sted/" + sted, function (data) {
+                    data.projects.forEach(function (project) {
+                        $projekt_.append($("<option></option>").attr("value", project.id).text(project.text));
+                    });
+                    if (data.projects.length === 1) {
+                        touch ? $projekt_.val(data.projects[0].id) : $projekt_.select2("val", data.projects[0].id);
+                        $projekt_.trigger("change");
+                    } else if (temp.projekt) {
+                        $projekt_.val(temp.projekt.split("_")[0]);
+                        $projekt_.trigger("change");
+                    }
+                    $projekt_.removeAttr("disabled");
+                    data.activities.forEach(function (activity) {
+                        $aktivitet_.append($("<option></option>").attr("value", activity.id).text(activity.text));
+                    });
+                    if (data.activities.length === 1) {
+                        touch ? $aktivitet_.val(data.activities[0].id) : $aktivitet_.select2("val", data.activities[0].id);
+                        $aktivitet_.trigger("change");
+                    } else if (temp.aktivitet) {
+                        $aktivitet_.val(temp.aktivitet.split("_")[0]);
+                        $aktivitet_.trigger("change");
+                    }
                     $aktivitet_.removeAttr("disabled");
                 });
             });
-            $aktivitet_.on("change", function (obj) {
-                var value = obj.val || this.value;
-                $aktivitet.val(value + "_" + this.options[this.selectedIndex].text);
-                $.get("/registrering/aktivitet/" + $projekt_.val() + "/" + value, function (data) {
-                    sted = data.sted;
-                    $sted_.val(sted.split("_")[1]);
-                    $sted.val(sted);
-                    delregnskab = data.delregnskab;
-                    $delregnskab_.val(delregnskab.split("_")[1]);
-                    $delregnskab.val(delregnskab);
-                });
+            $projekt_.on("change", function () {
+                var projekt = $(this).val();
+                $projekt.val(projekt + "_" + this.options[this.selectedIndex].text);
+                $delregnskab.val("");
+                $delregnskab_.attr("disabled", "disabled").find("option").remove();
+                if ($aktivitet_.val()) {
+                    loadAccounts();
+                }
+            });
+            $aktivitet_.on("change", function () {
+                var aktivitet = $(this).val();
+                $aktivitet.val(aktivitet + "_" + this.options[this.selectedIndex].text);
+                $delregnskab.val("");
+                $delregnskab_.attr("disabled", "disabled").find("option").remove();
+                if ($projekt_.val()) {
+                    loadAccounts();
+                }
+            });
+            $delregnskab_.on("change", function () {
+                var delregnskab = $(this).val();
+                $delregnskab.val(delregnskab + "_" + this.options[this.selectedIndex].text);
+            });
+            $lko_.on("change", function () {
+                var lko = $(this).val();
+                $lko.val(lko + "_" + this.options[this.selectedIndex].text);
             });
             $skabelonbtn.on("click", function() {
                 $skabelonfrm.toggle();
@@ -145,31 +255,52 @@ block scripts
                 $("aside a.active").removeClass("active");
                 $(this).addClass("active");
                 var skabelon = $(this).data("skabelon"),
-                    kladde = $(this).data("kladde"),
-                    data = skabelon || kladde,
-                    projekt = data.projekt.split("_")[0],
-                    aktivitet = data.aktivitet.split("_")[0];
-                if (projekt) {
-                    $.get("/registrering/projekt/" + projekt, function (aktiviteter) {
-                        aktiviteter.forEach(function (aktivitet) {
-                            $aktivitet_.append($("<option></option>").attr("value", aktivitet.id).text(aktivitet.text));
+                    kladde = $(this).data("kladde");
+                temp = skabelon || kladde;
+                console.log(temp);
+                reset();
+                if (temp.jobkategori) {
+                    $jobkategori_.val(temp.jobkategori.split("_")[0]);
+                    $jobkategori_.trigger("change");
+                }
+                $dato.val(temp.dato || "");
+                $felt1.val(temp.felt1 || 0);
+                $felt2.val(temp.felt2 || 0);
+                $felt3.val(temp.felt3 || 0);
+                $felt4.val(temp.felt4 || 0);
+            });
+            if ($jobkategori_.val()) {
+                if ($enhed_.val()) {
+                    $enhed_.trigger("change");
+                    $lko_.trigger("change");
+                    var jobkategori = document.getElementById("jobkategori");
+                    $jobkategori.val($jobkategori_.val() + "_" + jobkategori.options[jobkategori.selectedIndex].text);
+                } else {
+                    $jobkategori_.trigger("change");
+                }
+            }
+            function loadAccounts() {
+                if ($aktivitet_.val() && $projekt_.val()) {
+                    $.get("/registrering/delregnskab/" + $projekt_.val() + "/" + $aktivitet_.val(), function (accounts) {
+                        accounts.forEach(function (account) {
+                            $delregnskab_.append($("<option></option>").attr("value", account.id).text(account.text));
                         });
-                        $aktivitet_.removeAttr("disabled");
-                        $aktivitet.val(data.aktivitet);
-                        touch ? $aktivitet_.val(projekt) : $aktivitet_.select2("val", aktivitet);
+                        if (accounts.length === 1) {
+                            touch ? $delregnskab_.val(accounts[0].id) : $delregnskab_.select2("val", accounts[0].id);
+                            $delregnskab_.trigger("change");
+                        } else if (temp.delregnskab) {
+                            $delregnskab_.val(temp.delregnskab.split("_")[0]);
+                            $delregnskab_.trigger("change");
+                        }
+                        $delregnskab_.removeAttr("disabled");
                     });
                 }
-                touch ? $projekt_.val(projekt) : $projekt_.select2("val", projekt);
-                $projekt.val(data.projekt);
-                $sted.val(data.sted);
-                $sted_.val(data.sted);
-                $delregnskab.val(data.delregnskab);
-                $delregnskab_.val(data.delregnskab.split("_")[1]);
-                $kommentar.val(data.kommentar);
-                $dato.val(data.dato);
-                $felt1.val(data.felt1);
-                $felt2.val(data.felt2);
-                $felt3.val(data.felt3);
-                $felt4.val(data.felt4);
-            });
+            }
+            function reset() {
+                $("input").val("");
+                $("select[id!='jobkategori']").each(function() {
+                    touch ? $(this).val("") : $(this).select2("val", "");
+                }).attr("disabled", "disabled").find("option").remove();
+                touch ? $jobkategori_.val("") : $jobkategori_.select2("val", "");
+            }
         });

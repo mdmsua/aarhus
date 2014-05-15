@@ -79,17 +79,16 @@ KodeNavn.prototype.query = function (query, callback) {
     return deferred.promise.nodeify(callback);
 };
 
-KodeNavn.prototype.names = function (codes, callback) {
+KodeNavn.prototype.ones = function (ids, callback) {
     var deferred = Q.defer(),
         promises = [],
         self = this;
-    codes.forEach(function (code) {
-        promises.push(self.one(Number(code)));
+    ids.forEach(function (id) {
+        promises.push(self.one(id));
     });
-    Q.all(promises)
-        .done(function (names) {
-            deferred.resolve(names);
-        });
+    Q.all(promises).done(function (entities) {
+        deferred.resolve(entities);
+    });
     return deferred.promise.nodeify(callback);
 };
 

@@ -1,6 +1,7 @@
 "use strict";
 
-var uuid = require("node-uuid");
+var uuid = require("node-uuid"),
+    limit = 1000;
 
 function Task(storageClient, tableName, partitionKey, rowKeyProperty, callback) {
     this.storageClient = storageClient;
@@ -38,7 +39,7 @@ Task.prototype.queryEntities = function (query, callback) {
         if (error) {
             callback(error);
         } else {
-            if (continuation.nextPartitionKey && continuation.nextRowKey) {
+            if (entities.length === limit && continuation.nextPartitionKey && continuation.nextRowKey) {
                 nextPage(entities, continuation, callback);
             } else {
                 callback(null, entities.map(function (entity) {
@@ -52,7 +53,7 @@ Task.prototype.queryEntities = function (query, callback) {
 
 Task.prototype.queryEntity = function (rowKey, callback) {
     var self = this;
-    self.storageClient.queryEntity(self.tableName, self.partitionKey, process.env.NODE_ENV === 'dev' ? rowKey : rowKey.toString(), function (error, entity) {
+    self.storageClient.queryEntity(self.tableName, self.partitionKey, rowKey.toString(), function (error, entity) {
         if (error) {
             callback(error);
         } else {
@@ -105,11 +106,12 @@ Task.prototype.batchEntities = function (items, callback) {
     var self = this,
         batches = [],
         errors = [],
-        i;
+        i,
+        j;
     while (items.length) {
         batches.push(items.splice(0, 100));
     }
-    for (i = batches.length - 1; i; i -= 1) {
+    for (i = 0, j = batches.length; i < j; i += 1) {
         (function (i) {
             var batch = batches[i],
                 length = batch.length;

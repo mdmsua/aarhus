@@ -73,7 +73,7 @@ Kombo.prototype.project = function (kode, callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Kombo.prototype.activity = function (project, activity, callback) {
+Kombo.prototype.byProjectActivity = function (project, activity, callback) {
     var deferred = Q.defer(),
         query = process.env.NODE_ENV === 'dev' ?
                 { table: 'kombo', query: { $and: [ { PartitionKey: project }, { RowKey: activity } ] } } :
@@ -82,7 +82,22 @@ Kombo.prototype.activity = function (project, activity, callback) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(entities[0]);
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Kombo.prototype.byLocation = function (location, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === 'dev' ?
+                { table: 'kombo', query: { sted: location.toString() } } :
+                require('azure').TableQuery.select().from('kombo').where("sted eq ?", location);
+    this.komboTask.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
         }
     });
     return deferred.promise.nodeify(callback);
