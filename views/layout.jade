@@ -2,10 +2,11 @@ doctype html
 html(lang="dk")
     head
         title= title
-        link(href='/bootstrap.min.css', rel='stylesheet')
-        link(href='/bootstrap-custom.css', rel='stylesheet')
-        link(href='/select2/select2.css', rel='stylesheet')
-        link(href='/select2-bootstrap-css/select2-bootstrap.css', rel='stylesheet')
+        link(rel="icon", href="/favicon.ico")
+        link(rel="stylesheet", href="/bootstrap.min.css")
+        link(rel="stylesheet", href="/bootstrap-custom.css")
+        link(rel="stylesheet", href="/select2/select2.css")
+        link(rel="stylesheet", href="/select2-bootstrap-css/select2-bootstrap.css")
         style.
             .container {
                 width: 98%;
@@ -25,14 +26,15 @@ html(lang="dk")
                         - routes.push({ name: "Jobkategori", href: "/jobkategori" })
                         - routes.push({ name: "Medarbejder", href: "/medarbejder" })
                         - routes.push({ name: "Registrering", href: "/registrering" })
+                        - routes.push({ name: "Sekretær", href: "/godkende" })
                         ul.nav.navbar-nav
                             each route in routes
-                                li(class=title == route.name ? 'active' : '')
+                                li(class=title == route.name ? "active" : "")
                                     a(href=route.href) #{route.name}
         section.container
             block container
-        script(src='/modernizr/modernizr.js')
-        script(src='/jquery/dist/jquery.min.js')
-        script(src='/bootstrap/dist/js/bootstrap.min.js')
-        script(src='/select2/select2.min.js')
+        script(src="/modernizr/modernizr.js")
+        script(src="/jquery/dist/jquery.min.js")
+        script(src="/bootstrap/dist/js/bootstrap.min.js")
+        script(src="/select2/select2.min.js")
         block scripts

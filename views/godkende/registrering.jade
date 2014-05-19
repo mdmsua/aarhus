@@ -1,0 +1,68 @@
+extends ../layout
+block container
+    article.col-lg-6
+        header.page-header
+            h2 Registrering
+        form.form-horizontal(role="form", method="post")
+            input(type="hidden", name="ids", value=registrering.id)
+            div.form-group
+                label.col-lg-2.control-label Enhed
+                div.col-lg-10
+                    p.form-control-static= (registrering.enhed || "_").toString().split("_")[1]
+            div.form-group
+                label.col-lg-2.control-label Medarbejder
+                div.col-lg-10
+                    p.form-control-static= (registrering.medarbejder || "_").toString().split("_")[1]
+            div.form-group
+                label.col-lg-2.control-label Dato
+                div.col-lg-10
+                    p.form-control-static= registrering.dato
+            div.form-group
+                label.col-lg-2.control-label Projekt
+                div.col-lg-10
+                    p.form-control-static= (registrering.projekt || "_").toString().split("_")[1]
+            div.form-group
+                label.col-lg-2.control-label Aktivitet
+                div.col-lg-10
+                    p.form-control-static= (registrering.aktivitet || "_").toString().split("_")[1]
+            div.form-group
+                label.col-lg-2.control-label Sted
+                div.col-lg-10
+                    p.form-control-static= (registrering.sted || "_").toString().split("_")[1]
+            div.form-group
+                label.col-lg-2.control-label Delregnskab
+                div.col-lg-10
+                    p.form-control-static= (registrering.delregnskab || "_").toString().split("_")[1]
+            div.form-group
+                label.col-lg-2.control-label Værdi
+                div.col-lg-10
+                    p.form-control-static= registrering.felt1
+            div.form-group
+                label.col-lg-2.control-label Kommentar
+                div.col-lg-10
+                    textarea.form-control(name="godkendelsesmeddelelsen")
+            footer.form-group
+                div.col-lg-10.col-lg-offset-2
+                    div.btn-group.btn-group-justified
+                        div.btn-group
+                            button.btn.btn-success(type="submit", formaction="/godkende/godkende")
+                                span.glyphicon.glyphicon-ok
+                                |&nbsp;Godkende
+                        div.btn-group
+                            button.btn.btn-danger(type="submit", formaction="/godkende/afvise")
+                                span.glyphicon.glyphicon-remove
+                                |&nbsp;Afvise
+                        div.btn-group
+                            button.btn.btn-default(type="button", onclick="javascript:history.back()")
+                                span.glyphicon.glyphicon-arrow-left
+                                |&nbsp;Annuller
+
+    if registrering.logs && registrering.logs.length
+        article.col-lg-6
+            header.page-header
+                h2 Godkendelsesmeddelelsen
+            section.list-group
+                each log in registrering.logs || []
+                    section.list-group-item(class=log.type ? "list-group-item-" + log.type : "")
+                        h4.list-group-item-heading= log.what + " af " + log.name + " på " + log.when
+                        p.list-group-item-text= log.text

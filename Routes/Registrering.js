@@ -39,12 +39,6 @@ Registrering.prototype.create = function (req,  res, next) {
         if (organisations) {
             model.enheder = organisations;
         }
-//        if (kombo) {
-//            model.projekter = kombo.projects;
-//            model.aktiviteter = kombo.activities;
-//            model.delregnskaber = kombo.accounts;
-//            model.steder = util.isArray(kombo.location) ? kombo.location : [kombo.location];
-//        }
         res.render("registrering/ny", model);
     }, function (error) {
         next(error);
@@ -114,11 +108,27 @@ Registrering.prototype.deleteTemplate = function (req, res, next) {
 
 Registrering.prototype.send = function (req, res, next) {
     delete req.body.skabelon;
-    this.registration.post(req.body, function (error) {
+    var self = this;
+    this.registration.getEmployees(function (error, employees) {
         if (error) {
             next(error);
         } else {
-            res.redirect("/registrering");
+            var employee = employees[new Date().getDay()];
+            req.body.medarbejder = util.format("%s_%s %s", employee.ssn, employee.firstName, employee.lastName);
+            req.body.logs = req.body.logs || [];
+            req.body.logs.push({
+                when: new Date(),
+                name: util.format("%s %s", employee.firstName, employee.lastName),
+                what: "Oprettet",
+                text: req.body.kommentar
+            });
+            self.registration.post(req.body, function (error) {
+                if (error) {
+                    next(error);
+                } else {
+                    res.redirect("/registrering");
+                }
+            });
         }
     });
 };

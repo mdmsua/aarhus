@@ -12,6 +12,7 @@ var util = require("util"),
     Delregnskab = require("../modules/Delregnskab"),
     JobCategoryConfig = require("../modules/JobCategoryConfig"),
     Enhed = require("../modules/Enhed"),
+    Employee = require("../modules/Employee"),
     Lko = require("../modules/Lko"),
     Task = require("../modules/Task"),
     table = "registrering";
@@ -26,12 +27,27 @@ function Registration(tableService, queueService) {
     this.registrering = new Task(tableService, table);
     this.jobCategoryConfig = new JobCategoryConfig(tableService);
     this.enhed = new Enhed(tableService);
+    this.employee = new Employee(tableService);
     this.lko = new Lko(tableService);
 }
 
 Registration.prototype.peek = function (callback) {
     var deferred = Q.defer();
     this.queue.peek(10, function (error, messages) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(messages.map(function (message) {
+                return JSON.parse(message.messagetext);
+            }));
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.get = function (callback) {
+    var deferred = Q.defer();
+    this.queue.get(null, function (error, messages) {
         if (error) {
             deferred.reject(error);
         } else {
@@ -357,6 +373,38 @@ Registration.prototype.getAccounts = function (project, activity, callback) {
                     deferred.resolve(accounts);
                 }
             });
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.getEmployees = function (callback) {
+    var deferred = Q.defer();
+    this.employee.all(function (error, employees) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(employees);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.update = function (message, callback) {
+    var deferred = Q.defer(),
+        messageid = message.id,
+        popreceipt = message.popreceipt;
+    delete message.id;
+    delete message.popreceipt;
+    this.queue.update({
+        messageid: messageid,
+        popreceipt: popreceipt,
+        messagetext: JSON.stringify(message)
+    }, 1, function (error, message) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(message);
         }
     });
     return deferred.promise.nodeify(callback);

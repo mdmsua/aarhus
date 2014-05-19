@@ -63,8 +63,8 @@ Queue.prototype.update = function (queueMessage, visibilityTimeout, callback) {
 
 Queue.prototype.get = function (number, callback) {
     var d = Q.defer(),
-        n = number ? number > 32 ? 32 : number : 1;
-    this.queue.getMessages(this.name, { numofmessages: n }, function (error, queueMessages) {
+        n = number ? number > 32 ? 32 : number : 32;
+    this.queue.getMessages(this.name, { numofmessages: n, visibilitytimeout: 1 }, function (error, queueMessages) {
         if (error) {
             d.reject(error);
         } else {

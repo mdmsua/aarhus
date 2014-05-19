@@ -1,0 +1,125 @@
+extends ../layout
+block container
+    section.row
+        div.form-group.col-lg-6
+            select.form-control(id="enhed", data-placeholder="Vælg enhed", style="width:100%")
+                option
+                    each enhed in enheder
+                        option(value=enhed.kode)= enhed.navn
+        div.form-group.col-lg-6
+            select.form-control(id="medarbejder", data-placeholder="Vælg medarbejder", style="width:100%")
+                option
+                    each medarbejder in medarbejdere
+                        option(value=medarbejder.ssn)= medarbejder.navn
+    if registreringer && registreringer.length
+        section.row
+            table.table
+                caption
+                    h1#count= registreringer.length
+                        small &nbsp;Registreringer
+                thead
+                    tr
+                        th
+                            input#alle(type="checkbox")
+                        th(name="enhed") Enhed
+                        th(name="medarbejder") Medarbejder
+                        th Dato
+                        th Projekt
+                        th Aktivitet
+                        th Sted
+                        th Delregnskab
+                        th Værdi
+                        th Godkendelsesmeddelelsen
+                        th
+                tbody
+                    each registrering in registreringer
+                        - var godkendelsesstatus = registrering.godkendelsesstatus || ""
+                        - var cls = godkendelsesstatus === "godkendt" ? "success" : godkendelsesstatus === "afvist" ? "danger" : ""
+                        - var projekt = (registrering.projekt || "_").toString().split("_")[1]
+                        - var aktivitet = (registrering.aktivitet || "_").toString().split("_")[1]
+                        - var sted = (registrering.sted || "_").toString().split("_")[1]
+                        - var delregnskab = (registrering.delregnskab || "_").toString().split("_")[1]
+                        - var enhed = (registrering.enhed || "_").toString().split("_")[1]
+                        - var medarbejder = (registrering.medarbejder || "_").toString().split("_")[1]
+                        tr(class=cls,
+                            godkendelsesstatus=godkendelsesstatus,
+                            medarbejder=(registrering.medarbejder || "_").toString().split("_")[0]
+                            enhed=(registrering.enhed || "_").toString().split("_")[0])
+                            td
+                                input(type="checkbox", data-id=registrering.id)
+                            td(name="enhed")= enhed
+                            td(name="medarbejder")= medarbejder
+                            td= registrering.dato
+                            td= projekt
+                            td= aktivitet
+                            td= sted
+                            td= delregnskab
+                            td= registrering.felt1
+                            td= registrering.godkendelsesmeddelelsen
+                            td
+                                a(href="/godkende/" + registrering.id)
+                                    span.glyphicon.glyphicon-arrow-right
+                tfoot
+                    tr
+                        td
+                        td(colspan="10")
+                            form(method="post")
+                                div.input-group.col-lg-12
+                                    span.input-group-btn
+                                        button.btn.btn-success(type="submit", formaction="/godkende/godkende")
+                                            span.glyphicon.glyphicon-ok
+                                            |&nbsp;Godkende
+                                    input.form-control(type="text", name="godkendelsesmeddelelsen")
+                                    input#ids(type="hidden", name="ids")
+                                    span.input-group-btn
+                                        button.btn.btn-danger(type="submit", formaction="/godkende/afvise")
+                                            span.glyphicon.glyphicon-remove
+                                            |&nbsp;Afvise
+block scripts
+    script.
+        $(function() {
+            var touch = Modernizr.touch;
+            if (!touch) {
+                $("#enhed, #medarbejder").select2({allowClear: true});
+            }
+            $("#enhed").on("change", function() {
+                var enhed = $(this).val();
+                if (enhed) {
+                    $("td[name='enhed'], th[name='enhed'], tbody tr").hide();
+                    var $trEnheder = $("tbody tr[enhed='" + enhed + "']");
+                    $trEnheder.show();
+                    $("#count").html($trEnheder.length + "&nbsp;<small>Registreringer</small>");
+                } else {
+                    $("td[name='enhed'], th[name='enhed'], tbody tr").show();
+                    $("#count").html($("tbody tr").length + "&nbsp;<small>Registreringer</small>");
+                }
+            });
+            $("#medarbejder").on("change", function() {
+                var medarbejder = $(this).val();
+                if (medarbejder) {
+                    $("td[name='medarbejder'], th[name='medarbejder'], tbody tr").hide();
+                    $trMedarbejder = $("tbody tr[medarbejder='" + medarbejder + "']");
+                    $trMedarbejder.show();
+                    $("#count").html($trMedarbejder.length + "&nbsp;<small>Registreringer</small>");
+                } else {
+                    $("td[name='medarbejder'], th[name='medarbejder'], tbody tr").show();
+                    $("#count").html($("tbody tr").length + "&nbsp;<small>Registreringer</small>");
+                }
+            });
+            $("#alle").click(function() {
+                var ids = [];
+                $("tbody input[type='checkbox']").prop("checked", $(this).is(":checked")).each(function () {
+                    if ($(this).is(":checked")) {
+                        ids.push($(this).data("id"));
+                    }
+                });
+                $("#ids").val(ids.join());
+            });
+            $("tbody").on("click", "input[type='checkbox']", function() {
+                var ids = [];
+                $("tbody input[type='checkbox']:checked").each(function () {
+                    ids.push($(this).data("id"));
+                });
+                $("#ids").val(ids.join());
+            });
+        });

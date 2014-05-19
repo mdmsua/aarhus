@@ -47,18 +47,14 @@ block container
                         th Godkendelsesmeddelelsen
                 tbody
                     each registrering in registreringer
-                        - var godkendelsesstatus = registrering.godkendelsesstatus || "", cls = ""
+                        - var godkendelsesstatus = registrering.godkendelsesstatus || ""
+                        - var cls = godkendelsesstatus === "godkendt" ? "success" : godkendelsesstatus === "afvist" ? "danger" : ""
                         - var projekt = (registrering.projekt || "_").toString().split("_")[1]
                         - var aktivitet = (registrering.aktivitet || "_").toString().split("_")[1]
                         - var sted = (registrering.sted || "_").toString().split("_")[1]
                         - var delregnskab = (registrering.delregnskab || "_").toString().split("_")[1]
                         - var jobkategori = (registrering.jobkategori || "_").toString().split("_")[1]
                         - var enhed = (registrering.enhed || "_").toString().split("_")[1]
-                        case godkendelsesstatus
-                            when "godkendt"
-                                cls = "success"
-                            when "afvist"
-                                cls = "danger"
                         tr(class=cls,
                             godkendelsesstatus=godkendelsesstatus,
                             jobkategori=(registrering.jobkategori || "_").toString().split("_")[0]
