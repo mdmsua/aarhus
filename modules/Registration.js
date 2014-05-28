@@ -4,7 +4,6 @@ var util = require("util"),
     Q = require("Q"),
     _ = require("underscore"),
     moment = require("moment"),
-    Queue = require("../modules/Queue"),
     Projekt = require("../modules/Projekt"),
     Aktivitet = require("../modules/Aktivitet"),
     Kombo = require("../modules/Kombo"),
@@ -12,18 +11,17 @@ var util = require("util"),
     Delregnskab = require("../modules/Delregnskab"),
     JobCategoryConfig = require("../modules/JobCategoryConfig"),
     Enhed = require("../modules/Enhed"),
-    Employee = require("../modules/Employee"),
+    Employee = require("../modules/Medarbejder"),
     Lko = require("../modules/Lko"),
     Task = require("../modules/Task"),
     table = "registrering";
 
-function Registration(tableService, queueService) {
+function Registration(tableService) {
     this.projekt = new Projekt(tableService);
     this.aktivitet = new Aktivitet(tableService);
     this.kombo = new Kombo(tableService);
     this.sted = new Sted(tableService);
     this.delregnskab = new Delregnskab(tableService);
-    this.queue = new Queue(queueService, "registrering");
     this.registrering = new Task(tableService, table);
     this.jobCategoryConfig = new JobCategoryConfig(tableService);
     this.enhed = new Enhed(tableService);
@@ -31,37 +29,26 @@ function Registration(tableService, queueService) {
     this.lko = new Lko(tableService);
 }
 
-Registration.prototype.peek = function (callback) {
-    var deferred = Q.defer();
-    this.queue.peek(10, function (error, messages) {
+Registration.prototype.get = function (lock, user, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === "dev" ?
+                { table: table, query: { $and: [{ PartitionKey: table }, { lock: lock }, { medarbejderkode: user.ssn }] } } :
+                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and lock eq ? and medarbejderkode eq ?", table, lock, user.ssn);
+    this.registrering.queryEntities(query, function (error, registrations) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(messages.map(function (message) {
-                return JSON.parse(message.messagetext);
-            }));
+            deferred.resolve(registrations);
         }
     });
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.get = function (callback) {
+Registration.prototype.create = function (registration, callback) {
     var deferred = Q.defer();
-    this.queue.get(null, function (error, messages) {
-        if (error) {
-            deferred.reject(error);
-        } else {
-            deferred.resolve(messages.map(function (message) {
-                return JSON.parse(message.messagetext);
-            }));
-        }
-    });
-    return deferred.promise.nodeify(callback);
-};
-
-Registration.prototype.post = function (registration, callback) {
-    var deferred = Q.defer();
-    this.queue.enqueue(JSON.stringify(registration), function (error, message) {
+    registration.PartitionKey = table;
+    registration.RowKey = util.format("%d-%s", new Date().getTime(), registration.medarbejder.split("_")[0]);
+    this.registrering.insertEntity(registration, function (error, message) {
         if (error) {
             deferred.reject(error);
         } else {
@@ -166,11 +153,11 @@ Registration.prototype.stuff = function (project, activity, callback) {
     });
 };
 
-Registration.prototype.getDrafts = function (callback) {
+Registration.prototype.getDrafts = function (user, callback) {
     var deferred = Q.defer(),
         query = process.env.NODE_ENV === "dev" ?
-                { table: table, query: { PartitionKey: "kladde" }} :
-                require("azure").TableQuery.select().from(table).where("PartitionKey eq ?", "kladde");
+                { table: table, query: { $and: [{ PartitionKey: "kladde" }, { medarbejderkode: user.ssn }] } } :
+                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and medarbejderkode eq ?", "kladde", user.ssn);
     this.registrering.queryEntities(query, function (error, drafts) {
         if (error) {
             deferred.reject(error);
@@ -232,11 +219,11 @@ Registration.prototype.deleteDraft = function (id, callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.getTemplates = function (callback) {
+Registration.prototype.getTemplates = function (user, callback) {
     var deferred = Q.defer(),
         query = process.env.NODE_ENV === "dev" ?
-                { table: table, query: { PartitionKey: "skabelon" }} :
-                require("azure").TableQuery.select().from(table).where("PartitionKey eq ?", "skabelon");
+                { table: table, query: { $and: [{ PartitionKey: "skabelon" }, { medarbejderkode: user.ssn }] }} :
+                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and medarbejderkode eq ?", "skabelon", user.ssn);
     this.registrering.queryEntities(query, function (error, templates) {
         if (error) {
             deferred.reject(error);
@@ -298,9 +285,9 @@ Registration.prototype.deleteTemplate = function (id, callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.getJobCategories = function (callback) {
+Registration.prototype.getJobCategories = function (user, callback) {
     var deferred = Q.defer();
-    this.jobCategoryConfig.top(4, function (error, jobCategories) {
+    this.jobCategoryConfig.getByJobPosition(user.jobCategory, function (error, jobCategories) {
         if (error) {
             deferred.reject(error);
         } else {
@@ -322,15 +309,9 @@ Registration.prototype.getLkos = function (callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.getOrganisations = function (callback) {
-    var deferred = Q.defer(),
-        query = process.env.NODE_ENV === "dev" ?
-                { table: "enhed", query: { $or: [
-                    { location: 1911 },
-                    { location: 1191 }
-                ]} } :
-                require("azure").TableQuery.select().from("enhed").where("location eq ? or location eq ?", 1911, 1191);
-    this.enhed.query(query, function (error, organisations) {
+Registration.prototype.getOrganisations = function (user, callback) {
+    var deferred = Q.defer();
+    this.enhed.findByLocation(user.location, function (error, organisations) {
         if (error) {
             deferred.reject(error);
         } else {

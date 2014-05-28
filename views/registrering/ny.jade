@@ -4,17 +4,15 @@ block container
         article.panel.panel-default
             header.panel-heading
                 | Skabeloner
-                span.pull-right.badge= skabeloner.length
-            div.list-group
-                each skabelon in skabeloner
-                    a.list-group-item(href="javascript:void()", data-skabelon=skabelon)= skabelon.RowKey
+                span.pull-right.badge(data-bind="text: skabeloner.length")
+            div.list-group(data-bind="foreach: skabeloner")
+                a.list-group-item(href="javascript:void()", data-bind="text: RowKey")
         article.panel.panel-default
             header.panel-heading
                 | Kladder
-                span.pull-right.badge= kladder.length
-            div.list-group
-                each kladde in kladder
-                    a.list-group-item(href="javascript:void()", data-kladde=kladde)= kladde.oprettet
+                span.pull-right.badge(data-bind="text: kladder.length")
+            div.list-group(data-bind="foreach: kladder")
+                a.list-group-item(href="javascript:void()", data-bind="text: kladde.oprettet")
     form.form-horizontal(role="form", method="post")
         fieldset.col-lg-9.col-md-9.col-sm-9
             div.form-group
@@ -24,59 +22,43 @@ block container
             div.form-group
                 label.control-label.col-lg-3(for="jobkategori") Jobkategori
                 div.col-lg-6
-                    select.form-control(id="jobkategori", placeholder="Vælg jobkategori")
+                    select.form-control(name="jobkategorikode", value=jobkategori, placeholder="Vælg jobkategori", data-bind="value: jobkategorikode, options: jobkategorier, optionsText: 'stilling', optionsValue: 'uuid'")
                         option
-                        each jk in jobkategorier
-                            option(value=jk.uuid, selected=jk.uuid == jobkategori)= jk.stilling
-                    input(type="hidden", name="jobkategori")
+                    input(type="hidden", name="jobkategorinavn", data-bind="value: jobkategorinavn", value=jobkategorinavn)
             div.form-group
                 label.control-label.col-lg-3(for="enhed") Enhed
                 div.col-lg-6
-                    select.form-control(id="enhed", placeholder="Vælg enhed", disabled=!enheder)
+                    select.form-control(name="enhedkode", placeholder="Vælg enhed", value=enhedkode, data-bind="value: enhedkode, disabled: !enheder.length, options: enheder, optionsText: 'navn', optionsValue: 'kode'")
                         option
-                        each e in enheder || []
-                            option(value=e.kode, selected=e.kode == enhed)= e.navn
-                    input(type="hidden", name="enhed")
-            div.form-group
-                label.control-label.col-lg-3(for="sted") Sted
-                div.col-lg-6
-                    select.form-control(id="sted", placeholder="Vælg sted", disabled=!steder)
-                        option
-                            each sted in steder || []
-                                option(value=sted.kode, selected=steder.length === 1)= sted.navn
-                    input(type="hidden", name="sted")
+                    input(type="hidden", name="enhednavn", data-bind="value: enhednavn", value=enhednavn)
             div.form-group
                 label.control-label.col-lg-3(for="projekt") Projekt
                 div.col-lg-6
-                    select.form-control(id="projekt", placeholder="Vælg projekt", disabled=!projekter)
+                    select.form-control(name="projektkode", placeholder="Vælg projekt", disabled=!projekter, data-bind="value: projektkode, disabled: !projekter.length, options: projekter, optionsText: 'navn', optionsValue: 'kode'")
                         option
-                        each projekt in projekter || []
-                            option(value=projekt.kode)= projekt.navn
-                    input(type="hidden", name="projekt")
+                    input(type="hidden", name="projektnavn", data-bind="value: projektnavn")
             div.form-group
                 label.control-label.col-lg-3(for="aktivitet") Aktivitet
                 div.col-lg-6
-                    select.form-control(id="aktivitet", placeholder="Vælg aktivitet", disabled=!aktiviteter)
+                    select.form-control(name="aktivitetkode", placeholder="Vælg aktivitet", disabled=!aktiviteter, data-bind="value: aktivitetkode, disabled; !aktiviteter.length, options: aktiviteter, optionsText: 'navn', optionsValue: 'kode'")
                         option
-                            each aktivitet in aktiviteter || []
-                                option(value=aktivitet.kode, selected=aktiviteter.length === 1)= aktivitet.navn
-                    input(type="hidden", name="aktivitet")
-            div.form-group
-                label.control-label.col-lg-3(for="delregnskab") Delregnskab
-                div.col-lg-6
-                    select.form-control(id="delregnskab", placeholder="Vælg delregnskab", disabled=!delregnskaber)
-                        option
-                            each delregnskab in delregnskaber || []
-                                option(value=delregnskab.kode, selected=delregnskaber.length === 1)= delregnskab.navn
-                    input(type="hidden", name="delregnskab")
+                    input(type="hidden", name="aktivitetnavn", data-bind="value: aktivitetnavn")
             div.form-group
                 label.control-label.col-lg-3(for="lko") Lønkode
                 div.col-lg-6
-                    select.form-control(id="lko", placeholder="Vælg lønkode", disabled=!lkos)
+                    select.form-control(name="lkokode", placeholder="Vælg lønkode", disabled=!lkos, data-bind="value: lkokode, disabled: !lkos.length, options: lkos, optionsText: 'navn', optionsValue: 'kode'")
                         option
-                            each lko in lkos || []
-                                option(value=lko.kode, selected=lkos.length === 1)= lko.navn
-                    input(type="hidden", name="lko")
+                    input(type="hidden", name="lkonavn", data-bind="value: lkonavn")
+            div.form-group
+                label.control-label.col-lg-3(for="sted") Sted
+                div.col-lg-6
+                    input.form-control(name="stedkode", placeholder="Sted", disabled, data-bind="value: stedkode")
+                    input(type="hidden", name="stednavn", data-bind="value: stednavn")
+            div.form-group
+                label.control-label.col-lg-3(for="delregnskabkode") Delregnskab
+                div.col-lg-6
+                    input.form-control(name="delregnskabkode", placeholder="Delregnskab", disabled, data-bind="value: delregnskabkode")
+                    input(type="hidden", name="delregnskabnavn", data-bind="value: delregnskabnavn")
             div.form-group
                 label.control-label.col-lg-3(for="felt1") Værdi
                 div.col-lg-2
@@ -110,39 +92,45 @@ block scripts
     script.
         $(function () {
             var touch = Modernizr.touch,
-                $jobkategori_ = $("#jobkategori"),
-                $jobkategori = $("[name='jobkategori']"),
-                $enhed_ = $("#enhed"),
-                $enhed = $("[name='enhed']"),
-                $projekt_ = $("#projekt"),
-                $projekt = $("[name='projekt']"),
-                $aktivitet_ = $("#aktivitet"),
-                $aktivitet = $("[name='aktivitet']"),
-                $skabelonbtn = $("#skabelonbtn"),
-                $skabelonfrm = $("#skabelonfrm"),
-                $sted = $("[name='sted']"),
-                $sted_ = $("#sted"),
-                $delregnskab_ = $("#delregnskab"),
-                $delregnskab = $("[name='delregnskab']"),
-                $kommentar = $("[name='kommentar']"),
-                $dato = $("[name='dato']"),
-                $felt1 = $("[name='felt1']"),
-                $felt2 = $("[name='felt2']"),
-                $felt3 = $("[name='felt3']"),
-                $felt4 = $("[name='felt4']"),
-                $lko_ = $("#lko"),
-                $lko = $("[name='lko']"),
-                temp = {};
+                temp = {},
+                vm = {
+                    jobkategorier: ko.observableArray([]),
+                    jobkategorikode: ko.observable(),
+                    jobkategorinavn: ko.observable(),
+                    enheder: ko.observableArray([]),
+                    enhedkode: ko.observable(),
+                    enhednavn: ko.observable(),
+                    projekter: ko.observableArray([]),
+                    projektkode: ko.observable(),
+                    projektnavn: ko.observable(),
+                    aktiviteter: ko.observableArray([]),
+                    aktivitetkode: ko.observable(),
+                    aktivitetnavn: ko.observable(),
+                    lkos: ko.observableArray([]),
+                    lkokode: ko.observable(),
+                    lkonavn: ko.observable(),
+                    skabeloner: ko.observableArray([]),
+                    kladder: ko.observableArray([]),
+                    stedkode: ko.observable(),
+                    stednavn: ko.observable(),
+                    delregnskabkode: ko.observable(),
+                    delregnskabnavn: ko.observable()
+                };
+                vm.jobkategorikode.subscribe(function (jobkategori) {
+                    $.get("/registrering/jobkategori/" + jobkategori, function (organizations) {
+                        vm.enheder(organizations);
+                    });
+                });
+                vm.enhedkode.subscribe(function (enhed) {
+                    console.log(enhed);
+                });
+            ko.applyBindings(vm);
             if (!touch) {
-                $projekt_.select2();
-                $aktivitet_.select2();
-                $jobkategori_.select2();
-                $enhed_.select2();
-                $lko_.select2();
-                $sted_.select2();
-                $delregnskab_.select2();
+                $("select.form-control").select2({ allowClear: true });
             }
-            $skabelonfrm.hide();
+            $.get("/registrering/cpr", function (jobCategories) {
+                vm.jobkategorier(jobCategories);
+            });
             $jobkategori_.on("change", function () {
                 var jobkategori = $(this).val();
                 $jobkategori.val(jobkategori + "_" + this.options[this.selectedIndex].text);

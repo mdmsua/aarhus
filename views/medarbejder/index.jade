@@ -9,7 +9,7 @@ block container
                         span.input-group-btn
                             button.btn.btn-primary(type="submit")
                                 span.glyphicon.glyphicon-search &nbsp;Søg
-                            a.btn.btn-success(type="button", href="/medarbejder/new")
+                            a.btn.btn-success(type="button", href="/medarbejder/ny")
                                 span.glyphicon.glyphicon-plus &nbsp;Opret
     if employees
         article.row
@@ -19,5 +19,5 @@ block container
             ul.list-unstyled
                 - each employee in employees
                     li
-                        - var href = "/medarbejder/" + employee.ssn
+                        - var href = "/medarbejder/" + employee.cpr
                         a.btn.btn-link.btn-lg(href=href)= employee.name

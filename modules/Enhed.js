@@ -2,10 +2,11 @@
 
 var Q = require('Q'),
     Import = require("../modules/Import"),
-    Task = require("../modules/Task");
+    Task = require("../modules/Task"),
+    table = "enhed";
 
 function Enhed(tableService) {
-    this.task = new Task(tableService, "enhed", "enhed", "kode", function () { });
+    this.task = new Task(tableService, table, table, "kode", function () { });
 }
 
 Enhed.prototype.install = function (callback) {
@@ -30,7 +31,9 @@ Enhed.prototype.install = function (callback) {
 
 Enhed.prototype.all = function (callback) {
     var deferred = Q.defer(),
-        query = process.env.NODE_ENV === 'dev' ? { table: 'enhed' } : require('azure').TableQuery.select().from('enhed');
+        query = process.env.NODE_ENV === 'dev' ?
+                { table: table, query: { location: { $ne: null } } } :
+                require('azure').TableQuery.select().from(table).where("location ne ?", null);
     this.task.queryEntities(query, function (error, entities) {
         if (error) {
             deferred.reject(error);
@@ -53,8 +56,36 @@ Enhed.prototype.one = function (kode, callback) {
     return deferred.promise.nodeify(callback);
 };
 
+Enhed.prototype.ones = function (ids, callback) {
+    var deferred = Q.defer(),
+        promises = [],
+        self = this;
+    ids.forEach(function (id) {
+        promises.push(self.one(id.toString()));
+    });
+    Q.all(promises).done(function (entities) {
+        deferred.resolve(entities);
+    });
+    return deferred.promise.nodeify(callback);
+};
+
 Enhed.prototype.query = function (query, callback) {
     var deferred = Q.defer();
+    this.task.queryEntities(query, function (error, entities) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(entities);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Enhed.prototype.findByLocation = function (location, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === "dev" ?
+                { table: table, query: { location: location }} :
+                require("azure").TableQuery.select().from(table).where("location eq ?", location);
     this.task.queryEntities(query, function (error, entities) {
         if (error) {
             deferred.reject(error);

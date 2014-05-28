@@ -26,14 +26,14 @@ Queue.prototype.enqueue = function (message, callback) {
 
 Queue.prototype.dequeue = function (queueMessage, callback) {
     var d = Q.defer();
-    this.queue.deleteMessage(this.name, queueMessage.messageid, queueMessage.popreceipt, function (error, success) {
+    this.queue.deleteMessage(this.name, queueMessage.id || queueMessage.messageid, queueMessage.popreceipt, function (error, success) {
         if (error) {
             d.reject(error);
         } else {
             d.resolve(success);
         }
     });
-    return d.nodeify(callback);
+    return d.promise.nodeify(callback);
 };
 
 Queue.prototype.peek = function (number, callback) {

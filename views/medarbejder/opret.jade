@@ -1,0 +1,150 @@
+extends ../layout
+block container
+    form(role="form", method="post")
+        legend.btn-toolbar
+            button.btn.btn-link(type="submit")
+                span.glyphicon.glyphicon-floppy-disk &nbsp;Gem
+            button.btn.btn-link(type="reset")
+                span.glyphicon.glyphicon-remove &nbsp;Annuller
+        fieldset.col-lg-6
+            div.col-lg-6.form-group
+                label.control-label(for="firstName") Fornavn
+                input.form-control(type="text", name="fornavn", placeholder="Fornavn", required="required", value=medarbejder.fornavn)
+            div.col-lg-6.form-group
+                label.control-label(for="lastName") Efternavn
+                input.form-control(type="text", name="efternavn", placeholder="Efternavn", required="required", value=medarbejder.efternavn)
+            div.col-lg-3.form-group
+                label.control-label(for="ssn") CPR-nummer
+                input.form-control(type="text", name="cpr", placeholder="CPR-nummer", required="required", value=medarbejder.cpr)
+            div.col-lg-3.form-group
+                label.control-label(for="salaryGroupNumber") Løngruppenummer
+                input.form-control(type="text", name="lgn", maxlength="3" placeholder="Løngruppenummer", required="required", value=medarbejder.lgn)
+            div.col-lg-3.form-group
+                label.control-label(for="auid") Initialer
+                input.form-control(type="text", name="initialer", min="0", placeholder="Initialer", required="required", value=medarbejder.initialer)
+            div.col-lg-3.form-group
+                label.control-label(for="date") Fra dato
+                input.form-control(type="date", name="dato", placeholder="Fra dato", required="required", value=medarbejder.dato)
+            div.col-lg-4.form-group
+                label.control-label(for="primaryEmail") Primær e-mail
+                input.form-control(type="email", name="email", placeholder="Primær e-mail", value=medarbejder.email)
+            div.col-lg-4.form-group
+                label.control-label Privat e-mail
+                input.form-control(type="email", placeholder="Privat e-mail")
+            div.col-lg-4.form-group
+                label.control-label(for="telephoneNumber") Telefonnummer
+                input.form-control(type="tel", name="telefon", placeholder="Telefonnummer", value=medarbejder.telefon)
+            div.col-lg-12.form-group
+                label.control-label(for="roller") Roller
+                select.form-control(id="roller", name="roller", placeholder="Vælg roller", multiple="multiple", value=medarbejder.roller)
+                    option(value="Timelønnede") Timelønnede
+                    option(value="Sekretær") Sekretær
+                    option(value="økonom") økonom
+                    option(value="Administrator") Administrator
+            div.col-lg-12.form-group(data-bind="visible: enhed")
+                label.control-label(for="enheder") Enheder
+                select.form-control(id="enheder", name="enheder", placeholder="Vælg enheder", multiple="multiple", value=medarbejder.enheder)
+                    option
+                        each enhed in enheder
+                            option(value=enhed.kode)= enhed.navn
+        fieldset.col-lg-6(data-bind="visible: data")
+            div.form-group.col-lg-12
+                label(for="jobCategory") Jobkategori
+                select.form-control.select2(id="jobkategori", name="jobkategori", data-placeholder="Vælg jobkategori")
+                    option
+                    each jobkategori in jobkategorier
+                        option(value=jobkategori.uuid)= jobkategori.stilling
+            div.form-group.col-lg-12
+                label(for="pkat") PKAT
+                select.form-control(id="pkat", name="pkat", data-placeholder="Vælg PKAT", required, data-bind="options: pkats, optionsText: 'navn', optionsValue: 'kode', value: pkat, disable: !pkat()", value=medarbejder.pkat)
+            div.form-group.col-lg-12
+                label(for="delregnskab") Delregnskab
+                select.form-control(id="delregnskab", name="delregnskab", data-placeholder="Vælg delregnskab", value=medarbejder.delregnskab, required, data-bind="options: delregnskaber, optionsText: 'navn', optionsValue: 'kode'")
+            div.form-group.col-lg-12
+                label(for="Projekt") Projekt
+                input.form-control.remote(id="projekt", name="projekt", data-placeholder="Vælg projekt", value=medarbejder.projekt)
+            div.form-group.col-lg-12
+                label(for="aktivitet") Aktivitet
+                input.form-control.remote(id="aktivitet", name="aktivitet", data-placeholder="Vælg aktivitet", value=medarbejder.aktivitet)
+            div.form-group.col-lg-12
+                label(for="sted") STED
+                select.form-control(id="sted", name="sted", data-placeholder="Vælg STED", value=medarbejder.sted, data-bind="options: steder, optionsText: 'navn', optionsValue: 'kode'")
+            div.form-group.col-lg-12
+                label(for="enhed") Enhed
+                select.form-control(id="enhed", name="enhed", data-placeholder="Vælg enhed", value=medarbejder.enhed, required, data-bind="options: enheder, optionsText: 'navn', optionsValue: 'kode'")
+block scripts
+    script.
+        $(function () {
+            var touch = Modernizr.touch,
+                datas = ['delregnskaber', 'steder', 'enheder'],
+                vm = {
+                    enhed: ko.observable(false),
+                    pkats: ko.observableArray([]),
+                    data: ko.observable(false),
+                    pkat: ko.observable()
+            };
+            datas.forEach(function (data) {
+                vm[data] = ko.observableArray([]);
+            });
+            if (!touch) {
+                $("select").select2();
+                $("input[name='projekt']").select2({
+                    minimumInputLength: 4,
+                    ajax: {
+                        url: "/medarbejder/projekter",
+                        data: function (term) {
+                            return {
+                                q: term
+                            };
+                        },
+                        results: function (data) {
+                            return { results: data };
+                        }
+                    }
+                });
+                $("input[name='aktivitet']").select2({
+                    minimumInputLength: 4,
+                    ajax: {
+                        url: "/medarbejder/aktiviteter",
+                        data: function (term) {
+                            return {
+                                q: term
+                            };
+                        },
+                        results: function (data) {
+                            return { results: data };
+                        }
+                    }
+                });
+                $("[name='date']").datepicker({
+                    format: "dd-mm-yyyy",
+                    weekStart: 1,
+                    language: "da",
+                    autoclose: true
+                });
+            }
+            ko.applyBindings(vm);
+            vm.data.subscribe(function (value) {
+                if (value) {
+                    datas.forEach(function (data) {
+                        $.get("/medarbejder/" + data, function (results) {
+                            vm[data](results);
+                        });
+                    });
+                }
+            });
+            $("#roller").on("change", function () {
+                var roller = $(this).val();
+                vm.enhed((roller.indexOf('Sekretær') > -1 || roller.indexOf('økonom') > -1));
+                vm.data((roller.indexOf('Timelønnede') > -1));
+            });
+            $("#jobkategori").on("change", function () {
+                var jobkategori = $(this).val();
+                $.get("/medarbejder/job/" + jobkategori, function(data) {
+                    vm.pkats(data);
+                    if (data.length === 1) {
+                        vm.pkat(data[0].kode);
+                    }
+                });
+            });
+        });

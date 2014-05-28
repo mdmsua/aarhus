@@ -3,12 +3,12 @@ block container
     section.row
         form.form-inline(role="form", action="/registrering/ny")
             div.form-group.col-lg-5
-                select.form-control(id="jobkategori", name="jobkategori", data-placeholder="Vælg jobkategori", style="width:100%")
+                select.form-control(name="jobkategori", data-placeholder="Vælg jobkategori", style="width:100%", data-bind="value: jobcategory")
                     option
                         each jobkategori in jobkategorier
                             option(value=jobkategori.uuid)= jobkategori.stilling
             div.form-group.col-lg-5
-                select.form-control(id="enhed", name="enhed", data-placeholder="Vælg enhed", style="width:100%")
+                select.form-control(name="enhed", data-placeholder="Vælg enhed", style="width:100%", data-bind="value: organization")
                     option
                         each enhed in enheder
                             option(value=enhed.kode)= enhed.navn
@@ -19,14 +19,14 @@ block container
         section.row
             article
                 ul.nav.nav-pills
-                    - var godkendt = registreringer.filter(function (registrering) { return registrering.godkendelsesstatus === "godkendt"; }).length
+                    - var eksporteret = registreringer.filter(function (registrering) { return registrering.godkendelsesstatus === "eksporteret"; }).length
                     - var afvist = registreringer.filter(function (registrering) { return registrering.godkendelsesstatus === "afvist"; }).length
                     - var afventer = registreringer.filter(function (registrering) { return !registrering.godkendelsesstatus; }).length
                     li
                         a.text-muted(href="javascript:void(0)", data-godkendelsesstatus="x") &times;
                     li
-                        a.text-success(href="javascript:void(0)", data-godkendelsesstatus="godkendt") Godkendt &nbsp;
-                            span.badge= godkendt
+                        a.text-success(href="javascript:void(0)", data-godkendelsesstatus="eksporteret") Eksporteret &nbsp;
+                            span.badge= eksporteret
                     li
                         a.text-danger(href="javascript:void(0)", data-godkendelsesstatus="afvist") Afvist &nbsp;
                             span.badge= afvist
@@ -34,17 +34,54 @@ block container
                         a.text-primary(href="javascript:void(0)", data-godkendelsesstatus="") Afventer &nbsp;
                             span.badge= afventer
             table.table
+                caption
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Jobkategori']")
+                        |Jobkategori
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Enhed']")
+                        |Enhed
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Dato']")
+                        |Dato
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Lønkode']")
+                        |Lønkode
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Projekt']")
+                        |Projekt
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Aktivitet']")
+                        |Aktivitet
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Sted']")
+                        |Sted
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Delregnskab']")
+                        |Delregnskab
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Værdi']")
+                        |Værdi
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Kommentar']")
+                        |Kommentar
+                    label.checkbox-inline
+                        input(type="checkbox", data-bind="checked: columns['Godkendelsesmeddelelsen']")
+                        |Godkendelsesmeddelelsen
                 thead
                     tr
-                        th(name="jobkategori") Jobkategori
-                        th(name="enhed") Enhed
-                        th Dato
-                        th Projekt
-                        th Aktivitet
-                        th Sted
-                        th Delregnskab
-                        th Værdi
-                        th Godkendelsesmeddelelsen
+                        th(data-bind="visible: columns['Jobkategori']") Jobkategori
+                        th(data-bind="visible: columns['Enhed']") Enhed
+                        th(data-bind="visible: columns['Dato']") Dato
+                        th(data-bind="visible: columns['Lønkode']") Lønkode
+                        th(data-bind="visible: columns['Projekt']") Projekt
+                        th(data-bind="visible: columns['Aktivitet']") Aktivitet
+                        th(data-bind="visible: columns['Sted']") Sted
+                        th(data-bind="visible: columns['Delregnskab']") Delregnskab
+                        th(data-bind="visible: columns['Værdi']") Værdi
+                        th(data-bind="visible: columns['Kommentar']") Kommentar
+                        th(data-bind="visible: columns['Godkendelsesmeddelelsen']") Godkendelsesmeddelelsen
+                        th
                 tbody
                     each registrering in registreringer
                         - var godkendelsesstatus = registrering.godkendelsesstatus || ""
@@ -55,28 +92,64 @@ block container
                         - var delregnskab = (registrering.delregnskab || "_").toString().split("_")[1]
                         - var jobkategori = (registrering.jobkategori || "_").toString().split("_")[1]
                         - var enhed = (registrering.enhed || "_").toString().split("_")[1]
+                        - var lko = (registrering.lko || "_").toString().replace("_", ": ")
                         tr(class=cls,
-                            godkendelsesstatus=godkendelsesstatus,
-                            jobkategori=(registrering.jobkategori || "_").toString().split("_")[0]
-                            enhed=(registrering.enhed || "_").toString().split("_")[0])
-                            td(name="jobkategori")= jobkategori
-                            td(name="enhed")= enhed
-                            td= registrering.dato
-                            td= projekt
-                            td= aktivitet
-                            td= sted
-                            td= delregnskab
-                            td= registrering.felt1
-                            td= registrering.godkendelsesmeddelelsen
+                        godkendelsesstatus=godkendelsesstatus,
+                        jobkategori=(registrering.jobkategori || "_").toString().split("_")[0]
+                        enhed=(registrering.enhed || "_").toString().split("_")[0])
+                            td(data-bind="visible: columns['Jobkategori']")= jobkategori
+                            td(data-bind="visible: columns['Enhed']")= enhed
+                            td(data-bind="visible: columns['Dato']")= registrering.dato
+                            td(data-bind="visible: columns['Lønkode']")= lko
+                            td(data-bind="visible: columns['Projekt']")= projekt
+                            td(data-bind="visible: columns['Aktivitet']")= aktivitet
+                            td(data-bind="visible: columns['Sted']")= sted
+                            td(data-bind="visible: columns['Delregnskab']")= delregnskab
+                            td(data-bind="visible: columns['Værdi']")= registrering.felt1
+                            td(data-bind="visible: columns['Kommentar']")= registrering.kommentar
+                            td(data-bind="visible: columns['Godkendelsesmeddelelsen']")= registrering.godkendelsesmeddelelsen
+                            td
+                                unless registrering.godkendelsesstatus
+                                    div.btn-group
+                                        a(href="/registrering/" + registrering.id)
+                                            span.glyphicon.glyphicon-pencil
+                                        a(href="javascript:void(0)", data-bind="click: remove", data-id=registrering.id)
+                                            span.glyphicon.glyphicon-trash
 block scripts
     script.
         $(function() {
-            var touch = Modernizr.touch;
+            var touch = Modernizr.touch,
+                vm = {
+                    columns: {
+                        "Jobkategori": ko.observable(true),
+                        "Enhed": ko.observable(true),
+                        "Dato": ko.observable(true),
+                        "Lønkode": ko.observable(true),
+                        "Projekt": ko.observable(true),
+                        "Aktivitet": ko.observable(true),
+                        "Sted": ko.observable(true),
+                        "Delregnskab": ko.observable(true),
+                        "Værdi": ko.observable(true),
+                        "Kommentar": ko.observable(true),
+                        "Godkendelsesmeddelelsen": ko.observable(false)
+                    },
+                    jobcategory: ko.observable(),
+                    organization: ko.observable(),
+                    remove: function(data, event) {
+                      if (confirm("Vil du slette denne registrering?")) {
+                        var id = $(event.currentTarget).data("id");
+                        $.ajax({
+                            url: "/registrering/" + id,
+                            type: 'delete'
+                        });
+                      }
+                    }
+                };
             if (!touch) {
-                $("#jobkategori, #enhed").select2({allowClear: true});
+                $("[name='jobkategori'], [name='enhed']").select2({ allowClear: true });
             }
-            $("#jobkategori").on("change", function() {
-                var jobkategori = $(this).val();
+            ko.applyBindings(vm);
+            vm.jobcategory.subscribe(function (jobkategori) {
                 if (jobkategori) {
                     $("td[name='jobkategori'], th[name='jobkategori'], tbody tr").hide();
                     $("tbody tr[jobkategori='" + jobkategori + "']").show();
@@ -84,8 +157,7 @@ block scripts
                     $("td[name='jobkategori'], th[name='jobkategori'], tbody tr").show();
                 }
             });
-            $("#enhed").on("change", function() {
-                var enhed = $(this).val();
+            vm.organization.subscribe(function (enhed) {
                 if (enhed) {
                     $("td[name='enhed'], th[name='enhed'], tbody tr").hide();
                     $("tbody tr[enhed='" + enhed + "']").show();
@@ -95,8 +167,8 @@ block scripts
             });
             $("article").on("click", "ul > li > a", function() {
                 $("article li.active").removeClass("active");
-                var status = $(this).data("godkendelsesstatus");
-                var $trs = $("tbody tr");
+                var status = $(this).data("godkendelsesstatus"),
+                    $trs = $("tbody tr");
                 $trs.hide();
                 switch (status) {
                     case "x":

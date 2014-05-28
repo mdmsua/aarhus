@@ -1,0 +1,75 @@
+extends ../layout
+block container
+    section.page-header
+        h2
+            =employee.name
+            small &nbsp;
+                a(href="/medarbejder/" + employee.cpr + "/opdatering")
+                    span.glyphicon.glyphicon-pencil
+    article.form-horizontal.col-lg-6
+        div.form-group
+            label.col-lg-3.control-label(for="fornavn") Fornavn
+            div.col-lg-9
+                p.form-control-static(name="fornavn")= employee.fornavn
+        div.form-group
+            label.col-lg-3.control-label(for="efternavn") Efternavn
+            div.col-lg-9
+                p.form-control-static(name="efternavn")= employee.efternavn
+        div.form-group
+            label.col-lg-3.control-label(for="ssn") CPR-nummer
+            div.col-lg-9
+                p.form-control-static(name="ssn")= employee.cpr
+        div.form-group
+            label.col-lg-3.control-label(for="salaryGroupNumber") Løngruppenummer
+            div.col-lg-9
+                p.form-control-static(name="lgn")= employee.lgn
+        div.form-group
+            label.col-lg-3.control-label(for="initialer") Initialer
+            div.col-lg-9
+                p.form-control-static(name="initialer")= employee.initialer
+        div.form-group
+            label.col-lg-3.control-label(for="dato") Fra dato
+            div.col-lg-9
+                p.form-control-static(name="dato")= employee.dato
+        div.form-group
+            label.col-lg-3.control-label(for="primaryEmail") Primær e-mail
+            div.col-lg-9
+                p.form-control-static(name="primaryEmail")= employee.email
+        div.form-group
+            label.col-lg-3.control-label(for="personalEmail") Privat e-mail
+            div.col-lg-9
+                p.form-control-static(name="personalEmail")
+        div.form-group
+            label.col-lg-3.control-label(for="telephoneNumber") Telefonnummer
+            div.col-lg-9
+                p.form-control-static(name="telephoneNumber")= employee.phone
+        div.form-group
+            label.col-lg-3.control-label(for="roller") Roller
+            div.col-lg-9
+                if employee.roller
+                    ul.list-unstyled(name="roller")
+                        each rolle in employee.roller
+                            li= rolle
+        div.form-group
+            label.col-lg-3.control-label(for="enheder") Enheder
+            div.col-lg-9
+                if employee.enheder
+                    ul.list-unstyled(name="enheder")
+                        each enhed in employee.enheder
+                            li= enhed.navn
+    if employee.jobkategorier
+        article.col-lg-6
+            each jobkategori in employee.jobkategorier
+                section.panel(class=jobkategori.til ? "panel-default" : "panel-primary")
+                    header.panel-heading
+                        div.panel-title
+                            h3= jobkategori.navn
+                            h5= jobkategori.fra + " - "  + (jobkategori.til || "...")
+                    if jobkategori.enheder
+                        table.table
+                            tbody
+                                each enhed in jobkategori.enheder || []
+                                    tr
+                                        td= enhed.fra
+                                        td= enhed.til
+                                        td= enhed.navn

@@ -1,0 +1,16 @@
+extends _layout
+block body
+    section.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+        article.panel.panel-primary
+            header.panel-heading
+                h3.panel-title Log på
+            section.panel-body
+                form(role="form", action="/", method="post")
+                    div.form-group
+                        label.control-label(for="username") Brugernavn
+                        input.form-control(type="text", name="username", required, autofocus)
+                    div.form-group
+                        label.control-label(for="password") Adgangskode
+                        input.form-control(type="password", name="password", required)
+                    button.btn.btn-primary.btn-block(type="submit") Log på
+                    input(type="hidden", name="path", value=path || "")

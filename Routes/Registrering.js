@@ -9,50 +9,43 @@ function Registrering(tableService, queueService) {
     this.registration = new Registration(tableService, queueService);
 }
 
-Registrering.prototype.index = function (req,  res, next) {
-    Q.all([this.registration.peek(), this.registration.getJobCategories(), this.registration.getOrganisations()]).spread(function (registrations, jobCategories, organisations) {
+Registrering.prototype.index = function (req,  res) {
+    Q.all([this.registration.get(0, req.user), this.registration.getJobCategories(req.user), this.registration.getOrganisations(req.user)]).spread(function (registrations, jobCategories, organisations) {
         res.render("registrering/index", { title: "Registrering", registreringer: registrations, jobkategorier: jobCategories, enheder: organisations });
     });
 };
 
-Registrering.prototype.create = function (req,  res, next) {
+Registrering.prototype.create = function (req,  res) {
     var jobkategori = req.query.jobkategori,
-        enhed = req.query.enhed,
-        queue = [];
-    queue.push(this.registration.getJobCategories());
-    queue.push(this.registration.getDrafts());
-    queue.push(this.registration.getTemplates());
-    queue.push(this.registration.getLkos());
-    if (enhed) {
-        queue.push(this.registration.getOrganisations());
-    }
-    Q.all(queue).spread(function (jobCategories, drafts, templates, lkos, organisations) {
-        var model = {
-            title: "Registrering",
-            jobkategorier: jobCategories,
-            kladder: drafts || [],
-            skabeloner: templates || [],
-            jobkategori: jobkategori,
-            enhed: enhed,
-            lkos: _.where(lkos, { kode: (_.findWhere(jobCategories, { uuid: jobkategori }) || { lko: 0 }).lko.toString() })
-        };
-        if (organisations) {
-            model.enheder = organisations;
-        }
-        res.render("registrering/ny", model);
-    }, function (error) {
-        next(error);
-    });
+        enhed = req.query.enhed;
+    res.render("registrering/ny", { title: "Registrering", jobkategorikode: jobkategori, enhedkode: enhed });
 };
 
-Registrering.prototype.project = function (req,  res, next) {
-    this.registration.activities(req.params.kode, function (error, activities) {
-        if (error) {
-            next(error);
-        } else {
-            res.json(activities.map(function (activity) { return { id: activity.kode, text: activity.navn }; }));
-        }
-    });
+Registrering.prototype.getJobCategories = function (req,  res, next) {
+    var self = this;
+    if (req.params.ssn) {
+        self.registration.getEmployeeBySSN(req.params.ssn, function (error, employee) {
+            if (error) {
+                next(error);
+            } else {
+                self.registration.getJobCategories(employee, function (error, jobCategories) {
+                    if (error) {
+                        next(error);
+                    } else {
+                        res.json(jobCategories);
+                    }
+                });
+            }
+        });
+    } else {
+        self.registration.getJobCategories(req.user, function (error, jobCategories) {
+            if (error) {
+                next(error);
+            } else {
+                res.json(jobCategories);
+            }
+        });
+    }
 };
 
 Registrering.prototype.byProjectActivity = function (req,  res, next) {
@@ -133,7 +126,7 @@ Registrering.prototype.send = function (req, res, next) {
     });
 };
 
-Registrering.prototype.forJobCategory = function (req,  res, next) {
+Registrering.prototype.findOrganizations = function (req,  res, next) {
     Q.all([this.registration.getOrganisations(), this.registration.getLkos(), this.registration.getJobCategories()]).spread(function (organizations, lkos, jobCategories) {
         var jobCategory = _.findWhere(jobCategories, { uuid: req.params.jobkategori });
         res.json({
@@ -204,5 +197,22 @@ Registrering.prototype.account = function (req,  res, next) {
     });
 };
 
+Registrering.prototype.remove = function (req,  res, next) {
+    var id = req.params.id,
+        self = this;
+    this.registration.get(id, function (error, message) {
+        if (error) {
+            next(error);
+        } else {
+            self.registration.remove(message, function (error, success) {
+                if (error) {
+                    next(error);
+                } else {
+                    res.send(success ? 200 : 400);
+                }
+            });
+        }
+    });
+};
 
 module.exports = Registrering;

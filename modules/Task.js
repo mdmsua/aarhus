@@ -83,11 +83,11 @@ Task.prototype.insertEntity = function (item, callback) {
 
 Task.prototype.updateEntity = function (item, callback) {
     var self = this;
-    self.storageClient.queryEntity(self.tableName, self.partitionKey, item, function (error, entity) {
+    this.storageClient.queryEntity(this.tableName, item.partitionKey || this.partitionKey, item.rowKey || item[this.rowKeyProperty], function (error, entity) {
         if (error) {
             callback(error);
         } else {
-            self.storageClient.updateEntity(self.tableName, entity, function (error, entity) {
+            self.storageClient.updateEntity(self.tableName, item, function (error, entity) {
                 if (error) {
                     callback(error);
                 } else {
@@ -133,6 +133,22 @@ Task.prototype.batchEntities = function (items, callback) {
         })(i);
     }
     callback(errors);
+};
+
+Task.prototype.insertOrReplaceEntity = function (entity, callback) {
+    if (!entity.PartitionKey) {
+        entity.PartitionKey = this.partitionKey;
+    }
+    if (!entity.RowKey) {
+        entity.RowKey = this.rowKeyProperty ? (entity[this.rowKeyProperty] || uuid.v4()) : uuid.v4();
+    }
+    this.storageClient.insertOrReplaceEntity(this.tableName, entity, function (error, entity) {
+        if (error) {
+            callback(error);
+        } else {
+            callback(null, entity);
+        }
+    });
 };
 
 module.exports = Task;
