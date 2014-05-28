@@ -36,7 +36,6 @@
     "passport-local": "^1.0.0",
     "q": "^1.0.1",
     "qs": "^0.6.6",
-    "query": "^0.2.0",
     "redis": "^0.10.3",
     "serve-favicon": "^2.0.0",
     "underscore": "^1.6.0"
