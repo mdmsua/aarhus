@@ -33,7 +33,7 @@ Enhed.prototype.all = function (callback) {
     var deferred = Q.defer(),
         query = process.env.NODE_ENV === 'dev' ?
                 { table: table, query: { location: { $ne: null } } } :
-                require('azure').TableQuery.select().from(table).where("location ne ?", null);
+                require('azure').TableQuery.select().from(table).where("location ne 'null'");
     this.task.queryEntities(query, function (error, entities) {
         if (error) {
             deferred.reject(error);
