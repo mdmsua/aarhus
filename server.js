@@ -21,8 +21,8 @@ var util = require("util"),
     app = express(),
     tableService = null,
     employee = null,
-    redisStore = null,
-    redisClient = redis.createClient();
+    redisClient = null,
+    redisStore = null;
 
 function development(callback) {
     var MongoClient = require("mongodb").MongoClient,
@@ -33,7 +33,8 @@ function development(callback) {
             throw error;
         }
         tableService = new MongoService(db);
-        redisStore = new RedisStore({ host: "localhost", port: 6379, client: redisClient });
+        redisClient = redis.createClient();
+        redisStore = new RedisStore({ host: "localhost", port: 6379 });
         callback(tableService);
     });
 }
@@ -43,6 +44,9 @@ function production(callback) {
         azure = require("azure");
     nconf.file("settings.json").env();
     tableService = azure.createTableService(nconf.get("AZURE_STORAGE_ACCOUNT"), nconf.get("AZURE_STORAGE_ACCESS_KEY"));
+    redis.debug_mode = true;
+    redisClient = redis.createClient(6380, nconf.get("AZURE_CACHE_ACCOUNT"));
+    redisClient.auth(nconf.get("AZURE_CACHE_ACCESS_KEY"));
     redisStore = new RedisStore({ host: nconf.get("AZURE_CACHE_ACCOUNT"), port: 6380, client: redisClient });
     callback(tableService);
 }
