@@ -31,7 +31,7 @@ function Medarbejder(tableService, redisClient) {
 
 moment.lang("da");
 
-Medarbejder.prototype.lookup = function (set, q, callback) {
+Medarbejder.prototype.lookupSet = function (set, q, callback) {
     var deferred = Q.defer(),
         regexp = new RegExp(q, "gi"),
         key = null;
@@ -51,6 +51,27 @@ Medarbejder.prototype.lookup = function (set, q, callback) {
                 }
             }
             deferred.resolve(results);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Medarbejder.prototype.lookupStr = function (set, q, callback) {
+    var deferred = Q.defer(),
+        regexp = new RegExp(q, "gi"),
+        key = null;
+    this.redisClient.get(set, function (error, value) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(JSON.parse(value).filter(function (object) {
+                return regexp.test(object.navn);
+            }).map(function (object) {
+                return {
+                    id: object.kode,
+                    text: object.navn
+                };
+            }));
         }
     });
     return deferred.promise.nodeify(callback);
@@ -98,7 +119,7 @@ Medarbejder.prototype.create = function (req, res, next) {
         this.enhed.all()
     ]).spread(function (configs, organizations) {
         res.render("medarbejder/opret", { title: "Medarbejder", jobkategorier: configs, enheder: organizations, medarbejder: { } });
-        self.redisClient.hlen("projekt", function (error, len) {
+        self.redisClient.strlen("projekt", function (error, len) {
             if (error) {
                 next(error);
             } else if (!len) {
@@ -106,14 +127,15 @@ Medarbejder.prototype.create = function (req, res, next) {
                     if (error) {
                         next(error);
                     } else {
-                        projects.forEach(function (project) {
+                        /*projects.forEach(function (project) {
                             self.redisClient.hset("projekt", project.kode, project.navn);
-                        });
+                        });*/
+                        self.redisClient.set("projekt", JSON.stringify(projects));
                     }
                 });
             }
         });
-        self.redisClient.hlen("aktivitet", function (error, len) {
+        self.redisClient.strlen("aktivitet", function (error, len) {
             if (error) {
                 next(error);
             } else if (!len) {
@@ -121,9 +143,10 @@ Medarbejder.prototype.create = function (req, res, next) {
                     if (error) {
                         next(error);
                     } else {
-                        aktivities.forEach(function (aktivity) {
+                        /*aktivities.forEach(function (aktivity) {
                             self.redisClient.hset("aktivitet", aktivity.kode, aktivity.navn);
-                        });
+                        });*/
+                        self.redisClient.set("aktivitet", JSON.stringify(aktivities));
                     }
                 });
             }
@@ -222,7 +245,7 @@ Medarbejder.prototype.accounts = function (req, res, next) {
 };
 
 Medarbejder.prototype.projects = function (req, res, next) {
-    this.lookup("projekt", req.query.q, function (error, projects) {
+    this.lookupStr("projekt", req.query.q, function (error, projects) {
         if (error) {
             next(error);
         } else {
@@ -232,7 +255,7 @@ Medarbejder.prototype.projects = function (req, res, next) {
 };
 
 Medarbejder.prototype.activities = function (req, res, next) {
-    this.lookup("aktivitet", req.query.q, function (error, projects) {
+    this.lookupStr("aktivitet", req.query.q, function (error, projects) {
         if (error) {
             next(error);
         } else {

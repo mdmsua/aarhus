@@ -28,8 +28,9 @@ block body
                                 li(class=title == route.name ? "active" : "")
                                     a(href=route.href) #{route.name}
                         ul.nav.navbar-nav.navbar-right
-                            li
-                                p.navbar-text= user.navn
+                            if user
+                                li
+                                    p.navbar-text= user.navn
                             li
                                 a.navbar-link(href="/logaf")
                                     span.glyphicon.glyphicon-off

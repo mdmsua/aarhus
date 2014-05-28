@@ -21,8 +21,7 @@ var util = require("util"),
     app = express(),
     tableService = null,
     employee = null,
-    redisClient = null,
-    redisStore = null;
+    redisClient = null;
 
 function development(callback) {
     var MongoClient = require("mongodb").MongoClient,
@@ -34,8 +33,7 @@ function development(callback) {
         }
         tableService = new MongoService(db);
         redisClient = redis.createClient();
-        redisStore = new RedisStore({ host: "localhost", port: 6379 });
-        callback(tableService);
+        callback(tableService, redisClient);
     });
 }
 
@@ -44,11 +42,10 @@ function production(callback) {
         azure = require("azure");
     nconf.file("settings.json").env();
     tableService = azure.createTableService(nconf.get("AZURE_STORAGE_ACCOUNT"), nconf.get("AZURE_STORAGE_ACCESS_KEY"));
-    redis.debug_mode = true;
-    redisClient = redis.createClient(6380, nconf.get("AZURE_CACHE_ACCOUNT"));
-    redisClient.auth(nconf.get("AZURE_CACHE_ACCESS_KEY"));
-    redisStore = new RedisStore({ host: nconf.get("AZURE_CACHE_ACCOUNT"), port: 6380, client: redisClient });
-    callback(tableService);
+    redisClient = redis.createClient(6379, nconf.get("AZURE_CACHE_ACCOUNT"));
+    redisClient.auth(nconf.get("AZURE_CACHE_ACCESS_KEY"), function () {
+        callback(tableService, redisClient);
+    });
 }
 
 function setup() {
@@ -123,12 +120,12 @@ function getFilter(role) {
                             try {
                                 var message = JSON.parse(queueMessageResult.messagetext);
                                 switch (role) {
-                                case "godkende":
-                                    return !message.lock || message.lock === Number.MIN_VALUE;
-                                case "kontrollere":
-                                    return message.lock === Number.MAX_VALUE;
-                                default:
-                                    return !message.lock;
+                                    case "godkende":
+                                        return !message.lock || message.lock === Number.MIN_VALUE;
+                                    case "kontrollere":
+                                        return message.lock === Number.MAX_VALUE;
+                                    default:
+                                        return !message.lock;
                                 }
                             } catch (error) {
                                 if (error) {
@@ -156,58 +153,59 @@ function getFilter(role) {
 
 function authorize(req, res, next) {
     if (req.isAuthenticated()) {
-        req.user.navn = req.user.initialer === "@" ? "Administrator" : util.format("%s %s", req.user.fornavn, req.user.efternavn);
-        res.locals.user = req.user;
+        if (req.user) {
+            req.user.navn = req.user.initialer === "@" ? "Administrator" : util.format("%s %s", req.user.fornavn, req.user.efternavn);
+            res.locals.user = req.user;
+        }
         next();
-    } else if (req.method === "POST" && req.path === "/" && req.body.username && req.body.password) {
+    } else if (req.path === "/login") {
         next();
     } else {
-        res.render('signIn', { title: "Log på", path: req.path });
+        res.redirect("/login?_=" + req.path);
     }
 }
-
-app.set("view engine", "jade");
-app.use(favicon(path.join(__dirname, "public/favicon.ico")));
-app.use(express.static(__dirname + "/public"));
-app.use(express.static(__dirname + "/bower_components"));
-app.use(express.static(__dirname + "/bower_components/bootstrap"));
-app.use(bodyParser());
-app.use(cookieParser());
-app.use(methodOverride());
-app.use(morgan("dev"));
-app.use(session({ store: redisStore, secret: "Try2gue$$" }));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(authorize);
 
 var employeeRouter = express.Router(),
     jobCategoryConfigRouter = express.Router(),
     registrationRouter = express.Router(),
     approveRouter = express.Router();
 
-app.use("/jobkategori", jobCategoryConfigRouter);
-app.use("/medarbejder", employeeRouter);
-app.use("/registrering", registrationRouter);
-app.use("/godkende", approveRouter);
-
 var env = process.env.NODE_ENV || "",
     fn = env === "dev" ? development : production;
 
-fn(function () {
+fn(function (tableService, redisClient) {
+    app.set("view engine", "jade");
+    app.use(favicon(path.join(__dirname, "public/favicon.ico")));
+    app.use(express.static(__dirname + "/public"));
+    app.use(express.static(__dirname + "/bower_components"));
+    app.use(express.static(__dirname + "/bower_components/bootstrap"));
+    app.use(bodyParser());
+    app.use(cookieParser());
+    app.use(session({ store: new RedisStore({ client: redisClient }), secret: "Try2gue$$" }));
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use(morgan(env === "dev" ? "dev" : "default"));
+    app.use(methodOverride());
+    app.use(authorize);
+    app.use("/jobkategori", jobCategoryConfigRouter);
+    app.use("/medarbejder", employeeRouter);
+    app.use("/registrering", registrationRouter);
+    app.use("/godkende", approveRouter);
     setup();
     init();
     var jobCategoryConfig,
         employee;
-        //registration,
-        //approve;
+    //registration,
+    //approve;
     jobCategoryConfig = new JobCategoryConfig(tableService);
     employee = new Medarbejder(tableService, redisClient);
     //registration = new Registrering(tableService);
     //approve = new Godkende(tableService);
     app.get("/", index.index);
+    app.get("/login", index.signIn);
     app.get("/logaf", index.signOut);
-    app.post("/", passport.authenticate("local"), function (req, res) {
-        res.redirect(req.body.path || "/");
+    app.post("/login", passport.authenticate("local"), function (req, res) {
+        res.redirect(req.body.path === "/login" ? "/" : (req.body.path || "/"));
     });
     jobCategoryConfigRouter.get("/", jobCategoryConfig.index.bind(jobCategoryConfig));
     jobCategoryConfigRouter.get("/:uuid", jobCategoryConfig.get.bind(jobCategoryConfig));
