@@ -12,7 +12,10 @@ var util = require("util"),
     JobCategoryConfig = require("../modules/JobCategoryConfig"),
     Enhed = require("../modules/Enhed"),
     Employee = require("../modules/Medarbejder"),
+    Job = require("../modules/MedarbejderJob"),
     Lko = require("../modules/Lko"),
+    Preference = require("../modules/Indstilling"),
+    Samtale = require("../modules/Samtale"),
     Task = require("../modules/Task"),
     table = "registrering";
 
@@ -27,13 +30,22 @@ function Registration(tableService) {
     this.enhed = new Enhed(tableService);
     this.employee = new Employee(tableService);
     this.lko = new Lko(tableService);
+    this.job = new Job(tableService);
+    this.preference = new Preference(tableService);
+    this.samtale = new Samtale(tableService);
 }
 
-Registration.prototype.get = function (lock, user, callback) {
+Registration.prototype.get = function (lock, period, user, callback) {
     var deferred = Q.defer(),
+        from = (period > 0 ? moment().startOf("month").add("M", 1) :
+                period === 0 ? moment().startOf("month") :
+                        moment().startOf("month").add("M", period)).toDate().getTime().toString(),
+        to = (period > 0 ? moment().endOf("month").add("M", period) :
+                period === 0 ? moment().endOf("month") :
+                        moment().startOf("month")).toDate().getTime().toString(),
         query = process.env.NODE_ENV === "dev" ?
-                { table: table, query: { $and: [{ PartitionKey: table }, { lock: lock }, { medarbejderkode: user.ssn }] } } :
-                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and lock eq ? and medarbejderkode eq ?", table, lock, user.ssn);
+                { table: table, query: { $and: [{ PartitionKey: table }, { lock: lock }, { medarbejderkode: user.cpr }, { RowKey: { $gt: from, $lt: to } }] } } :
+                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and lock eq ? and medarbejderkode eq ? and RowKey gt ? and RowKey lt ?", table, lock, user.cpr, from, to);
     this.registrering.queryEntities(query, function (error, registrations) {
         if (error) {
             deferred.reject(error);
@@ -47,12 +59,12 @@ Registration.prototype.get = function (lock, user, callback) {
 Registration.prototype.create = function (registration, callback) {
     var deferred = Q.defer();
     registration.PartitionKey = table;
-    registration.RowKey = util.format("%d-%s", new Date().getTime(), registration.medarbejder.split("_")[0]);
-    this.registrering.insertEntity(registration, function (error, message) {
+    registration.RowKey = new Date().getTime().toString();
+    this.registrering.insertEntity(registration, function (error, entity) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(message);
+            deferred.resolve(entity);
         }
     });
     return deferred.promise.nodeify(callback);
@@ -285,9 +297,9 @@ Registration.prototype.deleteTemplate = function (id, callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.getJobCategories = function (user, callback) {
+Registration.prototype.getJobCategories = function (ssn, callback) {
     var deferred = Q.defer();
-    this.jobCategoryConfig.getByJobPosition(user.jobCategory, function (error, jobCategories) {
+    this.job.getJobs(ssn, function (error, jobCategories) {
         if (error) {
             deferred.reject(error);
         } else {
@@ -309,9 +321,28 @@ Registration.prototype.getLkos = function (callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.getOrganisations = function (user, callback) {
+Registration.prototype.getLkosForJobCategory = function (jobCategory, callback) {
+    var deferred = Q.defer(),
+        self = this;
+    this.jobCategoryConfig.one(jobCategory, function (error, jc) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            self.lko.one(jc.lko, function (error, lko) {
+                if (error) {
+                    deferred.reject(error);
+                } else {
+                    deferred.resolve([lko]);
+                }
+            });
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.getOrganisations = function (ssn, callback) {
     var deferred = Q.defer();
-    this.enhed.findByLocation(user.location, function (error, organisations) {
+    this.job.getOrgs(ssn, function (error, organisations) {
         if (error) {
             deferred.reject(error);
         } else {
@@ -371,21 +402,109 @@ Registration.prototype.getEmployees = function (callback) {
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.update = function (message, callback) {
-    var deferred = Q.defer(),
-        messageid = message.id,
-        popreceipt = message.popreceipt;
-    delete message.id;
-    delete message.popreceipt;
-    this.queue.update({
-        messageid: messageid,
-        popreceipt: popreceipt,
-        messagetext: JSON.stringify(message)
-    }, 1, function (error, message) {
+Registration.prototype.getPreferences = function (ssn, role, callback) {
+    var deferred = Q.defer();
+    this.preference.get(ssn, role, function (error, preference) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            if (!preference) {
+                switch (role) {
+                case "Medarbejder":
+                    preference = {
+                        "Medarbejder": false,
+                        "Jobkategori": true,
+                        "Enhed": true,
+                        "Dato": true,
+                        "Lønkode": true,
+                        "Projekt": true,
+                        "Aktivitet": true,
+                        "Sted": true,
+                        "Delregnskab": true,
+                        "Værdi": true,
+                        "Kommentar": true
+                    };
+                    break;
+                default:
+                    preference = {
+                        "Medarbejder": true,
+                        "Jobkategori": true,
+                        "Enhed": true,
+                        "Dato": true,
+                        "Lønkode": true,
+                        "Projekt": true,
+                        "Aktivitet": true,
+                        "Sted": true,
+                        "Delregnskab": true,
+                        "Værdi": true,
+                        "Kommentar": true
+                    };
+                }
+            }
+            deferred.resolve(preference);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.savePreferences = function (ssn, role, preference, callback) {
+    var deferred = Q.defer();
+    this.preference.save(ssn, role, preference, function (error) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve();
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.update = function (item, callback) {
+    var deferred = Q.defer();
+    this.registrering.updateEntity(item, function (error, message) {
         if (error) {
             deferred.reject(error);
         } else {
             deferred.resolve(message);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.getRegistration = function (id, role, callback) {
+    var deferred = Q.defer(),
+        self = this;
+    this.registrering.getEntity("registrering", id, function (error, registration) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            self.samtale.find(id, role, function (error, conversations) {
+                if (error) {
+                    deferred.reject(error);
+                } else {
+                    registration.samtaler = conversations;
+                    deferred.resolve(registration);
+                }
+            });
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.deleteRegistration = function (id, callback) {
+    var deferred = Q.defer(),
+        self = this;
+    this.registrering.deleteEntity({ PartitionKey: "registrering", RowKey: id }, function (error, count) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            self.samtale.remove(id, function (error) {
+                if (error) {
+                    deferred.reject(error);
+                } else {
+                    deferred.resolve();
+                }
+            });
         }
     });
     return deferred.promise.nodeify(callback);

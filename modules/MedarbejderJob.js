@@ -48,6 +48,37 @@ MedarbejderJob.prototype.get = function (ssn, callback) {
     return d.promise.nodeify(callback);
 };
 
+
+MedarbejderJob.prototype.getJobs = function (ssn, callback) {
+    var d = Q.defer(),
+        jobsQuery = process.env.NODE_ENV === "dev" ?
+                    { table: jobsTable, query: { PartitionKey: ssn } } :
+                    require("azure").TableQuery.select().from(jobsTable).where("PartitionKey eq ?", ssn);
+    this.jobs.queryEntities(jobsQuery, function (error, jobs) {
+        if (error) {
+            d.reject(error);
+        } else {
+            d.resolve(jobs);
+        }
+    });
+    return d.promise.nodeify(callback);
+};
+
+MedarbejderJob.prototype.getOrgs = function (ssn, callback) {
+    var d = Q.defer(),
+        orgsQuery = process.env.NODE_ENV === "dev" ?
+                { table: orgsTable, query: { PartitionKey: ssn } } :
+                require("azure").TableQuery.select().from(orgsTable).where("PartitionKey eq ?", ssn);
+    this.jobs.queryEntities(orgsQuery, function (error, orgs) {
+        if (error) {
+            d.reject(error);
+        } else {
+            d.resolve(orgs);
+        }
+    });
+    return d.promise.nodeify(callback);
+};
+
 MedarbejderJob.prototype.removeJob = function (job, ssn, callback) {
     var self = this,
         d = Q.defer(),

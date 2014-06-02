@@ -18,11 +18,6 @@ block body
                             span.icon-bar
                         a.navbar-brand(href="/") Aarhus
                     nav.navbar-collapse.collapse.navbar-inverse-collapse
-                        - routes = []
-                        - routes.push({ name: "Jobkategori", href: "/jobkategori" })
-                        - routes.push({ name: "Medarbejder", href: "/medarbejder" })
-                        - //routes.push({ name: "Registrering", href: "/registrering" })
-                        - //routes.push({ name: "Sekretær", href: "/godkende" })
                         ul.nav.navbar-nav
                             each route in routes
                                 li(class=title == route.name ? "active" : "")
@@ -42,6 +37,8 @@ block body
         script(src="/bootstrap/dist/js/bootstrap.min.js")
         script(src="/select2/select2.min.js")
         script(src="/knockout/dist/knockout.js")
+        script(src="/knockout-mapping/knockout.mapping.js")
+        script(src="/underscore/underscore.js")
         script(src="/js/bootstrap-datepicker.js")
         script(src="/js/locales/bootstrap-datepicker.da.js")
         block scripts

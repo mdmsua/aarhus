@@ -21,7 +21,14 @@ var util = require("util"),
     app = express(),
     tableService = null,
     employee = null,
-    redisClient = null;
+    redisClient = null,
+    routes = [
+        { name: "Jobkategori", href: "/jobkategori" },
+        { name: "Medarbejder", href: "/medarbejder" },
+        { name: "Registrering", href: "/registrering" }
+        /*{ name: "Sekretær", href: "/sekretær" },
+        { name: "økonom", href: "/økonom" }*/
+    ];
 
 function development(callback) {
     var MongoClient = require("mongodb").MongoClient,
@@ -101,7 +108,7 @@ function init() {
     });
     passport.deserializeUser(function (id, done) {
         if (id === "@") {
-            done(null, { initialer: "@" });
+            done(null, { initialer: "@", roller: ["Administrator"] });
         } else {
             employee.getByInitials(id, function (err, user) {
                 done(err, user);
@@ -154,9 +161,19 @@ function getFilter(role) {
 function authorize(req, res, next) {
     if (req.isAuthenticated()) {
         if (req.user) {
-            req.user.navn = req.user.initialer === "@" ? "Administrator" : util.format("%s %s", req.user.fornavn, req.user.efternavn);
+            req.user.navn = req.user.initialer === "@" ? req.user.roller[0] : util.format("%s %s", req.user.fornavn, req.user.efternavn);
             res.locals.user = req.user;
         }
+        req.user.roller = util.isArray(req.user.roller) ? req.user.roller : [req.user.roller];
+        if (req.user.roller.indexOf('Administrator') > -1) {
+            res.locals.routes = routes;
+        } else if (req.user.roller.indexOf('Timelønnede') > -1) {
+            res.locals.routes = routes.slice(2, 3);
+        } /*else if (req.user.roller.indexOf('Sekretær') > -1) {
+            req.locals.routes = routes.slice(0, 3);
+        } else if (req.user.roller.indexOf('Sekretær') > -1) {
+            req.locals.routes = routes.slice(0, 3);
+        }*/
         next();
     } else if (req.path === "/login") {
         next();
@@ -194,12 +211,12 @@ fn(function (tableService, redisClient) {
     setup();
     init();
     var jobCategoryConfig,
-        employee;
-    //registration,
+        employee,
+        registration;
     //approve;
     jobCategoryConfig = new JobCategoryConfig(tableService);
     employee = new Medarbejder(tableService, redisClient);
-    //registration = new Registrering(tableService);
+    registration = new Registrering(tableService);
     //approve = new Godkende(tableService);
     app.get("/", index.index);
     app.get("/login", index.signIn);
@@ -228,18 +245,21 @@ fn(function (tableService, redisClient) {
         .get("/job/:uuid", employee.config.bind(employee))
         .post("/:ssn/job/:id", employee.deleteJob.bind(employee))
         .post("/:ssn/org/:id", employee.deleteOrg.bind(employee));
-//    registrationRouter
-//        .get("/", registration.index.bind(registration))
-//        .get("/ny", registration.create.bind(registration))
-//        .get("/cpr/:ssn?", registration.getJobCategories.bind(registration))
-//        .get("/sted/:sted", registration.forLocation.bind(registration))
-//        .post("/kladde", registration.saveDraft.bind(registration))
-//        .get("/jobkategori/:jobkategori", registration.findOrganizations.bind(registration))
-//        .get("/enhed/:enhed", registration.forOrganization.bind(registration))
-//        .get("/delregnskab/:projekt/:aktivitet", registration.account.bind(registration))
-//        .post("/skabelon", registration.saveTemplate.bind(registration))
-//        .post("/ny", registration.send.bind(registration))
-//        .delete("/:id", registration.remove.bind(registration));
+    registrationRouter
+        .get("/ny", registration.create.bind(registration))
+        .post("/ny", registration.send.bind(registration))
+        .get("/cpr/:ssn?", registration.getJobCategories.bind(registration))
+        .get("/sted/:sted", registration.forLocation.bind(registration))
+        .post("/kladde", registration.saveDraft.bind(registration))
+        .get("/jobkategori/:jobkategori", registration.findOrganizations.bind(registration))
+        .get("/enhed/:enhed", registration.forOrganization.bind(registration))
+        .get("/delregnskab/:projekt/:aktivitet", registration.account.bind(registration))
+        .post("/skabelon", registration.saveTemplate.bind(registration))
+        .delete("/:id", registration.remove.bind(registration))
+        .get("/vis/:id", registration.view.bind(registration))
+        .post("/vis/:id", registration.update.bind(registration))
+        .post("/indstillinger", registration.savePreferences.bind(registration))
+        .get("/:period?", registration.index.bind(registration));
 //    approveRouter
 //        .get("/", approve.index.bind(approve))
 //        .post("/godkende", approve.approve.bind(approve))
