@@ -18,17 +18,32 @@ var util = require("util"),
     Godkende = require("./routes/Godkende"),
     index = require("./routes/index"),
     Employee = require("./modules/Medarbejder"),
+    _ = require("underscore"),
     app = express(),
     tableService = null,
     employee = null,
     redisClient = null,
-    routes = [
-        { name: "Jobkategori", href: "/jobkategori" },
-        { name: "Medarbejder", href: "/medarbejder" },
-        { name: "Registrering", href: "/registrering" }
-        /*{ name: "Sekretær", href: "/sekretær" },
-        { name: "økonom", href: "/økonom" }*/
-    ];
+    routes = {
+        "Administrator": [
+            { name: "Jobkategori", href: "/jobkategori" },
+            { name: "Medarbejder", href: "/medarbejder" },
+            { name: "Registrering", href: "/registrering" }
+            //{ name: "Sekretær", href: "/sekretær" },
+            //{ name: "økonom", href: "/økonom" }
+        ],
+        "økonom": [
+            { name: "økonom", href: "/økonom" }
+        ],
+        "Sekretær": [
+            { name: "Jobkategori", href: "/jobkategori" },
+            { name: "Medarbejder", href: "/medarbejder" },
+            { name: "Registrering", href: "/registrering" }
+            //{ name: "Sekretær", href: "/sekretær" }
+        ],
+        "Timelønnede": [
+            { name: "Registrering", href: "/registrering" }
+        ]
+    };
 
 function development(callback) {
     var MongoClient = require("mongodb").MongoClient,
@@ -81,9 +96,6 @@ function setup() {
 }
 
 function authenticate(username, password, done) {
-    if (username === "admin" && password === "admin") {
-        return done(null, { initialer: "@" });
-    }
     employee = new Employee(tableService);
     employee.getByInitials(username.toUpperCase(), function (err, user) {
         if (err) {
@@ -107,13 +119,9 @@ function init() {
         done(null, user.initialer);
     });
     passport.deserializeUser(function (id, done) {
-        if (id === "@") {
-            done(null, { initialer: "@", roller: ["Administrator"] });
-        } else {
-            employee.getByInitials(id, function (err, user) {
-                done(err, user);
-            });
-        }
+        employee.getByInitials(id, function (err, user) {
+            done(err, user);
+        });
     });
 }
 
@@ -161,19 +169,18 @@ function getFilter(role) {
 function authorize(req, res, next) {
     if (req.isAuthenticated()) {
         if (req.user) {
-            req.user.navn = req.user.initialer === "@" ? req.user.roller[0] : util.format("%s %s", req.user.fornavn, req.user.efternavn);
+            req.user.navn = util.format("%s %s", req.user.fornavn, req.user.efternavn);
             res.locals.user = req.user;
         }
-        req.user.roller = util.isArray(req.user.roller) ? req.user.roller : [req.user.roller];
-        if (req.user.roller.indexOf('Administrator') > -1) {
-            res.locals.routes = routes;
-        } else if (req.user.roller.indexOf('Timelønnede') > -1) {
-            res.locals.routes = routes.slice(2, 3);
-        } /*else if (req.user.roller.indexOf('Sekretær') > -1) {
-            req.locals.routes = routes.slice(0, 3);
-        } else if (req.user.roller.indexOf('Sekretær') > -1) {
-            req.locals.routes = routes.slice(0, 3);
-        }*/
+        var roller = req.user.roller.split(","),
+            localRoutes = [];
+        req.user.roller = util.isArray(roller) ? roller : [roller];
+        req.user.roller.forEach(function (role) {
+            localRoutes = localRoutes.concat((routes[role] || []).filter(function (route) {
+                return !_.findWhere(localRoutes, { name: route.name, href: route.href });
+            }));
+        });
+        res.locals.routes = localRoutes;
         next();
     } else if (req.path === "/login") {
         next();
