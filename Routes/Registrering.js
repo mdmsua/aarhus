@@ -1,51 +1,48 @@
 "use strict";
 
 var util = require("util"),
+    moment = require("moment"),
     Q = require("Q"),
     _ = require("underscore"),
     Registration = require("../modules/Registration");
 
-function Registrering(tableService, queueService) {
-    this.registration = new Registration(tableService, queueService);
+function Registrering(tableService) {
+    this.registration = new Registration(tableService);
 }
 
 Registrering.prototype.index = function (req,  res) {
-    Q.all([this.registration.get(0, req.user), this.registration.getJobCategories(req.user), this.registration.getOrganisations(req.user)]).spread(function (registrations, jobCategories, organisations) {
-        res.render("registrering/index", { title: "Registrering", registreringer: registrations, jobkategorier: jobCategories, enheder: organisations });
+    var period = parseInt(req.params.period, 10) || 0;
+    Q.all([
+        this.registration.get(0, period, req.user),
+        this.registration.getJobCategories(req.params.ssn || req.user.cpr),
+        this.registration.getOrganisations(req.params.ssn || req.user.cpr),
+        this.registration.getPreferences(req.user.cpr, "Medarbejder")
+    ]).spread(function (registrations, jobCategories, organisations, preferences) {
+        res.render("registrering/index", {
+            title: "Registrering",
+            registreringer: registrations,
+            jobkategorier: jobCategories,
+            enheder: organisations,
+            indstillinger: JSON.stringify(preferences),
+            period: period
+        });
     });
 };
 
 Registrering.prototype.create = function (req,  res) {
     var jobkategori = req.query.jobkategori,
         enhed = req.query.enhed;
-    res.render("registrering/ny", { title: "Registrering", jobkategorikode: jobkategori, enhedkode: enhed });
+    res.render("registrering/ny", { title: "Registrering", jobkategorikode: jobkategori, enhedkode: enhed, dato: moment().format("DD-MM-YYYY") });
 };
 
 Registrering.prototype.getJobCategories = function (req,  res, next) {
-    var self = this;
-    if (req.params.ssn) {
-        self.registration.getEmployeeBySSN(req.params.ssn, function (error, employee) {
-            if (error) {
-                next(error);
-            } else {
-                self.registration.getJobCategories(employee, function (error, jobCategories) {
-                    if (error) {
-                        next(error);
-                    } else {
-                        res.json(jobCategories);
-                    }
-                });
-            }
-        });
-    } else {
-        self.registration.getJobCategories(req.user, function (error, jobCategories) {
-            if (error) {
-                next(error);
-            } else {
-                res.json(jobCategories);
-            }
-        });
-    }
+    this.registration.getJobCategories(req.params.ssn || req.user.cpr, function (error, jobCategories) {
+        if (error) {
+            next(error);
+        } else {
+            res.json(jobCategories);
+        }
+    });
 };
 
 Registrering.prototype.byProjectActivity = function (req,  res, next) {
@@ -101,43 +98,42 @@ Registrering.prototype.deleteTemplate = function (req, res, next) {
 
 Registrering.prototype.send = function (req, res, next) {
     delete req.body.skabelon;
-    var self = this;
-    this.registration.getEmployees(function (error, employees) {
+    req.body.medarbejderkode = req.body.medarbejderkode || req.user.cpr;
+    req.body.medarbejdernavn = req.body.medarbejdernavn || req.user.navn;
+    req.body.lock = 0;
+    this.registration.create(req.body, function (error) {
         if (error) {
             next(error);
         } else {
-            var employee = employees[new Date().getDay()];
-            req.body.medarbejder = util.format("%s_%s %s", employee.ssn, employee.firstName, employee.lastName);
-            req.body.logs = req.body.logs || [];
-            req.body.logs.push({
-                when: new Date(),
-                name: util.format("%s %s", employee.firstName, employee.lastName),
-                what: "Oprettet",
-                text: req.body.kommentar
-            });
-            self.registration.post(req.body, function (error) {
-                if (error) {
-                    next(error);
-                } else {
-                    res.redirect("/registrering");
-                }
-            });
+            res.redirect("/registrering");
+        }
+    });
+};
+
+Registrering.prototype.update = function (req, res, next) {
+    res.send(req.body);
+    return;
+    delete req.body.skabelon;
+    req.body.medarbejderkode = req.body.medarbejderkode || req.user.cpr;
+    req.body.medarbejdernavn = req.body.medarbejdernavn || req.user.navn;
+    req.body.lock = 0;
+    this.registration.create(req.body, function (error) {
+        if (error) {
+            next(error);
+        } else {
+            res.redirect("/registrering");
         }
     });
 };
 
 Registrering.prototype.findOrganizations = function (req,  res, next) {
-    Q.all([this.registration.getOrganisations(), this.registration.getLkos(), this.registration.getJobCategories()]).spread(function (organizations, lkos, jobCategories) {
-        var jobCategory = _.findWhere(jobCategories, { uuid: req.params.jobkategori });
+    Q.all([
+        this.registration.getOrganisations(req.params.ssn || req.user.cpr),
+        this.registration.getLkosForJobCategory(req.params.jobkategori)]
+        ).spread(function (organizations, lkos) {
         res.json({
-            organizations: organizations.map(function (organization) {
-                return { id: organization.kode, text: organization.navn };
-            }),
-            lkos: lkos.filter(function (lko) {
-                return jobCategory.lko.toString() === lko.kode;
-            }).map(function (lko) {
-                return { id: lko.kode, text: lko.navn };
-            })
+            organizations: organizations,
+            lkos: lkos
         });
     }, function (error) {
         next(error);
@@ -149,12 +145,7 @@ Registrering.prototype.forOrganization = function (req,  res, next) {
         if (error) {
             next(error);
         } else {
-            res.json(locations.map(function (location) {
-                return {
-                    id: location.kode,
-                    text: location.navn
-                };
-            }));
+            res.json(locations);
         }
     });
 };
@@ -165,18 +156,8 @@ Registrering.prototype.forLocation = function (req,  res, next) {
             next(error);
         } else {
             res.json({
-                projects: kombo.projects.map(function (project) {
-                    return {
-                        id: project.kode,
-                        text: project.navn
-                    };
-                }),
-                activities: kombo.activities.map(function (activity) {
-                    return {
-                        id: activity.kode,
-                        text: activity.navn
-                    };
-                })
+                projects: kombo.projects,
+                activities: kombo.activities
             });
         }
     });
@@ -187,30 +168,35 @@ Registrering.prototype.account = function (req,  res, next) {
         if (error) {
             next(error);
         } else {
-            res.json(accounts.map(function (location) {
-                return {
-                    id: location.kode,
-                    text: location.navn
-                };
-            }));
+            res.json(accounts);
         }
     });
 };
 
 Registrering.prototype.remove = function (req,  res, next) {
-    var id = req.params.id,
-        self = this;
-    this.registration.get(id, function (error, message) {
+    this.registration.remove(req.params.id, function (error, success) {
         if (error) {
             next(error);
         } else {
-            self.registration.remove(message, function (error, success) {
-                if (error) {
-                    next(error);
-                } else {
-                    res.send(success ? 200 : 400);
-                }
-            });
+            res.send(success);
+        }
+    });
+};
+
+Registrering.prototype.savePreferences = function (req, res, next) {
+    this.registration.savePreferences(req.user.cpr, "Medarbejder", JSON.parse(req.body.data));
+};
+
+Registrering.prototype.view = function (req, res, next) {
+    this.registration.getRegistration(req.params.id, "Medarbejder", function (error, registration) {
+        if (error) {
+            next(error);
+        } else {
+            if (!registration) {
+                res.send(404);
+            } else {
+                res.render("registrering/vis", { title: "Registrering", registrering: registration });
+            }
         }
     });
 };
