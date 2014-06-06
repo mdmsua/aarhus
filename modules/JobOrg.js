@@ -156,7 +156,7 @@ JobOrg.prototype.deleteAll = function (ssn, callback) {
             jobs.forEach(function (job) {
                 queue.push(self.removeJob(job, ssn));
             });
-            Q.all(queue).done(function () {
+            Q.all(queue).spread(function () {
                 deferred.resolve();
             }, function (error) {
                 deferred.reject(error);
