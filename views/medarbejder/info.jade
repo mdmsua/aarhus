@@ -6,7 +6,7 @@ block container
             small &nbsp;
                 a(href="/medarbejder/" + employee.cpr + "/opdatering")
                     span.glyphicon.glyphicon-pencil
-    article.form-horizontal.col-lg-6
+    article.form-horizontal.col-lg-4
         div.form-group
             label.col-lg-3.control-label(for="fornavn") Fornavn
             div.col-lg-9
@@ -43,33 +43,41 @@ block container
             label.col-lg-3.control-label(for="telephoneNumber") Telefonnummer
             div.col-lg-9
                 p.form-control-static(name="telephoneNumber")= employee.phone
-        div.form-group
-            label.col-lg-3.control-label(for="roller") Roller
-            div.col-lg-9
-                if employee.roller
-                    ul.list-unstyled(name="roller")
-                        each rolle in employee.roller
-                            li= rolle
-        div.form-group
-            label.col-lg-3.control-label(for="enheder") Enheder
-            div.col-lg-9
-                if employee.enheder
-                    ul.list-unstyled(name="enheder")
-                        each enhed in employee.enheder
-                            li= enhed.navn
-    if employee.jobkategorier
-        article.col-lg-6
-            each jobkategori in employee.jobkategorier
-                section.panel(class=jobkategori.til ? "panel-default" : "panel-primary")
+        if employee.roller
+            div.form-group
+                label.col-lg-3.control-label(for="roller") Roller
+                div.col-lg-9
+                    p.form-control-static= employee.roller.join(", ")
+    if employee.enheder
+        article.col-lg-4
+            each enhed in employee.enheder
+                div.panel.panel-default
                     header.panel-heading
-                        div.panel-title
-                            h3= jobkategori.navn
-                            h5= jobkategori.fra + " - "  + (jobkategori.til || "...")
+                        h4= enhed.rolle
+                    table.table
+                        tbody
+                            each row in enhed.enheder
+                                tr(class=row.now ? "success" : "")
+                                    td= row.fra
+                                    td= row.til
+                                    td
+                                        ul.list-unstyled
+                                            each en in row.navne
+                                                li= en
+    if employee.jobkategorier
+        article.col-lg-4
+            each jobkategori in employee.jobkategorier
+                section.panel.panel-default
+                    header.panel-heading
+                        h4
+                            =jobkategori.navn
+                            |&nbsp;
+                            small= jobkategori.fra + " - "  + (jobkategori.til || "...")
                     if jobkategori.enheder
                         table.table
                             tbody
                                 each enhed in jobkategori.enheder || []
-                                    tr
+                                    tr(class=enhed.now ? "success" : "")
                                         td= enhed.fra
                                         td= enhed.til
                                         td= enhed.navn

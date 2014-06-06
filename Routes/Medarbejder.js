@@ -13,7 +13,9 @@ var util = require("util"),
     Projekt = require("../modules/Projekt"),
     Aktivitet = require("../modules/Aktivitet"),
     Sted = require("../modules/Sted"),
-    MedarbejderJob = require("../modules/MedarbejderJob");
+    JobOrg = require("../modules/JobOrg"),
+    Rolle = require("../modules/Rolle"),
+    format = "DD-MM-YYYY";
 
 function Medarbejder(tableService, redisClient) {
     this.employee = new Employee(tableService);
@@ -21,11 +23,12 @@ function Medarbejder(tableService, redisClient) {
     this.pkat = new Pkat(tableService);
     this.jobCategory = new JobCategory(tableService);
     this.enhed = new Enhed(tableService);
-    this.medarbejderJob = new MedarbejderJob(tableService);
+    this.joborg = new JobOrg(tableService);
     this.delregnskab = new Delregnskab(tableService);
     this.projekt = new Projekt(tableService);
     this.aktivitet = new Aktivitet(tableService);
     this.sted = new Sted(tableService);
+    this.rolle = new Rolle(tableService);
     this.redisClient = redisClient;
 }
 
@@ -102,13 +105,50 @@ Medarbejder.prototype.search = function (req, res) {
 };
 
 Medarbejder.prototype.get = function (req, res, next) {
-    Q.all([this.employee.one(req.params.ssn), this.medarbejderJob.get(req.params.ssn)]).spread(function (employee, jobs) {
+    Q.all([this.employee.one(req.params.ssn), this.joborg.get(req.params.ssn), this.rolle.get(req.params.ssn)]).spread(function (employee, jobs, roles) {
         employee.name = util.format("%s %s (%s)", employee.fornavn, employee.efternavn, employee.cpr);
         employee.roller = employee.roller ? employee.roller.split(",") : "";
-        employee.enheder = employee.enheder ? employee.enheder.split(",") : "";
-        employee.dato = employee.dato ? moment(employee.dato).format("DD-MM-YYYY") : "";
-        employee.jobkategorier = jobs;
+        employee.dato = employee.dato ? moment(employee.dato).format(format) : "";
+        employee.jobkategorier = jobs.map(function (job) {
+            job.now = moment().isBefore(moment(job.til, format)) && moment().isAfter(moment(job.fra, format));
+            if (!job.hasOwnProperty("fra")) {
+                job.fra = "";
+            }
+            if (!job.hasOwnProperty("til")) {
+                job.til = "";
+            }
+            job.enheder.forEach(function (enhed) {
+                if (!enhed.hasOwnProperty("fra")) {
+                    enhed.fra = "";
+                }
+                if (!enhed.hasOwnProperty("til")) {
+                    enhed.til = "";
+                }
+                enhed.now = moment().isBefore(moment(enhed.til, format)) && moment().isAfter(moment(enhed.fra, format));
+            });
+            return job;
+        });
+        var rls = [], role;
+        for (role in roles) {
+            if (roles.hasOwnProperty(role)) {
+                rls.push({
+                    rolle: role,
+                    enheder: roles[role].map(function (r) {
+                        return {
+                            fra: r.fra,
+                            til: r.til,
+                            koder: r.koder.split(","),
+                            navne: r.navne.split(";"),
+                            now: moment().isBefore(moment(r.til, format)) && moment().isAfter(moment(r.fra, format))
+                        };
+                    })
+                });
+            }
+        }
+        employee.enheder = rls;
         res.render("medarbejder/info", { title: "Medarbejder", employee: employee });
+    }, function (error) {
+        next(error);
     });
 };
 
@@ -157,20 +197,44 @@ Medarbejder.prototype.create = function (req, res, next) {
 };
 
 Medarbejder.prototype.update = function (req, res, next) {
+    res.locals.url = req.originalUrl;
     Q.all([
         this.employee.one(req.params.ssn),
-        this.medarbejderJob.get(req.params.ssn),
+        this.joborg.get(req.params.ssn),
         this.jobCategoryConfig.all(),
-        this.enhed.all()]).spread(function (employee, jobs, configs, organizations) {
+        this.enhed.all(),
+        this.rolle.get(req.params.ssn)]).spread(function (employee, jobs, configs, organizations, roles) {
         var model = {
             title: "Medarbejder",
             medarbejder: employee,
             jobkategorier: configs,
             enheder: organizations
         };
-        model.medarbejder.jobkategorier = jobs;
+        model.medarbejder.jobkategorier = jobs.map(function (job) {
+            job.now = moment().isBefore(moment(job.til, format)) && moment().isAfter(moment(job.fra, format));
+            job.enheder.forEach(function (enhed) {
+                enhed.now = moment().isBefore(moment(enhed.til, format)) && moment().isAfter(moment(enhed.fra, format));
+            });
+            return job;
+        });
         model.medarbejder.roller = model.medarbejder.roller ? model.medarbejder.roller.split(",") : [];
-        model.medarbejder.enheder = model.medarbejder.enheder ? model.medarbejder.enheder.split(",") : [];
+        var rls = [], role;
+        for (role in roles) {
+            if (roles.hasOwnProperty(role)) {
+                rls.push({
+                    rolle: role,
+                    enheder: roles[role].map(function (r) {
+                        return {
+                            fra: r.fra,
+                            til: r.til,
+                            navne: r.navne.split(";"),
+                            koder: r.koder.split(",")
+                        };
+                    })
+                });
+            }
+        }
+        employee.enheder = rls;
         model.medarbejder.dato = model.medarbejder.dato ? moment(model.medarbejder.dato).format("DD-MM-YYYY") : "";
         res.render("medarbejder/opdatering", model);
     }, function (error) {
@@ -180,24 +244,36 @@ Medarbejder.prototype.update = function (req, res, next) {
 
 Medarbejder.prototype.save = function (req, res, next) {
     var self = this,
-        job = req.body.job ? JSON.parse(req.body.job) : null,
+        jobs = req.body.job ? JSON.parse(req.body.job) : null,
+        orgs = req.body.org ? JSON.parse(req.body.org) : null,
         ssn = req.body.cpr;
     delete req.body.job;
-    this.employee.save(req.body, function (error) {
+    this.joborg.deleteAll(ssn, function (error) {
         if (error) {
             next(error);
         } else {
-            if (job) {
-                self.medarbejderJob.addJob(ssn, job, function (error) {
-                    if (error) {
-                        next(error);
-                    } else {
-                        res.redirect("/medarbejder/" + ssn);
+            self.employee.save(req.body, function (error) {
+                if (error) {
+                    next(error);
+                } else {
+                    var queue = [];
+                    if (jobs) {
+                        queue.push(self.joborg.addJobs(ssn, jobs));
                     }
-                });
-            } else {
-                res.redirect("/medarbejder/" + ssn);
-            }
+                    if (orgs) {
+                        orgs.forEach(function (org) {
+                            org.enheder.forEach(function (enhed) {
+                                queue.push(self.rolle.add(ssn, org.rolle, enhed.fra, enhed.til, enhed.koder, enhed.navne));
+                            });
+                        });
+                    }
+                    Q.all(queue).spread(function () {
+                        res.redirect("/medarbejder/" + ssn);
+                    }, function (error) {
+                        next(error);
+                    });
+                }
+            });
         }
     });
 };
@@ -285,7 +361,7 @@ Medarbejder.prototype.organizations = function (req, res, next) {
 };
 
 Medarbejder.prototype.deleteJob = function (req, res, next) {
-    this.medarbejderJob.removeJob(req.params.id, req.params.ssn, function (error) {
+    this.joborg.removeJob(req.params.id, req.params.ssn, function (error) {
         if (error) {
             next(error);
         } else {
@@ -295,7 +371,7 @@ Medarbejder.prototype.deleteJob = function (req, res, next) {
 };
 
 Medarbejder.prototype.deleteOrg = function (req, res, next) {
-    this.medarbejderJob.removeOrg(req.params.id, req.params.ssn, function (error) {
+    this.joborg.removeOrg(req.params.id, req.params.ssn, function (error) {
         if (error) {
             next(error);
         } else {

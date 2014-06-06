@@ -1,309 +1,213 @@
 extends ../layout
 block container
-    form(role="form", method="post")
-        legend
-            div.btn-toolbar
-                button.btn.btn-link(type="submit")
-                    span.glyphicon.glyphicon-floppy-disk &nbsp;Gem
-                button.btn.btn-link(type="reset", onclick="javascript:history.back()")
-                    span.glyphicon.glyphicon-remove &nbsp;Annuller
-                button.btn.btn-link(data-bind="click: jobcategory, disable: jobkategori()")
-                    span.glyphicon.glyphicon-plus &nbsp;Jobkategori
-        fieldset.col-lg-6.form-horizontal
-            //div.col-lg-6.form-group
-            //    label.control-label(for="fornavn") Fornavn
-            //    input.form-control(type="text", name="fornavn", placeholder="Fornavn", required="required", value=medarbejder.fornavn)
-            //div.col-lg-6.form-group
-            //    label.control-label(for="efternavn") Efternavn
-            //    input.form-control(type="text", name="efternavn", placeholder="Efternavn", required="required", value=medarbejder.efternavn)
-            //div.col-lg-3.form-group
-            //    label.control-label(for="cpr") CPR-nummer
-            //    input.form-control(type="text", name="cpr", placeholder="CPR-nummer", required="required", value=medarbejder.cpr)
-            //div.col-lg-3.form-group
-            //    label.control-label(for="lgn") Løngruppenummer
-            //    input.form-control(type="text", name="lgn", maxlength="3" placeholder="Løngruppenummer", required="required", value=medarbejder.lgn || '001')
-            //div.col-lg-3.form-group
-            //    label.control-label(for="initialer") Initialer
-            //    input.form-control(type="text", name="initialer", maxlength="3", placeholder="Initialer", required="required", value=medarbejder.initialer)
-            //div.col-lg-3.form-group
-            //    label.control-label(for="dato") Fra dato
-            //    input.form-control(type="date", name="dato", placeholder="Fra dato", required="required", value=medarbejder.dato)
-            //div.col-lg-4.form-group
-            //    label.control-label(for="email") Primær e-mail
-            //    input.form-control(type="email", name="email", placeholder="Primær e-mail", value=medarbejder.email)
-            //div.col-lg-4.form-group
-            //    label.control-label Privat e-mail
-            //    input.form-control(type="email", placeholder="Privat e-mail")
-            //div.col-lg-4.form-group
-            //    label.control-label(for="phone") Telefonnummer
-            //    input.form-control(type="tel", name="phone", placeholder="Telefonnummer", value=medarbejder.phone)
-            //div.col-lg-12.form-group
-            //    label.control-label(for="roller") Roller
-            //    select.form-control(id="roller", name="roller", placeholder="Vælg roller", multiple="multiple")
-            //        option(value="Timelønnede", selected=medarbejder.roller.indexOf('Timelønnede') > -1) Timelønnede
-            //        option(value="Sekretær", selected=medarbejder.roller.indexOf('Sekretær') > -1) Sekretær
-            //        option(value="økonom", selected=medarbejder.roller.indexOf('økonom') > -1) økonom
-            //        option(value="Administrator", selected=medarbejder.roller.indexOf('Administrator') > -1) Administrator
-            //div.col-lg-12.form-group(data-bind="visible: enheder")
-            //    label.control-label(for="enheder") Enheder
-            //    select.form-control(id="enheder", name="enheder", placeholder="Vælg enheder", multiple="multiple")
-            //        option
-            //            each enhed in enheder
-            //                option(value=enhed.kode, selected=medarbejder.enheder.indexOf(enhed.kode) > -1)= enhed.navn
-            div.form-group
-                label.control-label.col-lg-3(for="fornavn") Fornavn
-                div.col-lg-9
-                    input.form-control(type="text", name="fornavn", placeholder="Fornavn", required="required", value=medarbejder.fornavn)
-            div.form-group
-                label.control-label.col-lg-3(for="efternavn") Efternavn
-                div.col-lg-9
-                    input.form-control(type="text", name="efternavn", placeholder="Efternavn", required="required", value=medarbejder.efternavn)
-            div.form-group
-                label.control-label.col-lg-3(for="cpr") CPR-nummer
-                div.col-lg-3
-                    input.form-control(type="text", name="cpr", placeholder="CPR-nummer", required="required", value=medarbejder.cpr)
-            div.form-group
-                label.control-label.col-lg-3(for="lgn") Løngruppenummer
-                div.col-lg-3
-                    input.form-control(type="text", name="lgn", maxlength="3" placeholder="Løngruppenummer", required="required", value=medarbejder.lgn || '001')
-            div.form-group
-                label.control-label.col-lg-3(for="initialer") Initialer
-                div.col-lg-3
-                    input.form-control(type="text", name="initialer", maxlength="3", placeholder="Initialer", required="required", value=medarbejder.initialer)
-            div.form-group
-                label.control-label.col-lg-3(for="dato") Fra dato
-                div.col-lg-3
-                    input.form-control(type="date", name="dato", placeholder="Fra dato", required="required", value=medarbejder.dato)
-            div.form-group
-                label.control-label.col-lg-3(for="email") Primær e-mail
-                div.col-lg-6
-                    input.form-control(type="email", name="email", placeholder="Primær e-mail", value=medarbejder.email)
-            div.form-group
-                label.control-label.col-lg-3 Privat e-mail
-                div.col-lg-6
-                    input.form-control(type="email", placeholder="Privat e-mail")
-            div.form-group
-                label.control-label.col-lg-3(for="phone") Telefonnummer
-                div.col-lg-6
-                    input.form-control(type="tel", name="phone", placeholder="Telefonnummer", value=medarbejder.phone)
-            div.form-group
-                label.control-label.col-lg-3(for="roller") Roller
-                div.col-lg-9
-                    select.form-control(id="roller", name="roller", placeholder="Vælg roller", multiple="multiple")
-                        option(value="Timelønnede", selected=medarbejder.roller.indexOf('Timelønnede') > -1) Timelønnede
-                        option(value="Sekretær", selected=medarbejder.roller.indexOf('Sekretær') > -1) Sekretær
-                        option(value="økonom", selected=medarbejder.roller.indexOf('økonom') > -1) økonom
-                        option(value="Administrator", selected=medarbejder.roller.indexOf('Administrator') > -1) Administrator
-            div.form-group(data-bind="visible: enheder")
-                label.control-label.col-lg-3(for="enheder") Enheder
-                div.col-lg-9
-                    select.form-control(id="enheder", name="enheder", placeholder="Vælg enheder", multiple="multiple")
-                        option
-                            each enhed in enheder
-                                option(value=enhed.kode, selected=medarbejder.enheder.indexOf(enhed.kode) > -1)= enhed.navn
-        fieldset.col-lg-6
-            section.panel.panel-default(data-bind="if: jobkategori()")
-                header.panel-heading
-                    div.panel-title
-                        div.btn-group-sm
-                            button.btn.btn-success(type="button", data-bind="click: addJob, disable: !jobkategori().kode() || !jobkategori().enheder().length")
-                                span.glyphicon.glyphicon-ok
-                                |&nbsp;Gem
-                            button.btn.btn-warning(type="button", data-bind="click: remJob")
-                                span.glyphicon.glyphicon-remove
-                                |&nbsp;Annuler
-                section.panel-body
-                    form(role="form")
-                        div.form-group.col-lg-3
-                            label.control-label Fra
-                            input.form-control(type="date", data-bind="value: jobkategori().fra")
-                        div.form-group.col-lg-3
-                            label.control-label Til
-                            input.form-control(type="date", data-bind="value: jobkategori().til")
-                        div.form-group.col-lg-6
-                            label.control-label Jobkategori
-                            select.form-control(id="jobkategori", placeholder="Vælg jobkategori" data-bind="value: jobkategori().kode")
-                                option
-                                    each jobkategori in jobkategorier
-                                        option(value=jobkategori.uuid)= jobkategori.stilling
-                    form(role="form")
-                        div.form-group.col-lg-3
-                            label.control-label(for="fra") Fra
-                            input.form-control(type="date", name="fra", data-bind="value: jobkategori().enhed().fra")
-                        div.form-group.col-lg-3
-                            label.control-label(for="til") Til
-                            input.form-control(type="date", name="til", data-bind="value: jobkategori().enhed().til")
-                        div.form-group.col-lg-6
-                            label.control-label(for="jobkategori") Enhed
-                            select.form-control(id="enhed", name="enhed", placeholder="Vælg enhed" data-bind="value: jobkategori().enhed().kode")
-                                option
+    section(ng-app="app", ng-controller="ctrl")
+        input#medarbejder(type="hidden", value=JSON.stringify(medarbejder))
+        input#enheder(type="hidden", value=JSON.stringify(enheder))
+        input#jobkategorier(type="hidden", value=JSON.stringify(jobkategorier))
+        form(role="form", method="post", action=url)
+            input(type="hidden", name="job", value="{{ job }}")
+            input(type="hidden", name="org", value="{{ org }}")
+            legend
+                div.btn-toolbar
+                    button.btn.btn-link(type="submit")
+                        span.glyphicon.glyphicon-floppy-disk &nbsp;Gem
+                    button.btn.btn-link(type="reset", onclick="javascript:history.back()")
+                        span.glyphicon.glyphicon-remove &nbsp;Annuller
+                    button.btn.btn-link(ng-click="addJobCategory()", ng-disabled="jobkategori", ng-show="showJobCategories")
+                        span.glyphicon.glyphicon-plus &nbsp;Jobkategori
+            fieldset.col-lg-4.form-horizontal
+                div.form-group
+                    label.control-label.col-lg-4(for="fornavn") Fornavn
+                    div.col-lg-8
+                        input.form-control(type="text", name="fornavn", placeholder="Fornavn", ng-required="true", ng-model="medarbejder.fornavn")
+                div.form-group
+                    label.control-label.col-lg-4(for="efternavn") Efternavn
+                    div.col-lg-8
+                        input.form-control(type="text", name="efternavn", placeholder="Efternavn", ng-required="true", ng-model="medarbejder.efternavn")
+                div.form-group
+                    label.control-label.col-lg-4(for="cpr") CPR-nummer
+                    div.col-lg-8
+                        input.form-control(type="text", name="cpr", placeholder="CPR-nummer", ng-required="true", ng-model="medarbejder.cpr")
+                div.form-group
+                    label.control-label.col-lg-4(for="lgn") Løngruppenummer
+                    div.col-lg-4
+                        input.form-control(type="text", name="lgn", ng-maxlength="3", placeholder="Løngruppenummer", ng-required="true", ng-model="medarbejder.lgn")
+                div.form-group
+                    label.control-label.col-lg-4(for="initialer") Initialer
+                    div.col-lg-4
+                        input.form-control(type="text", name="initialer", maxlength="3", placeholder="Initialer", ng-required="true", ng-model="medarbejder.initialer")
+                div.form-group
+                    label.control-label.col-lg-4(for="dato") Fra dato
+                    div.col-lg-4
+                        input.form-control(type="text", name="dato", placeholder="Fra dato", ng-required="true", ng-model="medarbejder.dato", datepicker-popup, is-open="isOpen", ng-click="isOpen = true")
+                div.form-group
+                    label.control-label.col-lg-4(for="email") Primær e-mail
+                    div.col-lg-8
+                        input.form-control(type="email", name="email", placeholder="Primær e-mail", ng-model="medarbejder.email")
+                div.form-group
+                    label.control-label.col-lg-4 Privat e-mail
+                    div.col-lg-8
+                        input.form-control(type="email", placeholder="Privat e-mail")
+                div.form-group
+                    label.control-label.col-lg-4(for="phone") Telefonnummer
+                    div.col-lg-8
+                        input.form-control(type="tel", name="phone", placeholder="Telefonnummer", ng-model="medarbejder.phone")
+                div.form-group
+                    label.control-label.col-lg-4(for="roller") Roller
+                    div.col-lg-8
+                        select.form-control(name="roller", data-placeholder="Vælg roller", multiple, ng-model="medarbejder.roller", ui-select2)
+                            option(value="")
+                            option(value="Timelønnede") Timelønnede
+                            option(value="Sekretær") Sekretær
+                            option(value="økonom") økonom
+                            option(value="Administrator") Administrator
+            fieldset.col-lg-4(ng-show="showRoles")
+                div.panel.panel-default(ng-repeat="enhed in medarbejder.enheder")
+                    header.panel-heading
+                        h4 {{ enhed.rolle }}
+                    div.panel-body(ng-if="enhed.nyEnhed")
+                        form(role="form")
+                            div.form-group.col-lg-12
+                                select.form-control(data-placeholder="Vælg enheder", ng-model="enhed.nyEnhed.koder", multiple, ng-required="true", ui-select2)
                                     each enhed in enheder
                                         option(value=enhed.kode)= enhed.navn
-                        div.form-group.col-lg-12
-                            div.btn-group-sm.pull-right
-                                button.btn.btn-success(type="button", data-bind="click: addOrg, disable: !jobkategori().enhed().kode()")
-                                    span.glyphicon.glyphicon-ok
-                                    |&nbsp;Gem
-                                button.btn.btn-warning(type="button", data-bind="click: remOrg")
-                                    span.glyphicon.glyphicon-remove
-                                    |&nbsp;Annuler
-                table.table(data-bind="if: jobkategori().enheder().length")
-                    caption
-                    thead
-                        tr
-                            th Fra
-                            th Til
-                            th Enhed
-                            th
-                    tbody(data-bind="foreach: jobkategori().enheder")
-                        tr
-                            td(data-bind="text: fra")
-                            td(data-bind="text: til")
-                            td(data-bind="text: navn")
-                            td
-                                button.btn-link(type="button", data-bind="click: $root.remove")
-                                    span.glyphicon.glyphicon-trash
-            // ko foreach: jobkategorier
-            section.panel.panel-default
-                header.panel-heading
-                    div.panel-title
-                        h3(data-bind="text: navn")
-                        h5(data-bind="text: fra + ' - ' + (til || '...')")
-                div.panel-body
-                    button.btn.btn-danger.btn-xs(type="button", data-bind="click: $root.remJob")
-                        span.glyphicon.glyphicon-trash
-                        | &nbsp; Slet
-                table.table
-                    tbody(data-bind="foreach: enheder")
-                        tr
-                            td(data-bind="text: fra")
-                            td(data-bind="text: til")
-                            td(data-bind="text: navn")
-            // /ko
-            if medarbejder.jobkategorier
-                each jobkategori in medarbejder.jobkategorier
-                    section.panel(class=jobkategori.til ? "panel-default" : "panel-primary")
-                        header.panel-heading
-                            div.panel-title
-                                h3= jobkategori.navn
-                                h5= jobkategori.fra + " - "  + (jobkategori.til || "...")
-                        div.panel-body
-                            button.btn.btn-danger.btn-xs(type="submit", formaction="job/" + jobkategori.RowKey, formmethod="post")
-                                span.glyphicon.glyphicon-trash
-                                |&nbsp; Slet
-                        if jobkategori.enheder
-                            table.table
-                                tbody
-                                    each enhed in jobkategori.enheder || []
-                                        tr
-                                            td= enhed.fra
-                                            td= enhed.til
-                                            td= enhed.navn
-                                            td
-                                                button.btn-link(type="submit", formaction="org/" + enhed.RowKey, formmethod="post")
-                                                    span.glyphicon.glyphicon-trash
-            input(type="hidden", name="job", data-bind="value: job")
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Fra dato", ng-model="enhed.nyEnhed.fra", datepicker-popup, ng-click="enhed.nyEnhed.isOpen.fra = true", is-open="enhed.nyEnhed.isOpen.fra", max-date="enhed.nyEnhed.til", min-date="medarbejder.dato")
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Til dato", ng-model="enhed.nyEnhed.til", datepicker-popup, ng-click="enhed.nyEnhed.isOpen.til = true", is-open="enhed.nyEnhed.isOpen.til", min-date="enhed.nyEnhed.fra")
+                            div.form-group.col-lg-12
+                                div.btn-group.btn-group-justified
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-success(type="button", ng-click="addEnhed(enhed)", ng-disabled="!enhed.nyEnhed.fra && !enhed.nyEnhed.til || !enhed.nyEnhed.koder.length")
+                                            span.glyphicon.glyphicon-ok
+                                            |&nbsp; Gem
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-warning(type="button", ng-click="remEnhed(enhed)")
+                                            span.glyphicon.glyphicon-remove
+                                            |&nbsp; Annuler
+                    table.table
+                        thead(ng-if="!enhed.nyEnhed")
+                            tr
+                                th Fra
+                                th Til
+                                th Enheder
+                                th
+                                    a(href="javascript:void(0)", ng-click="addNewEnhed(enhed)")
+                                        span.glyphicon.glyphicon-plus
+                        tbody
+                            tr(ng-repeat="_enhed in enhed.enheder track by $index")
+                                td {{ _enhed.fra }}
+                                td {{ _enhed.til }}
+                                td
+                                    ul.list-unstyled
+                                        li(ng-repeat="navn in _enhed.navne") {{ navn }}
+                                td
+                                    a(href="javascript:void(0)", ng-click="delEnhed($index, enhed)")
+                                        span.glyphicon.glyphicon-trash
+            fieldset.col-lg-4(ng-show="showJobCategories")
+                section.panel.panel-default(ng-if="nyJobkategori")
+                    header.panel-heading
+                        h4 Ny jobkategori
+                    div.panel-body
+                        form(role="form")
+                            div.form-group.col-lg-12
+                                select.form-control(placeholder="Vælg jobkategori", ng-model="nyJobkategori.kode", ui-select2, ng-required="true")
+                                    option
+                                        each jobkategori in jobkategorier
+                                            option(value=jobkategori.uuid)= jobkategori.stilling
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Fra dato", ng-model="nyJobkategori.fra", datepicker-popup, ng-click="nyJobkategori.isOpen.fra = true", is-open="nyJobkategori.isOpen.fra", max-date="nyJobkategori.til")
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Til dato", ng-model="nyJobkategori.til", datepicker-popup, ng-click="nyJobkategori.isOpen.til = true", is-open="nyJobkategori.isOpen.til", min-date="nyJobkategori.fra")
+                            div.form-group.col-lg-12
+                                div.btn-group.btn-group-justified
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-success(type="button", ng-click="addJob(medarbejder.jobkategorier, nyJobkategori)", ng-disabled="!nyJobkategori.kode || !nyJobkategori.enheder.length || !nyJobkategori.fra")
+                                            span.glyphicon.glyphicon-ok
+                                            |&nbsp; Gem
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-warning(type="button", ng-click="remJob()")
+                                            span.glyphicon.glyphicon-remove
+                                            |&nbsp; Annuler
+                            div.form-group.col-lg-12
+                                select.form-control(placeholder="Vælg enhed", ng-model="nyJobkategori.enhed.kode", ng-required="true", ui-select2)
+                                    option
+                                        each enhed in enheder
+                                            option(value=enhed.kode)= enhed.navn
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Fra dato", ng-model="nyJobkategori.enhed.fra", datepicker-popup, ng-click="nyJobkategori.enhed.isOpen.fra = true", is-open="nyJobkategori.enhed.isOpen.fra", max-date="nyJobkategori.enhed.til")
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Til dato", ng-model="nyJobkategori.enhed.til", datepicker-popup, ng-click="nyJobkategori.enhed.isOpen.til = true", is-open="nyJobkategori.enhed.isOpen.til", min-date="nyJobkategori.enhed.fra")
+                            div.form-group.col-lg-12
+                                div.btn-group.btn-group-justified
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-success(type="button", ng-click="addOrg(nyJobkategori)", ng-disabled="!nyJobkategori.enhed.kode || !nyJobkategori.enhed.fra")
+                                            span.glyphicon.glyphicon-ok
+                                            |&nbsp; Gem
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-warning(type="button", ng-click="remOrg(nyJobkategori)")
+                                            span.glyphicon.glyphicon-remove
+                                            |&nbsp; Annuler
+                    table.table
+                        tbody
+                            tr(ng-repeat="enhed in nyJobkategori.enheder")
+                                td {{ enhed.fra }}
+                                td {{ enhed.til }}
+                                td {{ enhed.navn }}
+                                td
+                                    a(href="javascript:void(0)", ng-click="detachEnhed(nyJobkategori.enheder, $index)")
+                                        span.glyphicon.glyphicon-trash
+                section.panel.panel-default(ng-repeat="jobkategori in medarbejder.jobkategorier")
+                    header.panel-heading
+                        h4
+                            span {{ jobkategori.navn }}
+                            |&nbsp;
+                            small {{ jobkategori.fra + " - " + (jobkategori.til || "...") }}
+                    div.panel-body(ng-class="{ 'text-center': !jobkategori.enhed}")
+                        button.btn.btn-danger.btn-xs(type="button", ng-click="delJob(medarbejder.jobkategorier, $index)", ng-hide="jobkategori.enhed")
+                            span.glyphicon.glyphicon-trash
+                            | &nbsp; Slet jobkategori
+                        form(role="form", ng-if="jobkategori.enhed")
+                            div.form-group.col-lg-12
+                                select.form-control(placeholder="Vælg enhed", ng-model="jobkategori.enhed.kode", ng-required="true", ui-select2)
+                                    option
+                                        each enhed in enheder
+                                            option(value=enhed.kode)= enhed.navn
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Fra dato", ng-model="jobkategori.enhed.fra", datepicker-popup, ng-click="jobkategori.enhed.isOpen.fra = true", is-open="jobkategori.enhed.isOpen.fra", max-date="jobkategori.enhed.til")
+                            div.form-group.col-lg-6
+                                input.form-control(type="text", placeholder="Til dato", ng-model="jobkategori.enhed.til", datepicker-popup, ng-click="jobkategori.enhed.isOpen.til = true", is-open="jobkategori.enhed.isOpen.til", min-date="jobkategori.enhed.fra")
+                            div.form-group.col-lg-12
+                                div.btn-group.btn-group-justified
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-success(type="button", ng-click="addOrg(jobkategori)", ng-disabled="!jobkategori.enhed.fra || !jobkategori.enhed.kode")
+                                            span.glyphicon.glyphicon-ok
+                                            |&nbsp; Gem
+                                    div.btn-group.btn-group-sm
+                                        button.btn.btn-warning(type="button", ng-click="remOrg(jobkategori)")
+                                            span.glyphicon.glyphicon-remove
+                                            |&nbsp; Annuler
+                    table.table
+                        thead(ng-if="!jobkategori.enhed")
+                            tr
+                                th Fra
+                                th Til
+                                th Enhed
+                                th
+                                    a(href="javascript:void(0)", ng-click="attachEnhed(jobkategori)")
+                                        span.glyphicon.glyphicon-plus
+                        tbody
+                            tr(ng-repeat="enhed in jobkategori.enheder")
+                                td {{ enhed.fra }}
+                                td {{ enhed.til }}
+                                td {{ enhed.navn }}
+                                td
+                                    a(href="javascript:void(0)", type="button", ng-click="detachEnhed(jobkategori.enheder, $index)")
+                                        span.glyphicon.glyphicon-trash
 block scripts
-    script.
-        $(function () {
-            var touch = Modernizr.touch,
-                options = {
-                    format: "dd-mm-yyyy",
-                    weekStart: 1,
-                    language: "da",
-                    autoclose: true
-                },
-                $body = $("body"),
-                frasubscribtion = null,
-                tilsubscribtion = null,
-                vm = {
-                    job: ko.observable(null),
-                    enheder: ko.observable(false),
-                    jobkategorier: ko.observableArray([]),
-                    jobkategori: ko.observable(null),
-                    jobcategory: function () {
-                        vm.jobkategori({
-                            fra: ko.observable(),
-                            til: ko.observable(),
-                            enhed: ko.observable({
-                                fra: ko.observable(),
-                                til: ko.observable(),
-                                kode: ko.observable(),
-                                navn: ko.observable()
-                            }),
-                            enheder: ko.observableArray([]),
-                            kode: ko.observable(),
-                            navn: ko.observable()
-                        });
-                        if (!touch) {
-                            $("#jobkategori, #enhed").select2();
-                            $("input[type='date']").datepicker(options);
-                        }
-                        frasubscribtion = vm.jobkategori().fra.subscribe(function (value) {
-                            vm.jobkategori().enhed().fra(value);
-                        });
-                        tilsubscribtion = vm.jobkategori().til.subscribe(function (value) {
-                            vm.jobkategori().enhed().til(value);
-                        });
-                    },
-                    addJob: function () {
-                        var jobkategori = vm.jobkategori();
-                        vm.jobkategorier.push({
-                            fra: jobkategori.fra(),
-                            til: jobkategori.til(),
-                            navn: jobkategori.navn(),
-                            kode: jobkategori.kode(),
-                            enheder: jobkategori.enheder().map(function (enhed) {
-                                return {
-                                    fra: enhed.fra,
-                                    til: enhed.til,
-                                    navn: enhed.navn,
-                                    kode: enhed.kode
-                                }
-                            })
-                        });
-                        vm.remJob();
-                        vm.job(JSON.stringify(vm.jobkategorier()));
-                    },
-                    remJob: function () {
-                        vm.jobkategori(null);
-                        vm.jobkategorier.remove(this);
-                        frasubscribtion.dispose();
-                        tilsubscribtion.dispose();
-                    },
-                    addOrg: function () {
-                        var enhed = vm.jobkategori().enhed();
-                        vm.jobkategori().enheder.push({
-                            fra: enhed.fra(),
-                            til: enhed.til(),
-                            navn: enhed.navn(),
-                            kode: enhed.kode()
-                        });
-                        vm.remOrg();
-                    },
-                    remOrg: function () {
-                        vm.jobkategori().enhed().fra(null);
-                        vm.jobkategori().enhed().til(null);
-                        vm.jobkategori().enhed().kode(null);
-                        vm.jobkategori().enhed().navn(null);
-                    },
-                    remove: function () {
-                        vm.jobkategori().enheder.remove(this);
-                    }
-                };
-            ko.applyBindings(vm);
-            if (!touch) {
-                $("#jobkategorier, #roller, #enheder").select2();
-                $("input[type='date']").datepicker(options);
-            }
-            $("#roller").on("change", function () {
-                var roller = $(this).val();
-                vm.enheder((roller.indexOf('Sekretær') > -1 || roller.indexOf('økonom') > -1));
-            });
-            $body.on("change", "#jobkategori", function () {
-                vm.jobkategori().navn(this.options[this.selectedIndex].text);
-            });
-            $body.on("change", "#enhed", function () {
-                vm.jobkategori().enhed().navn(this.options[this.selectedIndex].text);
-            });
-        });
+    script(src="/angular/angular.min.js")
+    script(src="/angular-bootstrap/ui-bootstrap-tpls.min.js")
+    script(src="/angular-ui-select2/src/select2.js")
+    script(src="/moment/min/moment.min.js")
+    script(src="/moment/lang/da.js")
+    script(src="/js/medarbejder.js")

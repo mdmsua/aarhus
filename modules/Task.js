@@ -161,11 +161,11 @@ Task.prototype.insertOrReplaceEntity = function (entity, callback) {
     if (!entity.RowKey) {
         entity.RowKey = this.rowKeyProperty ? (entity[this.rowKeyProperty] || uuid.v4()) : uuid.v4();
     }
-    this.storageClient.insertOrReplaceEntity(this.tableName, entity, function (error, entity) {
+    this.storageClient.insertOrReplaceEntity(this.tableName, entity, function (error) {
         if (error) {
             callback(error);
         } else {
-            callback(null, entity);
+            callback(null);
         }
     });
 };

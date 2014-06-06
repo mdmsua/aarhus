@@ -12,7 +12,7 @@ var util = require("util"),
     JobCategoryConfig = require("../modules/JobCategoryConfig"),
     Enhed = require("../modules/Enhed"),
     Employee = require("../modules/Medarbejder"),
-    Job = require("../modules/MedarbejderJob"),
+    JobOrg = require("../modules/JobOrg"),
     Lko = require("../modules/Lko"),
     Preference = require("../modules/Indstilling"),
     Samtale = require("../modules/Samtale"),
@@ -30,7 +30,7 @@ function Registration(tableService) {
     this.enhed = new Enhed(tableService);
     this.employee = new Employee(tableService);
     this.lko = new Lko(tableService);
-    this.job = new Job(tableService);
+    this.joborg = new JobOrg(tableService);
     this.preference = new Preference(tableService);
     this.samtale = new Samtale(tableService);
 }
@@ -299,7 +299,7 @@ Registration.prototype.deleteTemplate = function (id, callback) {
 
 Registration.prototype.getJobCategories = function (ssn, callback) {
     var deferred = Q.defer();
-    this.job.getJobs(ssn, function (error, jobCategories) {
+    this.joborg.getJobs(ssn, function (error, jobCategories) {
         if (error) {
             deferred.reject(error);
         } else {
@@ -342,7 +342,7 @@ Registration.prototype.getLkosForJobCategory = function (jobCategory, callback) 
 
 Registration.prototype.getOrganisations = function (ssn, callback) {
     var deferred = Q.defer();
-    this.job.getOrgs(ssn, function (error, organisations) {
+    this.joborg.getOrgs(ssn, function (error, organisations) {
         if (error) {
             deferred.reject(error);
         } else {

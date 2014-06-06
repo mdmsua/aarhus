@@ -22,6 +22,11 @@
     "modernizr": "~2.8.1",
     "knockout": "~3.1.0",
     "knockout-mapping": "~2.4.1",
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "angular": "~1.2.16",
+    "angular-ui-bootstrap": "~0.11.0",
+    "angular-ui-select2": "~0.0.5",
+    "angular-bootstrap": "~0.11.0",
+    "moment": "~2.6.0"
   }
 }

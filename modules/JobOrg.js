@@ -4,12 +4,12 @@ var Q = require("Q"),
     _ = require("underscore"),
     uuid = require("node-uuid"),
     Task = require("../modules/Task"),
-    jobsTable = "medarbejderJob",
-    orgsTable = "medarbejderOrg";
+    jobTable = "job",
+    orgTable = "org";
 
-function MedarbejderJob(tableService) {
-    this.jobs = new Task(tableService, jobsTable);
-    this.orgs = new Task(tableService, orgsTable);
+function JobOrg(tableService) {
+    this.jobs = new Task(tableService, jobTable);
+    this.orgs = new Task(tableService, orgTable);
 }
 
 function structure(jobs, orgs) {
@@ -23,15 +23,15 @@ function structure(jobs, orgs) {
     return structures;
 }
 
-MedarbejderJob.prototype.get = function (ssn, callback) {
+JobOrg.prototype.get = function (ssn, callback) {
     var self = this,
         d = Q.defer(),
         jobsQuery = process.env.NODE_ENV === "dev" ?
-                { table: jobsTable, query: { PartitionKey: ssn } } :
-                require("azure").TableQuery.select().from(jobsTable).where("PartitionKey eq ?", ssn),
+                { table: jobTable, query: { PartitionKey: ssn } } :
+                require("azure").TableQuery.select().from(jobTable).where("PartitionKey eq ?", ssn),
         orgsQuery = process.env.NODE_ENV === "dev" ?
-                { table: orgsTable, query: { PartitionKey: ssn } } :
-                require("azure").TableQuery.select().from(orgsTable).where("PartitionKey eq ?", ssn);
+                { table: orgTable, query: { PartitionKey: ssn } } :
+                require("azure").TableQuery.select().from(orgTable).where("PartitionKey eq ?", ssn);
     this.jobs.queryEntities(jobsQuery, function (error, jobs) {
         if (error) {
             d.reject(error);
@@ -49,11 +49,11 @@ MedarbejderJob.prototype.get = function (ssn, callback) {
 };
 
 
-MedarbejderJob.prototype.getJobs = function (ssn, callback) {
+JobOrg.prototype.getJobs = function (ssn, callback) {
     var d = Q.defer(),
         jobsQuery = process.env.NODE_ENV === "dev" ?
-                    { table: jobsTable, query: { PartitionKey: ssn } } :
-                    require("azure").TableQuery.select().from(jobsTable).where("PartitionKey eq ?", ssn);
+                    { table: jobTable, query: { PartitionKey: ssn } } :
+                    require("azure").TableQuery.select().from(jobTable).where("PartitionKey eq ?", ssn);
     this.jobs.queryEntities(jobsQuery, function (error, jobs) {
         if (error) {
             d.reject(error);
@@ -64,11 +64,11 @@ MedarbejderJob.prototype.getJobs = function (ssn, callback) {
     return d.promise.nodeify(callback);
 };
 
-MedarbejderJob.prototype.getOrgs = function (ssn, callback) {
+JobOrg.prototype.getOrgs = function (ssn, callback) {
     var d = Q.defer(),
         orgsQuery = process.env.NODE_ENV === "dev" ?
-                { table: orgsTable, query: { PartitionKey: ssn } } :
-                require("azure").TableQuery.select().from(orgsTable).where("PartitionKey eq ?", ssn);
+                { table: orgTable, query: { PartitionKey: ssn } } :
+                require("azure").TableQuery.select().from(orgTable).where("PartitionKey eq ?", ssn);
     this.jobs.queryEntities(orgsQuery, function (error, orgs) {
         if (error) {
             d.reject(error);
@@ -79,12 +79,12 @@ MedarbejderJob.prototype.getOrgs = function (ssn, callback) {
     return d.promise.nodeify(callback);
 };
 
-MedarbejderJob.prototype.removeJob = function (job, ssn, callback) {
+JobOrg.prototype.removeJob = function (job, ssn, callback) {
     var self = this,
         d = Q.defer(),
         query = process.env.NODE_ENV === "dev" ?
-                { table: orgsTable, query: { job: job } } :
-                require("azure").TableQuery.select().from(orgsTable).where("job eq ?", job);
+                { table: orgTable, query: { job: job } } :
+                require("azure").TableQuery.select().from(orgTable).where("job eq ?", job);
     this.jobs.deleteEntity({ PartitionKey: ssn, RowKey: job }, function (error) {
         if (error) {
             d.reject(error);
@@ -104,7 +104,7 @@ MedarbejderJob.prototype.removeJob = function (job, ssn, callback) {
     return d.promise.nodeify(callback);
 };
 
-MedarbejderJob.prototype.removeOrg = function (org, ssn, callback) {
+JobOrg.prototype.removeOrg = function (org, ssn, callback) {
     var d = Q.defer();
     this.orgs.deleteEntity({ PartitionKey: ssn, RowKey: org }, function (error) {
         if (error) {
@@ -116,7 +116,7 @@ MedarbejderJob.prototype.removeOrg = function (org, ssn, callback) {
     return d.promise.nodeify(callback);
 };
 
-MedarbejderJob.prototype.addJob = function (ssn, jobcategories, callback) {
+JobOrg.prototype.addJobs = function (ssn, jobcategories, callback) {
     var self = this,
         d = Q.defer();
     jobcategories.forEach(function (jobcategory) {
@@ -144,4 +144,26 @@ MedarbejderJob.prototype.addJob = function (ssn, jobcategories, callback) {
     return d.promise.nodeify(callback);
 };
 
-module.exports = MedarbejderJob;
+
+JobOrg.prototype.deleteAll = function (ssn, callback) {
+    var self = this,
+        queue = [],
+        deferred = Q.defer();
+    this.getJobs(ssn, function (error, jobs) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            jobs.forEach(function (job) {
+                queue.push(self.removeJob(job, ssn));
+            });
+            Q.all(queue).done(function () {
+                deferred.resolve();
+            }, function (error) {
+                deferred.reject(error);
+            });
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+module.exports = JobOrg;

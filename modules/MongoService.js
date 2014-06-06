@@ -89,7 +89,7 @@ MongoService.prototype.insertOrReplaceEntity = function (table, entityDescriptor
                             if (error) {
                                 callback(error);
                             } else {
-                                callback(count);
+                                callback(null, count);
                             }
                         });
                     }
