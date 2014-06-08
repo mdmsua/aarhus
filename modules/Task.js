@@ -1,6 +1,7 @@
 "use strict";
 
-var uuid = require("node-uuid"),
+var Q = require("Q"),
+    uuid = require("node-uuid"),
     limit = 1000;
 
 function Task(storageClient, tableName, partitionKey, rowKeyProperty, callback) {
@@ -110,15 +111,15 @@ Task.prototype.updateEntity = function (item, callback) {
 };
 
 Task.prototype.deleteEntity = function (item, callback) {
-    this.storageClient.deleteEntity(this.tableName, item, function (error) {
-        if (callback) {
-            if (error) {
-                callback(error);
-            } else {
-                callback();
-            }
+    var deferred = Q.defer();
+    this.storageClient.deleteEntity(this.tableName, item, function (error, result) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(result);
         }
     });
+    return deferred.promise.nodeify(callback);
 };
 
 Task.prototype.batchEntities = function (items, callback) {
@@ -162,6 +163,22 @@ Task.prototype.insertOrReplaceEntity = function (entity, callback) {
         entity.RowKey = this.rowKeyProperty ? (entity[this.rowKeyProperty] || uuid.v4()) : uuid.v4();
     }
     this.storageClient.insertOrReplaceEntity(this.tableName, entity, function (error) {
+        if (error) {
+            callback(error);
+        } else {
+            callback(null);
+        }
+    });
+};
+
+Task.prototype.insertOrMergeEntity = function (entity, callback) {
+    if (!entity.PartitionKey) {
+        entity.PartitionKey = this.partitionKey;
+    }
+    if (!entity.RowKey) {
+        entity.RowKey = this.rowKeyProperty ? (entity[this.rowKeyProperty] || uuid.v4()) : uuid.v4();
+    }
+    this.storageClient.insertOrMergeEntity(this.tableName, entity, function (error) {
         if (error) {
             callback(error);
         } else {

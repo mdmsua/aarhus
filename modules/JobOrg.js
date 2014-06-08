@@ -1,6 +1,7 @@
 "use strict";
 
-var Q = require("Q"),
+var util = require("util"),
+    Q = require("Q"),
     _ = require("underscore"),
     uuid = require("node-uuid"),
     Task = require("../modules/Task"),
@@ -82,6 +83,7 @@ JobOrg.prototype.getOrgs = function (ssn, callback) {
 JobOrg.prototype.removeJob = function (job, ssn, callback) {
     var self = this,
         d = Q.defer(),
+        queue = [],
         query = process.env.NODE_ENV === "dev" ?
                 { table: orgTable, query: { job: job } } :
                 require("azure").TableQuery.select().from(orgTable).where("job eq ?", job);
@@ -94,9 +96,13 @@ JobOrg.prototype.removeJob = function (job, ssn, callback) {
                     d.reject(error);
                 } else {
                     entities.forEach(function (entity) {
-                        self.orgs.deleteEntity(entity);
+                        queue.push(self.orgs.deleteEntity(entity));
                     });
-                    d.resolve();
+                    Q.all(queue).spread(function () {
+                        d.resolve();
+                    }, function (error) {
+                        d.reject(error);
+                    });
                 }
             });
         }
@@ -117,23 +123,34 @@ JobOrg.prototype.removeOrg = function (org, ssn, callback) {
 };
 
 JobOrg.prototype.addJobs = function (ssn, jobcategories, callback) {
-    var self = this,
+    var jobKey = "",
+        self = this,
         d = Q.defer();
     jobcategories.forEach(function (jobcategory) {
-        jobcategory.PartitionKey = ssn;
-        jobcategory.RowKey = uuid.v4();
+        jobKey = util.format("%s_%s_%s", jobcategory.navn, jobcategory.fra, jobcategory.til);
         jobcategory.enheder.forEach(function (enhed) {
-            enhed.PartitionKey = ssn;
-            enhed.RowKey = uuid.v4();
-            enhed.job = jobcategory.RowKey;
-            self.orgs.insertEntity(enhed, function (error) {
+            self.orgs.insertEntity({
+                PartitionKey: ssn,
+                RowKey: uuid.v4(),
+                kode: enhed.kode,
+                navn: enhed.navn,
+                fra: enhed.fra,
+                til: enhed.til,
+                job: jobKey
+            }, function (error) {
                 if (error) {
                     d.reject(error);
                 }
             });
         });
-        delete jobcategory.enheder;
-        self.jobs.insertEntity(jobcategory, function (error) {
+        self.jobs.insertEntity({
+            PartitionKey: ssn,
+            RowKey: jobKey,
+            kode: jobcategory.kode,
+            navn: jobcategory.navn,
+            fra: jobcategory.fra,
+            til: jobcategory.til
+        }, function (error) {
             if (error) {
                 d.reject(error);
             } else {
@@ -154,7 +171,7 @@ JobOrg.prototype.deleteAll = function (ssn, callback) {
             deferred.reject(error);
         } else {
             jobs.forEach(function (job) {
-                queue.push(self.removeJob(job, ssn));
+                queue.push(self.removeJob(job.RowKey, ssn));
             });
             Q.all(queue).spread(function () {
                 deferred.resolve();

@@ -26,4 +26,4 @@ node_modules
 bower_components
 
 .idea
-settings.json
+setting.json

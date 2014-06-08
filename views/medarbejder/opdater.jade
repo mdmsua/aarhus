@@ -1,19 +1,19 @@
 extends ../layout
 block container
-    section(ng-app="app", ng-controller="ctrl")
-        input#medarbejder(type="hidden", value=JSON.stringify(medarbejder))
-        input#enheder(type="hidden", value=JSON.stringify(enheder))
-        input#jobkategorier(type="hidden", value=JSON.stringify(jobkategorier))
-        form(role="form", method="post", action=url)
-            input(type="hidden", name="job", value="{{ job }}")
-            input(type="hidden", name="org", value="{{ org }}")
+    input#medarbejder(type="hidden", value=JSON.stringify(medarbejder))
+    input#enheder(type="hidden", value=JSON.stringify(enheder))
+    input#jobkategorier(type="hidden", value=JSON.stringify(jobkategorier))
+    form(role="form", method="post", action=url, ng-app="app", ng-controller="ctrl")
+        input(type="hidden", name="job", value="{{ job }}")
+        input(type="hidden", name="org", value="{{ org }}")
+        fieldset
             legend
                 div.btn-toolbar
-                    button.btn.btn-link(type="submit")
+                    button.btn.btn-link.btn-lg(type="submit")
                         span.glyphicon.glyphicon-floppy-disk &nbsp;Gem
-                    button.btn.btn-link(type="reset", onclick="javascript:history.back()")
+                    button.btn.btn-link.btn-lg(type="reset", onclick="javascript:history.back()")
                         span.glyphicon.glyphicon-remove &nbsp;Annuller
-                    button.btn.btn-link(ng-click="addJobCategory()", ng-disabled="jobkategori", ng-show="showJobCategories")
+                    button.btn.btn-link.btn-lg(type="button", ng-click="addJobCategory()", ng-disabled="jobkategori", ng-show="showJobCategories && medarbejder.RowKey")
                         span.glyphicon.glyphicon-plus &nbsp;Jobkategori
             fieldset.col-lg-4.form-horizontal
                 div.form-group
@@ -56,13 +56,13 @@ block container
                     label.control-label.col-lg-4(for="roller") Roller
                     div.col-lg-8
                         select.form-control(name="roller", data-placeholder="Vælg roller", multiple, ng-model="medarbejder.roller", ui-select2)
-                            option(value="")
+                            //option(value="")
                             option(value="Timelønnede") Timelønnede
                             option(value="Sekretær") Sekretær
                             option(value="økonom") økonom
                             option(value="Administrator") Administrator
             fieldset.col-lg-4(ng-show="showRoles")
-                div.panel.panel-default(ng-repeat="enhed in medarbejder.enheder")
+                div.panel.panel-default(ng-repeat="enhed in medarbejder.enheder", ng-show="medarbejder.roller.indexOf(enhed.rolle) > -1")
                     header.panel-heading
                         h4 {{ enhed.rolle }}
                     div.panel-body(ng-if="enhed.nyEnhed")
@@ -105,6 +105,55 @@ block container
                                     a(href="javascript:void(0)", ng-click="delEnhed($index, enhed)")
                                         span.glyphicon.glyphicon-trash
             fieldset.col-lg-4(ng-show="showJobCategories")
+                section.form-horizontal(ng-show="!medarbejder.RowKey")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="jobkategorikode") Jobkategori
+                        div.col-lg-12
+                            select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-required="!medarbejder.RowKey", ng-model="jobkategorikode", ui-select2)
+                                option
+                                    each jobkategori in jobkategorier
+                                        option(value=jobkategori.uuid)= jobkategori.stilling
+                            input(type="hidden", name="jobkategorinavn", value="{{ jobkategorinavn }}")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="pkatkode") PKAT
+                        div.col-lg-12
+                            select.form-control(name="pkatkode", placeholder="Vælg PKAT", ng-required="!medarbejder.RowKey", ng-disabled="!pkats", ng-model="pkatkode", ui-select2)
+                                option
+                                option(ng-repeat="pkat in pkats", value="{{ pkat.kode }}") {{ pkat.navn }}
+                            input(type="hidden", name="pkatnavn", value="{{ pkatnavn }}")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="delregnskabkode") Delregnskab
+                        div.col-lg-12
+                            select.form-control(name="delregnskabkode", placeholder="Vælg delregnskab", ng-model="delregnskabkode", ng-required="!medarbejder.RowKey", ui-select2)
+                                option
+                                option(ng-repeat="delregnskab in delregnskaber", value="{{ delregnskab.kode }}") {{ delregnskab.navn }}
+                            input(type="hidden", name="delregnskabnavn", value="{{ delregnskabnavn }}")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="projektkode") Projekt
+                        div.col-lg-12
+                            input.form-control(placeholder="Vælg projekt", ng-model="projekt", ui-select2="uiprojekt")
+                            input(type="hidden", name="projektkode", value="{{ projektkode }}")
+                            input(type="hidden", name="projektnavn", value="{{ projektnavn }}")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="aktivitetkode") Aktivitet
+                        div.col-lg-12
+                            input.form-control(placeholder="Vælg aktivitet", ng-model="aktivitet", ui-select2="uiaktivitet")
+                            input(type="hidden", name="aktivitetkode", value="{{ aktivitetkode }}")
+                            input(type="hidden", name="aktivitetnavn", value="{{ aktivitetnavn }}")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="stedkode") STED
+                        div.col-lg-12
+                            select.form-control(name="stedkode", placeholder="Vælg STED", ng-model="stedkode", ui-select2="{ allowClear: true }")
+                                option
+                                option(ng-repeat="sted in steder", value="{{ sted.kode }}") {{ sted.navn }}
+                            input(type="hidden", name="stednavn", value="{{ stednavn }}")
+                    div.form-group
+                        //label.control-label.col-lg-4(for="enhedkode") Enhed
+                        div.col-lg-12
+                            select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="enhedkode", ng-required="!medarbejder.RowKey", ui-select2)
+                                option
+                                option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.navn }}
+                            input(type="hidden", name="enhednavn", value="{{ enhednavn }}")
                 section.panel.panel-default(ng-if="nyJobkategori")
                     header.panel-heading
                         h4 Ny jobkategori

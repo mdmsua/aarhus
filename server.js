@@ -62,7 +62,7 @@ function development(callback) {
 function production(callback) {
     var nconf = require("nconf"),
         azure = require("azure");
-    nconf.file("settings.json").env();
+    nconf.file("setting.json").env();
     tableService = azure.createTableService(nconf.get("AZURE_STORAGE_ACCOUNT"), nconf.get("AZURE_STORAGE_ACCESS_KEY"));
     redisClient = redis.createClient(6379, nconf.get("AZURE_CACHE_ACCOUNT"));
     redisClient.auth(nconf.get("AZURE_CACHE_ACCESS_KEY"), function () {
@@ -97,7 +97,7 @@ function setup() {
 
 function authenticate(username, password, done) {
     employee = new Employee(tableService);
-    employee.getByInitials(username.toUpperCase(), function (err, user) {
+    employee.getByInitials(username.toLowerCase(), function (err, user) {
         if (err) {
             return done(err);
         }

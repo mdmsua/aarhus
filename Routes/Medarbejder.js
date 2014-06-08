@@ -154,11 +154,12 @@ Medarbejder.prototype.get = function (req, res, next) {
 
 Medarbejder.prototype.create = function (req, res, next) {
     var self = this;
+    res.locals.url = req.originalUrl;
     Q.all([
         this.jobCategoryConfig.all(),
         this.enhed.all()
     ]).spread(function (configs, organizations) {
-        res.render("medarbejder/opret", { title: "Medarbejder", jobkategorier: configs, enheder: organizations, medarbejder: { } });
+        res.render("medarbejder/opdater", { title: "Medarbejder", jobkategorier: configs, enheder: organizations, medarbejder: { } });
         self.redisClient.strlen("projekt", function (error, len) {
             if (error) {
                 next(error);
@@ -236,7 +237,7 @@ Medarbejder.prototype.update = function (req, res, next) {
         }
         employee.enheder = rls;
         model.medarbejder.dato = model.medarbejder.dato ? moment(model.medarbejder.dato).format("DD-MM-YYYY") : "";
-        res.render("medarbejder/opdatering", model);
+        res.render("medarbejder/opdater", model);
     }, function (error) {
         next(error);
     });
@@ -248,10 +249,12 @@ Medarbejder.prototype.save = function (req, res, next) {
         orgs = req.body.org ? JSON.parse(req.body.org) : null,
         ssn = req.body.cpr;
     delete req.body.job;
+    delete req.body.org;
     this.joborg.deleteAll(ssn, function (error) {
         if (error) {
             next(error);
         } else {
+            req.body.initialer = req.body.initialer.toLowerCase();
             self.employee.save(req.body, function (error) {
                 if (error) {
                     next(error);
@@ -262,7 +265,7 @@ Medarbejder.prototype.save = function (req, res, next) {
                     }
                     if (orgs) {
                         orgs.forEach(function (org) {
-                            org.enheder.forEach(function (enhed) {
+                            (org.enheder || []).forEach(function (enhed) {
                                 queue.push(self.rolle.add(ssn, org.rolle, enhed.fra, enhed.til, enhed.koder, enhed.navne));
                             });
                         });

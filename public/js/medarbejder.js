@@ -1,33 +1,31 @@
 "use strict";
 function controller($scope, $http) {
+    var format = "DD-MM-YYYY",
+        roles = ["Sekretær", "økonom"],
+        length = roles.length,
+        role = "",
+        i = 0;
     $scope.medarbejder = { roller: [] };
     $scope.$watchCollection("medarbejder.roller", function (roller) {
         if (angular.isDefined(roller) && angular.isArray(roller)) {
-            var i;
             $scope.showJobCategories = roller.indexOf("Timelønnede") > -1;
-            $scope.showRoles = roller.indexOf("Sekretær") > -1 || roller.indexOf("økonom") > -1;
-            if (roller.indexOf("Sekretær") > -1) {
-                if (!_.findWhere($scope.medarbejder.enheder, { rolle: "Sekretær"})) {
-                    $scope.medarbejder.enheder.unshift({ rolle: "Sekretær" });
-                }
-            } else {
-                if (_.findWhere($scope.medarbejder.enheder, { rolle: "Sekretær"})) {
-                    for (i = 0; i < $scope.medarbejder.enheder.length; i++) {
-                        if ($scope.medarbejder.enheder[i].rolle === "Sekretær") {
-                            $scope.medarbejder.enheder.splice(i, 1);
-                        }
+            $scope.showRoles = _.intersection(roller, roles).length;
+            for (i = 0; i < length; i += 1) {
+                role = roles[i];
+                if (roller.indexOf(role) > -1) {
+                    $scope.medarbejder.enheder = $scope.medarbejder.enheder || [];
+                    if (!_.findWhere($scope.medarbejder.enheder, { rolle: role })) {
+                        $scope.medarbejder.enheder.unshift({ rolle: role });
                     }
-                }
-            }
-            if (roller.indexOf("økonom") > -1) {
-                if (!_.findWhere($scope.medarbejder.enheder, { rolle: "økonom"})) {
-                    $scope.medarbejder.enheder.unshift({ rolle: "økonom" });
-                }
-            } else {
-                if (_.findWhere($scope.medarbejder.enheder, { rolle: "økonom"})) {
-                    for (i = 0; i < $scope.medarbejder.enheder.length; i++) {
-                        if ($scope.medarbejder.enheder[i].rolle === "økonom") {
-                            $scope.medarbejder.enheder.splice(i, 1);
+                } else {
+                    var enhed = _.findWhere($scope.medarbejder.enheder, { rolle: role });
+                    if (enhed) {
+                        if ($scope.medarbejder.RowKey && confirm("Ved at fjerne denne rolle vil alle sine nuværende perioder være lukket i dag. Fortsæt?")) {
+                            (enhed.enheder || []).forEach(function (e) {
+                                if (!e.til || moment().isBefore(moment(e.til, format))) {
+                                    e.til = moment().format(format);
+                                }
+                            });
                         }
                     }
                 }
@@ -38,10 +36,70 @@ function controller($scope, $http) {
         if (angular.isDefined(medarbejder)) {
             $scope.org = JSON.stringify(medarbejder.enheder);
             $scope.job = JSON.stringify(medarbejder.jobkategorier);
-            console.log($scope.org);
-            console.log($scope.job);
         }
     }, true);
+    $scope.$watch("showJobCategories", function (showJobCategories, oldVal) {
+        if (!showJobCategories && oldVal) {
+            if (confirm("Ved at fjerne denne rolle vil alle sine nuværende perioder være lukket i dag. Fortsæt?")) {
+                $scope.medarbejder.jobkategorier.forEach(function (jobkategori) {
+                    if (!jobkategori.til || moment().isBefore(moment(jobkategori.til, format))) {
+                        jobkategori.til = moment().format(format);
+                        jobkategori.enheder.forEach(function (e) {
+                            if (!e.til || moment().isBefore(moment(e.til, format))) {
+                                e.til = moment().format(format);
+                            }
+                        });
+                    }
+                });
+            }
+        } else if (showJobCategories && !$scope.medarbejder.RowKey) {
+            $http.get("/medarbejder/delregnskaber").success(function (data) {
+                $scope.delregnskaber = data;
+            });
+            $http.get("/medarbejder/steder").success(function (data) {
+                $scope.steder = data;
+            });
+        }
+    });
+    $scope.$watch("jobkategorikode", function (jobkategorikode) {
+        if (angular.isDefined(jobkategorikode)) {
+            $scope.jobkategorinavn = _.findWhere($scope.jobkategorier, { uuid: jobkategorikode }).stilling;
+            $http.get("/medarbejder/job/" + jobkategorikode).success(function (data) {
+                $scope.pkats = data;
+                if (data.length === 1) {
+                    $scope.pkatkode = data[0].kode;
+                    $scope.pkatnavn = data[0].navn;
+                }
+            });
+        }
+    });
+    $scope.$watch("enhedkode", function (enhedkode) {
+        if (angular.isDefined(enhedkode) && enhedkode) {
+            $scope.enhednavn = _.findWhere($scope.enheder, { kode: enhedkode }).navn;
+        }
+    });
+    $scope.$watch("delregnskabkode", function (delregnskabkode) {
+        if (angular.isDefined(delregnskabkode) && delregnskabkode) {
+            $scope.delregnskabnavn = _.findWhere($scope.delregnskaber, { kode: delregnskabkode }).navn;
+        }
+    });
+    $scope.$watch("stedkode", function (stedkode) {
+        if (angular.isDefined(stedkode) && stedkode) {
+            $scope.stednavn = _.findWhere($scope.steder, { kode: stedkode }).navn;
+        }
+    });
+    $scope.$watch("projekt", function (projekt) {
+        if (angular.isDefined(projekt) && projekt) {
+            $scope.projektkode = projekt.id;
+            $scope.projektnavn = projekt.text;
+        }
+    });
+    $scope.$watch("aktivitet", function (aktivitet) {
+        if (angular.isDefined(aktivitet) && aktivitet) {
+            $scope.aktivitetkode = aktivitet.id;
+            $scope.aktivitetnavn = aktivitet.text;
+        }
+    });
     angular.element(document).ready(function () {
         $scope.medarbejder = angular.fromJson(angular.element("#medarbejder").val());
         $scope.enheder = angular.fromJson(angular.element("#enheder").val());
@@ -104,6 +162,38 @@ function controller($scope, $http) {
     };
     $scope.nyJobkategori = null;
     $scope.enhed = null;
+    $scope.uiprojekt = {
+        minimumInputLength: 4,
+        allowClear: true,
+        ajax: {
+            url: "/medarbejder/projekter",
+            data: function (term) {
+                return {
+                    q: term
+                };
+            },
+            results: function (data) {
+                $scope.projekter = data;
+                return { results: data };
+            }
+        }
+    };
+    $scope.uiaktivitet = {
+        minimumInputLength: 4,
+        allowClear: true,
+        ajax: {
+            url: "/medarbejder/aktiviteter",
+            data: function (term) {
+                return {
+                    q: term
+                };
+            },
+            results: function (data) {
+                $scope.aktiviteter = data;
+                return { results: data };
+            }
+        }
+    };
 }
 
 angular.module("app", ["ui.bootstrap", "ui.select2"])

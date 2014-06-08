@@ -82,7 +82,7 @@ Medarbejder.prototype.save = function (employee, callback) {
     var deferred = Q.defer();
     employee.roller = (util.isArray(employee.roller) ? employee.roller : [employee.roller]).join();
     employee.enheder = (util.isArray(employee.enheder) ? employee.enheder : [employee.enheder]).join();
-    this.task.insertOrReplaceEntity(employee, function (error, entity) {
+    this.task.insertOrMergeEntity(employee, function (error, entity) {
         if (error) {
             deferred.reject(error);
         } else {
