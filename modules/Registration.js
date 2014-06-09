@@ -16,6 +16,7 @@ var util = require("util"),
     Lko = require("../modules/Lko"),
     Preference = require("../modules/Indstilling"),
     Samtale = require("../modules/Samtale"),
+    Rolle = require("../modules/Rolle"),
     Task = require("../modules/Task"),
     table = "registrering";
 
@@ -33,6 +34,7 @@ function Registration(tableService) {
     this.joborg = new JobOrg(tableService);
     this.preference = new Preference(tableService);
     this.samtale = new Samtale(tableService);
+    this.rolle = new Rolle(tableService);
 }
 
 Registration.prototype.get = function (lock, period, user, callback) {
@@ -44,27 +46,53 @@ Registration.prototype.get = function (lock, period, user, callback) {
                 period === 0 ? moment().endOf("month") :
                         moment().startOf("month")).toDate().getTime().toString(),
         query = process.env.NODE_ENV === "dev" ?
-                { table: table, query: { $and: [{ PartitionKey: table }, { lock: lock }, { medarbejderkode: user.cpr }, { RowKey: { $gt: from, $lt: to } }] } } :
-                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and lock eq ? and medarbejderkode eq ? and RowKey gt ? and RowKey lt ?", table, lock, user.cpr, from, to);
+                { table: table, query: { $and: [{ PartitionKey: table }, { lock: lock }, { RowKey: { $gt: from, $lt: to } }] } } :
+                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and lock eq ? and RowKey gt ? and RowKey lt ?", table, lock, from, to);
     this.registrering.queryEntities(query, function (error, registrations) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(registrations);
+            deferred.resolve(registrations.filter(function (registration) {
+                return user ? registration.medarbejderkode === user.cpr : true;
+            }));
         }
     });
     return deferred.promise.nodeify(callback);
 };
 
 Registration.prototype.create = function (registration, callback) {
-    var deferred = Q.defer();
+    var self = this,
+        deferred = Q.defer();
     registration.PartitionKey = table;
     registration.RowKey = new Date().getTime().toString();
     this.registrering.insertEntity(registration, function (error, entity) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(entity);
+            var role = "";
+            switch (registration.lock) {
+            case 0:
+                role = "Timelønnede";
+                break;
+            case 1:
+                role = "Sekretær";
+                break;
+            case 2:
+                role = "økonom";
+                break;
+            }
+            self.samtale.add(registration.RowKey, {
+                rolle: role,
+                medarbejderkode: registration.medarbejderkode,
+                medarbejdernavn: registration.medarbejdernavn,
+                kommentar: registration.kommentar
+            }, function (error) {
+                if (error) {
+                    deferred.reject(error);
+                } else {
+                    deferred.resolve(entity);
+                }
+            });
         }
     });
     return deferred.promise.nodeify(callback);
@@ -346,8 +374,67 @@ Registration.prototype.getOrganisations = function (ssn, callback) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(organisations);
+            deferred.resolve(organisations.filter(function (organisation) {
+                return organisation.til ? (moment().isBefore(moment(organisation.til, "DD-MM-YYYY")) &&
+                    moment().isAfter(moment(organisation.fra, "DD-MM-YYYY"))) :
+                        moment().isAfter(moment(organisation.fra, "DD-MM-YYYY"));
+            }));
         }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.getOrganisationsForRole = function (ssn, role, callback) {
+    var deferred = Q.defer();
+    this.rolle.find(ssn, role, function (error, organisations) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(organisations.filter(function (organisation) {
+                return organisation.til ? (moment().isBefore(moment(organisation.til, "DD-MM-YYYY")) &&
+                    moment().isAfter(moment(organisation.fra, "DD-MM-YYYY"))) :
+                        moment().isAfter(moment(organisation.fra, "DD-MM-YYYY"));
+            }));
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
+Registration.prototype.findEmployeesInOrganizations = function (organizations, callback) {
+    var self = this,
+        deferred = Q.defer(),
+        orgQueue = [],
+        empQueue = [],
+        orgs = [];
+    organizations.forEach(function (organization) {
+        orgs = _.union(orgs, organization.koder.split(","));
+    });
+    orgs.forEach(function (org) {
+        orgQueue.push(self.joborg.getEmployees(org));
+    });
+    Q.all(orgQueue).spread(function (employeeGroups) {
+        employeeGroups.forEach(function (employeeGroup) {
+            if (util.isArray(employeeGroup)) {
+                employeeGroup.forEach(function (employee) {
+                    if (employee.til ? (moment().isBefore(moment(employee.til, "DD-MM-YYYY")) &&
+                        moment().isAfter(moment(employee.fra, "DD-MM-YYYY"))) :
+                                moment().isAfter(moment(employee.fra, "DD-MM-YYYY"))) {
+                        empQueue.push(self.employee.one(employee.PartitionKey));
+                    }
+                });
+            } else if (employeeGroup.til ? (moment().isBefore(moment(employeeGroup.til, "DD-MM-YYYY")) &&
+                moment().isAfter(moment(employeeGroup.fra, "DD-MM-YYYY"))) :
+                        moment().isAfter(moment(employeeGroup.fra, "DD-MM-YYYY"))) {
+                empQueue.push(self.employee.one(employeeGroup.PartitionKey));
+            }
+        });
+        Q.all(empQueue).spread(function (employees) {
+            deferred.resolve(_.union(employees));
+        }, function (error) {
+            deferred.reject(error);
+        });
+    }, function (error) {
+        deferred.reject(error);
     });
     return deferred.promise.nodeify(callback);
 };
@@ -410,7 +497,7 @@ Registration.prototype.getPreferences = function (ssn, role, callback) {
         } else {
             if (!preference) {
                 switch (role) {
-                case "Medarbejder":
+                case "Timelønnede":
                     preference = {
                         "Medarbejder": false,
                         "Jobkategori": true,
@@ -459,13 +546,26 @@ Registration.prototype.savePreferences = function (ssn, role, preference, callba
     return deferred.promise.nodeify(callback);
 };
 
-Registration.prototype.update = function (item, callback) {
-    var deferred = Q.defer();
+Registration.prototype.update = function (item, role, callback) {
+    var self = this,
+        deferred = Q.defer();
     this.registrering.updateEntity(item, function (error, message) {
         if (error) {
             deferred.reject(error);
         } else {
-            deferred.resolve(message);
+            self.samtale.add(item.RowKey, {
+                rolle: role,
+                medarbejderkode: item.medarbejderkode,
+                medarbejdernavn: item.medarbejdernavn,
+                kommentar: item.kommentar
+            }, function (error) {
+                if (error) {
+                    deferred.reject(error);
+                } else {
+                    deferred.resolve(message);
+                }
+            });
+            deferred.resolve();
         }
     });
     return deferred.promise.nodeify(callback);

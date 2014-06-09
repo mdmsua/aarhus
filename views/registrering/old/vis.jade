@@ -1,0 +1,272 @@
+extends ../layout
+block container
+    form.form-horizontal(role="form", method="post")
+        fieldset.col-lg-9.col-md-9.col-sm-9
+            div.form-group
+                label.control-label.col-lg-3(for="dato") Dato
+                div.col-lg-2
+                    input.form-control(name="dato", type="text", placeholder="Dato", value=registrering.dato)
+            div.form-group
+                label.control-label.col-lg-3(for="jobkategori") Jobkategori
+                div.col-lg-6
+                    select.form-control(name="jobkategorikode", value=registrering.jobkategorikode, placeholder="Vælg jobkategori", data-bind="value: registrering.jobkategorikode, disable: !jobkategorier().length")
+                        option
+                        // ko foreach: jobkategorier
+                        option(data-bind="value: kode, text: navn")
+                        // /ko
+                    input(type="hidden", name="jobkategorinavn", data-bind="value: registrering.jobkategorinavn", value=registrering.jobkategorinavn)
+            div.form-group
+                label.control-label.col-lg-3(for="enhed") Enhed
+                div.col-lg-6
+                    select.form-control(name="enhedkode", placeholder="Vælg enhed", value=registrering.enhedkode, data-bind="value: registrering.enhedkode, disable: !enheder().length")
+                        option
+                        // ko foreach: enheder
+                        option(data-bind="value: kode, text: navn")
+                        // /ko
+                    input(type="hidden", name="enhednavn", data-bind="value: registrering.enhednavn", value=registrering.enhednavn)
+            div.form-group
+                label.control-label.col-lg-3(for="projekt") Projekt
+                div.col-lg-6
+                    select.form-control(name="projektkode", placeholder="Vælg projekt", disabled=!projekter, data-bind="value: registrering.projektkode, disable: !projekter().length")
+                        option
+                        // ko foreach: projekter
+                        option(data-bind="value: kode, text: navn")
+                        // /ko
+                    input(type="hidden", name="projektnavn", data-bind="value: registrering().projektnavn")
+            div.form-group
+                label.control-label.col-lg-3(for="aktivitet") Aktivitet
+                div.col-lg-6
+                    select.form-control(name="aktivitetkode", placeholder="Vælg aktivitet", disabled=!aktiviteter, data-bind="value: registrering.aktivitetkode, disable: !aktiviteter().length")
+                        option
+                        // ko foreach: aktiviteter
+                        option(data-bind="value: kode, text: navn")
+                        // /ko
+                    input(type="hidden", name="aktivitetnavn", data-bind="value: registrering().aktivitetnavn")
+            div.form-group
+                label.control-label.col-lg-3(for="lko") Lønkode
+                div.col-lg-6
+                    select.form-control(name="lkokode", placeholder="Vælg lønkode", disabled=!lkos, data-bind="value: registrering.lkokode, disable: !lkos().length")
+                        option
+                        // ko foreach: lkos
+                        option(data-bind="value: kode, text: navn")
+                        // /ko
+                    input(type="hidden", name="lkonavn", data-bind="value: registrering.lkonavn")
+            div.form-group
+                label.control-label.col-lg-3(for="sted") Sted
+                div.col-lg-6
+                    input.form-control(placeholder="Sted", data-bind="value: registrering().stednavn", disabled)
+                    input(type="hidden", name="stedkode", data-bind="value: registrering().stedkode")
+                    input(type="hidden", name="stednavn", data-bind="value: registrering().stednavn")
+            div.form-group
+                label.control-label.col-lg-3(for="delregnskabkode") Delregnskab
+                div.col-lg-6
+                    input.form-control(placeholder="Delregnskab", data-bind="value: registrering().delregnskabnavn", disabled)
+                    input(type="hidden", name="delregnskabkode", data-bind="value: registrering().delregnskabkode")
+                    input(type="hidden", name="delregnskabnavn", data-bind="value: registrering().delregnskabnavn")
+            div.form-group
+                label.control-label.col-lg-3(for="felt1") Værdi
+                div.col-lg-2
+                    input.form-control(name="felt1", type="number", value=registrering.felt1, placeholder="Værdi")
+                    input.form-control(name="felt2", type="hidden", value=registrering.felt2)
+                    input.form-control(name="felt3", type="hidden", value=registrering.felt3)
+                    input.form-control(name="felt4", type="hidden", value=registrering.felt4)
+            div.form-group
+                label.control-label.col-lg-3(for="kommentar") Kommentar
+                div.col-lg-6
+                    textarea.form-control(name="kommentar", placeholder="Kommentar", value=registrering.kommentar)
+            footer.form-group
+                div.col-lg-offset-3.col-lg-6
+                    div.btn-group.btn-group-justified
+                        div.btn-group
+                            button.btn.btn-success(type="submit") Send
+                        div.btn-group
+                            button.btn.btn-warning(type="reset", onclick="javascript:history.back()") Annuller
+                        div.btn-group
+                            button.btn.btn-danger(type="button", data-bind="click: confirmDelete") Gem som kladde
+                        div.btn-group
+                            button.btn.btn-default(type="button", data-bind="click: toggleTemplate") Gem som skabelon
+            div.form-group(data-bind="visible: visibleTemplate")
+                label.control-label.col-lg-3 Skabelon
+                div.col-lg-6
+                    div.input-group
+                        input.form-control(type="text", name="skabelon")
+                        span.input-group-btn
+                            button.btn.btn-default(type="submit", formaction="/registrering/skabelon") Gem
+    aside.col-lg-3.col-md-3.col-sm-3
+    input#vm(type="hidden", value=JSON.stringify(registrering))
+block scripts
+    script.
+        $(function () {
+            var touch = Modernizr.touch,
+                vm = {
+                    registrering: ko.observable({
+                        jobkategorikode: ko.observable(),
+                        jobkategorinavn: ko.observable(),
+                        enhedkode: ko.observable(),
+                        enhednavn: ko.observable(),
+                        projektkode: ko.observable(),
+                        projektnavn: ko.observable(),
+                        aktivitetkode: ko.observable(),
+                        aktivitetnavn: ko.observable(),
+                        lkokode: ko.observable(),
+                        lkonavn: ko.observable(),
+                        stedkode: ko.observable(),
+                        stednavn: ko.observable(),
+                        delregnskabkode: ko.observable(),
+                        delregnskabnavn: ko.observable()
+                    }),
+                    jobkategorier: ko.observableArray([]),
+                    enheder: ko.observableArray([]),
+                    projekter: ko.observableArray([]),
+                    aktiviteter: ko.observableArray([]),
+                    lkos: ko.observableArray([]),
+                    confirmDelete: function () {
+                        if (confirm("Er du sikker på, at du vil slette denne post?")) {
+                            $.ajax({
+                                method: "delete",
+                                url: "/registrering/" + _vm.RowKey
+                            }).done(function () {
+                               history.back();
+                            });
+                        }
+                    }
+                };
+                var _vm = JSON.parse($("#vm").val());
+                /*vm.registrering.jobkategorikode.subscribe(function (jobkategori) {
+                    if (jobkategori) {
+                        if (!touch) {
+                            $("select[name='jobkategorikode']").select2("val", jobkategori);
+                        }
+                        $.get("/registrering/jobkategori/" + jobkategori, function (data) {
+                            vm.enheder(data.organizations);
+                            if (data.organizations.length === 1) {
+                                vm.registrering.enhedkode(data.organizations[0].kode);
+                                vm.registrering.enhednavn(data.organizations[0].navn);
+                            }
+                            vm.lkos(data.lkos);
+                            if (data.lkos.length === 1) {
+                                vm.registrering.lkokode(data.lkos[0].kode);
+                                vm.registrering.lkonavn(data.lkos[0].navn);
+                            }
+                        });
+                        vm.jobkategorinavn(_.findWhere(vm.jobkategorier(), { kode: jobkategori }).navn);
+                    } else {
+                        vm.registrering.jobkategorinavn(null);
+                        vm.registrering.enheder.removeAll();
+                        vm.registrering.lkos.removeAll();
+                        vm.registrering.enhedkode(null);
+                        vm.registrering.lkokode(null);
+                    }
+                });
+                vm.registrering.enhedkode.subscribe(function (enhed) {
+                    if (enhed) {
+                        if (!touch) {
+                            $("select[name='enhedkode']").select2("val", enhed);
+                        }
+                        $.get("/registrering/enhed/" + enhed, function (locations) {
+                            vm.registrering.stedkode(locations[0].kode);
+                            vm.registrering.stednavn(locations[0].navn);
+                        });
+                        vm.enhednavn(_.findWhere(vm.enheder(), { kode: enhed }).navn);
+                    } else {
+                        vm.enhednavn(null);
+                        vm.stedkode(null);
+                    }
+                });
+                vm.stedkode.subscribe(function (sted) {
+                    if (sted) {
+                        if (!touch) {
+                            $("select[name='stedkode']").select2("val", sted);
+                        }
+                        $.get("/registrering/sted/" + sted, function (data) {
+                            vm.projekter(data.projects);
+                            if (data.projects.length === 1) {
+                                vm.projektkode(data.projects[0].kode);
+                                vm.projektnavn(data.projects[0].navn);
+                            }
+                            vm.aktiviteter(data.activities);
+                            if (data.activities.length === 1) {
+                                vm.aktivitetkode(data.activities[0].kode);
+                                vm.aktivitetnavn(data.activities[0].navn);
+                            }
+                        });
+                    } else {
+                        vm.stednavn(null);
+                        vm.projekter.removeAll();
+                        vm.aktiviteter.removeAll();
+                        vm.projektkode(null);
+                        vm.aktivitetkode(null);
+                    }
+                });
+            vm.lkokode.subscribe(function (lko) {
+                if (lko) {
+                    if (!touch) {
+                        $("select[name='lkokode']").select2("val", lko);
+                    }
+                    vm.lkonavn(_.findWhere(vm.lkos(), { kode: lko }).navn);
+                } else {
+                    vm.lkonavn(null);
+                }
+            });
+            vm.projektkode.subscribe(function (project) {
+                if (project) {
+                    vm.projektnavn(_.findWhere(vm.projekter(), { kode: project }).navn);
+                    if (vm.aktivitetkode()) {
+                        getAccounting(project, vm.aktivitetkode());
+                    }
+                } else {
+                    vm.delregnskabkode(null);
+                    vm.delregnskabnavn(null);
+                }
+            });
+            vm.aktivitetkode.subscribe(function (activity) {
+                if (activity) {
+                    vm.aktivitetnavn(_.findWhere(vm.aktiviteter(), { kode: activity }).navn);
+                    if (vm.projektkode()) {
+                        getAccounting(vm.projektkode(), activity);
+                    }
+                } else {
+                    vm.delregnskabkode(null);
+                    vm.delregnskabnavn(null);
+                }
+            });
+            function getAccounting(project, activity) {
+                $.get("/registrering/delregnskab/" + project + "/" + activity, function (accounts) {
+                    if (accounts && accounts.length) {
+                        vm.delregnskabkode(accounts[0].kode);
+                        vm.delregnskabnavn(accounts[0].navn);
+                    }
+                });
+            }*/
+            ko.applyBindings(vm);
+            if (!touch) {
+                $("select.form-control").select2({ allowClear: true });
+                $("input[name='dato']").datepicker({
+                    format: "dd-mm-yyyy",
+                    weekStart: 1,
+                    language: "da",
+                    autoclose: true,
+                    startDate: "-1y",
+                    endDate: "+1m"
+                });
+            }
+            $.get("/registrering/cpr", function (jobCategories) {
+                vm.jobkategorier(jobCategories);
+                $.get("/registrering/jobkategori/" + _vm.jobkategorikode, function (data) {
+                    vm.enheder(data.organizations);
+                    vm.lkos(data.lkos);
+                    $.get("/registrering/sted/" + _vm.stedkode, function (data) {
+                       vm.projekter(data.projects);
+                       vm.aktiviteter(data.activities);
+                       vm.registrering(ko.mapping.fromJS(_vm));
+                       if (!touch) {
+                        $("select[name='jobkategorikode']").select2("val", _vm.jobkategorikode);
+                        $("select[name='enhedkode']").select2("val", _vm.enhedkode);
+                        $("select[name='projektkode']").select2("val", _vm.projektkode);
+                        $("select[name='aktivitetkode']").select2("val", _vm.aktivitetkode);
+                        $("select[name='lkokode']").select2("val", _vm.lkokode);
+                       }
+                   });
+                });
+            });
+        });

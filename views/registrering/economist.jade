@@ -1,0 +1,135 @@
+extends ../layout
+block container
+    article(ng-app="app", ng-controller="ctrl")
+        input#registreringer(type="hidden", value=JSON.stringify(registreringer))
+        input#indstillinger(type="hidden", value=JSON.stringify(indstillinger))
+        input#medarbejdere(type="hidden", value=JSON.stringify(medarbejdere))
+        input#enheder(type="hidden", value=JSON.stringify(enheder))
+        section.row
+            form.form-inline(role="form", action="/registrering/lock/1/ny")
+                div.form-group.col-lg-5
+                    select.form-control(name="enhed", data-placeholder="Vælg enhed", style="width:100%", ui-select2="{ allowClear: true }", ng-model="enhed")
+                        option
+                        option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.navn }}
+                div.form-group.col-lg-5
+                    select.form-control(name="medarbejder", data-placeholder="Vælg medarbejder", style="width:100%", ui-select2="{ allowClear: true }", ng-model="medarbejder")
+                        option
+                        option(ng-repeat="medarbejder in medarbejdere", value="{{ medarbejder.cpr }}") {{ medarbejder.fornavn + " " + medarbejder.efternavn }}
+                div.form-group.col-lg-2
+                    button.btn.btn-primary.btn-sm(type="submit", style="width:100%") Ny
+        hr
+        section.row
+            nav.col-lg-10
+                ul.nav.nav-pills
+                    if registreringer && registreringer.length
+                        li
+                            a.text-muted(href="javascript:void(0)", ng-click="setStatus()") &times;
+                        li(ng-class="{ active: status === 1 }")
+                            a.text-primary(href="javascript:void(0)", ng-click="setStatus(1)") Ny &nbsp;
+                                span.badge {{ getCount(1) }}
+                        li(ng-class="{ active: status === 2 }")
+                            a.text-primary(href="javascript:void(0)", ng-click="setStatus(2)") Afventer &nbsp;
+                                span.badge {{ getCount(2) }}
+                        li(ng-class="{ active: status === 2 }")
+                            a.text-success(href="javascript:void(0)", ng-click="setStatus(2)") økonomgodkendt &nbsp;
+                                span.badge {{ getCount(2) }}
+                        li(ng-class="{ active: status === -2 }")
+                            a.text-danger(href="javascript:void(0)", ng-click="setStatus(-2)") økonomafvist &nbsp;
+                                span.badge {{ getCount(-2) }}
+                        li(ng-class="{ active: status === 3 }")
+                            a.text-success(href="javascript:void(0)", ng-click="setStatus(3)") Eksporteret &nbsp;
+                                span.badge {{ getCount(3) }}
+                        li(ng-class="{ active: status === -3 }")
+                            a.text-danger(href="javascript:void(0)", ng-click="setStatus(-3)") Ikke eksporteret &nbsp;
+                                span.badge {{ getCount(-3) }}
+                    else
+                        li.disabled
+                            a(href="javascript:void(0)") Ingen varer fundet for den valgte periode
+            nav.col-lg-2
+                select.form-control#period
+                    option(value="1",selected=period === 1 ? "selected" : null) Næste måned
+                    option(value="0", selected=period === 0 ? "selected" : null) Denne måned
+                    option(value="-1", selected=period === -1 ? "selected" : null) Sidste måned
+                    option(value="-3", selected=period === -3 ? "selected" : null) Seneste 3 måneder
+                    option(value="-6", selected=period === -6 ? "selected" : null) Seneste 6 måneder
+                    option(value="-12", selected=period === -12 ? "selected" : null) Sidste år
+        if registreringer && registreringer.length
+            section.row
+                section.col-lg-12
+                    table.table
+                        caption.well-lg
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Medarbejder']")
+                                |Medarbejder
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Jobkategori']")
+                                |Jobkategori
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Enhed']")
+                                |Enhed
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Dato']")
+                                |Dato
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Lønkode']")
+                                |Lønkode
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Projekt']")
+                                |Projekt
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Aktivitet']")
+                                |Aktivitet
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Sted']")
+                                |Sted
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Delregnskab']")
+                                |Delregnskab
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Værdi']")
+                                |Værdi
+                            label.checkbox-inline
+                                input(type="checkbox", ng-model="indstillinger['Kommentar']")
+                                |Kommentar
+                        thead
+                            tr
+                                th
+                                    input(type="checkbox", ng-model="all")
+                                th(ng-show="indstillinger['Medarbejder']") Medarbejder
+                                th(ng-show="indstillinger['Jobkategori']") Jobkategori
+                                th(ng-show="indstillinger['Enhed']") Enhed
+                                th(ng-show="indstillinger['Dato']") Dato
+                                th(ng-show="indstillinger['Lønkode']") Lønkode
+                                th(ng-show="indstillinger['Projekt']") Projekt
+                                th(ng-show="indstillinger['Aktivitet']") Aktivitet
+                                th(ng-show="indstillinger['Sted']") Sted
+                                th(ng-show="indstillinger['Delregnskab']") Delregnskab
+                                th(ng-show="indstillinger['Værdi']") Værdi
+                                th(ng-show="indstillinger['Kommentar']") Kommentar
+                                th
+                        tbody
+                            tr(ng-repeat="registrering in registreringer | filter: { medarbejderkode: medarbejder } | filter: { enhedkode: enhed } | filter: { lock: status }",
+                                ng-class="{ success: registrering.lock == 3, danger: registrering.lock == -1 }")
+                                td
+                                    input(type="checkbox", ng-model="check[registrering.RowKey]")
+                                td(ng-show="indstillinger['Medarbejder']") {{ registrering.medarbejdernavn }}
+                                td(ng-show="indstillinger['Jobkategori']") {{ registrering.jobkategorinavn }}
+                                td(ng-show="indstillinger['Enhed']") {{ registrering.enhednavn }}
+                                td(ng-show="indstillinger['Dato']") {{ registrering.dato }}
+                                td(ng-show="indstillinger['Lønkode']") {{ registrering.lkonavn }}
+                                td(ng-show="indstillinger['Projekt']") {{ registrering.projektnavn }}
+                                td(ng-show="indstillinger['Aktivitet']") {{ registrering.aktivitetnavn }}
+                                td(ng-show="indstillinger['Sted']") {{ registrering.stednavn }}
+                                td(ng-show="indstillinger['Delregnskab']") {{ registrering.delregnskabnavn }}
+                                td(ng-show="indstillinger['Værdi']") {{ registrering.felt1 }}
+                                td(ng-show="indstillinger['Kommentar']") {{ registrering.kommentar }}
+                                td
+                                    a(href="{{ '/registrering/lock/' + lock + '/vis/' + registrering.RowKey }}")
+                                        span.glyphicon.glyphicon-arrow-right
+block scripts
+    script(src="/angular/angular.min.js")
+    script(src="/angular-bootstrap/ui-bootstrap-tpls.min.js")
+    script(src="/angular-ui-select2/src/select2.js")
+    script(src="/moment/min/moment.min.js")
+    script(src="/moment/lang/da.js")
+    script(src="/js/registrering/medarbejder/index.js")

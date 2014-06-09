@@ -172,7 +172,35 @@ MongoService.prototype.queryTables = function (callback) {
 };
 
 MongoService.prototype.updateEntity = function (table, entityDescriptor, callback) {
-
+    this.db.collection(table, function (error, collection) {
+        if (error) {
+            callback(error);
+        } else {
+            collection.findOne({ $and: [{ PartitionKey: entityDescriptor.PartitionKey }, { RowKey: entityDescriptor.RowKey }] }, function (error, entity) {
+                if (error) {
+                    callback(error);
+                } else {
+                    if (entity) {
+                        collection.update({ _id: entity._id }, entityDescriptor, function (error, count) {
+                            if (error) {
+                                callback(error);
+                            } else {
+                                callback(null, count);
+                            }
+                        });
+                    } else {
+                        collection.insert(entityDescriptor, { w: 1 }, function (error, count) {
+                            if (error) {
+                                callback(error);
+                            } else {
+                                callback(null, count);
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    });
 };
 
 MongoService.prototype.beginBatch = function () {

@@ -35,7 +35,7 @@ block container
                 div.form-group
                     label.control-label.col-lg-4(for="initialer") Initialer
                     div.col-lg-4
-                        input.form-control(type="text", name="initialer", maxlength="3", placeholder="Initialer", ng-required="true", ng-model="medarbejder.initialer")
+                        input.form-control(type="text", name="initialer", maxlength="10", placeholder="Initialer", ng-required="true", ng-model="medarbejder.initialer")
                 div.form-group
                     label.control-label.col-lg-4(for="dato") Fra dato
                     div.col-lg-4
@@ -109,7 +109,7 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="jobkategorikode") Jobkategori
                         div.col-lg-12
-                            select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-required="!medarbejder.RowKey", ng-model="jobkategorikode", ui-select2)
+                            select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-required="!!medarbejder.RowKey", ng-model="jobkategorikode", ui-select2)
                                 option
                                     each jobkategori in jobkategorier
                                         option(value=jobkategori.uuid)= jobkategori.stilling
@@ -117,14 +117,14 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="pkatkode") PKAT
                         div.col-lg-12
-                            select.form-control(name="pkatkode", placeholder="Vælg PKAT", ng-required="!medarbejder.RowKey", ng-disabled="!pkats", ng-model="pkatkode", ui-select2)
+                            select.form-control(name="pkatkode", placeholder="Vælg PKAT", ng-required="!!medarbejder.RowKey", ng-disabled="!pkats", ng-model="pkatkode", ui-select2)
                                 option
                                 option(ng-repeat="pkat in pkats", value="{{ pkat.kode }}") {{ pkat.navn }}
                             input(type="hidden", name="pkatnavn", value="{{ pkatnavn }}")
                     div.form-group
                         //label.control-label.col-lg-4(for="delregnskabkode") Delregnskab
                         div.col-lg-12
-                            select.form-control(name="delregnskabkode", placeholder="Vælg delregnskab", ng-model="delregnskabkode", ng-required="!medarbejder.RowKey", ui-select2)
+                            select.form-control(name="delregnskabkode", placeholder="Vælg delregnskab", ng-model="delregnskabkode", ng-required="!!medarbejder.RowKey", ui-select2)
                                 option
                                 option(ng-repeat="delregnskab in delregnskaber", value="{{ delregnskab.kode }}") {{ delregnskab.navn }}
                             input(type="hidden", name="delregnskabnavn", value="{{ delregnskabnavn }}")
@@ -150,7 +150,7 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="enhedkode") Enhed
                         div.col-lg-12
-                            select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="enhedkode", ng-required="!medarbejder.RowKey", ui-select2)
+                            select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="enhedkode", ng-required="!!medarbejder.RowKey", ui-select2)
                                 option
                                 option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.navn }}
                             input(type="hidden", name="enhednavn", value="{{ enhednavn }}")

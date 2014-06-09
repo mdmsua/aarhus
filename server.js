@@ -15,7 +15,6 @@ var util = require("util"),
     JobCategoryConfig = require("./routes/jobcategoryconfig"),
     Medarbejder = require("./routes/Medarbejder"),
     Registrering = require("./routes/Registrering"),
-    Godkende = require("./routes/Godkende"),
     index = require("./routes/index"),
     Employee = require("./modules/Medarbejder"),
     _ = require("underscore"),
@@ -27,18 +26,15 @@ var util = require("util"),
         "Administrator": [
             { name: "Jobkategori", href: "/jobkategori" },
             { name: "Medarbejder", href: "/medarbejder" },
-            { name: "Registrering", href: "/registrering" }
-            //{ name: "Sekretær", href: "/sekretær" },
-            //{ name: "økonom", href: "/økonom" }
+            { name: "Administration", href: "/administration" }
         ],
         "økonom": [
-            { name: "økonom", href: "/økonom" }
+            { name: "Registrering", href: "/registrering" }
         ],
         "Sekretær": [
             { name: "Jobkategori", href: "/jobkategori" },
             { name: "Medarbejder", href: "/medarbejder" },
             { name: "Registrering", href: "/registrering" }
-            //{ name: "Sekretær", href: "/sekretær" }
         ],
         "Timelønnede": [
             { name: "Registrering", href: "/registrering" }
@@ -191,8 +187,7 @@ function authorize(req, res, next) {
 
 var employeeRouter = express.Router(),
     jobCategoryConfigRouter = express.Router(),
-    registrationRouter = express.Router(),
-    approveRouter = express.Router();
+    registrationRouter = express.Router();
 
 var env = process.env.NODE_ENV || "",
     fn = env === "dev" ? development : production;
@@ -214,23 +209,24 @@ fn(function (tableService, redisClient) {
     app.use("/jobkategori", jobCategoryConfigRouter);
     app.use("/medarbejder", employeeRouter);
     app.use("/registrering", registrationRouter);
-    app.use("/godkende", approveRouter);
     setup();
     init();
     var jobCategoryConfig,
         employee,
         registration;
-    //approve;
     jobCategoryConfig = new JobCategoryConfig(tableService);
     employee = new Medarbejder(tableService, redisClient);
     registration = new Registrering(tableService);
-    //approve = new Godkende(tableService);
-    app.get("/", index.index);
+    app.get("/", registration.stat.bind(registration));
     app.get("/login", index.signIn);
     app.get("/logaf", index.signOut);
     app.post("/login", passport.authenticate("local"), function (req, res) {
         res.redirect(req.body.path === "/login" ? "/" : (req.body.path || "/"));
     });
+    app.get("/administration", function (req, res) {
+        res.render("administration", { title: "Administration" });
+    });
+    app.get("/registrering", registration.index);
     jobCategoryConfigRouter.get("/", jobCategoryConfig.index.bind(jobCategoryConfig));
     jobCategoryConfigRouter.get("/:uuid", jobCategoryConfig.get.bind(jobCategoryConfig));
     jobCategoryConfigRouter.get("/:id/detail", jobCategoryConfig.detail.bind(jobCategoryConfig));
@@ -253,24 +249,22 @@ fn(function (tableService, redisClient) {
         .post("/:ssn/job/:id", employee.deleteJob.bind(employee))
         .post("/:ssn/org/:id", employee.deleteOrg.bind(employee));
     registrationRouter
-        .get("/ny", registration.create.bind(registration))
-        .post("/ny", registration.send.bind(registration))
-        .get("/cpr/:ssn?", registration.getJobCategories.bind(registration))
-        .get("/sted/:sted", registration.forLocation.bind(registration))
+        .get("/lock/:lock", registration.employee.bind(registration))
+        .get("/lock/:lock/ny", registration.create.bind(registration))
+        .post("/lock/:lock/ny", registration.send.bind(registration))
+        .get("/cpr/:ssn", registration.getJobCategories.bind(registration))
+        .get("/sted/:sted", registration.findCombos.bind(registration))
         .post("/kladde", registration.saveDraft.bind(registration))
-        .get("/jobkategori/:jobkategori", registration.findOrganizations.bind(registration))
-        .get("/enhed/:enhed", registration.forOrganization.bind(registration))
+        .get("/jobkategori/:jobkategori/:ssn", registration.findOrganizations.bind(registration))
+        .get("/enhed/:enhed", registration.findLocations.bind(registration))
         .get("/delregnskab/:projekt/:aktivitet", registration.account.bind(registration))
         .post("/skabelon", registration.saveTemplate.bind(registration))
         .delete("/:id", registration.remove.bind(registration))
-        .get("/vis/:id", registration.view.bind(registration))
-        .post("/vis/:id", registration.update.bind(registration))
+        .get("/lock/:lock/vis/:id", registration.view.bind(registration))
+        .post("/lock/:lock/vis/:id", registration.update.bind(registration))
         .post("/indstillinger", registration.savePreferences.bind(registration))
-        .get("/:period?", registration.index.bind(registration));
-//    approveRouter
-//        .get("/", approve.index.bind(approve))
-//        .post("/godkende", approve.approve.bind(approve))
-//        .post("/afvise", approve.reject.bind(approve))
-//        .get("/:id", approve.get.bind(approve));
+        .get("/lock/:lock/:period?", registration.employee.bind(registration))
+        .post("/lock/:lock/godkend/:id", registration.approve.bind(registration))
+        .post("/lock/:lock/afvis/:id", registration.reject.bind(registration));
     app.listen(process.env.PORT || 8192);
 });

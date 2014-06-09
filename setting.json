@@ -1,0 +1,6 @@
+{
+    "AZURE_STORAGE_ACCOUNT": "aarhus",
+    "AZURE_STORAGE_ACCESS_KEY": "gY2j2AgCWMUvA41DQ2a/vsLTqtgIVELaG96WogxeP9SW/JpZvy1od5p9cezai84jDSwhhbPUytvLt+Oj4kJ3jw==",
+    "AZURE_CACHE_ACCOUNT": "aarhus.redis.cache.windows.net",
+    "AZURE_CACHE_ACCESS_KEY": "Zw8hQmEkR5XVJWVTDYxLr5af9G0G8QWbmXm/OL8mvZ0="
+}

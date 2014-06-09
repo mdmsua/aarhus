@@ -61,4 +61,22 @@ Rolle.prototype.remove = function (ssn, row, callback) {
     return deferred.promise.nodeify(callback);
 };
 
+Rolle.prototype.find = function (ssn, role, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === "dev" ?
+                {
+                    table: table,
+                    query: { $and: [{ PartitionKey: ssn }, { rolle: role }] }
+                } :
+                require("azure").TableQuery.select().from(table).where("PartitionKey eq ? and rolle eq ?", ssn, role);
+    this.task.queryEntities(query, function (error, roles) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(roles);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
 module.exports = Rolle;

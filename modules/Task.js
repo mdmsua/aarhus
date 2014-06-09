@@ -94,20 +94,22 @@ Task.prototype.insertEntity = function (item, callback) {
 };
 
 Task.prototype.updateEntity = function (item, callback) {
-    var self = this;
-    this.storageClient.queryEntity(this.tableName, item.partitionKey || this.partitionKey, item.rowKey || item[this.rowKeyProperty], function (error, entity) {
+    var self = this,
+        deferred = Q.defer();
+    this.storageClient.queryEntity(this.tableName, item.PartitionKey || this.partitionKey, item.RowKey || item[this.rowKeyProperty], function (error, entity) {
         if (error) {
-            callback(error);
+            deferred.reject(error);
         } else {
             self.storageClient.updateEntity(self.tableName, item, function (error, entity) {
                 if (error) {
-                    callback(error);
+                    deferred.reject(error);
                 } else {
-                    callback(null, entity);
+                    deferred.resolve(entity);
                 }
             });
         }
     });
+    return deferred.promise.nodeify(callback);
 };
 
 Task.prototype.deleteEntity = function (item, callback) {

@@ -183,4 +183,19 @@ JobOrg.prototype.deleteAll = function (ssn, callback) {
     return deferred.promise.nodeify(callback);
 };
 
+JobOrg.prototype.getEmployees = function (org, callback) {
+    var deferred = Q.defer(),
+        query = process.env.NODE_ENV === "dev" ?
+                { table: orgTable, query: { kode: org } } :
+                require("azure").TableQuery.select().from(orgTable).where("kode eq ?", org);
+    this.orgs.queryEntities(query, function (error, employees) {
+        if (error) {
+            deferred.reject(error);
+        } else {
+            deferred.resolve(employees);
+        }
+    });
+    return deferred.promise.nodeify(callback);
+};
+
 module.exports = JobOrg;

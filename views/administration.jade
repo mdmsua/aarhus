@@ -1,0 +1,39 @@
+extends layout
+block container
+    article.row
+        div.col-lg-2.col-lg-offset-5
+            button.btn.btn-lg.btn-primary(type="button")
+                span.glyphicon.glyphicon-refresh
+                |&nbsp; Export
+    table.table
+        thead
+            tr
+                th
+                th Dato
+                th Udløser
+                th Batchstørrelse
+                th Medarbejder
+                th Meddelelse
+                th
+        tbody
+            tr.success
+                td
+                    input(type="checkbox", disabled)
+                td 09-06-2014 00:00:00
+                td Auto
+                td 128
+                td Job
+                td OK
+                td
+            tr.danger
+                td
+                    input(type="checkbox")
+                td 10-06-2014 12:34:56
+                td Manuelt
+                td 64
+                td Administrator
+                td Tjenesten er ikke tilgængelig
+                td
+                    div.btn-group.btn-group-sm
+                        button.btn.btn-primary(type="button") Send igen
+                        button.btn.btn-warning(type="button") Ignorer

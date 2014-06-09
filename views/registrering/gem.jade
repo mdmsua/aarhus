@@ -1,0 +1,140 @@
+extends ../layout
+block container
+    section(ng-app="app", ng-controller="ctrl")
+        input#cpr(type="hidden", value=cpr)
+        input#registrering(type="hidden", value=JSON.stringify(registrering))
+        input#medarbejdere(type="hidden", value=JSON.stringify(medarbejdere || []))
+        aside.col-lg-3.col-md-3.col-sm-3(ng-if="!registrering.RowKey")
+            article.panel.panel-default
+                header.panel-heading
+                    | Skabeloner
+                    span.pull-right.badge {{ skabeloner.length }}
+                div.list-group
+                    a.list-group-item(ng-repeat="skabelon in skabeloner", href="javascript:void(0)") {{ skabelon.RowKey }}
+            article.panel.panel-default
+                header.panel-heading
+                    | Kladder
+                    span.pull-right.badge {{ kladder.length }}
+                div.list-group
+                    a.list-group-item(ng-repeat="kladde in kladder", href="javascript:void()") {{ kladde.oprettet }}
+            article.panel.panel-default
+                header.panel-heading
+                    | Tidligere registreringer
+                    span.pull-right.badge {{ registreringer.length }}
+                div.list-group
+                    a.list-group-item(ng-repeat="r in registreringer", href="javascript:void()") {{ r.RowKey }}
+        form.form-horizontal(role="form", method="post", action=url)
+            fieldset
+                fieldset(ng-class="{ 'col-lg-9 col-md-9 col-sm-9': !registrering.RowKey, 'col-lg-6 col-md-6 col-sm-6': registrering.RowKey }")
+                    div.form-group(ng-if="alert")
+                        div.col-lg-9.col-lg-offset-3
+                            div.alert.alert-warning.alert-dismissable
+                                button.close(type="button", data-dismiss="alert", aria-hidden="true", ng-click="alert = ''") &times;
+                                span {{ alert }}
+                    div.form-group
+                        label.control-label.col-lg-3(for="dato") Dato
+                        div.col-lg-2
+                            input.form-control(name="dato", type="text", placeholder="Dato", ng-model="registrering.dato", ng-click="isOpen = true", datepicker-popup, is-open="isOpen")
+                    div.form-group(ng-if="lock === 1")
+                        label.control-label.col-lg-3(for="medarbejder") Medarbejder
+                        div.col-lg-9
+                            select.form-control(name="medarbejderkode", placeholder="Vælg medarbejder", ng-model="registrering.medarbejderkode", ng-disabled="!medarbejdere", ui-select2)
+                                option
+                                option(ng-repeat="medarbejder in medarbejdere", value="{{ medarbejder.cpr }}") {{ medarbejder.fornavn + " " + medarbejder.efternavn }}
+                            input(type="hidden", name="medarbejdernavn", value="{{ registrering.medarbejdernavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="jobkategori") Jobkategori
+                        div.col-lg-9
+                            select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-model="registrering.jobkategorikode", ng-disabled="!jobkategorier", ui-select2="{ allowClear: lock === 0 }")
+                                option
+                                option(ng-repeat="jobkategori in jobkategorier", value="{{ jobkategori.kode }}") {{ jobkategori.navn }}
+                            input(type="hidden", name="jobkategorinavn", value="{{ registrering.jobkategorinavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="enhed") Enhed
+                        div.col-lg-9
+                            select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="registrering.enhedkode", ng-disabled="!enheder", ui-select2="{ allowClear: lock === 0 }")
+                                option
+                                option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.navn }}
+                            input(type="hidden", name="enhednavn", value="{{ registrering.enhednavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="projekt") Projekt
+                        div.col-lg-9
+                            select.form-control(name="projektkode", placeholder="Vælg projekt", ng-model="registrering.projektkode", ng-disabled="!projekter", ui-select2="{ allowClear: lock === 0 }")
+                                option
+                                option(ng-repeat="projekt in projekter", value="{{ projekt.kode }}") {{ projekt.kode + ": " + projekt.navn }}
+                            input(type="hidden", name="projektnavn", value="{{ registrering.projektnavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="aktivitet") Aktivitet
+                        div.col-lg-9
+                            select.form-control(name="aktivitetkode", placeholder="Vælg aktivitet", ng-model="registrering.aktivitetkode", ng-disabled="!aktiviteter", ui-select2="{ allowClear: lock === 0 }")
+                                option
+                                option(ng-repeat="aktivitet in aktiviteter", value="{{ aktivitet.kode }}") {{ aktivitet.kode + ": " + aktivitet.navn }}
+                            input(type="hidden", name="aktivitetnavn", value="{{ registrering.aktivitetnavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="lko") Lønkode
+                        div.col-lg-9
+                            select.form-control(name="lkokode", placeholder="Vælg lønkode", ng-model="registrering.lkokode", ng-disabled="!lkos", ui-select2="{ allowClear: lock === 0 }")
+                                option
+                                option(ng-repeat="lko in lkos", value="{{ lko.kode }}") {{ lko.navn }}
+                            input(type="hidden", name="lkonavn", value="{{ registrering.lkonavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="sted") Sted
+                        div.col-lg-9
+                            input.form-control(placeholder="Sted", ng-model="registrering.stednavn", disabled)
+                            input(type="hidden", name="stedkode", value="{{ registrering.stedkode }}")
+                            input(type="hidden", name="stednavn", value="{{ registrering.stednavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="delregnskabkode") Delregnskab
+                        div.col-lg-9
+                            input.form-control(placeholder="Delregnskab", ng-model="registrering.delregnskabnavn", disabled)
+                            input(type="hidden", name="delregnskabkode", value="{{ registrering.delregnskabkode }}")
+                            input(type="hidden", name="delregnskabnavn", value="{{ registrering.delregnskabnavn }}")
+                    div.form-group
+                        label.control-label.col-lg-3(for="felt1") Værdi
+                        div.col-lg-2
+                            input.form-control(name="felt1", type="text", ng-model="registrering.felt1", placeholder="Værdi")
+                            input.form-control(name="felt2", type="hidden", value="0")
+                            input.form-control(name="felt3", type="hidden", value="0")
+                            input.form-control(name="felt4", type="hidden", value="0")
+                    div.form-group
+                        label.control-label.col-lg-3(for="kommentar") Kommentar
+                        div.col-lg-9
+                            textarea.form-control(name="kommentar", placeholder="Kommentar", ng-model="registrering.kommentar")
+                    footer.form-group
+                        div.col-lg-offset-3.col-lg-9
+                            div.btn-group.btn-group-justified
+                                div.btn-group(ng-if="lock === 0")
+                                    button.btn.btn-success(type="submit", ng-click="submit()") Send
+                                div.btn-group(ng-if="lock > 0 && registrering.RowKey")
+                                    button.btn.btn-success(type="submit", ng-click="submit('/registrering/lock/1/godkend')") Godkend
+                                div.btn-group(ng-if="lock > 0 && registrering.RowKey")
+                                    button.btn.btn-danger(type="submit", ng-click="submit('/registrering/lock/1/afvis')") Afvis
+                                div.btn-group(ng-if="lock > 0")
+                                    button.btn.btn-info(type="submit", ng-click="submit()") Send
+                                div.btn-group
+                                    button.btn.btn-warning(type="reset", onclick="javascript:history.back()") Annuller
+                                div.btn-group(ng-if="!registrering.RowKey")
+                                    button.btn.btn-info(type="submit", formaction="/registrering/kladde") Gem som kladde
+                                div.btn-group(ng-if="!registrering.RowKey")
+                                    button.btn.btn-default(type="button", ng-click="toggleTemplate()") Gem som skabelon
+                    div.form-group(ng-show="visibleTemplate")
+                        label.control-label.col-lg-3 Skabelon
+                        div.col-lg-9
+                            div.input-group
+                                input.form-control(type="text", name="skabelon")
+                                span.input-group-btn
+                                    button.btn.btn-default(type="submit", formaction="/registrering/skabelon") Gem
+                article.col-lg-6.col-md-6.col-sm-6(ng-if="registrering.samtaler")
+                    section.panel.panel-default(ng-repeat="samtale in registrering.samtaler")
+                        div.panel-heading
+                            strong {{ samtale.medarbejdernavn }}
+                            |&nbsp;på&nbsp;
+                            strong {{ samtale.dato }}
+                        div.panel-body {{ samtale.kommentar }}
+block scripts
+    script(src="/angular/angular.min.js")
+    script(src="/angular-bootstrap/ui-bootstrap-tpls.min.js")
+    script(src="/angular-ui-select2/src/select2.js")
+    script(src="/moment/min/moment.min.js")
+    script(src="/moment/lang/da.js")
+    script(src="/js/registrering/medarbejder/gem.js")

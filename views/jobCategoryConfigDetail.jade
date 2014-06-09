@@ -18,21 +18,21 @@ block container
                     select.form-control.select2(data-placeholder="Vælg LKO")
                         option
                         each lko in lkos
-                            option(value=lko.kode, selected=lko.kode == configuration.lko)= lko.navn
+                            option(value=lko.kode, selected=lko.kode == configuration.lko)= lko.kode + ": " + lko.navn
             div.form-group
                 label.control-label.col-lg-2 PKAT
                 div.col-lg-10
                     select.form-control.select2(data-placeholder="Vælg PKAT")
                         option
                         each pkat in pkats
-                            option(value=pkat.kode, selected=pkat.kode == configuration.pkat)= pkat.navn
+                            option(value=pkat.kode, selected=pkat.kode == configuration.pkat)= pkat.kode + ": " + pkat.navn
             div.form-group
                 label.control-label.col-lg-2 STIKO
                 div.col-lg-10
                     select.form-control.select2(data-placeholder="Vælg STIKO")
                         option
                         each stiko in stikos
-                            option(value=stiko.kode, selected=stiko.kode == configuration.stiko)= stiko.navn
+                            option(value=stiko.kode, selected=stiko.kode == configuration.stiko)= stiko.kode + ": " + stiko.navn
             div.form-group
                 label.control-label.col-lg-2 Lønform
                 div.col-lg-10
