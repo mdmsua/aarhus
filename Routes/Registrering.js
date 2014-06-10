@@ -103,8 +103,8 @@ Registrering.prototype.employee = function (req,  res, next) {
                 this.registration.get(1, period, null),
                 this.registration.get(2, period, null),
                 this.registration.get(3, period, null),
-                this.registration.getOrganisationsForRole(req.user.cpr, "Sekretær"),
-                this.registration.getPreferences(req.user.cpr, "Sekretær")
+                this.registration.getOrganisationsForRole(req.user.cpr, "økonom"),
+                this.registration.getPreferences(req.user.cpr, "økonom")
             ]).spread(function (minusThrees, ones, twos, threes, organisations, preferences) {
                 organisations.forEach(function (organization) {
                     for (i = 0; i < organization.koder.split(",").length; i += 1) {

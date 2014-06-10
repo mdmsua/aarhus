@@ -406,6 +406,10 @@ Registration.prototype.findEmployeesInOrganizations = function (organizations, c
         orgQueue = [],
         empQueue = [],
         orgs = [];
+    if (organizations.length === 0) {
+        callback(null, []);
+        return;
+    }
     organizations.forEach(function (organization) {
         orgs = _.union(orgs, organization.koder.split(","));
     });
