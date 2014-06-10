@@ -64,6 +64,7 @@ function production(callback) {
     redisClient.auth(nconf.get("AZURE_CACHE_ACCESS_KEY"), function () {
         callback(tableService, redisClient);
     });
+    //callback(tableService, null);
 }
 
 function setup() {
@@ -201,6 +202,7 @@ fn(function (tableService, redisClient) {
     app.use(bodyParser());
     app.use(cookieParser());
     app.use(session({ store: new RedisStore({ client: redisClient }), secret: "Try2gue$$" }));
+    //app.use(session({ secret: "Try2gue$$" }));
     app.use(passport.initialize());
     app.use(passport.session());
     app.use(morgan(env === "dev" ? "dev" : "default"));

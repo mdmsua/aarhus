@@ -53,7 +53,7 @@ function controller($scope, $http) {
     });
     $scope.$watch("registrering.jobkategorikode", function (jobkategorikode) {
         if (jobkategorikode) {
-            $http.get("/registrering/jobkategori/" + jobkategorikode + "/" + cpr).success(function (data) {
+            $http.get("/registrering/jobkategori/" + jobkategorikode + "/" + (cpr || $scope.registrering.medarbejderkode)).success(function (data) {
                 $scope.enheder = data.organizations;
                 $scope.lkos = data.lkos;
                 if (data.organizations.length === 1 && !$scope.registrering.RowKey) {

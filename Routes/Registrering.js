@@ -57,6 +57,8 @@ Registrering.prototype.employee = function (req,  res, next) {
                     indstillinger: preferences,
                     period: period
                 });
+            }, function (error) {
+                next(error);
             });
             break;
         case 1:

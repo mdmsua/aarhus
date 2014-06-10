@@ -12,6 +12,7 @@ function Indstilling(tableService) {
 
 Indstilling.prototype.get = function (ssn, role, callback) {
     var d = Q.defer();
+    d.resolve(null);
     this.task.getEntity(ssn, role, function (error, entity) {
         if (error) {
             d.reject(error);
