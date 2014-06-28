@@ -1,12 +1,7 @@
 extends _layout
 block links
-    link(rel="stylesheet", href="/select2/select2.css")
-    link(rel="stylesheet", href="/select2-bootstrap-css/select2-bootstrap.css")
-    link(rel="stylesheet", href="/css/datepicker.css")
-    style.
-        .container {
-            width: 98%;
-        }
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/select2/3.4.8/select2.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/select2/3.4.8/select2-bootstrap.css")
 block body
         header
             nav.navbar.navbar-inverse(role="navigation")
@@ -32,14 +27,11 @@ block body
                                     |&nbsp;Log af
         section.container
             block container
-        script(src="/modernizr/modernizr.js")
-        script(src="/jquery/dist/jquery.min.js")
-        script(src="/bootstrap/dist/js/bootstrap.min.js")
-        script(src="/select2/select2.min.js")
-        script(src="/select2/select2_locale_da.js")
-        script(src="/knockout/dist/knockout.js")
-        script(src="/knockout-mapping/knockout.mapping.js")
-        script(src="/underscore/underscore.js")
-        script(src="/js/bootstrap-datepicker.js")
-        script(src="/js/locales/bootstrap-datepicker.da.js")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js")
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js")
+        script(src="//cdn.jsdelivr.net/select2/3.4.8/select2.min.js")
+        script(src="//cdn.jsdelivr.net/select2/3.4.8/select2_locale_da.js")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js")
         block scripts

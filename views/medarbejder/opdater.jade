@@ -39,7 +39,7 @@ block container
                 div.form-group
                     label.control-label.col-lg-4(for="dato") Fra dato
                     div.col-lg-4
-                        input.form-control(type="text", name="dato", placeholder="Fra dato", ng-required="true", ng-model="medarbejder.dato", datepicker-popup, is-open="isOpen", ng-click="isOpen = true")
+                        input.form-control(type="text", name="dato", placeholder="Fra dato", ng-required="true", ng-model="medarbejder.dato", datepicker-popup, ng-click="isOpen = true", is-open="isOpen")
                 div.form-group
                     label.control-label.col-lg-4(for="email") Primær e-mail
                     div.col-lg-8
@@ -121,6 +121,12 @@ block container
                                 option
                                 option(ng-repeat="pkat in pkats", value="{{ pkat.kode }}") {{ pkat.navn }}
                             input(type="hidden", name="pkatnavn", value="{{ pkatnavn }}")
+                    //div.form-group
+                    //    div.col-lg-12
+                    //        div.checkbox.pull-right
+                    //            label
+                    //                input(type="checkbox", ng-model="default")
+                    //                |&nbsp;Brug standardværdierne
                     div.form-group
                         //label.control-label.col-lg-4(for="delregnskabkode") Delregnskab
                         div.col-lg-12
@@ -131,13 +137,13 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="projektkode") Projekt
                         div.col-lg-12
-                            input.form-control(placeholder="Vælg projekt", ng-model="projekt", ui-select2="uiprojekt")
+                            input.form-control#projekt(placeholder="Vælg projekt", ng-model="projekt", ui-select2="uiprojekt")
                             input(type="hidden", name="projektkode", value="{{ projektkode }}")
                             input(type="hidden", name="projektnavn", value="{{ projektnavn }}")
                     div.form-group
                         //label.control-label.col-lg-4(for="aktivitetkode") Aktivitet
                         div.col-lg-12
-                            input.form-control(placeholder="Vælg aktivitet", ng-model="aktivitet", ui-select2="uiaktivitet")
+                            input.form-control#aktivitet(placeholder="Vælg aktivitet", ng-model="aktivitet", ui-select2="uiaktivitet")
                             input(type="hidden", name="aktivitetkode", value="{{ aktivitetkode }}")
                             input(type="hidden", name="aktivitetnavn", value="{{ aktivitetnavn }}")
                     div.form-group
@@ -254,9 +260,7 @@ block container
                                     a(href="javascript:void(0)", type="button", ng-click="detachEnhed(jobkategori.enheder, $index)")
                                         span.glyphicon.glyphicon-trash
 block scripts
-    script(src="/angular/angular.min.js")
-    script(src="/angular-bootstrap/ui-bootstrap-tpls.min.js")
-    script(src="/angular-ui-select2/src/select2.js")
-    script(src="/moment/min/moment.min.js")
-    script(src="/moment/lang/da.js")
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js")
+    script(src="/js/select2.js")
     script(src="/js/medarbejder.js")

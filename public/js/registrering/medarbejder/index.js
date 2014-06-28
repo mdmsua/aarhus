@@ -17,7 +17,6 @@ function controller($scope, $http, $filter) {
         $scope.indstillinger = angular.fromJson(angular.element("#indstillinger").val());
         $scope.jobkategorier = angular.fromJson(angular.element("#jobkategorier").val());
         $scope.enheder = angular.fromJson(angular.element("#enheder").val());
-        console.log($scope.enheder);
         $scope.medarbejdere = angular.fromJson(angular.element("#medarbejdere").val());
     });
     $scope.setStatus = function (status) {

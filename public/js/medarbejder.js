@@ -194,6 +194,18 @@ function controller($scope, $http) {
             }
         }
     };
+//    $scope.$watch("default", function (value, old) {
+//        if (value && !old) {
+//            if (value) {
+//                angular.element("select").attr("disabled", "disabled");
+//            } else {
+//                angular.element("select").removeAttr("disabled");
+//            }
+//            console.log(value);
+//            angular.element("#projekt").select2("enable", !value);
+//            angular.element("#aktivitet").select2("enable", !value);
+//        }
+//    });
 }
 
 angular.module("app", ["ui.bootstrap", "ui.select2"])

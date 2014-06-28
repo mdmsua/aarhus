@@ -199,7 +199,8 @@ fn(function (tableService, redisClient) {
     app.use(express.static(__dirname + "/public"));
     app.use(express.static(__dirname + "/bower_components"));
     app.use(express.static(__dirname + "/bower_components/bootstrap"));
-    app.use(bodyParser());
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: true }));
     app.use(cookieParser());
     app.use(session({ store: new RedisStore({ client: redisClient }), secret: "Try2gue$$" }));
     //app.use(session({ secret: "Try2gue$$" }));
