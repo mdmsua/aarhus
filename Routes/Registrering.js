@@ -380,8 +380,8 @@ Registrering.prototype.reject = function (req, res, next) {
     });
 };
 
-Registrering.prototype.stat = function (req, res, next) {
-    res.render("dashboard", { success: 16, info: 8, danger: 4 });
+Registrering.prototype.stat = function (req, res) {
+    res.render("dashboard");
 };
 
 module.exports = Registrering;
