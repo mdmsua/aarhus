@@ -27,33 +27,37 @@ JobCategoryConfig.prototype.index = function (req, res) {
     });
 };
 
-JobCategoryConfig.prototype.get = function (req, res) {
+JobCategoryConfig.prototype.get = function (req, res, next) {
     var self = this;
     self.jobCategoryConfig.one(req.params.uuid, function (error, config) {
-        Q.all([
-            self.lko.one(config.lko),
-            self.pkat.one(config.pkat),
-            self.stiko.one(config.stiko),
-            self.jobCategory.one(config.st),
-            self.salaryForm.one(new Date().getDate() % 5),
-            self.jobCategoryConfig.all()]).spread(function (lko, pkat, stiko, stilling, salaryForm, configurations) {
-            res.render("jobCategoryConfig", {
-                configuration: config,
-                configurations: configurations,
-                details: [
-                    {
-                        period: moment().startOf("year").format("D MMMM YYYY") + " - ",
-                        lko: lko.kode + ": " + lko.navn,
-                        pkat: pkat.kode + ": " + pkat.navn,
-                        stiko: stiko.kode + ": " + stiko.navn,
-                        stilling: stilling.kode + ": " + stilling.navn,
-                        salaryForm: salaryForm.kode + ": " + salaryForm.navn,
-                        salaryClass: new Date().getMonth() + 1,
-                        salaryLevel: new Date().getMonth() + 1
-                    }
-                ]
+        if (error) {
+            next(error);
+        } else {
+            Q.all([
+                self.lko.one(config.lko),
+                self.pkat.one(config.pkat),
+                self.stiko.one(config.stiko),
+                self.jobCategory.one(config.st),
+                self.salaryForm.one(1),
+                self.jobCategoryConfig.all()]).spread(function (lko, pkat, stiko, stilling, salaryForm, configurations) {
+                res.render("jobCategoryConfig", {
+                    configuration: config,
+                    configurations: configurations,
+                    details: [
+                        {
+                            period: moment().startOf("year").format("D MMMM YYYY") + " - ",
+                            lko: lko.kode + ": " + lko.navn,
+                            pkat: pkat.kode + ": " + pkat.navn,
+                            stiko: stiko.kode + ": " + stiko.navn,
+                            stilling: stilling.kode + ": " + stilling.navn,
+                            salaryForm: salaryForm.kode + ": " + salaryForm.navn,
+                            salaryClass: new Date().getMonth() + 1,
+                            salaryLevel: new Date().getMonth() + 1
+                        }
+                    ]
+                });
             });
-        });
+        }
     });
 };
 
@@ -66,7 +70,7 @@ JobCategoryConfig.prototype.detail = function (req, res) {
             self.stiko.all(),
             self.jobCategory.all(),
             self.salaryForm.all()]).spread(function (lkos, pkats, stikos, stillings, salaryForms) {
-            config.salaryForm = new Date().getDate() % 5;
+            config.salaryForm = 1;
             config.salaryClass = new Date().getMonth() + 1;
             config.salaryLevel = new Date().getMonth() + 1;
             res.render("jobCategoryConfigDetail", {

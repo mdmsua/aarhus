@@ -34,12 +34,10 @@ block container
                         div.btn-group
                             button.btn.btn-success(type="submit") Gem
                         div.btn-group
-                            button.btn.btn-warning(type="reset") Annuller
+                            button.btn.btn-warning(type="reset", onlick="javascript:history.back()") Annuller
                         if configuration.uuid
                             div.btn-group
                                 button.btn.btn-danger(onclick="confirm('Er du sikker på, at du vil slette konfigurationen?')") Slet
-                        div.btn-group
-                            button.btn.btn-default(type="button") Revisionslog
     if configuration.uuid
         article.col-lg-6
             header.page-header
@@ -47,7 +45,7 @@ block container
                     | Detaljer
                     - var url = "/jobkategori/" + configuration.uuid + "/detail"
                     small
-                        a.btn.btn-primary.pull-right(href=url)
+                        a.btn.btn-primary.pull-right(href=url, disabled)
                             span.glyphicon.glyphicon-plus
                             | &nbsp;Tilføj ny
             each detail, index in details || []
@@ -62,23 +60,27 @@ block container
                                 button.btn-link(onclick="confirm('Er du sikker på, at du vil slette denne post?')")
                                     span.glyphicon.glyphicon-trash
                         table.table
-                            thead
-                                tr
-                                    th LKO
-                                    th PKAT
-                                    th STIKO
-                                    th Stilling
-                                    th Lønform
-                                    th Lønklasse
-                                    th Lønanvisning
                             tbody
                                 tr
+                                    th LKO
                                     td= detail.lko
+                                tr
+                                    th PKAT
                                     td= detail.pkat
+                                tr
+                                    th STIKO
                                     td= detail.stiko
+                                tr
+                                    th Stilling
                                     td= detail.stilling
+                                tr
+                                    th Lønform
                                     td= detail.salaryForm
+                                tr
+                                    th Lønklasse
                                     td= detail.salaryClass
+                                tr
+                                    th Lønanvisning
                                     td= detail.salaryLevel
 block scripts
     script.
