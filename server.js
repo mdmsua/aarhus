@@ -32,7 +32,6 @@ var util = require("util"),
             { name: "Registrering", href: "/registrering" }
         ],
         "Sekretær": [
-            { name: "Jobkategori", href: "/jobkategori" },
             { name: "Medarbejder", href: "/medarbejder" },
             { name: "Registrering", href: "/registrering" }
         ],

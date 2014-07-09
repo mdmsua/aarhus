@@ -32,67 +32,67 @@ block container
                                 button.close(type="button", data-dismiss="alert", aria-hidden="true", ng-click="alert = ''") &times;
                                 span {{ alert }}
                     div.form-group
-                        label.control-label.col-lg-3(for="dato") Dato
+                        label.control-label.col-lg-3(for="dato") Dato *
                         div.col-lg-2
                             input.form-control(name="dato", type="text", placeholder="Dato", ng-model="registrering.dato", ng-click="isOpen = true", datepicker-popup, is-open="isOpen")
                     div.form-group(ng-if="lock === 1")
-                        label.control-label.col-lg-3(for="medarbejder") Medarbejder
+                        label.control-label.col-lg-3(for="medarbejder") Medarbejder *
                         div.col-lg-9
                             select.form-control(name="medarbejderkode", placeholder="Vælg medarbejder", ng-model="registrering.medarbejderkode", ng-disabled="!medarbejdere", ui-select2)
                                 option
                                 option(ng-repeat="medarbejder in medarbejdere", value="{{ medarbejder.cpr }}") {{ medarbejder.fornavn + " " + medarbejder.efternavn }}
                             input(type="hidden", name="medarbejdernavn", value="{{ registrering.medarbejdernavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="jobkategori") Jobkategori
+                        label.control-label.col-lg-3(for="jobkategori") Jobkategori *
                         div.col-lg-9
                             select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-model="registrering.jobkategorikode", ng-disabled="!jobkategorier", ui-select2="{ allowClear: lock === 0 }")
                                 option
                                 option(ng-repeat="jobkategori in jobkategorier", value="{{ jobkategori.kode }}") {{ jobkategori.navn }}
                             input(type="hidden", name="jobkategorinavn", value="{{ registrering.jobkategorinavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="enhed") Enhed
+                        label.control-label.col-lg-3(for="enhed") Enhed *
                         div.col-lg-9
                             select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="registrering.enhedkode", ng-disabled="!enheder", ui-select2="{ allowClear: lock === 0 }")
                                 option
-                                option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.navn }}
+                                option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.kode + ": " + enhed.navn }}
                             input(type="hidden", name="enhednavn", value="{{ registrering.enhednavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="projekt") Projekt
+                        label.control-label.col-lg-3(for="projekt") Projekt *
                         div.col-lg-9
                             select.form-control(name="projektkode", placeholder="Vælg projekt", ng-model="registrering.projektkode", ng-disabled="!projekter", ui-select2="{ allowClear: lock === 0 }")
                                 option
                                 option(ng-repeat="projekt in projekter", value="{{ projekt.kode }}") {{ projekt.kode + ": " + projekt.navn }}
                             input(type="hidden", name="projektnavn", value="{{ registrering.projektnavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="aktivitet") Aktivitet
+                        label.control-label.col-lg-3(for="aktivitet") Aktivitet *
                         div.col-lg-9
                             select.form-control(name="aktivitetkode", placeholder="Vælg aktivitet", ng-model="registrering.aktivitetkode", ng-disabled="!aktiviteter", ui-select2="{ allowClear: lock === 0 }")
                                 option
                                 option(ng-repeat="aktivitet in aktiviteter", value="{{ aktivitet.kode }}") {{ aktivitet.kode + ": " + aktivitet.navn }}
                             input(type="hidden", name="aktivitetnavn", value="{{ registrering.aktivitetnavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="lko") Lønkode
+                        label.control-label.col-lg-3(for="lko") Lønkode *
                         div.col-lg-9
                             select.form-control(name="lkokode", placeholder="Vælg lønkode", ng-model="registrering.lkokode", ng-disabled="!lkos", ui-select2="{ allowClear: lock === 0 }")
                                 option
                                 option(ng-repeat="lko in lkos", value="{{ lko.kode }}") {{ lko.navn }}
                             input(type="hidden", name="lkonavn", value="{{ registrering.lkonavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="sted") Sted
+                        label.control-label.col-lg-3(for="sted") Sted *
                         div.col-lg-9
                             input.form-control(placeholder="Sted", ng-model="registrering.stednavn", disabled)
                             input(type="hidden", name="stedkode", value="{{ registrering.stedkode }}")
                             input(type="hidden", name="stednavn", value="{{ registrering.stednavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="delregnskabkode") Delregnskab
+                        label.control-label.col-lg-3(for="delregnskabkode") Delregnskab *
                         div.col-lg-9
                             input.form-control(placeholder="Delregnskab", ng-model="registrering.delregnskabnavn", disabled)
                             input(type="hidden", name="delregnskabkode", value="{{ registrering.delregnskabkode }}")
                             input(type="hidden", name="delregnskabnavn", value="{{ registrering.delregnskabnavn }}")
                     div.form-group
-                        label.control-label.col-lg-3(for="felt1") Værdi
+                        label.control-label.col-lg-3(for="felt1") Timer *
                         div.col-lg-2
-                            input.form-control(name="felt1", type="text", ng-model="registrering.felt1", placeholder="Værdi")
+                            input.form-control(name="felt1", type="text", ng-model="registrering.felt1", placeholder="Timer")
                             input.form-control(name="felt2", type="hidden", value="0")
                             input.form-control(name="felt3", type="hidden", value="0")
                             input.form-control(name="felt4", type="hidden", value="0")

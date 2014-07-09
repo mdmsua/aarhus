@@ -17,15 +17,15 @@ block container
                         span.glyphicon.glyphicon-plus &nbsp;Jobkategori
             fieldset.col-lg-4.form-horizontal
                 div.form-group
-                    label.control-label.col-lg-4(for="fornavn") Fornavn
+                    label.control-label.col-lg-4(for="fornavn") Fornavn *
                     div.col-lg-8
                         input.form-control(type="text", name="fornavn", placeholder="Fornavn", ng-required="true", ng-model="medarbejder.fornavn")
                 div.form-group
-                    label.control-label.col-lg-4(for="efternavn") Efternavn
+                    label.control-label.col-lg-4(for="efternavn") Efternavn *
                     div.col-lg-8
                         input.form-control(type="text", name="efternavn", placeholder="Efternavn", ng-required="true", ng-model="medarbejder.efternavn")
                 div.form-group
-                    label.control-label.col-lg-4(for="cpr") CPR-nummer
+                    label.control-label.col-lg-4(for="cpr") CPR-nummer *
                     div.col-lg-8
                         input.form-control(type="text", name="cpr", placeholder="CPR-nummer", ng-required="true", ng-model="medarbejder.cpr")
                 div.form-group
@@ -33,15 +33,15 @@ block container
                     div.col-lg-4
                         input.form-control(type="text", name="lgn", ng-maxlength="3", placeholder="Løngruppenummer", ng-required="true", ng-model="medarbejder.lgn")
                 div.form-group
-                    label.control-label.col-lg-4(for="initialer") Initialer
+                    label.control-label.col-lg-4(for="initialer") ID *
                     div.col-lg-4
-                        input.form-control(type="text", name="initialer", maxlength="10", placeholder="Initialer", ng-required="true", ng-model="medarbejder.initialer")
+                        input.form-control(type="text", name="initialer", maxlength="10", placeholder="ID", ng-required="true", ng-model="medarbejder.initialer")
                 div.form-group
-                    label.control-label.col-lg-4(for="dato") Fra dato
+                    label.control-label.col-lg-4(for="dato") Fra dato *
                     div.col-lg-4
                         input.form-control(type="text", name="dato", placeholder="Fra dato", ng-required="true", ng-model="medarbejder.dato", datepicker-popup, ng-click="isOpen = true", is-open="isOpen")
                 div.form-group
-                    label.control-label.col-lg-4(for="email") Primær e-mail
+                    label.control-label.col-lg-4(for="email") Primær e-mail *
                     div.col-lg-8
                         input.form-control(type="email", name="email", placeholder="Primær e-mail", ng-model="medarbejder.email")
                 div.form-group
@@ -53,7 +53,7 @@ block container
                     div.col-lg-8
                         input.form-control(type="tel", name="phone", placeholder="Telefonnummer", ng-model="medarbejder.phone")
                 div.form-group
-                    label.control-label.col-lg-4(for="roller") Roller
+                    label.control-label.col-lg-4(for="roller") Roller *
                     div.col-lg-8
                         select.form-control(name="roller", data-placeholder="Vælg roller", multiple, ng-model="medarbejder.roller", ui-select2)
                             //option(value="")
@@ -70,7 +70,7 @@ block container
                             div.form-group.col-lg-12
                                 select.form-control(data-placeholder="Vælg enheder", ng-model="enhed.nyEnhed.koder", multiple, ng-required="true", ui-select2)
                                     each enhed in enheder
-                                        option(value=enhed.kode)= enhed.navn
+                                        option(value=enhed.kode)= enhed.kode + ': ' + enhed.navn
                             div.form-group.col-lg-6
                                 input.form-control(type="text", placeholder="Fra dato", ng-model="enhed.nyEnhed.fra", datepicker-popup, ng-click="enhed.nyEnhed.isOpen.fra = true", is-open="enhed.nyEnhed.isOpen.fra", max-date="enhed.nyEnhed.til", min-date="medarbejder.dato")
                             div.form-group.col-lg-6
@@ -109,7 +109,7 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="jobkategorikode") Jobkategori
                         div.col-lg-12
-                            select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-required="!!medarbejder.RowKey", ng-model="jobkategorikode", ui-select2)
+                            select.form-control(name="jobkategorikode", placeholder="Vælg jobkategori", ng-required="!medarbejder.RowKey", ng-model="jobkategorikode", ui-select2)
                                 option
                                     each jobkategori in jobkategorier
                                         option(value=jobkategori.uuid)= jobkategori.stilling
@@ -117,7 +117,7 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="pkatkode") PKAT
                         div.col-lg-12
-                            select.form-control(name="pkatkode", placeholder="Vælg PKAT", ng-required="!!medarbejder.RowKey", ng-disabled="!pkats", ng-model="pkatkode", ui-select2)
+                            select.form-control(name="pkatkode", placeholder="Vælg PKAT", ng-required="!medarbejder.RowKey", ng-disabled="!pkats", ng-model="pkatkode", ui-select2)
                                 option
                                 option(ng-repeat="pkat in pkats", value="{{ pkat.kode }}") {{ pkat.navn }}
                             input(type="hidden", name="pkatnavn", value="{{ pkatnavn }}")
@@ -130,7 +130,7 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="delregnskabkode") Delregnskab
                         div.col-lg-12
-                            select.form-control(name="delregnskabkode", placeholder="Vælg delregnskab", ng-model="delregnskabkode", ng-required="!!medarbejder.RowKey", ui-select2)
+                            select.form-control(name="delregnskabkode", placeholder="Vælg delregnskab", ng-model="delregnskabkode", ng-required="!medarbejder.RowKey", ui-select2)
                                 option
                                 option(ng-repeat="delregnskab in delregnskaber", value="{{ delregnskab.kode }}") {{ delregnskab.navn }}
                             input(type="hidden", name="delregnskabnavn", value="{{ delregnskabnavn }}")
@@ -156,9 +156,9 @@ block container
                     div.form-group
                         //label.control-label.col-lg-4(for="enhedkode") Enhed
                         div.col-lg-12
-                            select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="enhedkode", ng-required="!!medarbejder.RowKey", ui-select2)
+                            select.form-control(name="enhedkode", placeholder="Vælg enhed", ng-model="enhedkode", ng-required="!medarbejder.RowKey", ui-select2)
                                 option
-                                option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.navn }}
+                                option(ng-repeat="enhed in enheder", value="{{ enhed.kode }}") {{ enhed.kode + ': ' + enhed.navn }}
                             input(type="hidden", name="enhednavn", value="{{ enhednavn }}")
                 section.panel.panel-default(ng-if="nyJobkategori")
                     header.panel-heading
@@ -188,7 +188,7 @@ block container
                                 select.form-control(placeholder="Vælg enhed", ng-model="nyJobkategori.enhed.kode", ng-required="true", ui-select2)
                                     option
                                         each enhed in enheder
-                                            option(value=enhed.kode)= enhed.navn
+                                            option(value=enhed.kode)= enhed.kode + ': ' + enhed.navn
                             div.form-group.col-lg-6
                                 input.form-control(type="text", placeholder="Fra dato", ng-model="nyJobkategori.enhed.fra", datepicker-popup, ng-click="nyJobkategori.enhed.isOpen.fra = true", is-open="nyJobkategori.enhed.isOpen.fra", max-date="nyJobkategori.enhed.til")
                             div.form-group.col-lg-6
@@ -227,7 +227,7 @@ block container
                                 select.form-control(placeholder="Vælg enhed", ng-model="jobkategori.enhed.kode", ng-required="true", ui-select2)
                                     option
                                         each enhed in enheder
-                                            option(value=enhed.kode)= enhed.navn
+                                            option(value=enhed.kode)= enhed.kode + ': ' + enhed.navn
                             div.form-group.col-lg-6
                                 input.form-control(type="text", placeholder="Fra dato", ng-model="jobkategori.enhed.fra", datepicker-popup, ng-click="jobkategori.enhed.isOpen.fra = true", is-open="jobkategori.enhed.isOpen.fra", max-date="jobkategori.enhed.til")
                             div.form-group.col-lg-6

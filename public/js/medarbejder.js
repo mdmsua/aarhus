@@ -5,7 +5,7 @@ function controller($scope, $http) {
         length = roles.length,
         role = "",
         i = 0;
-    $scope.medarbejder = { roller: [] };
+    $scope.medarbejder = { roller: [], lgn: '001' };
     $scope.$watchCollection("medarbejder.roller", function (roller) {
         if (angular.isDefined(roller) && angular.isArray(roller)) {
             $scope.showJobCategories = roller.indexOf("Timelønnede") > -1;

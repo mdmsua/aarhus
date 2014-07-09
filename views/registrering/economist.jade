@@ -25,7 +25,7 @@ block container
                         li
                             a.text-muted(href="javascript:void(0)", ng-click="setStatus()") &times;
                         li(ng-class="{ active: status === 1 }")
-                            a.text-primary(href="javascript:void(0)", ng-click="setStatus(1)") Ny &nbsp;
+                            a.text-primary(href="javascript:void(0)", ng-click="setStatus(1)") Til godkendelse &nbsp;
                                 span.badge {{ getCount(1) }}
                         li(ng-class="{ active: status === 2 }")
                             a.text-primary(href="javascript:void(0)", ng-click="setStatus(2)") Afventer &nbsp;
@@ -37,10 +37,10 @@ block container
                             a.text-danger(href="javascript:void(0)", ng-click="setStatus(-2)") økonomafvist &nbsp;
                                 span.badge {{ getCount(-2) }}
                         li(ng-class="{ active: status === 3 }")
-                            a.text-success(href="javascript:void(0)", ng-click="setStatus(3)") Eksporteret &nbsp;
+                            a.text-success(href="javascript:void(0)", ng-click="setStatus(3)") Udbetalt &nbsp;
                                 span.badge {{ getCount(3) }}
                         li(ng-class="{ active: status === -3 }")
-                            a.text-danger(href="javascript:void(0)", ng-click="setStatus(-3)") Ikke eksporteret &nbsp;
+                            a.text-danger(href="javascript:void(0)", ng-click="setStatus(-3)") Fejl &nbsp;
                                 span.badge {{ getCount(-3) }}
                     else
                         li.disabled
